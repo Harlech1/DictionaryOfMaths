@@ -1,86 +1,36 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-	<title>HTML5 MathML</title>
+    <title>MathML Example</title>
 </head>
-
-<body style="text-align:center;">
-
-	<h1 style="color:green">
-		GeeksforGeeks
-	</h1>
-
-	<h3>HTML5 MathML</h3>
-
-	<!--start tag of the whole representation-->
-	<math>
-
-		<!-- Creating Matrix -->
-		<mrow>
-			<mi>A</mi>
-			<mo>=</mo>
-
-			<mfenced open="[" close="]">
-
-				<mtable>
-					<mtr>
-						<mtd>
-							<mi>a</mi>
-						</mtd>
-						<mtd>
-							<mi>b</mi>
-						</mtd>
-					</mtr>
-
-					<mtr>
-						<mtd>
-							<mi>x</mi>
-						</mtd>
-						<mtd>
-							<mi>y</mi>
-						</mtd>
-					</mtr>
-
-				</mtable>
-
-			</mfenced>
-		</mrow>
-
-		<!-- Creating equation -->
-		<br><br>
-		<msub>
-			<mi>Geeks</mi>
-			<mn>4</mn>
-		</msub>
-		<mo>+</mo>
-		<mn>Geeks</mn>
-		<mo>=</mo>
-		<msub>
-			<mi>G</mi>
-		</msub>
-		<mo>→</mo>
-		<msub>
-			<mi>e</mi>
-			<mn>2</mn>
-		</msub>
-		<mo>→</mo>
-		<mi>k</mi>
-		<mi>s</mi>
-		<mn>4
-		</mn>
-		<msub>
-			<mi>G</mi>
-		</msub>
-		<mo>→</mo>
-		<msub>
-			<mi>e</mi>
-			<mn>2</mn>
-		</msub>
-		<mo>→</mo>
-		<mi>k</mi>
-		<mi>s</mi>
-	</math>
+<body>
+    <p>İşlem: <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <mfenced mathcolor="#000000" separators="|">
+            <mrow>
+                <mi mathcolor="#000000">a</mi>
+                <mo mathcolor="#000000">,</mo>
+                <mi mathcolor="#000000">b</mi>
+            </mrow>
+        </mfenced>
+        <mo mathcolor="#000000">=</mo>
+        <mfenced mathcolor="#000000" open="{" close="}" separators="|">
+            <mrow>
+                <mi mathcolor="#000000">x</mi>
+                <mi mathcolor="#000000"> </mi>
+                <mo mathcolor="#000000">:</mo>
+                <mi mathcolor="#000000">a</mi>
+                <mo mathcolor="#000000">&lt;</mo>
+                <mi mathcolor="#000000">x</mi>
+                <mo mathcolor="#000000">&lt;</mo>
+                <mi mathcolor="#000000">b</mi>
+                <mo mathcolor="#000000">,</mo>
+                <mi mathcolor="#000000"> </mi>
+                <mi mathcolor="#000000"> </mi>
+                <mi mathcolor="#000000">x</mi>
+                <mo mathcolor="#000000">∈</mo>
+                <mi mathcolor="#000000">R</mi>
+            </mrow>
+        </mfenced>
+    </math></p>
 </body>
-
 </html>
