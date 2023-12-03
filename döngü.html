@@ -12,10 +12,30 @@
             background-color: #fff; 
             line-height: 1.5; 
         }
+        
+        /* Dark mode için CSS */
+        body.dark-mode {
+            color: #fff; /* Beyaz metin rengi */
+            background-color: #333; /* Koyu arka plan rengi */
+        }
     </style>
+    <script>
+        // Dark mode durumunu algılayan ve uygun class'ı ekleyen JavaScript kodu
+        function detectDarkMode() {
+            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+            if (prefersDarkScheme.matches) {
+                document.body.classList.add("dark-mode");
+            } else {
+                document.body.classList.remove("dark-mode");
+            }
+        }
+        
+        // Sayfa yüklendiğinde dark mode'u algıla
+        window.onload = detectDarkMode;
+    </script>
 </head>
 <body>
     <p> loop</p>
-<p>A path whose initial and final points coincide in a fixed point.</p>
+    <p>A path whose initial and final points coincide in a fixed point.</p>
 </body>
 </html>
