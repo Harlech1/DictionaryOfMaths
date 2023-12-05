@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"matematik sözlüğü"</title>
+    <style>
+        body {
+            font-size: 16px;
+            font-family: Arial, sans-serif; 
+            color: #333; 
+            background-color: #fff; 
+            line-height: 1.5; 
+        }
+        body.dark-mode {
+            color: #fff; 
+            background-color: #333; 
+        }
+    </style>
+    <script>
+        function detectDarkMode() {
+            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+            if (prefersDarkScheme.matches) {
+                document.body.classList.add("dark-mode");
+            } else {
+                document.body.classList.remove("dark-mode");
+            }
+        }
+        
+        window.onload = detectDarkMode;
+    </script>
+</head>
+<body>
+    <p> parametric form</p>
+<p>For the ellipse with cartesian equation
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>𝐛</mi><mn>𝟐</mn></msup><msup><mi>𝐱</mi><mn>𝟐</mn></msup><mo>+</mo><msup><mi>𝐚</mi><mn>𝟐</mn></msup><msup><mi>𝐲</mi><mn>𝟐</mn></msup><mo>=</mo><msup><mi>a</mi><mn>2</mn></msup><msup><mi>b</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">\mathbf{b}^{\mathbf{2}}\mathbf{x}^{\mathbf{2}} + \mathbf{a}^{\mathbf{2}}\mathbf{y}^{\mathbf{2}} = a^{2}b^{2}</annotation></semantics></math>
+the parametric form is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mi>a</mi><mo>cos</mo><mi>t</mi><mspace width="0.222em"></mspace></mrow><annotation encoding="application/x-tex">x = a\cos t\ </annotation></semantics></math>and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mi>b</mi><mo>sin</mo><mi>t</mi></mrow><annotation encoding="application/x-tex">y = b\sin t</annotation></semantics></math>
+.</p>
+</body>
+</html>
