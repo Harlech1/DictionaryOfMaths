@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"matematik sözlüğü"</title>
+    <style>
+        body {
+            font-size: 16px;
+            font-family: Arial, sans-serif; 
+            color: #333; 
+            background-color: #fff; 
+            line-height: 1.5; 
+        }
+        body.dark-mode {
+            color: #fff; 
+            background-color: #333; 
+        }
+    </style>
+    <script>
+        function detectDarkMode() {
+            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+            if (prefersDarkScheme.matches) {
+                document.body.classList.add("dark-mode");
+            } else {
+                document.body.classList.remove("dark-mode");
+            }
+        }
+        
+        window.onload = detectDarkMode;
+    </script>
+</head>
+<body>
+    <p> phase shift
+for sinusoidal functions</p>
+<p>For the graphs of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mspace width="0.222em"></mspace><mi>y</mi><mo>=</mo><mi>A</mi><mspace width="0.222em"></mspace><mi>s</mi><mi>i</mi><mi>n</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>ω</mi><mi>x</mi><mo>−</mo><mi>⌀</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\ y = A\ sin(\omega x - \varnothing)</annotation></semantics></math>
+or
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mi>A</mi><mspace width="0.222em"></mspace><mi>c</mi><mi>o</mi><mi>s</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>ω</mi><mi>x</mi><mo>−</mo><mi>⌀</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">y = A\ cos(\omega x - \varnothing)</annotation></semantics></math>,
+where
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>⌀</mi><mo>&gt;</mo><mn>0</mn><mspace width="0.222em"></mspace><mi>a</mi><mi>n</mi><mi>d</mi><mspace width="0.222em"></mspace><mi>ω</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\varnothing &gt; 0\ and\ \omega &gt; 0</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mi>h</mi><mi>a</mi><mi>s</mi><mi>e</mi><mspace width="0.222em"></mspace><mi>s</mi><mi>h</mi><mi>i</mi><mi>f</mi><mi>t</mi><mo>=</mo><mi>⌀</mi><mi>/</mi><mi>ω</mi></mrow><annotation encoding="application/x-tex">phase\ shift = \varnothing/\omega</annotation></semantics></math></p>
+</body>
+</html>
