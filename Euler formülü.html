@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"matematik sözlüğü"</title>
+    <style>
+        body {
+            font-size: 16px;
+            font-family: Arial, sans-serif; 
+            color: #333; 
+            background-color: #fff; 
+            line-height: 1.5; 
+        }
+        body.dark-mode {
+            color: #fff; 
+            background-color: #333; 
+        }
+    </style>
+    <script>
+        function detectDarkMode() {
+            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+            if (prefersDarkScheme.matches) {
+                document.body.classList.add("dark-mode");
+            } else {
+                document.body.classList.remove("dark-mode");
+            }
+        }
+        
+        window.onload = detectDarkMode;
+    </script>
+</head>
+<body>
+    <p> Euler’s formula</p>
+
+<p>I. For any polyhedron that doesn’t intersect itself, the number of
+faces (F), vertices (V), and edges (E) are related by the formula
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>+</mo><mi>V</mi><mo>−</mo><mi>E</mi><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">F + V - E = 2</annotation></semantics></math>.</p>
+<p>II.
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>e</mi><mrow><mi>i</mi><mi>x</mi></mrow></msup><mo>=</mo><mo>cos</mo><mrow><mi>x</mi><mo>+</mo><mi>i</mi><mo>sin</mo><mi>x</mi></mrow><mspace width="0.222em"></mspace></mrow><annotation encoding="application/x-tex">e^{ix} = \cos{x + i\sin x}\ </annotation></semantics></math>where
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi><annotation encoding="application/x-tex">i</annotation></semantics></math>
+is the imaginary unit.</p>
+</body>
+</html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>eşkenar dörtgen</title>
+    <title>"matematik sözlüğü"</title>
     <style>
         body {
             font-size: 16px;
@@ -12,9 +12,43 @@
             background-color: #fff; 
             line-height: 1.5; 
         }
+        body.dark-mode {
+            color: #fff; 
+            background-color: #333; 
+        }
     </style>
+    <script>
+        function detectDarkMode() {
+            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+            if (prefersDarkScheme.matches) {
+                document.body.classList.add("dark-mode");
+            } else {
+                document.body.classList.remove("dark-mode");
+            }
+        }
+        
+        window.onload = detectDarkMode;
+    </script>
 </head>
 <body>
-    <p> rhombus; diamond</p>
+    <p> rhombus
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mi>l</mi><mi>.</mi><mspace width="0.222em"></mspace></mrow><annotation encoding="application/x-tex">pl.\ </annotation></semantics></math>rhombi;
+diamond</p>
+
+<p>A parallelogram with four congruent sides.</p>
+<p>Opposite angles are congruent and adjacent angles are
+supplementary.</p>
+<p>Each diagonal of a rhombus bisects the angles of the rhombus.</p>
+<p>The diagonals of a rhombus are perpendicular and they bisect each
+other.</p>
+<p>If the length of each side is <em>a</em>, and the lengths of the
+diagonals are e and f, then</p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>e</mi><mn>2</mn></msup><mo>+</mo><msup><mi>f</mi><mn>2</mn></msup><mo>=</mo><mn>4</mn><msup><mi>a</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">e^{2} + f^{2} = 4a^{2}</annotation></semantics></math>
+Perimeter:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>=</mo><mn>4</mn><mi>a</mi></mrow><annotation encoding="application/x-tex">p = 4a</annotation></semantics></math>
+Area:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>=</mo><mfrac><mrow><mi>e</mi><mi>f</mi></mrow><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">A = \frac{ef}{2}</annotation></semantics></math>
+or
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>=</mo><mi>a</mi><mi>h</mi></mrow><annotation encoding="application/x-tex">A = ah</annotation></semantics></math></p>
 </body>
 </html>
