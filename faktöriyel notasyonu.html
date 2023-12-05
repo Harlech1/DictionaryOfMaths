@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"matematik sözlüğü"</title>
+    <style>
+        body {
+            font-size: 16px;
+            font-family: Arial, sans-serif; 
+            color: #333; 
+            background-color: #fff; 
+            line-height: 1.5; 
+        }
+        body.dark-mode {
+            color: #fff; 
+            background-color: #333; 
+        }
+    </style>
+    <script>
+        function detectDarkMode() {
+            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+            if (prefersDarkScheme.matches) {
+                document.body.classList.add("dark-mode");
+            } else {
+                document.body.classList.remove("dark-mode");
+            }
+        }
+        
+        window.onload = detectDarkMode;
+    </script>
+</head>
+<body>
+    <p> factorial notation</p>
+<p>The factorial
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mi>!</mi></mrow><annotation encoding="application/x-tex">n!</annotation></semantics></math>
+gives the number of ways in which
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+objects can be permuted.</p>
+<p>As
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+grows large, factorials begin acquiring tails of trailing zeros.</p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mi>!</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">0! = 1</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mi>!</mi><mo>=</mo><mi>n</mi><mrow><mo stretchy="true" form="prefix">[</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>n</mi><mo>−</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mi>!</mi><mo stretchy="true" form="postfix">]</mo></mrow></mrow><annotation encoding="application/x-tex">n! = n\left\lbrack (n - 1)! \right\rbrack</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mi>!</mi><mo>=</mo><mi>n</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>n</mi><mo>−</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mo stretchy="true" form="prefix">[</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>n</mi><mo>−</mo><mn>2</mn><mo stretchy="true" form="postfix">)</mo></mrow><mi>!</mi><mo stretchy="true" form="postfix">]</mo></mrow></mrow><annotation encoding="application/x-tex">n! = n(n - 1)\left\lbrack (n - 2)! \right\rbrack</annotation></semantics></math></p>
+
+<p>The only known factorials which are products of factorials in an
+arithmetic sequence are:</p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mi>!</mi><mn>1</mn><mi>!</mi><mo>=</mo><mn>1</mn><mi>!</mi></mrow><annotation encoding="application/x-tex">0!1! = 1!</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi>!</mi></mrow><annotation encoding="application/x-tex">1!</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>!</mi><mo>=</mo><mn>2</mn><mi>!</mi></mrow><annotation encoding="application/x-tex">2! = 2!</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mi>!</mi><mn>1</mn><mi>!</mi><mn>2</mn><mi>!</mi><mo>=</mo><mn>2</mn><mi>!</mi></mrow><annotation encoding="application/x-tex">0!1!2! = 2!</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>6</mn><mi>!</mi><mn>7</mn><mi>!</mi><mo>=</mo><mn>10</mn><mi>!</mi></mrow><annotation encoding="application/x-tex">6!7! = 10!</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi>!</mi><mn>3</mn><mi>!</mi><mn>5</mn><mi>!</mi><mo>=</mo><mn>6</mn><mi>!</mi></mrow><annotation encoding="application/x-tex">1!3!5! = 6!</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi>!</mi><mn>3</mn><mi>!</mi><mn>5</mn><mi>!</mi><mn>7</mn><mi>!</mi><mo>=</mo><mn>10</mn><mi>!</mi></mrow><annotation encoding="application/x-tex">1!3!5!7! = 10!</annotation></semantics></math></p>
+<p>No factorial greater than
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi>!</mi></mrow><annotation encoding="application/x-tex">1!</annotation></semantics></math>
+Is a square number. Sums of some distinct factorials give square
+numbers:</p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mi>!</mi><mo>+</mo><mn>1</mn><mi>!</mi><mo>+</mo><mn>2</mn><mi>!</mi><mo>=</mo><msup><mn>2</mn><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">0! + 1! + 2! = 2^{2}</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi>!</mi><mo>+</mo><mn>2</mn><mi>!</mi><mo>+</mo><mn>3</mn><mi>!</mi><mo>=</mo><msup><mn>3</mn><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">1! + 2! + 3! = 3^{2}</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi>!</mi><mo>+</mo><mn>4</mn><mi>!</mi><mo>=</mo><msup><mn>5</mn><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">1! + 4! = 5^{2}</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mi>!</mi><mo>+</mo><mn>5</mn><mi>!</mi><mo>=</mo><msup><mn>12</mn><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">4! + 5! = 12^{2}</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi>!</mi><mo>+</mo><mn>2</mn><mi>!</mi><mo>+</mo><mn>3</mn><mi>!</mi><mo>+</mo><mn>6</mn><mi>!</mi><mo>=</mo><msup><mn>27</mn><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">1! + 2! + 3! + 6! = 27^{2}</annotation></semantics></math></p>
+<p>There are exactly four integers, called factorians, which are equal
+to the sum of factorials of their digits:</p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>=</mo><mn>1</mn><mi>!</mi></mrow><annotation encoding="application/x-tex">1 = 1!</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>=</mo><mn>2</mn><mi>!</mi></mrow><annotation encoding="application/x-tex">2 = 2!</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>145</mn><mo>=</mo><mn>1</mn><mi>!</mi><mo>+</mo><mn>4</mn><mi>!</mi><mo>+</mo><mn>5</mn><mi>!</mi></mrow><annotation encoding="application/x-tex">145 = 1! + 4! + 5!</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>40585</mn><mo>=</mo><mn>4</mn><mi>!</mi><mo>+</mo><mn>0</mn><mi>!</mi><mo>+</mo><mn>5</mn><mi>!</mi><mo>+</mo><mn>8</mn><mi>!</mi><mo>+</mo><mn>5</mn><mi>!</mi></mrow><annotation encoding="application/x-tex">40585 = 4! + 0! + 5! + 8! + 5!</annotation></semantics></math></p>
+</body>
+</html>

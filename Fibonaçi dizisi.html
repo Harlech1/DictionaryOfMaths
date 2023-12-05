@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"matematik sözlüğü"</title>
+    <style>
+        body {
+            font-size: 16px;
+            font-family: Arial, sans-serif; 
+            color: #333; 
+            background-color: #fff; 
+            line-height: 1.5; 
+        }
+        body.dark-mode {
+            color: #fff; 
+            background-color: #333; 
+        }
+    </style>
+    <script>
+        function detectDarkMode() {
+            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+            if (prefersDarkScheme.matches) {
+                document.body.classList.add("dark-mode");
+            } else {
+                document.body.classList.remove("dark-mode");
+            }
+        }
+        
+        window.onload = detectDarkMode;
+    </script>
+</head>
+<body>
+    <p> Fibonacci sequence</p>
+
+<p>A famous sequence that is defined recursively and shows up in nature.
+The first two terms are specified as
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mi>o</mi></msub><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">a_{o} = 1</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mn>1</mn></msub><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">a_{1} = 1</annotation></semantics></math>;
+and other terms are defined as
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mi>n</mi></msub><mo>=</mo><msub><mi>a</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>+</mo><msub><mi>a</mi><mrow><mi>n</mi><mo>−</mo><mn>2</mn></mrow></msub></mrow><annotation encoding="application/x-tex">a_{n} = a_{n - 1} + a_{n - 2}</annotation></semantics></math>
+, for all
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>≥</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">n \geq 2</annotation></semantics></math>
+(each subsequent term is the sum of the two terms immediately preceding
+it). The first eight terms of the sequence are
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>,</mo><mspace width="0.222em"></mspace><mn>1</mn><mo>,</mo><mspace width="0.222em"></mspace><mn>2</mn><mo>,</mo><mspace width="0.222em"></mspace><mn>3</mn><mo>,</mo><mspace width="0.222em"></mspace><mn>5</mn><mo>,</mo><mspace width="0.222em"></mspace><mn>8</mn><mo>,</mo><mspace width="0.222em"></mspace><mn>13</mn><mo>,</mo><mspace width="0.222em"></mspace><mn>21</mn><mo>,</mo><mspace width="0.222em"></mspace><mn>34</mn><mo>,</mo><mspace width="0.222em"></mspace><mn>55</mn></mrow><annotation encoding="application/x-tex">1,\ 1,\ 2,\ 3,\ 5,\ 8,\ 13,\ 21,\ 34,\ 55</annotation></semantics></math></p>
+<p>The shallow diagonals of Pascal’s triangle sum to Fibonacci
+numbers.</p>
+</body>
+</html>
