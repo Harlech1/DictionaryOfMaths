@@ -3,9 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>eğriler arasındaki açı</title>
+    <title>"matematik sözlüğü"</title>
+    <style>
+        body {
+            font-size: 16px;
+            font-family: Arial, sans-serif; 
+            color: #333; 
+            background-color: #fff; 
+            line-height: 1.5; 
+        }
+        body.dark-mode {
+            color: #fff; 
+            background-color: #333; 
+        }
+    </style>
+    <script>
+        function detectDarkMode() {
+            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+            if (prefersDarkScheme.matches) {
+                document.body.classList.add("dark-mode");
+            } else {
+                document.body.classList.remove("dark-mode");
+            }
+        }
+        
+        window.onload = detectDarkMode;
+    </script>
 </head>
 <body>
     <p> angle between curves</p>
+<p>Let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>C</mi><mn>1</mn></msub><mspace width="0.222em"></mspace><mi>a</mi><mi>n</mi><mi>d</mi><mspace width="0.222em"></mspace><msub><mi>C</mi><mn>2</mn></msub><mspace width="0.222em"></mspace></mrow><annotation encoding="application/x-tex">C_{1}\ and\ C_{2}\ </annotation></semantics></math>be
+two curves which intersect at a point. Then the angle between
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>C</mi><mn>1</mn></msub><mspace width="0.222em"></mspace></mrow><annotation encoding="application/x-tex">C_{1}\ </annotation></semantics></math>and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>C</mi><mn>2</mn></msub><annotation encoding="application/x-tex">C_{2}</annotation></semantics></math>
+at
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>P</mi><annotation encoding="application/x-tex">P</annotation></semantics></math>
+is, by definition, is</p>
+<p>the angle between their tangents. If the tangents at
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>P</mi><annotation encoding="application/x-tex">P</annotation></semantics></math>
+have slopes
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>m</mi><mn>1</mn></msub><annotation encoding="application/x-tex">m_{1}</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>m</mi><mn>2</mn></msub><annotation encoding="application/x-tex">m_{2}</annotation></semantics></math>,
+then the angle between the tangents is</p>
+<p>given by
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mspace width="0.222em"></mspace><mi>t</mi><mi>a</mi><mi>n</mi></mrow><mrow><mi>β</mi><mo>=</mo><mspace width="0.222em"></mspace><mfrac><mrow><msub><mi>m</mi><mn>1</mn></msub><mo>−</mo><mspace width="0.222em"></mspace><msub><mi>m</mi><mn>2</mn></msub></mrow><mrow><mn>1</mn><mo>+</mo><mspace width="0.222em"></mspace><msub><mi>m</mi><mn>1</mn></msub><mi>.</mi><msub><mi>m</mi><mn>2</mn></msub></mrow></mfrac></mrow></mrow><annotation encoding="application/x-tex">{\ tan}{\beta = \ \frac{m_{1} - \ m_{2}}{1 + \ m_{1}.m_{2}}}</annotation></semantics></math>
+.</p>
 </body>
 </html>

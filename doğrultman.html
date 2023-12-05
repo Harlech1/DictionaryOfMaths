@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>doğrusal ilişki</title>
+    <title>"matematik sözlüğü"</title>
     <style>
         body {
             font-size: 16px;
@@ -12,13 +12,30 @@
             background-color: #fff; 
             line-height: 1.5; 
         }
+        body.dark-mode {
+            color: #fff; 
+            background-color: #333; 
+        }
     </style>
+    <script>
+        function detectDarkMode() {
+            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+            if (prefersDarkScheme.matches) {
+                document.body.classList.add("dark-mode");
+            } else {
+                document.body.classList.remove("dark-mode");
+            }
+        }
+        
+        window.onload = detectDarkMode;
+    </script>
 </head>
 <body>
-<p> directrix (of a conic section)</p>
-<p>The line, which, together with the point known as the focus, is used
-to define a conic section as the locus of points</p>
-<p>whose distance from the focus is proportional to the horizontal
-distance from the directrix.</p>
+    <p> directrix
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mi>l</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">pl.</annotation></semantics></math>
+directrices</p>
+<p>Noncircular ellipses have two distinct foci and two associated
+directrices, each directrix being perpendicular to the</p>
+<p>line joining the two foci.</p>
 </body>
 </html>

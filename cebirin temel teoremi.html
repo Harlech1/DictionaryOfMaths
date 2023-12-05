@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cebirin temel teoremi</title>
+    <title>"matematik sözlüğü"</title>
     <style>
         body {
             font-size: 16px;
@@ -12,17 +12,26 @@
             background-color: #fff; 
             line-height: 1.5; 
         }
+        body.dark-mode {
+            color: #fff; 
+            background-color: #333; 
+        }
     </style>
+    <script>
+        function detectDarkMode() {
+            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+            if (prefersDarkScheme.matches) {
+                document.body.classList.add("dark-mode");
+            } else {
+                document.body.classList.remove("dark-mode");
+            }
+        }
+        
+        window.onload = detectDarkMode;
+    </script>
 </head>
 <body>
-<p> fundamental theorem of
+    <p> fundamental theorem of
 algebra</p>
-<p>Every polynomial equation with complex coefficients and positive
-degree
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
-has exactly
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
-real or complex roots. A polynomial of degree <em>n</em> with real or
-complex coefficients has at least one real or complex root.</p>
 </body>
 </html>

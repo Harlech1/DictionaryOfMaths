@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>denklem</title>
+    <title>"matematik sözlüğü"</title>
     <style>
         body {
             font-size: 16px;
@@ -12,12 +12,39 @@
             background-color: #fff; 
             line-height: 1.5; 
         }
+        body.dark-mode {
+            color: #fff; 
+            background-color: #333; 
+        }
     </style>
+    <script>
+        function detectDarkMode() {
+            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+            if (prefersDarkScheme.matches) {
+                document.body.classList.add("dark-mode");
+            } else {
+                document.body.classList.remove("dark-mode");
+            }
+        }
+        
+        window.onload = detectDarkMode;
+    </script>
 </head>
 <body>
     <p> equation</p>
-<p>A sentence which contains an equal
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">(</mo><mo>=</mo><mo stretchy="true" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">( = )</annotation></semantics></math>
-sign .</p>
+<p><u>center</u> <u>major axis</u> <u>foci</u> <u>equation</u></p>
+<p>(0,0 along the x-axis
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>∓</mo><annotation encoding="application/x-tex">\mp</annotation></semantics></math>c,
+0)
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>𝐛</mi><mn>𝟐</mn></msup><msup><mi>𝐱</mi><mn>𝟐</mn></msup><mo>+</mo><msup><mi>𝐚</mi><mn>𝟐</mn></msup><msup><mi>𝐲</mi><mn>𝟐</mn></msup><mo>=</mo><msup><mi>a</mi><mn>2</mn></msup><msup><mi>b</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">\mathbf{b}^{\mathbf{2}}\mathbf{x}^{\mathbf{2}} + \mathbf{a}^{\mathbf{2}}\mathbf{y}^{\mathbf{2}} = a^{2}b^{2}</annotation></semantics></math></p>
+<p>0,0) along the y-axis
+(0<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>,</mo><mo>∓</mo></mrow><annotation encoding="application/x-tex">, \mp</annotation></semantics></math>c)
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>𝐛</mi><mn>𝟐</mn></msup><msup><mi>𝐲</mi><mn>𝟐</mn></msup><mo>+</mo><msup><mi>𝐚</mi><mn>𝟐</mn></msup><msup><mi>𝐱</mi><mn>𝟐</mn></msup><mo>=</mo><msup><mi>a</mi><mn>2</mn></msup><msup><mi>b</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">\mathbf{b}^{\mathbf{2}}\mathbf{y}^{\mathbf{2}} + \mathbf{a}^{\mathbf{2}}\mathbf{x}^{\mathbf{2}} = a^{2}b^{2}</annotation></semantics></math></p>
+<p>(h,k) parallel to the x-axis
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mo>∓</mo><mi>c</mi><mo>,</mo><mspace width="0.222em"></mspace><mi>k</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">h \mp c,\ k)</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>𝐛</mi><mn>𝟐</mn></msup><msup><mrow><mo stretchy="true" form="prefix" mathvariant="bold">(</mo><mi>𝐱</mi><mo mathvariant="bold">−</mo><mi>𝐡</mi><mo stretchy="true" form="postfix" mathvariant="bold">)</mo></mrow><mn>𝟐</mn></msup><mo>+</mo><msup><mi>𝐚</mi><mn>𝟐</mn></msup><mo stretchy="false" form="prefix">(</mo><msup><mrow><mi>𝐲</mi><mo mathvariant="bold">−</mo><mi>𝐤</mi><mo stretchy="false" form="postfix" mathvariant="bold">)</mo></mrow><mn>𝟐</mn></msup><mo>=</mo><msup><mi>a</mi><mn>2</mn></msup><msup><mi>b</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">\mathbf{b}^{\mathbf{2}}\mathbf{(x - h)}^{\mathbf{2}} + \mathbf{a}^{\mathbf{2}}(\mathbf{y - k)}^{\mathbf{2}} = a^{2}b^{2}</annotation></semantics></math></p>
+<p>(h,k) parallel to the y-axis
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mo>,</mo><mspace width="0.222em"></mspace><mi>k</mi><mo>∓</mo><mi>c</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">h,\ k \mp c)</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>𝐛</mi><mn>𝟐</mn></msup><msup><mrow><mo stretchy="true" form="prefix" mathvariant="bold">(</mo><mi>𝐲</mi><mo mathvariant="bold">−</mo><mi>𝐤</mi><mo stretchy="true" form="postfix" mathvariant="bold">)</mo></mrow><mn>𝟐</mn></msup><mo>+</mo><mspace width="0.222em"></mspace><msup><mi>𝐚</mi><mn>𝟐</mn></msup><msup><mrow><mo stretchy="true" form="prefix" mathvariant="bold">(</mo><mi>𝐱</mi><mo mathvariant="bold">−</mo><mi>𝐡</mi><mo stretchy="true" form="postfix" mathvariant="bold">)</mo></mrow><mn>𝟐</mn></msup><mo>=</mo><msup><mi>a</mi><mn>2</mn></msup><msup><mi>b</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">\mathbf{b}^{\mathbf{2}}\mathbf{(y - k)}^{\mathbf{2}} + \ \mathbf{a}^{\mathbf{2}}\mathbf{(x - h)}^{\mathbf{2}} = a^{2}b^{2}</annotation></semantics></math></p>
 </body>
 </html>

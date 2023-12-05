@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>eğik doğru</title>
+    <title>"matematik sözlüğü"</title>
     <style>
         body {
             font-size: 16px;
@@ -12,9 +12,25 @@
             background-color: #fff; 
             line-height: 1.5; 
         }
+        body.dark-mode {
+            color: #fff; 
+            background-color: #333; 
+        }
     </style>
+    <script>
+        function detectDarkMode() {
+            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+            if (prefersDarkScheme.matches) {
+                document.body.classList.add("dark-mode");
+            } else {
+                document.body.classList.remove("dark-mode");
+            }
+        }
+        
+        window.onload = detectDarkMode;
+    </script>
 </head>
 <body>
-    <p> oblique line</p>
+    <p> inclined line; oblique line</p>
 </body>
 </html>

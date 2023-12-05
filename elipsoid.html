@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"matematik sözlüğü"</title>
+    <style>
+        body {
+            font-size: 16px;
+            font-family: Arial, sans-serif; 
+            color: #333; 
+            background-color: #fff; 
+            line-height: 1.5; 
+        }
+        body.dark-mode {
+            color: #fff; 
+            background-color: #333; 
+        }
+    </style>
+    <script>
+        function detectDarkMode() {
+            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+            if (prefersDarkScheme.matches) {
+                document.body.classList.add("dark-mode");
+            } else {
+                document.body.classList.remove("dark-mode");
+            }
+        }
+        
+        window.onload = detectDarkMode;
+    </script>
+</head>
+<body>
+    <p> ellipsoid</p>
+
+<p>A quadratic surface which is given by the equation
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><msup><mi>𝐱</mi><mn>𝟐</mn></msup><msup><mi>𝐚</mi><mn>𝟐</mn></msup></mfrac><mrow><mo mathvariant="bold">+</mo><mspace width="0.222em"></mspace></mrow><mfrac><msup><mi>𝐲</mi><mn>𝟐</mn></msup><msup><mi>𝐛</mi><mn>𝟐</mn></msup></mfrac><mo mathvariant="bold">+</mo><mfrac><msup><mi>𝐳</mi><mn>𝟐</mn></msup><msup><mi>𝐜</mi><mn>𝟐</mn></msup></mfrac><mrow><mspace width="0.222em"></mspace><mo mathvariant="bold">=</mo></mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">\frac{\mathbf{x}^{\mathbf{2}}}{\mathbf{a}^{\mathbf{2}}}\mathbf{+ \ }\frac{\mathbf{y}^{\mathbf{2}}}{\mathbf{b}^{\mathbf{2}}}\mathbf{+}\frac{\mathbf{z}^{\mathbf{2}}}{\mathbf{c}^{\mathbf{2}}}\mathbf{\  =}1</annotation></semantics></math><em></em>
+where
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>,</mo><mspace width="0.222em"></mspace><mi>b</mi><mo>,</mo></mrow><annotation encoding="application/x-tex">a,\ b,</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi><annotation encoding="application/x-tex">c</annotation></semantics></math>
+are the semiaxes .</p>
+</body>
+</html>
