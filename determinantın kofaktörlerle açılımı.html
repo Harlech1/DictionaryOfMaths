@@ -1,28 +1,45 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>determinantın kofaktörlerle açılımı</title>
-    <style>
-        body {
-            font-size: 16px;
-            font-family: Arial, sans-serif; 
-            color: #333; 
-            background-color: #fff; 
-            line-height: 1.5; 
-        }
-    </style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>"matematik sözlüğü"</title>
+<style>
+            body {
+                font-size: 16px;
+                font-family: Arial, sans-serif; 
+                color: #333; 
+                background-color: #fff; 
+                line-height: 1.5; 
+            }
+            body.dark-mode {
+                color: #fff; 
+                background-color: #333; 
+            }
+        </style>
+<script>
+            function detectDarkMode() {
+                const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+                if (prefersDarkScheme.matches) {
+                    document.body.classList.add("dark-mode");
+                } else {
+                    document.body.classList.remove("dark-mode");
+                }
+            }
+
+            window.onload = detectDarkMode;
+        </script>
 </head>
 <body>
-    <p> expansion of
+<p> expansion of
 determinant by cofactors</p>
 <p>Let
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">|</mo><mi>A</mi><mo stretchy="true" form="postfix">|</mo></mrow><annotation encoding="application/x-tex">|A|</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo form="prefix" stretchy="true">|</mo><mi>A</mi><mo form="postfix" stretchy="true">|</mo></mrow><annotation encoding="application/x-tex">|A|</annotation></semantics></math>
 represent the determinant of a matrix
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>,
 then
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">|</mo><mi>A</mi><mo stretchy="true" form="postfix">|</mo></mrow><mo>=</mo><msubsup><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>k</mi></msubsup><mrow><msup><mrow><mo stretchy="true" form="prefix">(</mo><mo>−</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mi>i</mi><mo>+</mo><mi>j</mi></mrow></msup><msub><mi>a</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><msub><mi>A</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub></mrow></mrow><annotation encoding="application/x-tex">|A| = \sum_{i = 1}^{k}{{( - 1)}^{i + j}a_{ij}A_{ij}}</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo form="prefix" stretchy="true">|</mo><mi>A</mi><mo form="postfix" stretchy="true">|</mo></mrow><mo>=</mo><msubsup><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>k</mi></msubsup><mrow><msup><mrow><mo form="prefix" stretchy="true">(</mo><mo>−</mo><mn>1</mn><mo form="postfix" stretchy="true">)</mo></mrow><mrow><mi>i</mi><mo>+</mo><mi>j</mi></mrow></msup><msub><mi>a</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><msub><mi>A</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub></mrow></mrow><annotation encoding="application/x-tex">|A| = \sum_{i = 1}^{k}{{( - 1)}^{i + j}a_{ij}A_{ij}}</annotation></semantics></math>
 , where
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>A</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><annotation encoding="application/x-tex">A_{ij}</annotation></semantics></math>
 is the minor of
@@ -34,18 +51,18 @@ row<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics>
 and column
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>j</mi><annotation encoding="application/x-tex">j</annotation></semantics></math>
 crossed out .</p>
-<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">|</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><msub><mi>a</mi><mn>11</mn></msub></mtd><mtd columnalign="center" style="text-align: center"><msub><mi>a</mi><mn>12</mn></msub></mtd><mtd columnalign="center" style="text-align: center"><msub><mi>a</mi><mn>13</mn></msub></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><msub><mi>a</mi><mn>21</mn></msub></mtd><mtd columnalign="center" style="text-align: center"><msub><mi>a</mi><mn>22</mn></msub></mtd><mtd columnalign="center" style="text-align: center"><msub><mi>a</mi><mn>23</mn></msub></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><msub><mi>a</mi><mn>31</mn></msub></mtd><mtd columnalign="center" style="text-align: center"><msub><mi>a</mi><mn>32</mn></msub></mtd><mtd columnalign="center" style="text-align: center"><msub><mi>a</mi><mn>33</mn></msub></mtd></mtr></mtable><mo stretchy="true" form="postfix">|</mo></mrow><mo>=</mo><msub><mi>a</mi><mn>11</mn></msub><mi>.</mi><msub><mi>A</mi><mn>11</mn></msub><mo>+</mo><msub><mi>a</mi><mn>12</mn></msub><mi>.</mi><msub><mi>A</mi><mn>12</mn></msub><mo>+</mo><msub><mi>a</mi><mn>13</mn></msub><mi>.</mi><msub><mi>A</mi><mn>13</mn></msub></mrow><annotation encoding="application/x-tex">\left| \begin{matrix}
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo form="prefix" stretchy="true">|</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><msub><mi>a</mi><mn>11</mn></msub></mtd><mtd columnalign="center" style="text-align: center"><msub><mi>a</mi><mn>12</mn></msub></mtd><mtd columnalign="center" style="text-align: center"><msub><mi>a</mi><mn>13</mn></msub></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><msub><mi>a</mi><mn>21</mn></msub></mtd><mtd columnalign="center" style="text-align: center"><msub><mi>a</mi><mn>22</mn></msub></mtd><mtd columnalign="center" style="text-align: center"><msub><mi>a</mi><mn>23</mn></msub></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><msub><mi>a</mi><mn>31</mn></msub></mtd><mtd columnalign="center" style="text-align: center"><msub><mi>a</mi><mn>32</mn></msub></mtd><mtd columnalign="center" style="text-align: center"><msub><mi>a</mi><mn>33</mn></msub></mtd></mtr></mtable><mo form="postfix" stretchy="true">|</mo></mrow><mo>=</mo><msub><mi>a</mi><mn>11</mn></msub><mi>.</mi><msub><mi>A</mi><mn>11</mn></msub><mo>+</mo><msub><mi>a</mi><mn>12</mn></msub><mi>.</mi><msub><mi>A</mi><mn>12</mn></msub><mo>+</mo><msub><mi>a</mi><mn>13</mn></msub><mi>.</mi><msub><mi>A</mi><mn>13</mn></msub></mrow><annotation encoding="application/x-tex">\left| \begin{matrix}
 a_{11} &amp; a_{12} &amp; a_{13} \\
 a_{21} &amp; a_{22} &amp; a_{23} \\
 a_{31} &amp; a_{32} &amp; a_{33}
 \end{matrix} \right| = a_{11}.A_{11} + a_{12}.A_{12} + a_{13}.A_{13}</annotation></semantics></math>
 ( expanding across the 1st row ))</p>
-<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mspace width="0.222em"></mspace><mrow><mo stretchy="true" form="prefix">|</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><mi>a</mi></mtd><mtd columnalign="center" style="text-align: center"><mi>b</mi></mtd><mtd columnalign="center" style="text-align: center"><mi>c</mi></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mi>d</mi></mtd><mtd columnalign="center" style="text-align: center"><mi>e</mi></mtd><mtd columnalign="center" style="text-align: center"><mi>f</mi></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mi>g</mi></mtd><mtd columnalign="center" style="text-align: center"><mi>h</mi></mtd><mtd columnalign="center" style="text-align: center"><mi>k</mi></mtd></mtr></mtable><mo stretchy="true" form="postfix">|</mo></mrow><mo>=</mo></mrow><annotation encoding="application/x-tex">\ \left| \begin{matrix}
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mspace width="0.222em"></mspace><mrow><mo form="prefix" stretchy="true">|</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><mi>a</mi></mtd><mtd columnalign="center" style="text-align: center"><mi>b</mi></mtd><mtd columnalign="center" style="text-align: center"><mi>c</mi></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mi>d</mi></mtd><mtd columnalign="center" style="text-align: center"><mi>e</mi></mtd><mtd columnalign="center" style="text-align: center"><mi>f</mi></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mi>g</mi></mtd><mtd columnalign="center" style="text-align: center"><mi>h</mi></mtd><mtd columnalign="center" style="text-align: center"><mi>k</mi></mtd></mtr></mtable><mo form="postfix" stretchy="true">|</mo></mrow><mo>=</mo></mrow><annotation encoding="application/x-tex">\ \left| \begin{matrix}
 a &amp; b &amp; c \\
 d &amp; e &amp; f \\
 g &amp; h &amp; k
 \end{matrix} \right| =</annotation></semantics></math>
-a<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">|</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><mi>e</mi></mtd><mtd columnalign="center" style="text-align: center"><mi>f</mi></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mi>h</mi></mtd><mtd columnalign="center" style="text-align: center"><mi>k</mi></mtd></mtr></mtable><mo stretchy="true" form="postfix">|</mo></mrow><mo>−</mo><mi>b</mi><mrow><mo stretchy="true" form="prefix">|</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><mi>d</mi></mtd><mtd columnalign="center" style="text-align: center"><mi>f</mi></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mi>g</mi></mtd><mtd columnalign="center" style="text-align: center"><mi>k</mi></mtd></mtr></mtable><mo stretchy="true" form="postfix">|</mo></mrow><mo>+</mo><mi>c</mi><mrow><mo stretchy="true" form="prefix">|</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><mi>d</mi></mtd><mtd columnalign="center" style="text-align: center"><mi>e</mi></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mi>g</mi></mtd><mtd columnalign="center" style="text-align: center"><mi>h</mi></mtd></mtr></mtable><mo stretchy="true" form="postfix">|</mo></mrow></mrow><annotation encoding="application/x-tex">\left| \begin{matrix}
+a<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo form="prefix" stretchy="true">|</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><mi>e</mi></mtd><mtd columnalign="center" style="text-align: center"><mi>f</mi></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mi>h</mi></mtd><mtd columnalign="center" style="text-align: center"><mi>k</mi></mtd></mtr></mtable><mo form="postfix" stretchy="true">|</mo></mrow><mo>−</mo><mi>b</mi><mrow><mo form="prefix" stretchy="true">|</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><mi>d</mi></mtd><mtd columnalign="center" style="text-align: center"><mi>f</mi></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mi>g</mi></mtd><mtd columnalign="center" style="text-align: center"><mi>k</mi></mtd></mtr></mtable><mo form="postfix" stretchy="true">|</mo></mrow><mo>+</mo><mi>c</mi><mrow><mo form="prefix" stretchy="true">|</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><mi>d</mi></mtd><mtd columnalign="center" style="text-align: center"><mi>e</mi></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mi>g</mi></mtd><mtd columnalign="center" style="text-align: center"><mi>h</mi></mtd></mtr></mtable><mo form="postfix" stretchy="true">|</mo></mrow></mrow><annotation encoding="application/x-tex">\left| \begin{matrix}
 e &amp; f \\
 h &amp; k
 \end{matrix} \right| - b\left| \begin{matrix}
@@ -55,6 +72,6 @@ g &amp; k
 d &amp; e \\
 g &amp; h
 \end{matrix} \right|</annotation></semantics></math>
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mi>a</mi><mi>e</mi><mi>k</mi><mo>+</mo><mi>b</mi><mi>f</mi><mi>g</mi><mo>+</mo><mi>c</mi><mi>d</mi><mi>h</mi><mo>−</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>c</mi><mi>e</mi><mi>g</mi><mo>+</mo><mi>a</mi><mi>f</mi><mi>h</mi><mo>+</mo><mi>b</mi><mi>d</mi><mi>k</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">= aek + bfg + cdh - (ceg + afh + bdk)</annotation></semantics></math></p>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mi>a</mi><mi>e</mi><mi>k</mi><mo>+</mo><mi>b</mi><mi>f</mi><mi>g</mi><mo>+</mo><mi>c</mi><mi>d</mi><mi>h</mi><mo>−</mo><mrow><mo form="prefix" stretchy="true">(</mo><mi>c</mi><mi>e</mi><mi>g</mi><mo>+</mo><mi>a</mi><mi>f</mi><mi>h</mi><mo>+</mo><mi>b</mi><mi>d</mi><mi>k</mi><mo form="postfix" stretchy="true">)</mo></mrow></mrow><annotation encoding="application/x-tex">= aek + bfg + cdh - (ceg + afh + bdk)</annotation></semantics></math></p>
 </body>
 </html>

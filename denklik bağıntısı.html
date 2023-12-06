@@ -1,21 +1,38 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>denklik bağıntısı</title>
-    <style>
-        body {
-            font-size: 16px;
-            font-family: Arial, sans-serif; 
-            color: #333; 
-            background-color: #fff; 
-            line-height: 1.5; 
-        }
-    </style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>"matematik sözlüğü"</title>
+<style>
+            body {
+                font-size: 16px;
+                font-family: Arial, sans-serif; 
+                color: #333; 
+                background-color: #fff; 
+                line-height: 1.5; 
+            }
+            body.dark-mode {
+                color: #fff; 
+                background-color: #333; 
+            }
+        </style>
+<script>
+            function detectDarkMode() {
+                const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+                if (prefersDarkScheme.matches) {
+                    document.body.classList.add("dark-mode");
+                } else {
+                    document.body.classList.remove("dark-mode");
+                }
+            }
+
+            window.onload = detectDarkMode;
+        </script>
 </head>
 <body>
-    <p> equivalence relation</p>
+<p> equivalence relation</p>
 <p>An equivalence relation
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>β</mi><mspace width="0.222em"></mspace></mrow><annotation encoding="application/x-tex">\beta\ </annotation></semantics></math>on
 a set
@@ -24,21 +41,20 @@ is a subset of
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mi>x</mi><mi>A</mi></mrow><annotation encoding="application/x-tex">AxA</annotation></semantics></math>
 satisfying the properties:</p>
 <p>I. Reflexive
-:<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mspace width="0.222em"></mspace><mrow><mo stretchy="true" form="prefix">(</mo><mi>a</mi><mo>,</mo><mi>a</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>∈</mo><mi>β</mi><mspace width="0.222em"></mspace></mrow><annotation encoding="application/x-tex">\ (a,a) \in \beta\ </annotation></semantics></math>
+:<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mspace width="0.222em"></mspace><mrow><mo form="prefix" stretchy="true">(</mo><mi>a</mi><mo>,</mo><mi>a</mi><mo form="postfix" stretchy="true">)</mo></mrow><mo>∈</mo><mi>β</mi><mspace width="0.222em"></mspace></mrow><annotation encoding="application/x-tex">\ (a,a) \in \beta\ </annotation></semantics></math>
 for all
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>∈</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">a \in A</annotation></semantics></math>
 II.Symmetric:
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>∈</mo><mi>β</mi><mspace width="0.222em"></mspace></mrow><annotation encoding="application/x-tex">(a,b) \in \beta\ </annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo form="prefix" stretchy="true">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo form="postfix" stretchy="true">)</mo></mrow><mo>∈</mo><mi>β</mi><mspace width="0.222em"></mspace></mrow><annotation encoding="application/x-tex">(a,b) \in \beta\ </annotation></semantics></math>
 implies
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">(</mo><mi>b</mi><mo>,</mo><mi>a</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>∈</mo><mi>β</mi><mspace width="0.222em"></mspace></mrow><annotation encoding="application/x-tex">(b,a) \in \beta\ </annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo form="prefix" stretchy="true">(</mo><mi>b</mi><mo>,</mo><mi>a</mi><mo form="postfix" stretchy="true">)</mo></mrow><mo>∈</mo><mi>β</mi><mspace width="0.222em"></mspace></mrow><annotation encoding="application/x-tex">(b,a) \in \beta\ </annotation></semantics></math>
 for all
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>,</mo><mi>b</mi><mo>∈</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">a,b \in A</annotation></semantics></math>.</p>
 <p>III.Transitive:
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>∈</mo><mi>β</mi><mspace width="0.222em"></mspace></mrow><annotation encoding="application/x-tex">(a,b) \in \beta\ </annotation></semantics></math>and
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">(</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>∈</mo><mi>β</mi><mspace width="0.222em"></mspace></mrow><annotation encoding="application/x-tex">(b,c) \in \beta\ </annotation></semantics></math>imply
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">(</mo><mi>a</mi><mo>,</mo><mi>c</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>∈</mo><mi>β</mi><mspace width="0.222em"></mspace></mrow><annotation encoding="application/x-tex">(a,c) \in \beta\ </annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo form="prefix" stretchy="true">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo form="postfix" stretchy="true">)</mo></mrow><mo>∈</mo><mi>β</mi><mspace width="0.222em"></mspace></mrow><annotation encoding="application/x-tex">(a,b) \in \beta\ </annotation></semantics></math>and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo form="prefix" stretchy="true">(</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo form="postfix" stretchy="true">)</mo></mrow><mo>∈</mo><mi>β</mi><mspace width="0.222em"></mspace></mrow><annotation encoding="application/x-tex">(b,c) \in \beta\ </annotation></semantics></math>imply
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo form="prefix" stretchy="true">(</mo><mi>a</mi><mo>,</mo><mi>c</mi><mo form="postfix" stretchy="true">)</mo></mrow><mo>∈</mo><mi>β</mi><mspace width="0.222em"></mspace></mrow><annotation encoding="application/x-tex">(a,c) \in \beta\ </annotation></semantics></math>
 for all
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>,</mo><mspace width="0.222em"></mspace><mi>b</mi><mo>,</mo><mspace width="0.222em"></mspace><mi>c</mi><mo>∈</mo><mi>A</mi><mspace width="0.222em"></mspace><mi>.</mi></mrow><annotation encoding="application/x-tex">a,\ b,\ c \in A\ .</annotation></semantics></math></p>
-
 </body>
 </html>
