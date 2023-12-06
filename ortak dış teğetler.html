@@ -1,28 +1,45 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ortak dış teğetler</title>
-    <style>
-        body {
-            font-size: 16px;
-            font-family: Arial, sans-serif; 
-            color: #333; 
-            background-color: #fff; 
-            line-height: 1.5; 
-        }
-    </style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>"matematik sözlüğü"</title>
+<style>
+            body {
+                font-size: 16px;
+                font-family: Arial, sans-serif; 
+                color: #333; 
+                background-color: #fff; 
+                line-height: 1.5; 
+            }
+            body.dark-mode {
+                color: #fff; 
+                background-color: #333; 
+            }
+        </style>
+<script>
+            function detectDarkMode() {
+                const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+                if (prefersDarkScheme.matches) {
+                    document.body.classList.add("dark-mode");
+                } else {
+                    document.body.classList.remove("dark-mode");
+                }
+            }
+
+            window.onload = detectDarkMode;
+        </script>
 </head>
 <body>
 <p> common external tangents</p>
-<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mi>A</mi><mi>B</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">\lbrack AB\rbrack</annotation></semantics></math>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo form="prefix" stretchy="false">[</mo><mi>A</mi><mi>B</mi><mo form="postfix" stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">\lbrack AB\rbrack</annotation></semantics></math>
 and
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mi>C</mi><mi>D</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">\lbrack CD\rbrack</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo form="prefix" stretchy="false">[</mo><mi>C</mi><mi>D</mi><mo form="postfix" stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">\lbrack CD\rbrack</annotation></semantics></math>
 are common external tangents,
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">|</mo><msub><mi>O</mi><mn>1</mn></msub><msub><mi>O</mi><mn>2</mn></msub><mo stretchy="true" form="postfix">|</mo></mrow><mo>=</mo><mi>d</mi><mo>,</mo><mspace width="0.222em"></mspace><mrow><mo stretchy="true" form="prefix">|</mo><mi>A</mi><mi>B</mi><mo stretchy="true" form="postfix">|</mo></mrow><mo>=</mo><mrow><mo stretchy="true" form="prefix">|</mo><mi>C</mi><mi>D</mi><mo stretchy="true" form="postfix">|</mo></mrow><mo>=</mo><mi>t</mi><mo>=</mo><msqrt><mrow><msup><mi>d</mi><mn>2</mn></msup><mo>−</mo><msup><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>r</mi><mn>1</mn></msub><mo>−</mo><msub><mi>r</mi><mn>2</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup></mrow></msqrt></mrow><annotation encoding="application/x-tex">\left| O_{1}O_{2} \right| = d,\ |AB| = |CD| = t = \sqrt{d^{2} - \left( r_{1} - r_{2} \right)^{2}}</annotation></semantics></math></p>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo form="prefix" stretchy="true">|</mo><msub><mi>O</mi><mn>1</mn></msub><msub><mi>O</mi><mn>2</mn></msub><mo form="postfix" stretchy="true">|</mo></mrow><mo>=</mo><mi>d</mi><mo>,</mo><mspace width="0.222em"></mspace><mrow><mo form="prefix" stretchy="true">|</mo><mi>A</mi><mi>B</mi><mo form="postfix" stretchy="true">|</mo></mrow><mo>=</mo><mrow><mo form="prefix" stretchy="true">|</mo><mi>C</mi><mi>D</mi><mo form="postfix" stretchy="true">|</mo></mrow><mo>=</mo><mi>t</mi><mo>=</mo><msqrt><mrow><msup><mi>d</mi><mn>2</mn></msup><mo>−</mo><msup><mrow><mo form="prefix" stretchy="true">(</mo><msub><mi>r</mi><mn>1</mn></msub><mo>−</mo><msub><mi>r</mi><mn>2</mn></msub><mo form="postfix" stretchy="true">)</mo></mrow><mn>2</mn></msup></mrow></msqrt></mrow><annotation encoding="application/x-tex">\left| O_{1}O_{2} \right| = d,\ |AB| = |CD| = t = \sqrt{d^{2} - \left( r_{1} - r_{2} \right)^{2}}</annotation></semantics></math></p>
 <p>If the circles are externally tangent, then
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">|</mo><msub><mi>O</mi><mn>1</mn></msub><msub><mi>O</mi><mn>2</mn></msub><mo stretchy="true" form="postfix">|</mo></mrow><mo>=</mo><mi>d</mi><mo>=</mo><msub><mi>r</mi><mn>1</mn></msub><mo>+</mo><msub><mi>r</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">\left| O_{1}O_{2} \right| = d = r_{1} + r_{2}</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo form="prefix" stretchy="true">|</mo><msub><mi>O</mi><mn>1</mn></msub><msub><mi>O</mi><mn>2</mn></msub><mo form="postfix" stretchy="true">|</mo></mrow><mo>=</mo><mi>d</mi><mo>=</mo><msub><mi>r</mi><mn>1</mn></msub><mo>+</mo><msub><mi>r</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">\left| O_{1}O_{2} \right| = d = r_{1} + r_{2}</annotation></semantics></math>
 ,
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">|</mo><mi>A</mi><mi>B</mi><mo stretchy="true" form="postfix">|</mo></mrow><mo>=</mo><mrow><mo stretchy="true" form="prefix">|</mo><mi>C</mi><mi>D</mi><mo stretchy="true" form="postfix">|</mo></mrow><mo>=</mo><mi>t</mi><mo>=</mo><mn>2</mn><msqrt><mrow><msub><mi>r</mi><mn>1</mn></msub><mi>.</mi><msub><mi>r</mi><mn>2</mn></msub></mrow></msqrt></mrow><annotation encoding="application/x-tex">|AB| = |CD| = t = 2\sqrt{r_{1}.r_{2}}</annotation></semantics></math></p></body>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo form="prefix" stretchy="true">|</mo><mi>A</mi><mi>B</mi><mo form="postfix" stretchy="true">|</mo></mrow><mo>=</mo><mrow><mo form="prefix" stretchy="true">|</mo><mi>C</mi><mi>D</mi><mo form="postfix" stretchy="true">|</mo></mrow><mo>=</mo><mi>t</mi><mo>=</mo><mn>2</mn><msqrt><mrow><msub><mi>r</mi><mn>1</mn></msub><mi>.</mi><msub><mi>r</mi><mn>2</mn></msub></mrow></msqrt></mrow><annotation encoding="application/x-tex">|AB| = |CD| = t = 2\sqrt{r_{1}.r_{2}}</annotation></semantics></math></p></body>
 </html>

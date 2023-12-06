@@ -1,38 +1,55 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>önermelerin değillemesi (olumsuzu)</title>
-    <style>
-        body {
-            font-size: 16px;
-            font-family: Arial, sans-serif; 
-            color: #333; 
-            background-color: #fff; 
-            line-height: 1.5; 
-        }
-    </style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>"matematik sözlüğü"</title>
+<style>
+            body {
+                font-size: 16px;
+                font-family: Arial, sans-serif; 
+                color: #333; 
+                background-color: #fff; 
+                line-height: 1.5; 
+            }
+            body.dark-mode {
+                color: #fff; 
+                background-color: #333; 
+            }
+        </style>
+<script>
+            function detectDarkMode() {
+                const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+                if (prefersDarkScheme.matches) {
+                    document.body.classList.add("dark-mode");
+                } else {
+                    document.body.classList.remove("dark-mode");
+                }
+            }
+
+            window.onload = detectDarkMode;
+        </script>
 </head>
 <body>
-    <p>
+<p>
 negation of propositions</p>
 <p>The operation of interchanging true and false in a logical
 statement.</p>
-<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo>*</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>p</mi><mo>⇒</mo><mi>q</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><mi>′</mi></msup><mo mathvariant="bold">≡</mo></mrow><annotation encoding="application/x-tex">{*(p \Longrightarrow q)}^{&#39;}\mathbf{\equiv}</annotation></semantics></math>
-p<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mspace width="0.222em"></mspace><msubsup><mo>⋀</mo><mrow></mrow><mrow></mrow></msubsup><mspace width="0.222em"></mspace><msup><mi>q</mi><mi>′</mi></msup></mrow><annotation encoding="application/x-tex">\ \bigwedge_{}^{}\ q^{&#39;}</annotation></semantics></math>
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo>*</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>p</mi><mo>⇔</mo><mi>q</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><mi>′</mi></msup><mo mathvariant="bold">≡</mo></mrow><annotation encoding="application/x-tex">{*(p \Longleftrightarrow q)}^{&#39;}\mathbf{\equiv}</annotation></semantics></math>
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>p</mi><mi>′</mi></msup><annotation encoding="application/x-tex">p^{&#39;}</annotation></semantics></math>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo>*</mo><mrow><mo form="prefix" stretchy="true">(</mo><mi>p</mi><mo>⇒</mo><mi>q</mi><mo form="postfix" stretchy="true">)</mo></mrow></mrow><mi>′</mi></msup><mo mathvariant="bold">≡</mo></mrow><annotation encoding="application/x-tex">{*(p \Longrightarrow q)}^{'}\mathbf{\equiv}</annotation></semantics></math>
+p<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mspace width="0.222em"></mspace><msubsup><mo>⋀</mo><mrow></mrow><mrow></mrow></msubsup><mspace width="0.222em"></mspace><msup><mi>q</mi><mi>′</mi></msup></mrow><annotation encoding="application/x-tex">\ \bigwedge_{}^{}\ q^{'}</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo>*</mo><mrow><mo form="prefix" stretchy="true">(</mo><mi>p</mi><mo>⇔</mo><mi>q</mi><mo form="postfix" stretchy="true">)</mo></mrow></mrow><mi>′</mi></msup><mo mathvariant="bold">≡</mo></mrow><annotation encoding="application/x-tex">{*(p \Longleftrightarrow q)}^{'}\mathbf{\equiv}</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>p</mi><mi>′</mi></msup><annotation encoding="application/x-tex">p^{'}</annotation></semantics></math>
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>⇔</mo><mi>q</mi></mrow><annotation encoding="application/x-tex">\Longleftrightarrow q</annotation></semantics></math>
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo mathvariant="bold">≡</mo><mi>p</mi><mo>⇔</mo><msup><mi>q</mi><mi>′</mi></msup></mrow><annotation encoding="application/x-tex">\mathbf{\equiv}p \Longleftrightarrow q^{&#39;}</annotation></semantics></math>
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo>*</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>p</mi><mspace width="0.222em"></mspace><msubsup><mo>⋀</mo><mrow></mrow><mrow></mrow></msubsup><mspace width="0.222em"></mspace><mi>q</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><mi>′</mi></msup><mo mathvariant="bold">≡</mo></mrow><annotation encoding="application/x-tex">{*\left( p\ \bigwedge_{}^{}\ q \right)}^{&#39;}\mathbf{\equiv}</annotation></semantics></math>
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>p</mi><mi>′</mi></msup><mspace width="0.222em"></mspace><mo>⋁</mo><msup><mrow><mspace width="0.222em"></mspace><mi>q</mi></mrow><mi>′</mi></msup></mrow><annotation encoding="application/x-tex">p^{&#39;}\ \bigvee{\ q}^{&#39;}</annotation></semantics></math>
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo>*</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>p</mi><mspace width="0.222em"></mspace><msubsup><mo>⋁</mo><mrow></mrow><mrow></mrow></msubsup><mspace width="0.222em"></mspace><mi>q</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><mi>′</mi></msup><mo mathvariant="bold">≡</mo></mrow><annotation encoding="application/x-tex">{*\left( p\ \bigvee_{}^{}\ q \right)}^{&#39;}\mathbf{\equiv}</annotation></semantics></math>
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>p</mi><mi>′</mi></msup><msubsup><mo>⋀</mo><mrow></mrow><mrow></mrow></msubsup><mspace width="0.222em"></mspace><msup><mi>q</mi><mi>′</mi></msup></mrow><annotation encoding="application/x-tex">p^{&#39;}\bigwedge_{}^{}\ q^{&#39;}</annotation></semantics></math></p>
-<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo>*</mo><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>p</mi><mi>′</mi></msup><mo stretchy="true" form="postfix">)</mo></mrow></mrow><mi>′</mi></msup><mo mathvariant="bold">≡</mo><mi>p</mi></mrow><annotation encoding="application/x-tex">{*\left( p^{&#39;} \right)}^{&#39;}\mathbf{\equiv}p</annotation></semantics></math>
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo>*</mo><mrow><mo stretchy="true" form="prefix">(</mo><mo>∀</mo><mi>x</mi><mo>,</mo><mi>x</mi><mo>&gt;</mo><mn>2</mn><mspace width="0.222em"></mspace><mo stretchy="true" form="postfix">)</mo></mrow></mrow><mi>′</mi></msup><mrow><mo mathvariant="bold">≡</mo><mo stretchy="false" form="prefix" mathvariant="bold">(</mo></mrow><mo>∃</mo><mi>x</mi><mo>,</mo><mi>x</mi><mo>≤</mo><mn>2</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">{*(\forall x,x &gt; 2\ )}^{&#39;}\mathbf{\equiv (}\exists x,x \leq 2)</annotation></semantics></math>
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mrow><mo>*</mo><mrow><mo stretchy="true" form="prefix">(</mo><mo>∃</mo><mi>x</mi><mo>,</mo><mi>x</mi><mo>=</mo><mn>2</mn><mo stretchy="true" form="postfix">)</mo></mrow></mrow><mi>′</mi></msup><annotation encoding="application/x-tex">{*(\exists x,x = 2)}^{&#39;}</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo mathvariant="bold">≡</mo><mi>p</mi><mo>⇔</mo><msup><mi>q</mi><mi>′</mi></msup></mrow><annotation encoding="application/x-tex">\mathbf{\equiv}p \Longleftrightarrow q^{'}</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo>*</mo><mrow><mo form="prefix" stretchy="true">(</mo><mi>p</mi><mspace width="0.222em"></mspace><msubsup><mo>⋀</mo><mrow></mrow><mrow></mrow></msubsup><mspace width="0.222em"></mspace><mi>q</mi><mo form="postfix" stretchy="true">)</mo></mrow></mrow><mi>′</mi></msup><mo mathvariant="bold">≡</mo></mrow><annotation encoding="application/x-tex">{*\left( p\ \bigwedge_{}^{}\ q \right)}^{'}\mathbf{\equiv}</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>p</mi><mi>′</mi></msup><mspace width="0.222em"></mspace><mo>⋁</mo><msup><mrow><mspace width="0.222em"></mspace><mi>q</mi></mrow><mi>′</mi></msup></mrow><annotation encoding="application/x-tex">p^{'}\ \bigvee{\ q}^{'}</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo>*</mo><mrow><mo form="prefix" stretchy="true">(</mo><mi>p</mi><mspace width="0.222em"></mspace><msubsup><mo>⋁</mo><mrow></mrow><mrow></mrow></msubsup><mspace width="0.222em"></mspace><mi>q</mi><mo form="postfix" stretchy="true">)</mo></mrow></mrow><mi>′</mi></msup><mo mathvariant="bold">≡</mo></mrow><annotation encoding="application/x-tex">{*\left( p\ \bigvee_{}^{}\ q \right)}^{'}\mathbf{\equiv}</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>p</mi><mi>′</mi></msup><msubsup><mo>⋀</mo><mrow></mrow><mrow></mrow></msubsup><mspace width="0.222em"></mspace><msup><mi>q</mi><mi>′</mi></msup></mrow><annotation encoding="application/x-tex">p^{'}\bigwedge_{}^{}\ q^{'}</annotation></semantics></math></p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo>*</mo><mrow><mo form="prefix" stretchy="true">(</mo><msup><mi>p</mi><mi>′</mi></msup><mo form="postfix" stretchy="true">)</mo></mrow></mrow><mi>′</mi></msup><mo mathvariant="bold">≡</mo><mi>p</mi></mrow><annotation encoding="application/x-tex">{*\left( p^{'} \right)}^{'}\mathbf{\equiv}p</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo>*</mo><mrow><mo form="prefix" stretchy="true">(</mo><mo>∀</mo><mi>x</mi><mo>,</mo><mi>x</mi><mo>&gt;</mo><mn>2</mn><mspace width="0.222em"></mspace><mo form="postfix" stretchy="true">)</mo></mrow></mrow><mi>′</mi></msup><mrow><mo mathvariant="bold">≡</mo><mo form="prefix" mathvariant="bold" stretchy="false">(</mo></mrow><mo>∃</mo><mi>x</mi><mo>,</mo><mi>x</mi><mo>≤</mo><mn>2</mn><mo form="postfix" stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">{*(\forall x,x &gt; 2\ )}^{'}\mathbf{\equiv (}\exists x,x \leq 2)</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mrow><mo>*</mo><mrow><mo form="prefix" stretchy="true">(</mo><mo>∃</mo><mi>x</mi><mo>,</mo><mi>x</mi><mo>=</mo><mn>2</mn><mo form="postfix" stretchy="true">)</mo></mrow></mrow><mi>′</mi></msup><annotation encoding="application/x-tex">{*(\exists x,x = 2)}^{'}</annotation></semantics></math>
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo mathvariant="bold">≡</mo><annotation encoding="application/x-tex">\mathbf{\equiv}</annotation></semantics></math>
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><mi>x</mi><mo>,</mo><mi>x</mi><mo>≠</mo><mn>2</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\forall x,x \neq 2)</annotation></semantics></math></p>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><mi>x</mi><mo>,</mo><mi>x</mi><mo>≠</mo><mn>2</mn><mo form="postfix" stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\forall x,x \neq 2)</annotation></semantics></math></p>
 </body>
 </html>

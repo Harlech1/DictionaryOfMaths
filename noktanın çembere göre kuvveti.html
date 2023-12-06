@@ -1,18 +1,35 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>noktanın çembere göre kuvveti</title>
-    <style>
-        body {
-            font-size: 16px;
-            font-family: Arial, sans-serif; 
-            color: #333; 
-            background-color: #fff; 
-            line-height: 1.5; 
-        }
-    </style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>"matematik sözlüğü"</title>
+<style>
+            body {
+                font-size: 16px;
+                font-family: Arial, sans-serif; 
+                color: #333; 
+                background-color: #fff; 
+                line-height: 1.5; 
+            }
+            body.dark-mode {
+                color: #fff; 
+                background-color: #333; 
+            }
+        </style>
+<script>
+            function detectDarkMode() {
+                const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+                if (prefersDarkScheme.matches) {
+                    document.body.classList.add("dark-mode");
+                } else {
+                    document.body.classList.remove("dark-mode");
+                }
+            }
+
+            window.onload = detectDarkMode;
+        </script>
 </head>
 <body>
 <p> power of the point
@@ -24,7 +41,7 @@ respect to a circle of radius
 and center
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>O</mi><annotation encoding="application/x-tex">O</annotation></semantics></math>
 is defined by
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>=</mo><mrow><mo stretchy="true" form="prefix">|</mo><mi>P</mi><mi>A</mi><mo stretchy="true" form="postfix">|</mo></mrow><mrow><mo stretchy="true" form="prefix">|</mo><mi>P</mi><mi>B</mi><mo stretchy="true" form="postfix">|</mo></mrow><mo>=</mo><msup><mrow><mo stretchy="true" form="prefix">|</mo><mi>P</mi><mi>O</mi><mo stretchy="true" form="postfix">|</mo></mrow><mn>2</mn></msup><mo>−</mo><msup><mi>r</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">p = |PA||PB| = |PO|^{2} - r^{2}</annotation></semantics></math></p>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>=</mo><mrow><mo form="prefix" stretchy="true">|</mo><mi>P</mi><mi>A</mi><mo form="postfix" stretchy="true">|</mo></mrow><mrow><mo form="prefix" stretchy="true">|</mo><mi>P</mi><mi>B</mi><mo form="postfix" stretchy="true">|</mo></mrow><mo>=</mo><msup><mrow><mo form="prefix" stretchy="true">|</mo><mi>P</mi><mi>O</mi><mo form="postfix" stretchy="true">|</mo></mrow><mn>2</mn></msup><mo>−</mo><msup><mi>r</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">p = |PA||PB| = |PO|^{2} - r^{2}</annotation></semantics></math></p>
 <p>where
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mspace width="0.222em"></mspace></mrow><annotation encoding="application/x-tex">A\ </annotation></semantics></math>and
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>
