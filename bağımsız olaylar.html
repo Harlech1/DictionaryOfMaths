@@ -1,21 +1,38 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>bağımsız olaylar</title>
-    <style>
-        body {
-            font-size: 16px; /* Örnek bir font boyutu */
-            font-family: Arial, sans-serif; /* Örnek bir font ailesi */
-            color: #333; /* Metin rengi */
-            background-color: #fff; /* Arka plan rengi */
-            line-height: 1.5; /* Satır aralığı */
-        }
-    </style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>"matematik sözlüğü"</title>
+<style>
+            body {
+                font-size: 16px;
+                font-family: Arial, sans-serif; 
+                color: #333; 
+                background-color: #fff; 
+                line-height: 1.5; 
+            }
+            body.dark-mode {
+                color: #fff; 
+                background-color: #333; 
+            }
+        </style>
+<script>
+            function detectDarkMode() {
+                const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+                if (prefersDarkScheme.matches) {
+                    document.body.classList.add("dark-mode");
+                } else {
+                    document.body.classList.remove("dark-mode");
+                }
+            }
+
+            window.onload = detectDarkMode;
+        </script>
 </head>
 <body>
-    <p>independent
+<p>independent
 events; uncorrelated events</p>
 <p>Two events that have no bearing on each other.</p>
 <p>Two events
@@ -23,6 +40,6 @@ events; uncorrelated events</p>
 and
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>
 are independent if their probabilities satisfy
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>A</mi><mi>a</mi><mi>n</mi><mi>d</mi><mi>B</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mi>P</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>A</mi><mo>∩</mo><mi>B</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mi>P</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>A</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>P</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>B</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">P(AandB) = P(A \cap B) = P(A)P(B)</annotation></semantics></math>.</p>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mrow><mo form="prefix" stretchy="true">(</mo><mi>A</mi><mi>a</mi><mi>n</mi><mi>d</mi><mi>B</mi><mo form="postfix" stretchy="true">)</mo></mrow><mo>=</mo><mi>P</mi><mrow><mo form="prefix" stretchy="true">(</mo><mi>A</mi><mo>∩</mo><mi>B</mi><mo form="postfix" stretchy="true">)</mo></mrow><mo>=</mo><mi>P</mi><mrow><mo form="prefix" stretchy="true">(</mo><mi>A</mi><mo form="postfix" stretchy="true">)</mo></mrow><mi>P</mi><mrow><mo form="prefix" stretchy="true">(</mo><mi>B</mi><mo form="postfix" stretchy="true">)</mo></mrow></mrow><annotation encoding="application/x-tex">P(AandB) = P(A \cap B) = P(A)P(B)</annotation></semantics></math>.</p>
 </body>
 </html>
