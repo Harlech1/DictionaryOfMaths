@@ -1,26 +1,43 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>dönel cisimlerin hacimleri</title>
-    <style>
-        body {
-            font-size: 16px;
-            font-family: Arial, sans-serif; 
-            color: #333; 
-            background-color: #fff; 
-            line-height: 1.5; 
-        }
-    </style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>"matematik sözlüğü"</title>
+<style>
+            body {
+                font-size: 16px;
+                font-family: Arial, sans-serif; 
+                color: #333; 
+                background-color: #fff; 
+                line-height: 1.5; 
+            }
+            body.dark-mode {
+                color: #fff; 
+                background-color: #333; 
+            }
+        </style>
+<script>
+            function detectDarkMode() {
+                const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+                if (prefersDarkScheme.matches) {
+                    document.body.classList.add("dark-mode");
+                } else {
+                    document.body.classList.remove("dark-mode");
+                }
+            }
+
+            window.onload = detectDarkMode;
+        </script>
 </head>
 <body>
-    <p> volumes of solids of
+<p> volumes of solids of
 revolution</p>
 <table>
 <colgroup>
-<col style="width: 38%" />
-<col style="width: 61%" />
+<col style="width: 38%"/>
+<col style="width: 61%"/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -33,28 +50,28 @@ by the given curves</u></th>
 </thead>
 <tbody>
 <tr class="odd">
-<td><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mi>f</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mi>x</mi><mo>=</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mi>x</mi><mo>=</mo><msub><mi>x</mi><mn>2</mn></msub><mspace width="0.222em"></mspace><mo>,</mo><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mi>y</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">y = f(x),\ \ \ x = x_{1},\ \ x = x_{2}\ ,\ \ y = 0</annotation></semantics></math></td>
+<td><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mi>f</mi><mrow><mo form="prefix" stretchy="true">(</mo><mi>x</mi><mo form="postfix" stretchy="true">)</mo></mrow><mo>,</mo><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mi>x</mi><mo>=</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mi>x</mi><mo>=</mo><msub><mi>x</mi><mn>2</mn></msub><mspace width="0.222em"></mspace><mo>,</mo><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mi>y</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">y = f(x),\ \ \ x = x_{1},\ \ x = x_{2}\ ,\ \ y = 0</annotation></semantics></math></td>
 <td>about the x-axis
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>V</mi><mi>x</mi></msub><mo>=</mo><mi>π</mi><msubsup><mo>∫</mo><msub><mi>x</mi><mn>1</mn></msub><msub><mi>x</mi><mn>2</mn></msub></msubsup><mrow><mspace width="0.222em"></mspace><msup><mrow><mo stretchy="true" form="prefix">[</mo><mi>f</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">]</mo></mrow><mn>2</mn></msup><mi>d</mi><mi>x</mi></mrow></mrow><annotation encoding="application/x-tex">V_{x} = \pi\int_{x_{1}}^{x_{2}}{\ \left\lbrack f(x) \right\rbrack^{2}dx}</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>V</mi><mi>x</mi></msub><mo>=</mo><mi>π</mi><msubsup><mo>∫</mo><msub><mi>x</mi><mn>1</mn></msub><msub><mi>x</mi><mn>2</mn></msub></msubsup><mrow><mspace width="0.222em"></mspace><msup><mrow><mo form="prefix" stretchy="true">[</mo><mi>f</mi><mrow><mo form="prefix" stretchy="true">(</mo><mi>x</mi><mo form="postfix" stretchy="true">)</mo></mrow><mo form="postfix" stretchy="true">]</mo></mrow><mn>2</mn></msup><mi>d</mi><mi>x</mi></mrow></mrow><annotation encoding="application/x-tex">V_{x} = \pi\int_{x_{1}}^{x_{2}}{\ \left\lbrack f(x) \right\rbrack^{2}dx}</annotation></semantics></math>
 <em>,</em>
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mspace width="0.222em"></mspace><msub><mi>x</mi><mn>1</mn></msub><mo>&lt;</mo><msub><mi>x</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">\ x_{1} &lt; x_{2}</annotation></semantics></math></td>
 </tr>
 <tr class="even">
-<td><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mi>g</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>y</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mi>y</mi><mo>=</mo><msub><mi>y</mi><mn>1</mn></msub><mo>,</mo><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mi>y</mi><mo>=</mo><msub><mi>y</mi><mn>2</mn></msub><mspace width="0.222em"></mspace><mo>,</mo><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mi>x</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x = g(y),\ \ \ y = y_{1},\ \ y = y_{2}\ ,\ \ x = 0</annotation></semantics></math></td>
+<td><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mi>g</mi><mrow><mo form="prefix" stretchy="true">(</mo><mi>y</mi><mo form="postfix" stretchy="true">)</mo></mrow><mo>,</mo><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mi>y</mi><mo>=</mo><msub><mi>y</mi><mn>1</mn></msub><mo>,</mo><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mi>y</mi><mo>=</mo><msub><mi>y</mi><mn>2</mn></msub><mspace width="0.222em"></mspace><mo>,</mo><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mi>x</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x = g(y),\ \ \ y = y_{1},\ \ y = y_{2}\ ,\ \ x = 0</annotation></semantics></math></td>
 <td>about the y-axis
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mspace width="0.222em"></mspace><msub><mi>V</mi><mi>y</mi></msub><mo>=</mo><mi>π</mi><msubsup><mo>∫</mo><msub><mi>y</mi><mn>1</mn></msub><msub><mi>y</mi><mn>2</mn></msub></msubsup><mrow><msup><mrow><mspace width="0.222em"></mspace><mrow><mo stretchy="true" form="prefix">[</mo><mi>g</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>y</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">]</mo></mrow></mrow><mn>2</mn></msup><mi>d</mi><mi>y</mi></mrow></mrow><annotation encoding="application/x-tex">\ V_{y} = \pi\int_{y_{1}}^{y_{2}}{{\ \left\lbrack g(y) \right\rbrack}^{2}dy}</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mspace width="0.222em"></mspace><msub><mi>V</mi><mi>y</mi></msub><mo>=</mo><mi>π</mi><msubsup><mo>∫</mo><msub><mi>y</mi><mn>1</mn></msub><msub><mi>y</mi><mn>2</mn></msub></msubsup><mrow><msup><mrow><mspace width="0.222em"></mspace><mrow><mo form="prefix" stretchy="true">[</mo><mi>g</mi><mrow><mo form="prefix" stretchy="true">(</mo><mi>y</mi><mo form="postfix" stretchy="true">)</mo></mrow><mo form="postfix" stretchy="true">]</mo></mrow></mrow><mn>2</mn></msup><mi>d</mi><mi>y</mi></mrow></mrow><annotation encoding="application/x-tex">\ V_{y} = \pi\int_{y_{1}}^{y_{2}}{{\ \left\lbrack g(y) \right\rbrack}^{2}dy}</annotation></semantics></math>
 <em>,</em>
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mspace width="0.222em"></mspace><mi>y</mi></mrow><mn>1</mn></msub><mo>&lt;</mo><msub><mi>y</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">{\ y}_{1} &lt; y_{2}</annotation></semantics></math></td>
 </tr>
 <tr class="odd">
-<td><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mi>f</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo><mi>y</mi><mo>=</mo><mi>g</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mi>x</mi><mo>=</mo><msub><mi>x</mi><mn>1</mn></msub><mspace width="0.222em"></mspace><mo>,</mo><mspace width="0.222em"></mspace><mi>x</mi><mo>=</mo><msub><mi>x</mi><mn>2</mn></msub><mspace width="0.222em"></mspace></mrow><annotation encoding="application/x-tex">y = f(x),y = g(x),\ \ \ \ x = x_{1}\ ,\ x = x_{2}\ </annotation></semantics></math></td>
+<td><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mi>f</mi><mrow><mo form="prefix" stretchy="true">(</mo><mi>x</mi><mo form="postfix" stretchy="true">)</mo></mrow><mo>,</mo><mi>y</mi><mo>=</mo><mi>g</mi><mrow><mo form="prefix" stretchy="true">(</mo><mi>x</mi><mo form="postfix" stretchy="true">)</mo></mrow><mo>,</mo><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mi>x</mi><mo>=</mo><msub><mi>x</mi><mn>1</mn></msub><mspace width="0.222em"></mspace><mo>,</mo><mspace width="0.222em"></mspace><mi>x</mi><mo>=</mo><msub><mi>x</mi><mn>2</mn></msub><mspace width="0.222em"></mspace></mrow><annotation encoding="application/x-tex">y = f(x),y = g(x),\ \ \ \ x = x_{1}\ ,\ x = x_{2}\ </annotation></semantics></math></td>
 <td>about the x-axis
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>V</mi><mi>x</mi></msub><mo>=</mo><mi>π</mi><msubsup><mo>∫</mo><msub><mi>x</mi><mn>1</mn></msub><msub><mi>x</mi><mn>2</mn></msub></msubsup><mrow><mrow><mo stretchy="true" form="prefix">[</mo><msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>f</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup><mo>−</mo><msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>g</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup><mo stretchy="true" form="postfix">]</mo></mrow><mi>d</mi><mi>x</mi></mrow></mrow><annotation encoding="application/x-tex">V_{x} = \pi\int_{x_{1}}^{x_{2}}{\left\lbrack \left( f(x) \right)^{2} - \left( g(x) \right)^{2} \right\rbrack dx}</annotation></semantics></math></td>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>V</mi><mi>x</mi></msub><mo>=</mo><mi>π</mi><msubsup><mo>∫</mo><msub><mi>x</mi><mn>1</mn></msub><msub><mi>x</mi><mn>2</mn></msub></msubsup><mrow><mrow><mo form="prefix" stretchy="true">[</mo><msup><mrow><mo form="prefix" stretchy="true">(</mo><mi>f</mi><mrow><mo form="prefix" stretchy="true">(</mo><mi>x</mi><mo form="postfix" stretchy="true">)</mo></mrow><mo form="postfix" stretchy="true">)</mo></mrow><mn>2</mn></msup><mo>−</mo><msup><mrow><mo form="prefix" stretchy="true">(</mo><mi>g</mi><mrow><mo form="prefix" stretchy="true">(</mo><mi>x</mi><mo form="postfix" stretchy="true">)</mo></mrow><mo form="postfix" stretchy="true">)</mo></mrow><mn>2</mn></msup><mo form="postfix" stretchy="true">]</mo></mrow><mi>d</mi><mi>x</mi></mrow></mrow><annotation encoding="application/x-tex">V_{x} = \pi\int_{x_{1}}^{x_{2}}{\left\lbrack \left( f(x) \right)^{2} - \left( g(x) \right)^{2} \right\rbrack dx}</annotation></semantics></math></td>
 </tr>
 <tr class="even">
-<td><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mi>h</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>y</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mi>x</mi><mo>=</mo><mi>t</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>y</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mi>y</mi><mo>=</mo><msub><mi>y</mi><mn>1</mn></msub><mspace width="0.222em"></mspace><mo>,</mo><mspace width="0.222em"></mspace><mi>y</mi><mo>=</mo><msub><mi>y</mi><mn>2</mn></msub><mspace width="0.222em"></mspace></mrow><annotation encoding="application/x-tex">x = h(y),\ \ x = t(y),\ \ \ \ y = y_{1}\ ,\ y = y_{2}\ </annotation></semantics></math></td>
+<td><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mi>h</mi><mrow><mo form="prefix" stretchy="true">(</mo><mi>y</mi><mo form="postfix" stretchy="true">)</mo></mrow><mo>,</mo><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mi>x</mi><mo>=</mo><mi>t</mi><mrow><mo form="prefix" stretchy="true">(</mo><mi>y</mi><mo form="postfix" stretchy="true">)</mo></mrow><mo>,</mo><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mi>y</mi><mo>=</mo><msub><mi>y</mi><mn>1</mn></msub><mspace width="0.222em"></mspace><mo>,</mo><mspace width="0.222em"></mspace><mi>y</mi><mo>=</mo><msub><mi>y</mi><mn>2</mn></msub><mspace width="0.222em"></mspace></mrow><annotation encoding="application/x-tex">x = h(y),\ \ x = t(y),\ \ \ \ y = y_{1}\ ,\ y = y_{2}\ </annotation></semantics></math></td>
 <td>about the y-axis
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>V</mi><mi>y</mi></msub><mo>=</mo><mi>π</mi><msubsup><mo>∫</mo><msub><mi>y</mi><mn>1</mn></msub><msub><mi>y</mi><mn>2</mn></msub></msubsup><mrow><mspace width="0.222em"></mspace><mrow><mo stretchy="true" form="prefix">[</mo><msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>h</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>y</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup><mo>−</mo><msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>y</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup><mo stretchy="true" form="postfix">]</mo></mrow><mi>d</mi><mi>y</mi></mrow></mrow><annotation encoding="application/x-tex">V_{y} = \pi\int_{y_{1}}^{y_{2}}{\ \left\lbrack \left( h(y) \right)^{2} - \left( t(y) \right)^{2} \right\rbrack dy}</annotation></semantics></math></td>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>V</mi><mi>y</mi></msub><mo>=</mo><mi>π</mi><msubsup><mo>∫</mo><msub><mi>y</mi><mn>1</mn></msub><msub><mi>y</mi><mn>2</mn></msub></msubsup><mrow><mspace width="0.222em"></mspace><mrow><mo form="prefix" stretchy="true">[</mo><msup><mrow><mo form="prefix" stretchy="true">(</mo><mi>h</mi><mrow><mo form="prefix" stretchy="true">(</mo><mi>y</mi><mo form="postfix" stretchy="true">)</mo></mrow><mo form="postfix" stretchy="true">)</mo></mrow><mn>2</mn></msup><mo>−</mo><msup><mrow><mo form="prefix" stretchy="true">(</mo><mi>t</mi><mrow><mo form="prefix" stretchy="true">(</mo><mi>y</mi><mo form="postfix" stretchy="true">)</mo></mrow><mo form="postfix" stretchy="true">)</mo></mrow><mn>2</mn></msup><mo form="postfix" stretchy="true">]</mo></mrow><mi>d</mi><mi>y</mi></mrow></mrow><annotation encoding="application/x-tex">V_{y} = \pi\int_{y_{1}}^{y_{2}}{\ \left\lbrack \left( h(y) \right)^{2} - \left( t(y) \right)^{2} \right\rbrack dy}</annotation></semantics></math></td>
 </tr>
 </tbody>
 </table>
