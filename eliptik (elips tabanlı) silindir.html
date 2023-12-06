@@ -1,37 +1,38 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>"matematik sözlüğü"</title>
-    <style>
-        body {
-            font-size: 16px;
-            font-family: Arial, sans-serif; 
-            color: #333; 
-            background-color: #fff; 
-            line-height: 1.5; 
-        }
-        body.dark-mode {
-            color: #fff; 
-            background-color: #333; 
-        }
-    </style>
-    <script>
-        function detectDarkMode() {
-            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
-            if (prefersDarkScheme.matches) {
-                document.body.classList.add("dark-mode");
-            } else {
-                document.body.classList.remove("dark-mode");
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>"matematik sözlüğü"</title>
+<style>
+            body {
+                font-size: 16px;
+                font-family: Arial, sans-serif; 
+                color: #333; 
+                background-color: #fff; 
+                line-height: 1.5; 
             }
-        }
-        
-        window.onload = detectDarkMode;
-    </script>
+            body.dark-mode {
+                color: #fff; 
+                background-color: #333; 
+            }
+        </style>
+<script>
+            function detectDarkMode() {
+                const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+                if (prefersDarkScheme.matches) {
+                    document.body.classList.add("dark-mode");
+                } else {
+                    document.body.classList.remove("dark-mode");
+                }
+            }
+
+            window.onload = detectDarkMode;
+        </script>
 </head>
 <body>
-    <p> elliptic
+<p> elliptic
 cylinder</p>
 <p>A cylinder with elliptical cross section. The parametric equations
 for the lateral sides of an elliptic cylinder of height
@@ -45,8 +46,8 @@ are
 and
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi><mo>=</mo><mi>z</mi></mrow><annotation encoding="application/x-tex">z = z</annotation></semantics></math>
 where
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>θ</mi><mi>ϵ</mi><mo stretchy="false" form="prefix">[</mo><mn>0</mn><mo>,</mo><mspace width="0.222em"></mspace><mn>2</mn><mi>π</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">\theta\epsilon\lbrack 0,\ 2\pi\rbrack</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>θ</mi><mi>ϵ</mi><mo form="prefix" stretchy="false">[</mo><mn>0</mn><mo>,</mo><mspace width="0.222em"></mspace><mn>2</mn><mi>π</mi><mo form="postfix" stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">\theta\epsilon\lbrack 0,\ 2\pi\rbrack</annotation></semantics></math>
 and
-z<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϵ</mi><mo stretchy="false" form="prefix">[</mo><mn>0</mn><mo>,</mo><mspace width="0.222em"></mspace><mi>h</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">\epsilon\lbrack 0,\ h\rbrack</annotation></semantics></math>.</p>
+z<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϵ</mi><mo form="prefix" stretchy="false">[</mo><mn>0</mn><mo>,</mo><mspace width="0.222em"></mspace><mi>h</mi><mo form="postfix" stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">\epsilon\lbrack 0,\ h\rbrack</annotation></semantics></math>.</p>
 </body>
 </html>
