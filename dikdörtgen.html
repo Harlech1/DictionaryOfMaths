@@ -1,21 +1,38 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>dikdörtgen</title>
-    <style>
-        body {
-            font-size: 16px;
-            font-family: Arial, sans-serif; 
-            color: #333; 
-            background-color: #fff; 
-            line-height: 1.5; 
-        }
-    </style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>"matematik sözlüğü"</title>
+<style>
+            body {
+                font-size: 16px;
+                font-family: Arial, sans-serif; 
+                color: #333; 
+                background-color: #fff; 
+                line-height: 1.5; 
+            }
+            body.dark-mode {
+                color: #fff; 
+                background-color: #333; 
+            }
+        </style>
+<script>
+            function detectDarkMode() {
+                const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+                if (prefersDarkScheme.matches) {
+                    document.body.classList.add("dark-mode");
+                } else {
+                    document.body.classList.remove("dark-mode");
+                }
+            }
+
+            window.onload = detectDarkMode;
+        </script>
 </head>
 <body>
-    <p> rectangle</p>
+<p> rectangle</p>
 <p>A parallelogram with four right angles.</p>
 <p>The two side lengths of a rectangle are called the length
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>,</mo><mi>l</mi><mo>,</mo><mspace width="0.222em"></mspace></mrow><annotation encoding="application/x-tex">,l,\ </annotation></semantics></math>(
@@ -28,13 +45,12 @@ interior angle measures
 Area
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mi>l</mi><mi>w</mi></mrow><annotation encoding="application/x-tex">= lw</annotation></semantics></math>
 , perimeter
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mn>2</mn><mo stretchy="false" form="prefix">(</mo><mspace width="0.222em"></mspace><mi>l</mi></mrow><annotation encoding="application/x-tex">= 2(\ l</annotation></semantics></math><em>+w).</em>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mn>2</mn><mo form="prefix" stretchy="false">(</mo><mspace width="0.222em"></mspace><mi>l</mi></mrow><annotation encoding="application/x-tex">= 2(\ l</annotation></semantics></math><em>+w).</em>
 The two lines passing through the midpoints of the opposite sides are
 the axes of symmetry</p>
 <p>The intersection point of the diagonals is the center of symmetry
 <em>.</em> The length of each diagonal is
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msqrt><mrow><msup><mi>l</mi><mn>2</mn></msup><mo>+</mo><msup><mi>w</mi><mn>2</mn></msup></mrow></msqrt><annotation encoding="application/x-tex">\sqrt{l^{2} + w^{2}}</annotation></semantics></math>
 .</p>
-
 </body>
 </html>
