@@ -1,21 +1,47 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>azalan dizi</title>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>"matematik sözlüğü"</title>
+<style>
+            body {
+                font-size: 16px;
+                font-family: Arial, sans-serif; 
+                color: #333; 
+                background-color: #fff; 
+                line-height: 1.5; 
+            }
+            body.dark-mode {
+                color: #fff; 
+                background-color: #333; 
+            }
+        </style>
+<script>
+            function detectDarkMode() {
+                const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+                if (prefersDarkScheme.matches) {
+                    document.body.classList.add("dark-mode");
+                } else {
+                    document.body.classList.remove("dark-mode");
+                }
+            }
+
+            window.onload = detectDarkMode;
+        </script>
 </head>
 <body>
-    <p>decreasing sequence; decreasing
+<p>decreasing sequence; decreasing
 progression</p>
 <p>For a sequence
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">{</mo><msub><mi>a</mi><mi>n</mi></msub><mo stretchy="true" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\left\{ a_{n} \right\}</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo form="prefix" stretchy="true">{</mo><msub><mi>a</mi><mi>n</mi></msub><mo form="postfix" stretchy="true">}</mo></mrow><annotation encoding="application/x-tex">\left\{ a_{n} \right\}</annotation></semantics></math>
 , if
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>−</mo><msub><mi>a</mi><mi>n</mi></msub><mo>&lt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">a_{n + 1} - a_{n} &lt; 0</annotation></semantics></math>
 for
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>≥</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">n \geq x</annotation></semantics></math>,
 then
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">{</mo><msub><mi>a</mi><mi>n</mi></msub><mo stretchy="true" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\left\{ a_{n} \right\}</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo form="prefix" stretchy="true">{</mo><msub><mi>a</mi><mi>n</mi></msub><mo form="postfix" stretchy="true">}</mo></mrow><annotation encoding="application/x-tex">\left\{ a_{n} \right\}</annotation></semantics></math>
 is decreasing for
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>≥</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">n \geq x</annotation></semantics></math>
 .</p>
@@ -26,8 +52,8 @@ and
 for all
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>≥</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">n \geq x</annotation></semantics></math>,
 then
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">{</mo><msub><mi>a</mi><mi>n</mi></msub><mo stretchy="true" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\left\{ a_{n} \right\}</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo form="prefix" stretchy="true">{</mo><msub><mi>a</mi><mi>n</mi></msub><mo form="postfix" stretchy="true">}</mo></mrow><annotation encoding="application/x-tex">\left\{ a_{n} \right\}</annotation></semantics></math>
 is decreasing for
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>≥</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">n \geq x</annotation></semantics></math>
-</body>
+</p></body>
 </html>
