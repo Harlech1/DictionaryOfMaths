@@ -1,23 +1,40 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>bireysel önermeler</title>
-    <style>
-        body {
-            font-size: 16px;
-            font-family: Arial, sans-serif; 
-            color: #333; 
-            background-color: #fff; 
-            line-height: 1.5; 
-        }
-    </style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>"matematik sözlüğü"</title>
+<style>
+            body {
+                font-size: 16px;
+                font-family: Arial, sans-serif; 
+                color: #333; 
+                background-color: #fff; 
+                line-height: 1.5; 
+            }
+            body.dark-mode {
+                color: #fff; 
+                background-color: #333; 
+            }
+        </style>
+<script>
+            function detectDarkMode() {
+                const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+                if (prefersDarkScheme.matches) {
+                    document.body.classList.add("dark-mode");
+                } else {
+                    document.body.classList.remove("dark-mode");
+                }
+            }
+
+            window.onload = detectDarkMode;
+        </script>
 </head>
 <body>
-    <p> individual propositions</p>
+<p> individual propositions</p>
 <p>The compound proposition
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">(</mo><mi>p</mi><mo>∧</mo><mi>q</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>⇒</mo><mi>r</mi></mrow><annotation encoding="application/x-tex">(p \land q) \Rightarrow r</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo form="prefix" stretchy="true">(</mo><mi>p</mi><mo>∧</mo><mi>q</mi><mo form="postfix" stretchy="true">)</mo></mrow><mo>⇒</mo><mi>r</mi></mrow><annotation encoding="application/x-tex">(p \land q) \Rightarrow r</annotation></semantics></math>
 is formed from the individual propositions
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>,</mo><mi>q</mi><mi>a</mi><mi>n</mi><mi>d</mi><mi>r</mi></mrow><annotation encoding="application/x-tex">p,qandr</annotation></semantics></math>.</p>
 </body>

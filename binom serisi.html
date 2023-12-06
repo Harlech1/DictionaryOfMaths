@@ -1,21 +1,38 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>binom serisi</title>
-    <style>
-        body {
-            font-size: 16px;
-            font-family: Arial, sans-serif; 
-            color: #333; 
-            background-color: #fff; 
-            line-height: 1.5; 
-        }
-    </style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>"matematik sözlüğü"</title>
+<style>
+            body {
+                font-size: 16px;
+                font-family: Arial, sans-serif; 
+                color: #333; 
+                background-color: #fff; 
+                line-height: 1.5; 
+            }
+            body.dark-mode {
+                color: #fff; 
+                background-color: #333; 
+            }
+        </style>
+<script>
+            function detectDarkMode() {
+                const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+                if (prefersDarkScheme.matches) {
+                    document.body.classList.add("dark-mode");
+                } else {
+                    document.body.classList.remove("dark-mode");
+                }
+            }
+
+            window.onload = detectDarkMode;
+        </script>
 </head>
 <body>
-    <p> binomial series
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>+</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>n</mi></msup><mo>=</mo><mn>1</mn><mo>+</mo><mi>p</mi><mi>x</mi><mo>+</mo><mfrac><mrow><mi>p</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>p</mi><mo>−</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow></mrow><mrow><mn>2</mn><mi>!</mi></mrow></mfrac><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mfrac><mrow><mi>p</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>p</mi><mo>−</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mi>p</mi><mo>−</mo><mn>2</mn><mo stretchy="true" form="postfix">)</mo></mrow></mrow><mrow><mn>3</mn><mi>!</mi></mrow></mfrac><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><mi>⋯</mi><mi>f</mi><mi>o</mi><mi>r</mi><mo>−</mo><mn>1</mn><mo>&lt;</mo><mi>x</mi><mo>&lt;</mo><mn>1</mn><mi>.</mi></mrow><annotation encoding="application/x-tex">(1 + x)^{n} = 1 + px + \frac{p(p - 1)}{2!}x^{2} + \frac{p(p - 1)(p - 2)}{3!}x^{3} + \cdots for - 1 &lt; x &lt; 1.</annotation></semantics></math></p>
+<p> binomial series
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo form="prefix" stretchy="true">(</mo><mn>1</mn><mo>+</mo><mi>x</mi><mo form="postfix" stretchy="true">)</mo></mrow><mi>n</mi></msup><mo>=</mo><mn>1</mn><mo>+</mo><mi>p</mi><mi>x</mi><mo>+</mo><mfrac><mrow><mi>p</mi><mrow><mo form="prefix" stretchy="true">(</mo><mi>p</mi><mo>−</mo><mn>1</mn><mo form="postfix" stretchy="true">)</mo></mrow></mrow><mrow><mn>2</mn><mi>!</mi></mrow></mfrac><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mfrac><mrow><mi>p</mi><mrow><mo form="prefix" stretchy="true">(</mo><mi>p</mi><mo>−</mo><mn>1</mn><mo form="postfix" stretchy="true">)</mo></mrow><mrow><mo form="prefix" stretchy="true">(</mo><mi>p</mi><mo>−</mo><mn>2</mn><mo form="postfix" stretchy="true">)</mo></mrow></mrow><mrow><mn>3</mn><mi>!</mi></mrow></mfrac><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><mi>⋯</mi><mi>f</mi><mi>o</mi><mi>r</mi><mo>−</mo><mn>1</mn><mo>&lt;</mo><mi>x</mi><mo>&lt;</mo><mn>1</mn><mi>.</mi></mrow><annotation encoding="application/x-tex">(1 + x)^{n} = 1 + px + \frac{p(p - 1)}{2!}x^{2} + \frac{p(p - 1)(p - 2)}{3!}x^{3} + \cdots for - 1 &lt; x &lt; 1.</annotation></semantics></math></p>
 </body>
 </html>

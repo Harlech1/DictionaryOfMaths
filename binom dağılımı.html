@@ -1,27 +1,44 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>binom dağılımı</title>
-    <style>
-        body {
-            font-size: 16px;
-            font-family: Arial, sans-serif; 
-            color: #333; 
-            background-color: #fff; 
-            line-height: 1.5; 
-        }
-    </style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>"matematik sözlüğü"</title>
+<style>
+            body {
+                font-size: 16px;
+                font-family: Arial, sans-serif; 
+                color: #333; 
+                background-color: #fff; 
+                line-height: 1.5; 
+            }
+            body.dark-mode {
+                color: #fff; 
+                background-color: #333; 
+            }
+        </style>
+<script>
+            function detectDarkMode() {
+                const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+                if (prefersDarkScheme.matches) {
+                    document.body.classList.add("dark-mode");
+                } else {
+                    document.body.classList.remove("dark-mode");
+                }
+            }
+
+            window.onload = detectDarkMode;
+        </script>
 </head>
 <body>
-    <p> binomial distribution</p>
+<p> binomial distribution</p>
 <p>The binomial distribution gives the probability distribution of
 obtaining exactly n successes out of n trials where the result of each
 trial is true with probability p and false with probability
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi><mo>=</mo><mn>1</mn><mo>−</mo><mi>p</mi></mrow><annotation encoding="application/x-tex">q = 1 - p</annotation></semantics></math>.</p>
 <p>The formula for the binomial distribution is given by
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>n</mi><mo>∖</mo><mi>N</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mtable><mtr><mtd columnalign="right" style="text-align: right"><mi>N</mi></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right"><mi>n</mi></mtd></mtr></mtable><mo stretchy="true" form="postfix">)</mo></mrow><msup><mi>p</mi><mi>n</mi></msup><mi>.</mi><msup><mi>q</mi><mrow><mi>N</mi><mo>−</mo><mi>n</mi></mrow></msup></mrow><annotation encoding="application/x-tex">P(n\backslash N) = \left( \begin{array}{r}
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mrow><mo form="prefix" stretchy="true">(</mo><mi>n</mi><mo>∖</mo><mi>N</mi><mo form="postfix" stretchy="true">)</mo></mrow><mo>=</mo><mrow><mo form="prefix" stretchy="true">(</mo><mtable><mtr><mtd columnalign="right" style="text-align: right"><mi>N</mi></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right"><mi>n</mi></mtd></mtr></mtable><mo form="postfix" stretchy="true">)</mo></mrow><msup><mi>p</mi><mi>n</mi></msup><mi>.</mi><msup><mi>q</mi><mrow><mi>N</mi><mo>−</mo><mi>n</mi></mrow></msup></mrow><annotation encoding="application/x-tex">P(n\backslash N) = \left( \begin{array}{r}
 N \\
 n
 \end{array} \right)p^{n}.q^{N - n}</annotation></semantics></math>.</p>
