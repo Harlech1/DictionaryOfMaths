@@ -1,23 +1,40 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>merkezi (a,b) ve yarıçap uzunluğu r olan çemberin genel denklemi</title>
-    <style>
-        body {
-            font-size: 16px;
-            font-family: Arial, sans-serif; 
-            color: #333; 
-            background-color: #fff; 
-            line-height: 1.5; 
-        }
-    </style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>"matematik sözlüğü"</title>
+<style>
+            body {
+                font-size: 16px;
+                font-family: Arial, sans-serif; 
+                color: #333; 
+                background-color: #fff; 
+                line-height: 1.5; 
+            }
+            body.dark-mode {
+                color: #fff; 
+                background-color: #333; 
+            }
+        </style>
+<script>
+            function detectDarkMode() {
+                const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+                if (prefersDarkScheme.matches) {
+                    document.body.classList.add("dark-mode");
+                } else {
+                    document.body.classList.remove("dark-mode");
+                }
+            }
+
+            window.onload = detectDarkMode;
+        </script>
 </head>
 <body>
 <p></p>
 <p>The <em>general form of the equation of a circle with center</em>
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="true" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(a,b)</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo form="prefix" stretchy="true">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo form="postfix" stretchy="true">)</mo></mrow><annotation encoding="application/x-tex">(a,b)</annotation></semantics></math>
 <em>and radius</em>
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi><annotation encoding="application/x-tex">r</annotation></semantics></math>
 <em>is</em>
@@ -25,6 +42,6 @@
 <p>where
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>A</mi><mn>2</mn></msup><mo>+</mo><msup><mi>B</mi><mn>2</mn></msup><mo>−</mo><mn>4</mn><mi>C</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">A^{2} + B^{2} - 4C &gt; 0</annotation></semantics></math><em>,
 center</em>
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo stretchy="false" form="prefix">(</mo><mo>−</mo><mfrac><mi>A</mi><mn>2</mn></mfrac><mspace width="0.222em"></mspace><mo>,</mo><mspace width="0.222em"></mspace><mo>−</mo><mfrac><mi>B</mi><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">M( - \frac{A}{2}\ ,\  - \frac{B}{2}</annotation></semantics></math><em>)
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo form="prefix" stretchy="false">(</mo><mo>−</mo><mfrac><mi>A</mi><mn>2</mn></mfrac><mspace width="0.222em"></mspace><mo>,</mo><mspace width="0.222em"></mspace><mo>−</mo><mfrac><mi>B</mi><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">M( - \frac{A}{2}\ ,\  - \frac{B}{2}</annotation></semantics></math><em>)
 and</em><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mspace width="0.222em"></mspace><mi>r</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mspace width="0.222em"></mspace><msqrt><mrow><msup><mi>A</mi><mn>2</mn></msup><mo>+</mo><msup><mi>B</mi><mn>2</mn></msup><mo>−</mo><mn>4</mn><mi>C</mi></mrow></msqrt></mrow><annotation encoding="application/x-tex">\ r = \frac{1}{2}\ \sqrt{A^{2} + B^{2} - 4C}</annotation></semantics></math><em>.</em></p></body>
 </html>

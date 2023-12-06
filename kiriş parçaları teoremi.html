@@ -1,28 +1,45 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>kiriş parçaları teoremi</title>
-    <style>
-        body {
-            font-size: 16px;
-            font-family: Arial, sans-serif; 
-            color: #333; 
-            background-color: #fff; 
-            line-height: 1.5; 
-        }
-    </style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>"matematik sözlüğü"</title>
+<style>
+            body {
+                font-size: 16px;
+                font-family: Arial, sans-serif; 
+                color: #333; 
+                background-color: #fff; 
+                line-height: 1.5; 
+            }
+            body.dark-mode {
+                color: #fff; 
+                background-color: #333; 
+            }
+        </style>
+<script>
+            function detectDarkMode() {
+                const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+                if (prefersDarkScheme.matches) {
+                    document.body.classList.add("dark-mode");
+                } else {
+                    document.body.classList.remove("dark-mode");
+                }
+            }
+
+            window.onload = detectDarkMode;
+        </script>
 </head>
 <body>
 <p> segments of chords
 theorem</p>
 <p>Given two chords
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mi>A</mi><mi>B</mi><mo stretchy="false" form="postfix">]</mo><mspace width="0.222em"></mspace></mrow><annotation encoding="application/x-tex">\lbrack AB\rbrack\ </annotation></semantics></math>and
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mi>B</mi><mi>C</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">\lbrack BC\rbrack</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo form="prefix" stretchy="false">[</mo><mi>A</mi><mi>B</mi><mo form="postfix" stretchy="false">]</mo><mspace width="0.222em"></mspace></mrow><annotation encoding="application/x-tex">\lbrack AB\rbrack\ </annotation></semantics></math>and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo form="prefix" stretchy="false">[</mo><mi>B</mi><mi>C</mi><mo form="postfix" stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">\lbrack BC\rbrack</annotation></semantics></math>
 which intersect at
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mspace width="0.222em"></mspace></mrow><annotation encoding="application/x-tex">P\ </annotation></semantics></math>inside
 a circle, we have
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">|</mo><mi>P</mi><mi>A</mi><mo stretchy="true" form="postfix">|</mo></mrow><mo>•</mo><mrow><mo stretchy="true" form="prefix">|</mo><mi>P</mi><mi>B</mi><mo stretchy="true" form="postfix">|</mo></mrow><mo>=</mo><mrow><mo stretchy="true" form="prefix">|</mo><mi>P</mi><mi>C</mi><mo stretchy="true" form="postfix">|</mo></mrow><mo>•</mo></mrow><annotation encoding="application/x-tex">|PA| \bullet |PB| = |PC| \bullet</annotation></semantics></math>
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">|</mo><mi>P</mi><mi>D</mi><mo stretchy="true" form="postfix">|</mo></mrow><annotation encoding="application/x-tex">|PD|</annotation></semantics></math>.</p></body>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo form="prefix" stretchy="true">|</mo><mi>P</mi><mi>A</mi><mo form="postfix" stretchy="true">|</mo></mrow><mo>•</mo><mrow><mo form="prefix" stretchy="true">|</mo><mi>P</mi><mi>B</mi><mo form="postfix" stretchy="true">|</mo></mrow><mo>=</mo><mrow><mo form="prefix" stretchy="true">|</mo><mi>P</mi><mi>C</mi><mo form="postfix" stretchy="true">|</mo></mrow><mo>•</mo></mrow><annotation encoding="application/x-tex">|PA| \bullet |PB| = |PC| \bullet</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo form="prefix" stretchy="true">|</mo><mi>P</mi><mi>D</mi><mo form="postfix" stretchy="true">|</mo></mrow><annotation encoding="application/x-tex">|PD|</annotation></semantics></math>.</p></body>
 </html>
