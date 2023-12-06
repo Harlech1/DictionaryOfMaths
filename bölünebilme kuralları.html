@@ -1,21 +1,38 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>bölünebilme kuralları</title>
-    <style>
-        body {
-            font-size: 16px; /* Örnek bir font boyutu */
-            font-family: Arial, sans-serif; /* Örnek bir font ailesi */
-            color: #333; /* Metin rengi */
-            background-color: #fff; /* Arka plan rengi */
-            line-height: 1.5; /* Satır aralığı */
-        }
-    </style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>"matematik sözlüğü"</title>
+<style>
+            body {
+                font-size: 16px;
+                font-family: Arial, sans-serif; 
+                color: #333; 
+                background-color: #fff; 
+                line-height: 1.5; 
+            }
+            body.dark-mode {
+                color: #fff; 
+                background-color: #333; 
+            }
+        </style>
+<script>
+            function detectDarkMode() {
+                const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+                if (prefersDarkScheme.matches) {
+                    document.body.classList.add("dark-mode");
+                } else {
+                    document.body.classList.remove("dark-mode");
+                }
+            }
+
+            window.onload = detectDarkMode;
+        </script>
 </head>
 <body>
-    <p> divisibility rules; rules of
+<p> divisibility rules; rules of
 divisibility</p>
 <p><u>A number is divisible</u></p>
 <p>by two if the units digit is 0 , 2, 4, 6 or 8,</p>
@@ -49,20 +66,20 @@ digits are: 1,2,3,4,5,6,7,8,9,12, 24,...</p>
 <p>If
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
 is a prime number and
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mspace width="0.222em"></mspace><mi>p</mi><mo stretchy="true" form="postfix">|</mo></mrow><mi>a</mi><mi>b</mi></mrow><annotation encoding="application/x-tex">\left. \ p \right|ab</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mspace width="0.222em"></mspace><mi>p</mi><mo form="postfix" stretchy="true">|</mo></mrow><mi>a</mi><mi>b</mi></mrow><annotation encoding="application/x-tex">\left. \ p \right|ab</annotation></semantics></math>
 (means
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
 divides
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mi>b</mi></mrow><annotation encoding="application/x-tex">ab</annotation></semantics></math>),
 then
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mspace width="0.222em"></mspace><mi>p</mi><mo stretchy="true" form="postfix">|</mo></mrow><mi>a</mi></mrow><annotation encoding="application/x-tex">\left. \ p \right|a</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mspace width="0.222em"></mspace><mi>p</mi><mo form="postfix" stretchy="true">|</mo></mrow><mi>a</mi></mrow><annotation encoding="application/x-tex">\left. \ p \right|a</annotation></semantics></math>
 or
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mspace width="0.222em"></mspace><mi>p</mi><mo stretchy="true" form="postfix">|</mo></mrow><mi>b</mi></mrow><annotation encoding="application/x-tex">\left. \ p \right|b</annotation></semantics></math>.</p>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mspace width="0.222em"></mspace><mi>p</mi><mo form="postfix" stretchy="true">|</mo></mrow><mi>b</mi></mrow><annotation encoding="application/x-tex">\left. \ p \right|b</annotation></semantics></math>.</p>
 <p>If
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
 is a prime number and
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mspace width="0.222em"></mspace><mi>p</mi><mo stretchy="true" form="postfix">|</mo></mrow><msup><mi>a</mi><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">\left. \ p \right|a^{n}</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mspace width="0.222em"></mspace><mi>p</mi><mo form="postfix" stretchy="true">|</mo></mrow><msup><mi>a</mi><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">\left. \ p \right|a^{n}</annotation></semantics></math>
 , then
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mspace width="0.222em"></mspace><mi>p</mi><mo stretchy="true" form="postfix">|</mo></mrow><mi>a</mi></mrow><annotation encoding="application/x-tex">\left. \ p \right|a</annotation></semantics></math>.</p>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mspace width="0.222em"></mspace><mi>p</mi><mo form="postfix" stretchy="true">|</mo></mrow><mi>a</mi></mrow><annotation encoding="application/x-tex">\left. \ p \right|a</annotation></semantics></math>.</p>
 </body>
 </html>
