@@ -1,27 +1,43 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>düzgün çok yüzlü</title>
-    <style>
-        body {
-            font-size: 16px;
-            font-family: Arial, sans-serif; 
-            color: #333; 
-            background-color: #fff; 
-            line-height: 1.5; 
-        }
-    </style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>"matematik sözlüğü"</title>
+<style>
+            body {
+                font-size: 16px;
+                font-family: Arial, sans-serif; 
+                color: #333; 
+                background-color: #fff; 
+                line-height: 1.5; 
+            }
+            body.dark-mode {
+                color: #fff; 
+                background-color: #333; 
+            }
+        </style>
+<script>
+            function detectDarkMode() {
+                const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+                if (prefersDarkScheme.matches) {
+                    document.body.classList.add("dark-mode");
+                } else {
+                    document.body.classList.remove("dark-mode");
+                }
+            }
+
+            window.onload = detectDarkMode;
+        </script>
 </head>
 <body>
-    <p> regular polyhedron</p>
+<p> regular polyhedron</p>
 <p>It is a convex polyhedron in which all of the faces are congruent
 regular polygons, with the same number of</p>
 <p>faces meeting at each vertex . They are also called platonic solids
 after the Greek philosopher Plato.The five</p>
 <p>platonic solids are :</p>
-
 <p> regular hexahedron; cube (6
 faces , 8 vertices, and 12 edges)</p>
 <p> regular
@@ -33,6 +49,5 @@ edges)</p>
 vertices, and 12 edges)</p>
 <p> regular icosahedron (20 faces ,
 12 vertices, and 30 edges)</p>
-
 </body>
 </html>

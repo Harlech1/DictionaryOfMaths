@@ -1,21 +1,38 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>düzgün sekiz yüzlü</title>
-    <style>
-        body {
-            font-size: 16px;
-            font-family: Arial, sans-serif; 
-            color: #333; 
-            background-color: #fff; 
-            line-height: 1.5; 
-        }
-    </style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>"matematik sözlüğü"</title>
+<style>
+            body {
+                font-size: 16px;
+                font-family: Arial, sans-serif; 
+                color: #333; 
+                background-color: #fff; 
+                line-height: 1.5; 
+            }
+            body.dark-mode {
+                color: #fff; 
+                background-color: #333; 
+            }
+        </style>
+<script>
+            function detectDarkMode() {
+                const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+                if (prefersDarkScheme.matches) {
+                    document.body.classList.add("dark-mode");
+                } else {
+                    document.body.classList.remove("dark-mode");
+                }
+            }
+
+            window.onload = detectDarkMode;
+        </script>
 </head>
 <body>
-    <p> regular octahedron</p>
+<p> regular octahedron</p>
 <p>The platonic solid which has eight equilateral faces.</p>
 <p>It has 6 vertices and 12 edges. Length of each edge:
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math></p>
@@ -26,7 +43,7 @@
 Area of each face =
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><msup><mi>a</mi><mn>2</mn></msup><msqrt><mn>3</mn></msqrt></mrow><mn>4</mn></mfrac><annotation encoding="application/x-tex">\frac{a^{2}\sqrt{3}}{4}</annotation></semantics></math></p>
 <p>Total surface area:
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mi>.</mi><mi>A</mi><mi>.</mi><mo>=</mo><mn>8</mn><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mrow><mspace width="0.222em"></mspace><msup><mi>a</mi><mn>2</mn></msup><msqrt><mn>3</mn></msqrt></mrow><mn>4</mn></mfrac><mspace width="0.222em"></mspace><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mspace width="0.222em"></mspace><mn>2</mn><msup><mi>a</mi><mn>2</mn></msup><msqrt><mn>3</mn></msqrt></mrow><annotation encoding="application/x-tex">S.A. = 8(\frac{\ a^{2}\sqrt{3}}{4}\ ) = \ 2a^{2}\sqrt{3}</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mi>.</mi><mi>A</mi><mi>.</mi><mo>=</mo><mn>8</mn><mrow><mo form="prefix" stretchy="true">(</mo><mfrac><mrow><mspace width="0.222em"></mspace><msup><mi>a</mi><mn>2</mn></msup><msqrt><mn>3</mn></msqrt></mrow><mn>4</mn></mfrac><mspace width="0.222em"></mspace><mo form="postfix" stretchy="true">)</mo></mrow><mo>=</mo><mspace width="0.222em"></mspace><mn>2</mn><msup><mi>a</mi><mn>2</mn></msup><msqrt><mn>3</mn></msqrt></mrow><annotation encoding="application/x-tex">S.A. = 8(\frac{\ a^{2}\sqrt{3}}{4}\ ) = \ 2a^{2}\sqrt{3}</annotation></semantics></math>
 Volume:
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>=</mo><mfrac><mrow><msup><mi>a</mi><mn>3</mn></msup><msqrt><mn>2</mn></msqrt></mrow><mn>3</mn></mfrac></mrow><annotation encoding="application/x-tex">V = \frac{a^{3}\sqrt{2}}{3}</annotation></semantics></math></p>
 </body>

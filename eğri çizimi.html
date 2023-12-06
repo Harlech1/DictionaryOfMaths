@@ -1,39 +1,39 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>"matematik sözlüğü"</title>
-    <style>
-        body {
-            font-size: 16px;
-            font-family: Arial, sans-serif; 
-            color: #333; 
-            background-color: #fff; 
-            line-height: 1.5; 
-        }
-        body.dark-mode {
-            color: #fff; 
-            background-color: #333; 
-        }
-    </style>
-    <script>
-        function detectDarkMode() {
-            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
-            if (prefersDarkScheme.matches) {
-                document.body.classList.add("dark-mode");
-            } else {
-                document.body.classList.remove("dark-mode");
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>"matematik sözlüğü"</title>
+<style>
+            body {
+                font-size: 16px;
+                font-family: Arial, sans-serif; 
+                color: #333; 
+                background-color: #fff; 
+                line-height: 1.5; 
             }
-        }
-        
-        window.onload = detectDarkMode;
-    </script>
+            body.dark-mode {
+                color: #fff; 
+                background-color: #333; 
+            }
+        </style>
+<script>
+            function detectDarkMode() {
+                const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+                if (prefersDarkScheme.matches) {
+                    document.body.classList.add("dark-mode");
+                } else {
+                    document.body.classList.remove("dark-mode");
+                }
+            }
+
+            window.onload = detectDarkMode;
+        </script>
 </head>
 <body>
-    <p> curve plotting; curve tracing; curve
+<p> curve plotting; curve tracing; curve
 sketching; graphing the curve</p>
-
 <p>Find the domain. Calculate
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mspace width="0.222em"></mspace><mi>d</mi><mi>y</mi></mrow><mrow><mi>d</mi><mi>x</mi></mrow></mfrac><mspace width="0.222em"></mspace></mrow><annotation encoding="application/x-tex">\frac{\ dy}{dx}\ </annotation></semantics></math>and
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><msup><mi>d</mi><mn>2</mn></msup><mi>y</mi></mrow><mrow><mi>d</mi><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac><annotation encoding="application/x-tex">\frac{d^{2}y}{dx^{2}}</annotation></semantics></math>
@@ -46,7 +46,7 @@ Find
 and
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math>-intercepts.</p>
 <p>Test end behavior
-<em>(</em><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><mo>∓</mo><mi>∞</mi></mrow></msub><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi></mrow><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>?</mi></mrow><annotation encoding="application/x-tex">\lim_{x \rightarrow \mp \infty}{f(x}) = ?</annotation></semantics></math>).
+<em>(</em><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><mo>∓</mo><mi>∞</mi></mrow></msub><mrow><mi>f</mi><mo form="prefix" stretchy="false">(</mo><mi>x</mi></mrow><mo form="postfix" stretchy="false">)</mo><mo>=</mo><mi>?</mi></mrow><annotation encoding="application/x-tex">\lim_{x \rightarrow \mp \infty}{f(x}) = ?</annotation></semantics></math>).
 Find the asymptotes if they exist. Sketch the graph.</p>
 </body>
 </html>
