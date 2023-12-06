@@ -1,21 +1,38 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>daire diliminin alanı</title>
-    <style>
-        body {
-            font-size: 16px;
-            font-family: Arial, sans-serif; 
-            color: #333; 
-            background-color: #fff; 
-            line-height: 1.5; 
-        }
-    </style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>"matematik sözlüğü"</title>
+<style>
+            body {
+                font-size: 16px;
+                font-family: Arial, sans-serif; 
+                color: #333; 
+                background-color: #fff; 
+                line-height: 1.5; 
+            }
+            body.dark-mode {
+                color: #fff; 
+                background-color: #333; 
+            }
+        </style>
+<script>
+            function detectDarkMode() {
+                const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+                if (prefersDarkScheme.matches) {
+                    document.body.classList.add("dark-mode");
+                } else {
+                    document.body.classList.remove("dark-mode");
+                }
+            }
+
+            window.onload = detectDarkMode;
+        </script>
 </head>
 <body>
-    <p> area of the sector of the
+<p> area of the sector of the
 circle</p>
 <p>The area of the sector ofa circle of radius r formed by a central
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>θ</mi><mspace width="0.222em"></mspace></mrow><annotation encoding="application/x-tex">\theta\ </annotation></semantics></math>degrees
@@ -23,10 +40,10 @@ circle</p>
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>α</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math>
 radians )</p>
 <p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>A</mi><mi>s</mi></msub><mo>=</mo><mfrac><mrow><mi>π</mi><msup><mi>r</mi><mn>2</mn></msup><msup><mi>θ</mi><mn>0</mn></msup></mrow><msup><mn>360</mn><mi>o</mi></msup></mfrac></mrow><annotation encoding="application/x-tex">A_{s} = \frac{\pi r^{2}\theta^{0}}{360^{o}}</annotation></semantics></math>
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mrow><mo stretchy="true" form="prefix">(</mo><mi>a</mi><mi>r</mi><mi>c</mi><mspace width="0.222em"></mspace><mi>l</mi><mi>e</mi><mi>n</mi><mi>g</mi><mi>t</mi><mi>h</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>•</mo><mi>r</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mspace width="0.222em"></mspace><mi>l</mi><mi>r</mi></mrow><annotation encoding="application/x-tex">= \frac{1}{2}(arc\ length) \bullet r = \frac{1}{2}\ lr</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mrow><mo form="prefix" stretchy="true">(</mo><mi>a</mi><mi>r</mi><mi>c</mi><mspace width="0.222em"></mspace><mi>l</mi><mi>e</mi><mi>n</mi><mi>g</mi><mi>t</mi><mi>h</mi><mo form="postfix" stretchy="true">)</mo></mrow><mo>•</mo><mi>r</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mspace width="0.222em"></mspace><mi>l</mi><mi>r</mi></mrow><annotation encoding="application/x-tex">= \frac{1}{2}(arc\ length) \bullet r = \frac{1}{2}\ lr</annotation></semantics></math>
 or
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>A</mi><mi>s</mi></msub><mo>=</mo><mi>π</mi><msup><mi>r</mi><mn>2</mn></msup><mi>.</mi><mfrac><mrow><mi>α</mi><mspace width="0.222em"></mspace><mi>r</mi><mi>a</mi><mi>d</mi><mi>i</mi><mi>a</mi><mi>n</mi><mi>s</mi></mrow><mrow><mn>2</mn><mi>π</mi></mrow></mfrac><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mspace width="0.222em"></mspace><msup><mi>r</mi><mn>2</mn></msup><mi>α</mi></mrow><annotation encoding="application/x-tex">A_{s} = \pi r^{2}.\frac{\alpha\ radians}{2\pi} = \frac{1}{2}\ r^{2}\alpha</annotation></semantics></math></p>
-<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mspace width="0.222em"></mspace><mfrac><mrow><mi>a</mi><mi>r</mi><mi>e</mi><mi>a</mi><mspace width="0.222em"></mspace><mi>o</mi><mi>f</mi><mspace width="0.222em"></mspace><mi>t</mi><mi>h</mi><mi>e</mi><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mi>s</mi><mi>e</mi><mi>c</mi><mi>t</mi><mi>o</mi><mi>r</mi></mrow><mrow><mi>a</mi><mi>r</mi><mi>e</mi><mi>a</mi><mspace width="0.222em"></mspace><mi>o</mi><mi>f</mi><mspace width="0.222em"></mspace><mi>t</mi><mi>h</mi><mi>e</mi><mspace width="0.222em"></mspace><mi>c</mi><mi>i</mi><mi>r</mi><mi>c</mi><mi>u</mi><mi>l</mi><mi>a</mi><mi>r</mi><mspace width="0.222em"></mspace><mi>r</mi><mi>e</mi><mi>g</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></mfrac><mo>=</mo><mfrac><msub><mi>A</mi><mi>s</mi></msub><mi>A</mi></mfrac><mo>=</mo><mspace width="0.222em"></mspace><mfrac><msup><mi>θ</mi><mn>0</mn></msup><msup><mn>360</mn><mi>o</mi></msup></mfrac><mo>=</mo><mspace width="0.222em"></mspace><mfrac><mrow><mi>α</mi><mspace width="0.222em"></mspace><mrow><mo stretchy="true" form="prefix">(</mo><mi>r</mi><mi>a</mi><mi>d</mi><mi>i</mi><mi>a</mi><mi>n</mi><mi>s</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><mrow><mn>2</mn><mi>π</mi></mrow></mfrac><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace></mrow><annotation encoding="application/x-tex">\ \frac{area\ of\ the\ \ sector}{area\ of\ the\ circular\ region} = \frac{A_{s}}{A} = \ \frac{\theta^{0}}{360^{o}} = \ \frac{\alpha\ (radians)}{2\pi}\ \ \ </annotation></semantics></math></p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mspace width="0.222em"></mspace><mfrac><mrow><mi>a</mi><mi>r</mi><mi>e</mi><mi>a</mi><mspace width="0.222em"></mspace><mi>o</mi><mi>f</mi><mspace width="0.222em"></mspace><mi>t</mi><mi>h</mi><mi>e</mi><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mi>s</mi><mi>e</mi><mi>c</mi><mi>t</mi><mi>o</mi><mi>r</mi></mrow><mrow><mi>a</mi><mi>r</mi><mi>e</mi><mi>a</mi><mspace width="0.222em"></mspace><mi>o</mi><mi>f</mi><mspace width="0.222em"></mspace><mi>t</mi><mi>h</mi><mi>e</mi><mspace width="0.222em"></mspace><mi>c</mi><mi>i</mi><mi>r</mi><mi>c</mi><mi>u</mi><mi>l</mi><mi>a</mi><mi>r</mi><mspace width="0.222em"></mspace><mi>r</mi><mi>e</mi><mi>g</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></mfrac><mo>=</mo><mfrac><msub><mi>A</mi><mi>s</mi></msub><mi>A</mi></mfrac><mo>=</mo><mspace width="0.222em"></mspace><mfrac><msup><mi>θ</mi><mn>0</mn></msup><msup><mn>360</mn><mi>o</mi></msup></mfrac><mo>=</mo><mspace width="0.222em"></mspace><mfrac><mrow><mi>α</mi><mspace width="0.222em"></mspace><mrow><mo form="prefix" stretchy="true">(</mo><mi>r</mi><mi>a</mi><mi>d</mi><mi>i</mi><mi>a</mi><mi>n</mi><mi>s</mi><mo form="postfix" stretchy="true">)</mo></mrow></mrow><mrow><mn>2</mn><mi>π</mi></mrow></mfrac><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace></mrow><annotation encoding="application/x-tex">\ \frac{area\ of\ the\ \ sector}{area\ of\ the\ circular\ region} = \frac{A_{s}}{A} = \ \frac{\theta^{0}}{360^{o}} = \ \frac{\alpha\ (radians)}{2\pi}\ \ \ </annotation></semantics></math></p>
 <p>The ratio of the areas of the sectors bounded by two arcs equals the
 ratio of the square of ratio of the lengths of these arcs.</p>
 </body>

@@ -1,30 +1,47 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>de Morgan kuralları</title>
-    <style>
-        body {
-            font-size: 16px;
-            font-family: Arial, sans-serif; 
-            color: #333; 
-            background-color: #fff; 
-            line-height: 1.5; 
-        }
-    </style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>"matematik sözlüğü"</title>
+<style>
+            body {
+                font-size: 16px;
+                font-family: Arial, sans-serif; 
+                color: #333; 
+                background-color: #fff; 
+                line-height: 1.5; 
+            }
+            body.dark-mode {
+                color: #fff; 
+                background-color: #333; 
+            }
+        </style>
+<script>
+            function detectDarkMode() {
+                const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+                if (prefersDarkScheme.matches) {
+                    document.body.classList.add("dark-mode");
+                } else {
+                    document.body.classList.remove("dark-mode");
+                }
+            }
+
+            window.onload = detectDarkMode;
+        </script>
 </head>
 <body>
-    <p> de Morgan’s laws</p>
+<p> de Morgan’s laws</p>
 <p>In logic, for the negation of statements:
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo>*</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>p</mi><mspace width="0.222em"></mspace><msubsup><mo>⋀</mo><mrow></mrow><mrow></mrow></msubsup><mspace width="0.222em"></mspace><mi>q</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><mi>′</mi></msup><mo mathvariant="bold">≡</mo></mrow><annotation encoding="application/x-tex">{*\left( p\ \bigwedge_{}^{}\ q \right)}^{&#39;}\mathbf{\equiv}</annotation></semantics></math>
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>p</mi><mi>′</mi></msup><mspace width="0.222em"></mspace><mo>⋁</mo><msup><mrow><mspace width="0.222em"></mspace><mi>q</mi></mrow><mi>′</mi></msup></mrow><annotation encoding="application/x-tex">p^{&#39;}\ \bigvee{\ q}^{&#39;}</annotation></semantics></math>
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo>*</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>p</mi><mspace width="0.222em"></mspace><msubsup><mo>⋁</mo><mrow></mrow><mrow></mrow></msubsup><mspace width="0.222em"></mspace><mi>q</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><mi>′</mi></msup><mo mathvariant="bold">≡</mo></mrow><annotation encoding="application/x-tex">{*\left( p\ \bigvee_{}^{}\ q \right)}^{&#39;}\mathbf{\equiv}</annotation></semantics></math>
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>p</mi><mi>′</mi></msup><msubsup><mo>⋀</mo><mrow></mrow><mrow></mrow></msubsup><mspace width="0.222em"></mspace><msup><mi>q</mi><mi>′</mi></msup></mrow><annotation encoding="application/x-tex">p^{&#39;}\bigwedge_{}^{}\ q^{&#39;}</annotation></semantics></math>
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo>*</mo><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>p</mi><mi>′</mi></msup><mo stretchy="true" form="postfix">)</mo></mrow></mrow><mi>′</mi></msup><mo mathvariant="bold">≡</mo><mi>p</mi></mrow><annotation encoding="application/x-tex">{*\left( p^{&#39;} \right)}^{&#39;}\mathbf{\equiv}p</annotation></semantics></math></p>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo>*</mo><mrow><mo form="prefix" stretchy="true">(</mo><mi>p</mi><mspace width="0.222em"></mspace><msubsup><mo>⋀</mo><mrow></mrow><mrow></mrow></msubsup><mspace width="0.222em"></mspace><mi>q</mi><mo form="postfix" stretchy="true">)</mo></mrow></mrow><mi>′</mi></msup><mo mathvariant="bold">≡</mo></mrow><annotation encoding="application/x-tex">{*\left( p\ \bigwedge_{}^{}\ q \right)}^{'}\mathbf{\equiv}</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>p</mi><mi>′</mi></msup><mspace width="0.222em"></mspace><mo>⋁</mo><msup><mrow><mspace width="0.222em"></mspace><mi>q</mi></mrow><mi>′</mi></msup></mrow><annotation encoding="application/x-tex">p^{'}\ \bigvee{\ q}^{'}</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo>*</mo><mrow><mo form="prefix" stretchy="true">(</mo><mi>p</mi><mspace width="0.222em"></mspace><msubsup><mo>⋁</mo><mrow></mrow><mrow></mrow></msubsup><mspace width="0.222em"></mspace><mi>q</mi><mo form="postfix" stretchy="true">)</mo></mrow></mrow><mi>′</mi></msup><mo mathvariant="bold">≡</mo></mrow><annotation encoding="application/x-tex">{*\left( p\ \bigvee_{}^{}\ q \right)}^{'}\mathbf{\equiv}</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>p</mi><mi>′</mi></msup><msubsup><mo>⋀</mo><mrow></mrow><mrow></mrow></msubsup><mspace width="0.222em"></mspace><msup><mi>q</mi><mi>′</mi></msup></mrow><annotation encoding="application/x-tex">p^{'}\bigwedge_{}^{}\ q^{'}</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo>*</mo><mrow><mo form="prefix" stretchy="true">(</mo><msup><mi>p</mi><mi>′</mi></msup><mo form="postfix" stretchy="true">)</mo></mrow></mrow><mi>′</mi></msup><mo mathvariant="bold">≡</mo><mi>p</mi></mrow><annotation encoding="application/x-tex">{*\left( p^{'} \right)}^{'}\mathbf{\equiv}p</annotation></semantics></math></p>
 <p>For the complement of sets:
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo>*</mo><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>A</mi><mi>′</mi></msup><mo stretchy="true" form="postfix">)</mo></mrow></mrow><mi>′</mi></msup><mo>=</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">{*\left( A^{&#39;} \right)}^{&#39;} = A</annotation></semantics></math>
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo>*</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>A</mi><mo>∪</mo><mi>B</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><mi>′</mi></msup><mo>=</mo><msup><mi>A</mi><mi>′</mi></msup><mo>∩</mo><msup><mi>B</mi><mi>′</mi></msup></mrow><annotation encoding="application/x-tex">{*(A \cup B)}^{&#39;} = A^{&#39;} \cap B^{&#39;}</annotation></semantics></math>
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo>*</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>A</mi><mo>∩</mo><mi>B</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><mi>′</mi></msup><mo>=</mo><msup><mi>A</mi><mi>′</mi></msup><mo>∪</mo><msup><mi>B</mi><mi>′</mi></msup></mrow><annotation encoding="application/x-tex">{*(A \cap B)}^{&#39;} = A^{&#39;} \cup B^{&#39;}</annotation></semantics></math></p>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo>*</mo><mrow><mo form="prefix" stretchy="true">(</mo><msup><mi>A</mi><mi>′</mi></msup><mo form="postfix" stretchy="true">)</mo></mrow></mrow><mi>′</mi></msup><mo>=</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">{*\left( A^{'} \right)}^{'} = A</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo>*</mo><mrow><mo form="prefix" stretchy="true">(</mo><mi>A</mi><mo>∪</mo><mi>B</mi><mo form="postfix" stretchy="true">)</mo></mrow></mrow><mi>′</mi></msup><mo>=</mo><msup><mi>A</mi><mi>′</mi></msup><mo>∩</mo><msup><mi>B</mi><mi>′</mi></msup></mrow><annotation encoding="application/x-tex">{*(A \cup B)}^{'} = A^{'} \cap B^{'}</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo>*</mo><mrow><mo form="prefix" stretchy="true">(</mo><mi>A</mi><mo>∩</mo><mi>B</mi><mo form="postfix" stretchy="true">)</mo></mrow></mrow><mi>′</mi></msup><mo>=</mo><msup><mi>A</mi><mi>′</mi></msup><mo>∪</mo><msup><mi>B</mi><mi>′</mi></msup></mrow><annotation encoding="application/x-tex">{*(A \cap B)}^{'} = A^{'} \cup B^{'}</annotation></semantics></math></p>
 </body>
 </html>
