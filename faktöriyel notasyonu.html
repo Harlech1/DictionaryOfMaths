@@ -1,37 +1,38 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>"matematik sözlüğü"</title>
-    <style>
-        body {
-            font-size: 16px;
-            font-family: Arial, sans-serif; 
-            color: #333; 
-            background-color: #fff; 
-            line-height: 1.5; 
-        }
-        body.dark-mode {
-            color: #fff; 
-            background-color: #333; 
-        }
-    </style>
-    <script>
-        function detectDarkMode() {
-            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
-            if (prefersDarkScheme.matches) {
-                document.body.classList.add("dark-mode");
-            } else {
-                document.body.classList.remove("dark-mode");
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>"matematik sözlüğü"</title>
+<style>
+            body {
+                font-size: 16px;
+                font-family: Arial, sans-serif; 
+                color: #333; 
+                background-color: #fff; 
+                line-height: 1.5; 
             }
-        }
-        
-        window.onload = detectDarkMode;
-    </script>
+            body.dark-mode {
+                color: #fff; 
+                background-color: #333; 
+            }
+        </style>
+<script>
+            function detectDarkMode() {
+                const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+                if (prefersDarkScheme.matches) {
+                    document.body.classList.add("dark-mode");
+                } else {
+                    document.body.classList.remove("dark-mode");
+                }
+            }
+
+            window.onload = detectDarkMode;
+        </script>
 </head>
 <body>
-    <p> factorial notation</p>
+<p> factorial notation</p>
 <p>The factorial
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mi>!</mi></mrow><annotation encoding="application/x-tex">n!</annotation></semantics></math>
 gives the number of ways in which
@@ -41,9 +42,8 @@ objects can be permuted.</p>
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
 grows large, factorials begin acquiring tails of trailing zeros.</p>
 <p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mi>!</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">0! = 1</annotation></semantics></math>
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mi>!</mi><mo>=</mo><mi>n</mi><mrow><mo stretchy="true" form="prefix">[</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>n</mi><mo>−</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mi>!</mi><mo stretchy="true" form="postfix">]</mo></mrow></mrow><annotation encoding="application/x-tex">n! = n\left\lbrack (n - 1)! \right\rbrack</annotation></semantics></math>
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mi>!</mi><mo>=</mo><mi>n</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>n</mi><mo>−</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mo stretchy="true" form="prefix">[</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>n</mi><mo>−</mo><mn>2</mn><mo stretchy="true" form="postfix">)</mo></mrow><mi>!</mi><mo stretchy="true" form="postfix">]</mo></mrow></mrow><annotation encoding="application/x-tex">n! = n(n - 1)\left\lbrack (n - 2)! \right\rbrack</annotation></semantics></math></p>
-
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mi>!</mi><mo>=</mo><mi>n</mi><mrow><mo form="prefix" stretchy="true">[</mo><mrow><mo form="prefix" stretchy="true">(</mo><mi>n</mi><mo>−</mo><mn>1</mn><mo form="postfix" stretchy="true">)</mo></mrow><mi>!</mi><mo form="postfix" stretchy="true">]</mo></mrow></mrow><annotation encoding="application/x-tex">n! = n\left\lbrack (n - 1)! \right\rbrack</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mi>!</mi><mo>=</mo><mi>n</mi><mrow><mo form="prefix" stretchy="true">(</mo><mi>n</mi><mo>−</mo><mn>1</mn><mo form="postfix" stretchy="true">)</mo></mrow><mrow><mo form="prefix" stretchy="true">[</mo><mrow><mo form="prefix" stretchy="true">(</mo><mi>n</mi><mo>−</mo><mn>2</mn><mo form="postfix" stretchy="true">)</mo></mrow><mi>!</mi><mo form="postfix" stretchy="true">]</mo></mrow></mrow><annotation encoding="application/x-tex">n! = n(n - 1)\left\lbrack (n - 2)! \right\rbrack</annotation></semantics></math></p>
 <p>The only known factorials which are products of factorials in an
 arithmetic sequence are:</p>
 <p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mi>!</mi><mn>1</mn><mi>!</mi><mo>=</mo><mn>1</mn><mi>!</mi></mrow><annotation encoding="application/x-tex">0!1! = 1!</annotation></semantics></math>
