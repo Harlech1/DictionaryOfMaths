@@ -1,34 +1,51 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>iki düzlem arasındaki açı</title>
-    <style>
-        body {
-            font-size: 16px;
-            font-family: Arial, sans-serif; 
-            color: #333; 
-            background-color: #fff; 
-            line-height: 1.5; 
-        }
-    </style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>"matematik sözlüğü"</title>
+<style>
+            body {
+                font-size: 16px;
+                font-family: Arial, sans-serif; 
+                color: #333; 
+                background-color: #fff; 
+                line-height: 1.5; 
+            }
+            body.dark-mode {
+                color: #fff; 
+                background-color: #333; 
+            }
+        </style>
+<script>
+            function detectDarkMode() {
+                const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+                if (prefersDarkScheme.matches) {
+                    document.body.classList.add("dark-mode");
+                } else {
+                    document.body.classList.remove("dark-mode");
+                }
+            }
+
+            window.onload = detectDarkMode;
+        </script>
 </head>
 <body>
-    <p> angle betwwen two
+<p> angle betwwen two
 planes</p>
 <p>If the angle between two planes
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>A</mi><mn>1</mn></msub><mi>x</mi><mo>+</mo><msub><mi>B</mi><mn>1</mn></msub><mi>y</mi><mo>+</mo><msub><mi>C</mi><mn>1</mn></msub><mi>z</mi><mo>+</mo><msub><mi>D</mi><mn>1</mn></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">A_{1}x + B_{1}y + C_{1}z + D_{1} = 0</annotation></semantics></math>
 and
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>A</mi><mn>2</mn></msub><mi>x</mi><mo>+</mo><msub><mi>B</mi><mn>2</mn></msub><mi>y</mi><mo>+</mo><msub><mi>C</mi><mn>2</mn></msub><mi>z</mi><mo>+</mo><msub><mi>D</mi><mn>2</mn></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">A_{2}x + B_{2}y + C_{2}z + D_{2} = 0</annotation></semantics></math>
 which have normal vectors
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mover><mi>N</mi><mo accent="true">→</mo></mover><mn>1</mn></msub><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>A</mi><mn>1</mn></msub><mo>,</mo><msub><mi>B</mi><mn>1</mn></msub><mo>,</mo><msub><mi>C</mi><mn>1</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">{\overrightarrow{N}}_{1} = (A_{1},B_{1},C_{1})</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mover><mi>N</mi><mo accent="true">→</mo></mover><mn>1</mn></msub><mo>=</mo><mrow><mo form="prefix" stretchy="true">(</mo><msub><mi>A</mi><mn>1</mn></msub><mo>,</mo><msub><mi>B</mi><mn>1</mn></msub><mo>,</mo><msub><mi>C</mi><mn>1</mn></msub><mo form="postfix" stretchy="true">)</mo></mrow></mrow><annotation encoding="application/x-tex">{\overrightarrow{N}}_{1} = (A_{1},B_{1},C_{1})</annotation></semantics></math>
 and
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mover><mi>N</mi><mo accent="true">→</mo></mover><mn>2</mn></msub><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>A</mi><mn>2</mn></msub><mo>,</mo><msub><mi>B</mi><mn>2</mn></msub><mo>,</mo><msub><mi>C</mi><mn>2</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">{\overrightarrow{N}}_{2} = (A_{2},B_{2},C_{2})</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mover><mi>N</mi><mo accent="true">→</mo></mover><mn>2</mn></msub><mo>=</mo><mrow><mo form="prefix" stretchy="true">(</mo><msub><mi>A</mi><mn>2</mn></msub><mo>,</mo><msub><mi>B</mi><mn>2</mn></msub><mo>,</mo><msub><mi>C</mi><mn>2</mn></msub><mo form="postfix" stretchy="true">)</mo></mrow></mrow><annotation encoding="application/x-tex">{\overrightarrow{N}}_{2} = (A_{2},B_{2},C_{2})</annotation></semantics></math>
 is
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>θ</mi><annotation encoding="application/x-tex">\theta</annotation></semantics></math>,
 then
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>cos</mo><mrow><mi>θ</mi><mo>=</mo><mfrac><mrow><mo stretchy="true" form="prefix">|</mo><msub><mover><mi>N</mi><mo accent="true">→</mo></mover><mn>1</mn></msub><mo>•</mo><mspace width="0.222em"></mspace><msub><mover><mi>N</mi><mo accent="true">→</mo></mover><mn>2</mn></msub><mo stretchy="true" form="postfix">|</mo></mrow><mrow><mrow><mo stretchy="true" form="prefix">∥</mo><msub><mover><mi>N</mi><mo accent="true">→</mo></mover><mn>1</mn></msub><mo stretchy="true" form="postfix">∥</mo></mrow><mrow><mo stretchy="true" form="prefix">∥</mo><msub><mover><mi>N</mi><mo accent="true">→</mo></mover><mn>2</mn></msub><mo stretchy="true" form="postfix">∥</mo></mrow></mrow></mfrac><mo>=</mo><mfrac><mrow><mo stretchy="true" form="prefix">|</mo><msub><mi>A</mi><mn>1</mn></msub><msub><mi>A</mi><mn>2</mn></msub><mo>+</mo><msub><mi>B</mi><mn>1</mn></msub><msub><mi>B</mi><mn>2</mn></msub><mo>+</mo><msub><mi>C</mi><mn>1</mn></msub><msub><mi>C</mi><mn>2</mn></msub><mo stretchy="true" form="postfix">|</mo></mrow><mrow><msqrt><mrow><msup><msub><mi>A</mi><mn>1</mn></msub><mn>2</mn></msup><mo>+</mo><msup><msub><mi>B</mi><mn>1</mn></msub><mn>2</mn></msup><mo>+</mo><msup><msub><mi>C</mi><mn>1</mn></msub><mn>2</mn></msup></mrow></msqrt><mspace width="0.222em"></mspace><msqrt><mrow><msup><msub><mi>A</mi><mn>2</mn></msub><mn>2</mn></msup><mo>+</mo><msup><msub><mi>B</mi><mn>2</mn></msub><mn>2</mn></msup><mo>+</mo><msup><msub><mi>C</mi><mn>2</mn></msub><mn>2</mn></msup></mrow></msqrt></mrow></mfrac></mrow></mrow><annotation encoding="application/x-tex">\cos{\theta = \frac{\left| {\overrightarrow{N}}_{1} \bullet \ {\overrightarrow{N}}_{2} \right|}{\left\| {\overrightarrow{N}}_{1} \right\|\left\| {\overrightarrow{N}}_{2} \right\|} = \frac{\left| A_{1}A_{2} + B_{1}B_{2} + C_{1}C_{2} \right|}{\sqrt{{A_{1}}^{2} + {B_{1}}^{2} + {C_{1}}^{2}}\ \sqrt{{A_{2}}^{2} + {B_{2}}^{2} + {C_{2}}^{2}}}}</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>cos</mo><mrow><mi>θ</mi><mo>=</mo><mfrac><mrow><mo form="prefix" stretchy="true">|</mo><msub><mover><mi>N</mi><mo accent="true">→</mo></mover><mn>1</mn></msub><mo>•</mo><mspace width="0.222em"></mspace><msub><mover><mi>N</mi><mo accent="true">→</mo></mover><mn>2</mn></msub><mo form="postfix" stretchy="true">|</mo></mrow><mrow><mrow><mo form="prefix" stretchy="true">∥</mo><msub><mover><mi>N</mi><mo accent="true">→</mo></mover><mn>1</mn></msub><mo form="postfix" stretchy="true">∥</mo></mrow><mrow><mo form="prefix" stretchy="true">∥</mo><msub><mover><mi>N</mi><mo accent="true">→</mo></mover><mn>2</mn></msub><mo form="postfix" stretchy="true">∥</mo></mrow></mrow></mfrac><mo>=</mo><mfrac><mrow><mo form="prefix" stretchy="true">|</mo><msub><mi>A</mi><mn>1</mn></msub><msub><mi>A</mi><mn>2</mn></msub><mo>+</mo><msub><mi>B</mi><mn>1</mn></msub><msub><mi>B</mi><mn>2</mn></msub><mo>+</mo><msub><mi>C</mi><mn>1</mn></msub><msub><mi>C</mi><mn>2</mn></msub><mo form="postfix" stretchy="true">|</mo></mrow><mrow><msqrt><mrow><msup><msub><mi>A</mi><mn>1</mn></msub><mn>2</mn></msup><mo>+</mo><msup><msub><mi>B</mi><mn>1</mn></msub><mn>2</mn></msup><mo>+</mo><msup><msub><mi>C</mi><mn>1</mn></msub><mn>2</mn></msup></mrow></msqrt><mspace width="0.222em"></mspace><msqrt><mrow><msup><msub><mi>A</mi><mn>2</mn></msub><mn>2</mn></msup><mo>+</mo><msup><msub><mi>B</mi><mn>2</mn></msub><mn>2</mn></msup><mo>+</mo><msup><msub><mi>C</mi><mn>2</mn></msub><mn>2</mn></msup></mrow></msqrt></mrow></mfrac></mrow></mrow><annotation encoding="application/x-tex">\cos{\theta = \frac{\left| {\overrightarrow{N}}_{1} \bullet \ {\overrightarrow{N}}_{2} \right|}{\left\| {\overrightarrow{N}}_{1} \right\|\left\| {\overrightarrow{N}}_{2} \right\|} = \frac{\left| A_{1}A_{2} + B_{1}B_{2} + C_{1}C_{2} \right|}{\sqrt{{A_{1}}^{2} + {B_{1}}^{2} + {C_{1}}^{2}}\ \sqrt{{A_{2}}^{2} + {B_{2}}^{2} + {C_{2}}^{2}}}}</annotation></semantics></math>
 where
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mover><mi>N</mi><mo accent="true">→</mo></mover><mn>1</mn></msub><mo>•</mo><mspace width="0.222em"></mspace><msub><mover><mi>N</mi><mo accent="true">→</mo></mover><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">{\overrightarrow{N}}_{1} \bullet \ {\overrightarrow{N}}_{2}</annotation></semantics></math>
 is the scalar product of
