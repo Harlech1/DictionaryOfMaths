@@ -1,12 +1,38 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>altın dikdörtgen</title>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>"matematik sözlüğü"</title>
+<style>
+            body {
+                font-size: 16px;
+                font-family: Arial, sans-serif; 
+                color: #333; 
+                background-color: #fff; 
+                line-height: 1.5; 
+            }
+            body.dark-mode {
+                color: #fff; 
+                background-color: #333; 
+            }
+        </style>
+<script>
+            function detectDarkMode() {
+                const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+                if (prefersDarkScheme.matches) {
+                    document.body.classList.add("dark-mode");
+                } else {
+                    document.body.classList.remove("dark-mode");
+                }
+            }
+
+            window.onload = detectDarkMode;
+        </script>
 </head>
 <body>
-    <p>golden rectangle</p>
+<p>golden rectangle</p>
 <p>Given a rectangle having sides in the ratio
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>:</mo><mi>φ</mi></mrow><annotation encoding="application/x-tex">1:\varphi</annotation></semantics></math>,
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>φ</mi><annotation encoding="application/x-tex">\varphi</annotation></semantics></math>
@@ -15,14 +41,14 @@ is defined such that partitioning the original</p>
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>:</mo><mi>φ</mi></mrow><annotation encoding="application/x-tex">1:\varphi</annotation></semantics></math>.
 Such a rectangle is called a golden rectangle. In the figure ABCD is the
 given triangle having
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">|</mo><mi>A</mi><mi>D</mi><mo stretchy="true" form="postfix">|</mo></mrow><mo>=</mo><mi>φ</mi><mrow><mo stretchy="true" form="prefix">|</mo><mi>D</mi><mi>C</mi><mo stretchy="true" form="postfix">|</mo></mrow></mrow><annotation encoding="application/x-tex">|AD| = \varphi|DC|</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo form="prefix" stretchy="true">|</mo><mi>A</mi><mi>D</mi><mo form="postfix" stretchy="true">|</mo></mrow><mo>=</mo><mi>φ</mi><mrow><mo form="prefix" stretchy="true">|</mo><mi>D</mi><mi>C</mi><mo form="postfix" stretchy="true">|</mo></mrow></mrow><annotation encoding="application/x-tex">|AD| = \varphi|DC|</annotation></semantics></math>
 , DCEF is a square with side length
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>
 and ABEF is the new rectangle having
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">|</mo><mi>F</mi><mi>E</mi><mo stretchy="true" form="postfix">|</mo></mrow><mo>=</mo><mi>φ</mi><mrow><mo stretchy="true" form="prefix">|</mo><mi>E</mi><mi>B</mi><mo stretchy="true" form="postfix">|</mo></mrow></mrow><annotation encoding="application/x-tex">|FE| = \varphi|EB|</annotation></semantics></math>.
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo form="prefix" stretchy="true">|</mo><mi>F</mi><mi>E</mi><mo form="postfix" stretchy="true">|</mo></mrow><mo>=</mo><mi>φ</mi><mrow><mo form="prefix" stretchy="true">|</mo><mi>E</mi><mi>B</mi><mo form="postfix" stretchy="true">|</mo></mrow></mrow><annotation encoding="application/x-tex">|FE| = \varphi|EB|</annotation></semantics></math>.
 This means that
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mi>a</mi><mrow><mi>a</mi><mi>φ</mi><mo>−</mo><mi>a</mi></mrow></mfrac><mo>=</mo><mi>φ</mi></mrow><annotation encoding="application/x-tex">\frac{a}{a\varphi - a} = \varphi</annotation></semantics></math>
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>⇒</mo><annotation encoding="application/x-tex">\Longrightarrow</annotation></semantics></math>
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>φ</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>+</mo><msqrt><mn>5</mn></msqrt><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mn>1</mn><mo>,</mo><mn>618</mn><mi>.</mi><mi>.</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">\varphi = \frac{1}{2}\left( 1 + \sqrt{5} \right) = 1,618...</annotation></semantics></math></p>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>φ</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mrow><mo form="prefix" stretchy="true">(</mo><mn>1</mn><mo>+</mo><msqrt><mn>5</mn></msqrt><mo form="postfix" stretchy="true">)</mo></mrow><mo>=</mo><mn>1</mn><mo>,</mo><mn>618</mn><mi>.</mi><mi>.</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">\varphi = \frac{1}{2}\left( 1 + \sqrt{5} \right) = 1,618...</annotation></semantics></math></p>
 </body>
 </html>
