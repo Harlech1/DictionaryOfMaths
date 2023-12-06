@@ -1,31 +1,48 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>teğet parçaları</title>
-    <style>
-        body {
-            font-size: 16px;
-            font-family: Arial, sans-serif; 
-            color: #333; 
-            background-color: #fff; 
-            line-height: 1.5; 
-        }
-    </style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>"matematik sözlüğü"</title>
+<style>
+            body {
+                font-size: 16px;
+                font-family: Arial, sans-serif; 
+                color: #333; 
+                background-color: #fff; 
+                line-height: 1.5; 
+            }
+            body.dark-mode {
+                color: #fff; 
+                background-color: #333; 
+            }
+        </style>
+<script>
+            function detectDarkMode() {
+                const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+                if (prefersDarkScheme.matches) {
+                    document.body.classList.add("dark-mode");
+                } else {
+                    document.body.classList.remove("dark-mode");
+                }
+            }
+
+            window.onload = detectDarkMode;
+        </script>
 </head>
 <body>
 <p> segments of tangents</p>
 <p>Given tangent segments
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mi>P</mi><mi>A</mi><mo stretchy="false" form="postfix">]</mo><mspace width="0.222em"></mspace></mrow><annotation encoding="application/x-tex">\lbrack PA\rbrack\ </annotation></semantics></math>and
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mi>P</mi><mi>B</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">\lbrack PB\rbrack</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo form="prefix" stretchy="false">[</mo><mi>P</mi><mi>A</mi><mo form="postfix" stretchy="false">]</mo><mspace width="0.222em"></mspace></mrow><annotation encoding="application/x-tex">\lbrack PA\rbrack\ </annotation></semantics></math>and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo form="prefix" stretchy="false">[</mo><mi>P</mi><mi>B</mi><mo form="postfix" stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">\lbrack PB\rbrack</annotation></semantics></math>
 from the same endpoint
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>P</mi><annotation encoding="application/x-tex">P</annotation></semantics></math>
 outside a circle we have</p>
 <ol type="I">
-<li><p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mi>P</mi><mi>A</mi><mo stretchy="false" form="postfix">]</mo><mi>⊥</mi><mo stretchy="false" form="prefix">[</mo><mi>A</mi><mi>O</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">\lbrack PA\rbrack\bot\lbrack AO\rbrack</annotation></semantics></math>,
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mi>P</mi><mi>B</mi><mo stretchy="false" form="postfix">]</mo><mi>⊥</mi><mo stretchy="false" form="prefix">[</mo><mi>B</mi><mi>O</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">\lbrack PB\rbrack\bot\lbrack BO\rbrack</annotation></semantics></math></p></li>
+<li><p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo form="prefix" stretchy="false">[</mo><mi>P</mi><mi>A</mi><mo form="postfix" stretchy="false">]</mo><mi>⊥</mi><mo form="prefix" stretchy="false">[</mo><mi>A</mi><mi>O</mi><mo form="postfix" stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">\lbrack PA\rbrack\bot\lbrack AO\rbrack</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo form="prefix" stretchy="false">[</mo><mi>P</mi><mi>B</mi><mo form="postfix" stretchy="false">]</mo><mi>⊥</mi><mo form="prefix" stretchy="false">[</mo><mi>B</mi><mi>O</mi><mo form="postfix" stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">\lbrack PB\rbrack\bot\lbrack BO\rbrack</annotation></semantics></math></p></li>
 <li><p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mi>P</mi><mi>A</mi><mi>O</mi><mo>≅</mo><mi mathvariant="normal">Δ</mi><mi>P</mi><mi>B</mi><mi>O</mi></mrow><annotation encoding="application/x-tex">\mathrm{\Delta}PAO \cong \mathrm{\Delta}PBO</annotation></semantics></math></p></li>
-<li><p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">|</mo><mi>P</mi><mi>A</mi><mo stretchy="true" form="postfix">|</mo></mrow><mo>=</mo><mrow><mo stretchy="true" form="prefix">|</mo><mi>P</mi><mi>B</mi><mo stretchy="true" form="postfix">|</mo></mrow></mrow><annotation encoding="application/x-tex">|PA| = |PB|</annotation></semantics></math></p></li>
+<li><p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo form="prefix" stretchy="true">|</mo><mi>P</mi><mi>A</mi><mo form="postfix" stretchy="true">|</mo></mrow><mo>=</mo><mrow><mo form="prefix" stretchy="true">|</mo><mi>P</mi><mi>B</mi><mo form="postfix" stretchy="true">|</mo></mrow></mrow><annotation encoding="application/x-tex">|PA| = |PB|</annotation></semantics></math></p></li>
 </ol></body>
 </html>
