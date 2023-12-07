@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"matematik sözlüğü"</title>
+    <style>
+        body {
+            font-size: 16px;
+            font-family: Arial, sans-serif; 
+            color: #333; 
+            background-color: #fff; 
+            line-height: 1.5; 
+        }
+        body.dark-mode {
+            color: #fff; 
+            background-color: #333; 
+        }
+    </style>
+    <script>
+        function detectDarkMode() {
+            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+            if (prefersDarkScheme.matches) {
+                document.body.classList.add("dark-mode");
+            } else {
+                document.body.classList.remove("dark-mode");
+            }
+        }
+        
+        window.onload = detectDarkMode;
+    </script>
+</head>
+<body>
+    <p>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>l</mi><mi>o</mi><mi>g</mi><mi>i</mi><mi>c</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">logic.</annotation></semantics></math>
+conditional proposition; implication</p>
+
+<p>If
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mspace width="0.222em"></mspace></mrow><annotation encoding="application/x-tex">p\ </annotation></semantics></math>and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi><mspace width="0.222em"></mspace></mrow><annotation encoding="application/x-tex">q\ </annotation></semantics></math>are
+statements, then the implication
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>⇒</mo><mi>q</mi></mrow><annotation encoding="application/x-tex">p \Longrightarrow q</annotation></semantics></math>
+is the assertion that
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mspace width="0.222em"></mspace></mrow><annotation encoding="application/x-tex">p\ </annotation></semantics></math>implies
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi><annotation encoding="application/x-tex">q</annotation></semantics></math>.</p>
+<p>If the implication
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>⇒</mo><mi>q</mi></mrow><annotation encoding="application/x-tex">p \Longrightarrow q</annotation></semantics></math>
+is true and if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mspace width="0.222em"></mspace></mrow><annotation encoding="application/x-tex">p\ </annotation></semantics></math>happens
+to be true , then
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi><mspace width="0.222em"></mspace></mrow><annotation encoding="application/x-tex">q\ </annotation></semantics></math>is
+also true .</p>
+<p>Statement
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mspace width="0.222em"></mspace></mrow><annotation encoding="application/x-tex">p\ </annotation></semantics></math>is
+called the hypothesis (or premise) and statement
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi><mspace width="0.222em"></mspace></mrow><annotation encoding="application/x-tex">q\ </annotation></semantics></math>is
+called the conclusion of the implication.</p>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"matematik sözlüğü"</title>
+    <style>
+        body {
+            font-size: 16px;
+            font-family: Arial, sans-serif; 
+            color: #333; 
+            background-color: #fff; 
+            line-height: 1.5; 
+        }
+        body.dark-mode {
+            color: #fff; 
+            background-color: #333; 
+        }
+    </style>
+    <script>
+        function detectDarkMode() {
+            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+            if (prefersDarkScheme.matches) {
+                document.body.classList.add("dark-mode");
+            } else {
+                document.body.classList.remove("dark-mode");
+            }
+        }
+        
+        window.onload = detectDarkMode;
+    </script>
+</head>
+<body>
+    <p> geometric mean</p>
+<p>The geometric mean of a sequence
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">{</mo><msub><mi>a</mi><mn>1</mn></msub><mo>,</mo><mspace width="0.222em"></mspace><msub><mi>a</mi><mn>2</mn></msub><mo>,</mo><mspace width="0.222em"></mspace><msub><mi>a</mi><mn>3</mn></msub><mo>,</mo><mspace width="0.222em"></mspace><mi>.</mi><mspace width="0.222em"></mspace><mi>.</mi><mspace width="0.222em"></mspace><mi>.</mi><mspace width="0.222em"></mspace><mo>,</mo><mspace width="0.222em"></mspace><msub><mi>a</mi><mi>n</mi></msub><mo stretchy="true" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\left\{ a_{1},\ a_{2},\ a_{3},\ .\ .\ .\ ,\ a_{n} \right\}</annotation></semantics></math>
+is defined by
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mi>M</mi><mo>=</mo><mroot><mrow><msubsup><mo>∏</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><msub><mi>a</mi><mi>i</mi></msub></mrow><mi>n</mi></mroot></mrow><annotation encoding="application/x-tex">GM = \sqrt[n]{\prod_{i = 1}^{n}a_{i}}</annotation></semantics></math>
+.</p>
+
+<p>The geometric mean of two positive numbers
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi><annotation encoding="application/x-tex">b</annotation></semantics></math>
+is the positive number
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msqrt><mrow><mi>a</mi><mi>b</mi></mrow></msqrt><annotation encoding="application/x-tex">\sqrt{ab}</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mi>M</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>a</mi><mo>,</mo><mspace width="0.222em"></mspace><mi>b</mi><mo>,</mo><mspace width="0.222em"></mspace><mi>c</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mroot><mrow><mi>a</mi><mi>b</mi><mi>c</mi></mrow><mn>3</mn></mroot></mrow><annotation encoding="application/x-tex">GM(a,\ b,\ c) = \sqrt[3]{abc}</annotation></semantics></math>
+.</p>
+</body>
+</html>
