@@ -1,0 +1,470 @@
+<p> Gauss elimination method</p>
+<p>A method for solving matrix equations of the form
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mi>X</mi><mo>=</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">AX = B</annotation></semantics></math>.</p>
+<p> Gauss-Jordan
+elimination method</p>
+
+<p>A method for finding a matrix inverse. If we operate on
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">[</mo><mrow><mspace width="0.222em"></mspace><mi>A</mi><mo stretchy="true" form="postfix">|</mo></mrow><mi>I</mi><mo stretchy="true" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">\left\lbrack \left. \ A \right|I \right\rbrack</annotation></semantics></math>
+where
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math>
+is the identity matrix, to obtain a matrix of the form
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">[</mo><mrow><mspace width="0.222em"></mspace><mi>I</mi><mo stretchy="true" form="postfix">|</mo></mrow><mi>B</mi><mo stretchy="true" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">\left\lbrack \left. \ I \right|B \right\rbrack</annotation></semantics></math>
+, then the matrix
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>
+is the matrix inverse of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>.</p>
+
+<p> gases</p>
+<p> expansion of gases</p>
+<p> valid</p>
+
+<p> valid solution</p>
+
+<p> validity</p>
+<p> hold for</p>
+<p> invalid</p>
+<p> transition</p>
+<p> transition
+diagram</p>
+<p> transition matrix</p>
+<p> transitive</p>
+
+<p> transitive relation</p>
+
+<p> transitivity</p>
+
+<p> transitivity of
+subset</p>
+<p> transitivity of
+equality</p>
+<p> transitivity of
+inequality</p>
+<p> transitivity axiom</p>
+
+<p> income; revenue</p>
+
+<p>The total amount of money received for goods sold or services. It is
+calculated before any expenses are subtracted .</p>
+<p>Net income = revenue - expenses</p>
+
+<p> revenue function</p>
+<p> income tax</p>
+<p> arbitrary; random</p>
+<p> arbitrarily; at random</p>
+<p> general</p>
+<p> general solution</p>
+<p> generalization</p>
+<p> generalize</p>
+<p> formal logic</p>
+<p> generally</p>
+<p>  formal statement</p>
+<p> wide</p>
+<p> obtuse angle</p>
+
+<p>An angle with measure between
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>90</mn><mi>o</mi></msup><annotation encoding="application/x-tex">90^{o}</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>180</mn><mi>o</mi></msup><annotation encoding="application/x-tex">180^{o}</annotation></semantics></math>.</p>
+
+<p> obtuse-angled triangle; obtuse
+triangle</p>
+
+<p>A triangle with one obtuse angle.</p>
+
+<p> set of extended
+real numbers</p>
+
+<p>The set
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>ℝ</mi><mo mathvariant="double-struck">∪</mo></mrow><mrow><mo stretchy="true" form="prefix">{</mo><mo>−</mo><mi>∞</mi><mo>,</mo><mspace width="0.222em"></mspace><mi>∞</mi><mo stretchy="true" form="postfix">}</mo></mrow></mrow><annotation encoding="application/x-tex">\mathbb{R \cup}\left\{ - \infty,\ \infty \right\}</annotation></semantics></math>
+obtained by adjoining two improper elements to the set
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℝ</mi><annotation encoding="application/x-tex">\mathbb{R}</annotation></semantics></math>
+of real numbers is called the set of extended real numbers.</p>
+
+<p> width</p>
+
+<p> width of the box</p>
+
+<p> amplitude</p>
+
+<p>The amplitude of a graph is the half the difference between its
+largest and smallest values.</p>
+
+<p> geometry</p>
+
+<p>The study of figures in a space of a given number of dimensions and
+of a given type.</p>
+<p> analytic geometry; coordinate
+geometry</p>
+<p>Geometry that is done in a coordinate system</p>
+<p> plane geometry</p>
+<p>Deals with the line, circle, triangle, and polygon.</p>
+<p> solid geometry</p>
+<p>The geometry of three-dimensional Euclidean space. It deals with
+prisms, cylinders, pyramids, cones and spheres.</p>
+<p> spherical geometry</p>
+<p>Deals with the spherical triangle and spherical polygon.</p>
+
+<p> geometric</p>
+
+<p> geometric construction
+ Euclidean construction</p>
+<p>Construction of figures and lengths that are restricted to the use
+only a straightedge and a compass. Construction of a bisector of a line
+segment, trisection of an angle are some examples of geometric
+constructions.</p>
+<p> geometric interpretation</p>
+
+<p> geometric sequence; geometric
+progression</p>
+
+<p>If the ratio of successive terms of a sequence is always the same
+nonzero number, the sequence is called geometric.</p>
+<p>A geometric sequence is a sequence
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">{</mo><msub><mi>a</mi><mi>k</mi></msub><mo stretchy="true" form="postfix">}</mo></mrow><mo>,</mo><mspace width="0.222em"></mspace><mi>k</mi><mo>∈</mo><msup><mi>N</mi><mo>+</mo></msup></mrow><annotation encoding="application/x-tex">\left\{ a_{k} \right\},\ k \in N^{+}</annotation></semantics></math>,
+such that each term is given by a multiple
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi><annotation encoding="application/x-tex">r</annotation></semantics></math>
+of the previous one.</p>
+<p>The geometric sequence
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>a</mi><mi>n</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\left( a_{n} \right)</annotation></semantics></math>
+may be defined recursively as
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mn>1</mn></msub><mo>=</mo><mi>a</mi></mrow><annotation encoding="application/x-tex">a_{1} = a</annotation></semantics></math>,<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mspace width="0.222em"></mspace><mo>∀</mo><mi>n</mi><mo>∈</mo><msup><mi>N</mi><mo>+</mo></msup></mrow><annotation encoding="application/x-tex">\ \forall n \in N^{+}</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><msub><mi>a</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><msub><mi>a</mi><mi>n</mi></msub></mfrac><mo>=</mo><mi>r</mi><mo>,</mo></mrow><annotation encoding="application/x-tex">\frac{a_{n + 1}}{a_{n}} = r,</annotation></semantics></math>
+where
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mn>1</mn></msub><mo>∈</mo><mi>R</mi></mrow><annotation encoding="application/x-tex">a_{1} \in R</annotation></semantics></math>
+is the first term and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>∈</mo><mi>R</mi><mo>−</mo><mrow><mo stretchy="true" form="prefix">{</mo><mn>0</mn><mo stretchy="true" form="postfix">}</mo></mrow></mrow><annotation encoding="application/x-tex">r \in R - \left\{ 0 \right\}</annotation></semantics></math>
+is the common ratio .</p>
+<p>General term (n <em>th</em> term):
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mi>n</mi></msub><mo>=</mo><msub><mi>a</mi><mn>1</mn></msub><mi>.</mi><msup><mi>r</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup></mrow><annotation encoding="application/x-tex">a_{n} = a_{1}.r^{n - 1}</annotation></semantics></math>
+or
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mspace width="0.222em"></mspace><msub><mi>a</mi><mi>n</mi></msub><mo>=</mo><mi>a</mi></mrow><mi>k</mi></msub><mi>.</mi><msup><mi>r</mi><mrow><mi>n</mi><mo>−</mo><mi>k</mi></mrow></msup><mspace width="0.222em"></mspace><mo>,</mo><mspace width="0.222em"></mspace><mi>w</mi><mi>h</mi><mi>e</mi><mi>r</mi><mi>e</mi><mspace width="0.222em"></mspace><mi>k</mi><mo>&lt;</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">{\ a_{n} = a}_{k}.r^{n - k}\ ,\ where\ k &lt; n</annotation></semantics></math></p>
+<p>If a,b,c are the three consecutive terms of a geometric sequence,
+then
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mi>b</mi><mi>a</mi></mfrac><mo>=</mo><mfrac><mi>c</mi><mi>b</mi></mfrac></mrow><annotation encoding="application/x-tex">\frac{b}{a} = \frac{c}{b}</annotation></semantics></math>
+or
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>b</mi><mn>2</mn></msup><mo>=</mo><mi>a</mi><mi>.</mi><mi>c</mi></mrow><annotation encoding="application/x-tex">b^{2} = a.c</annotation></semantics></math></p>
+<p>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>𝐧</mi><mspace width="0.222em"></mspace></mrow><annotation encoding="application/x-tex">\mathbf{n\ }</annotation></semantics></math> sum of the first n terms</p>
+
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>S</mi><mi>n</mi></msub><mo>=</mo><msubsup><mo>∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><mrow><msub><mi>a</mi><mi>k</mi></msub><mo>=</mo><mfrac><mrow><msub><mi>a</mi><mn>1</mn></msub><mi>.</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><msup><mi>r</mi><mi>n</mi></msup><mo stretchy="true" form="postfix">)</mo></mrow></mrow><mrow><mn>1</mn><mo>−</mo><mi>r</mi></mrow></mfrac></mrow></mrow><annotation encoding="application/x-tex">S_{n} = \sum_{k = 1}^{n}{a_{k} = \frac{a_{1}.(1 - r^{n})}{1 - r}}</annotation></semantics></math>
+,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>≠</mo><mn>1</mn><mo>,</mo><mspace width="0.222em"></mspace><mi>r</mi><mo>≠</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">r \neq 1,\ r \neq 0</annotation></semantics></math></p>
+<p> limit of the sum of the
+terms</p>
+<p> geometric (geometrical)
+transformations</p>
+<p> geometric limit</p>
+<p> geometric probability</p>
+
+<p>A probability that involves a geometric measure such as length, area,
+or volume, etc., for geometric objects under stated conditions.</p>
+
+<p> geometric mean</p>
+<p>The geometric mean of a sequence
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">{</mo><msub><mi>a</mi><mn>1</mn></msub><mo>,</mo><mspace width="0.222em"></mspace><msub><mi>a</mi><mn>2</mn></msub><mo>,</mo><mspace width="0.222em"></mspace><msub><mi>a</mi><mn>3</mn></msub><mo>,</mo><mspace width="0.222em"></mspace><mi>.</mi><mspace width="0.222em"></mspace><mi>.</mi><mspace width="0.222em"></mspace><mi>.</mi><mspace width="0.222em"></mspace><mo>,</mo><mspace width="0.222em"></mspace><msub><mi>a</mi><mi>n</mi></msub><mo stretchy="true" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\left\{ a_{1},\ a_{2},\ a_{3},\ .\ .\ .\ ,\ a_{n} \right\}</annotation></semantics></math>
+is defined by
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mi>M</mi><mo>=</mo><mroot><mrow><msubsup><mo>∏</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><msub><mi>a</mi><mi>i</mi></msub></mrow><mi>n</mi></mroot></mrow><annotation encoding="application/x-tex">GM = \sqrt[n]{\prod_{i = 1}^{n}a_{i}}</annotation></semantics></math>
+.</p>
+
+<p>The geometric mean of two positive numbers
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi><annotation encoding="application/x-tex">b</annotation></semantics></math>
+is the positive number
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msqrt><mrow><mi>a</mi><mi>b</mi></mrow></msqrt><annotation encoding="application/x-tex">\sqrt{ab}</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mi>M</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>a</mi><mo>,</mo><mspace width="0.222em"></mspace><mi>b</mi><mo>,</mo><mspace width="0.222em"></mspace><mi>c</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mroot><mrow><mi>a</mi><mi>b</mi><mi>c</mi></mrow><mn>3</mn></mroot></mrow><annotation encoding="application/x-tex">GM(a,\ b,\ c) = \sqrt[3]{abc}</annotation></semantics></math>
+.</p>
+
+<p> geometric series</p>
+
+<p>An infinite sum of the sum
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mn>1</mn></msub><mo>+</mo><msub><mi>a</mi><mn>1</mn></msub><mi>r</mi><mo>+</mo><msub><mi>a</mi><mn>1</mn></msub><msup><mi>r</mi><mn>2</mn></msup><mo>+</mo><mspace width="0.222em"></mspace><mi>.</mi><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mi>.</mi><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mi>.</mi><mspace width="0.222em"></mspace><mo>+</mo><msub><mi>a</mi><mn>1</mn></msub><msup><mi>r</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup><mo>+</mo><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mi>.</mi><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mi>.</mi><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mi>.</mi><mspace width="0.222em"></mspace></mrow><annotation encoding="application/x-tex">a_{1} + a_{1}r + a_{1}r^{2} + \ .\ \ .\ \ .\  + a_{1}r^{n - 1} + \ \ .\ \ .\ \ .\ </annotation></semantics></math>with
+first term
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>a</mi><mn>1</mn></msub><annotation encoding="application/x-tex">a_{1}</annotation></semantics></math>
+and common ratio r is called</p>
+<p>an infinite geometric series and is denoted by
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>=</mo><msubsup><mo>∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>∞</mi></msubsup><mrow><msub><mi>a</mi><mn>1</mn></msub><msup><mi>r</mi><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></msup></mrow></mrow><annotation encoding="application/x-tex">S = \sum_{k = 1}^{\infty}{a_{1}r^{k - 1}}</annotation></semantics></math></p>
+<p>The
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>th
+partial sum is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>S</mi><mi>n</mi></msub><mo>=</mo><msub><mi>a</mi><mn>1</mn></msub><mo>+</mo><msub><mi>a</mi><mn>1</mn></msub><mi>r</mi><mo>+</mo><msub><mi>a</mi><mn>1</mn></msub><msup><mi>r</mi><mn>2</mn></msup><mo>+</mo><mspace width="0.222em"></mspace><mi>.</mi><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mi>.</mi><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mi>.</mi><mspace width="0.222em"></mspace><mo>+</mo><msub><mi>a</mi><mn>1</mn></msub><msup><mi>r</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup><mo>=</mo><mspace width="0.222em"></mspace><mfrac><mrow><msub><mi>a</mi><mn>1</mn></msub><mi>.</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><msup><mi>r</mi><mi>n</mi></msup><mo stretchy="true" form="postfix">)</mo></mrow></mrow><mrow><mn>1</mn><mo>−</mo><mi>r</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">S_{n} = a_{1} + a_{1}r + a_{1}r^{2} + \ .\ \ .\ \ .\  + a_{1}r^{n - 1} = \ \frac{a_{1}.(1 - r^{n})}{1 - r}</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>≠</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">r \neq 0</annotation></semantics></math>.</p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>=</mo><msubsup><mo>∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>∞</mi></msubsup><mrow><msub><mi>a</mi><mn>1</mn></msub><msup><mi>r</mi><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></msup></mrow><mo>=</mo><msub><mo>lim</mo><mrow><mi>n</mi><mo>→</mo><mi>∞</mi></mrow></msub><mrow><mfrac><mrow><msub><mi>a</mi><mn>1</mn></msub><mi>.</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><msup><mi>r</mi><mi>n</mi></msup><mo stretchy="true" form="postfix">)</mo></mrow></mrow><mrow><mn>1</mn><mo>−</mo><mi>r</mi></mrow></mfrac><mspace width="0.222em"></mspace><mi>.</mi></mrow></mrow><annotation encoding="application/x-tex">S = \sum_{k = 1}^{\infty}{a_{1}r^{k - 1}} = \lim_{n \rightarrow \infty}{\frac{a_{1}.(1 - r^{n})}{1 - r}\ .}</annotation></semantics></math>
+If
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">|</mo><mi>r</mi><mo stretchy="true" form="postfix">|</mo></mrow><mo>&lt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">|r| &lt; 1</annotation></semantics></math>,
+then the geometric series converges
+to<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mspace width="0.222em"></mspace><mfrac><msub><mi>a</mi><mn>1</mn></msub><mrow><mn>1</mn><mo>−</mo><mi>r</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">\ \frac{a_{1}}{1 - r}</annotation></semantics></math>
+. If
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">|</mo><mi>r</mi><mo stretchy="true" form="postfix">|</mo></mrow><mo>≥</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">|r| \geq 1</annotation></semantics></math>,
+then the geometric series diverges.</p>
+
+<p> geometric figures</p>
+<p> transformation of the
+geometric figure</p>
+
+<p>A change in position, shape or size of a geometric figure is a
+transformation. The original figure is called the preimage and the
+resulting figure is called the image.</p>
+
+<p> locus
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mspace width="0.222em"></mspace><mi>p</mi><mi>l</mi><mi>.</mi><mspace width="0.222em"></mspace></mrow><annotation encoding="application/x-tex">\ pl.\ </annotation></semantics></math>
+loci</p>
+
+<p>The set of points which satisfies a set of criteria is called the
+locus of the criteria. The locus of</p>
+<p>(a) all points in a plane equidistant from a given point is a
+circle;</p>
+
+<p>(b) all points in 3-space equidistant from a given point is a
+sphere;</p>
+
+<p>(c) all points in a plane equidistant from two intersecting lines is
+the pair of angle bisectors formed by these two lines;</p>
+<p>(d) the center of a variable circle, tangent to a given circle and
+passing through a given point inside that circle, is an ellipse;</p>
+<p>(e) the center of a variable circle, tangent to a given circle and
+passing through a given point outside that circle, is a hyperbola;</p>
+<p>(f) the center of a variable circle, tangent to a given line and
+passing through a given point not on that line, is a parabola.</p>
+<p> description of the locus</p>
+
+<p> geometric interpretation</p>
+<p> geometry stripes</p>
+<p> geoboard</p>
+<p> approaches to
+geometry</p>
+<p> analytic approach</p>
+<p> synthetic
+(axiomatic) approach</p>
+<p> vectorial
+approach vector approach</p>
+<p>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mspace width="0.222em"></mspace><annotation encoding="application/x-tex">\ </annotation></semantics></math>real;
+fact; truth</p>
+<p> real life</p>
+
+<p> real life applications</p>
+
+<p> verify</p>
+<p> real numbers; reals</p>
+<p> reason</p>
+<p> necessary</p>
+
+<p> necessary condition</p>
+<p>A condition which must hold for a result to be true, but which does
+not guarantee it to be true.</p>
+<p> fulfill the necessary
+conditions</p>
+
+<p> necessity</p>
+<p>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>l</mi><mi>o</mi><mi>g</mi><mi>i</mi><mi>c</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">logic.</annotation></semantics></math>
+conditional proposition; implication</p>
+
+<p>If
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mspace width="0.222em"></mspace></mrow><annotation encoding="application/x-tex">p\ </annotation></semantics></math>and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi><mspace width="0.222em"></mspace></mrow><annotation encoding="application/x-tex">q\ </annotation></semantics></math>are
+statements, then the implication
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>⇒</mo><mi>q</mi></mrow><annotation encoding="application/x-tex">p \Longrightarrow q</annotation></semantics></math>
+is the assertion that
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mspace width="0.222em"></mspace></mrow><annotation encoding="application/x-tex">p\ </annotation></semantics></math>implies
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi><annotation encoding="application/x-tex">q</annotation></semantics></math>.</p>
+<p>If the implication
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>⇒</mo><mi>q</mi></mrow><annotation encoding="application/x-tex">p \Longrightarrow q</annotation></semantics></math>
+is true and if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mspace width="0.222em"></mspace></mrow><annotation encoding="application/x-tex">p\ </annotation></semantics></math>happens
+to be true , then
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi><mspace width="0.222em"></mspace></mrow><annotation encoding="application/x-tex">q\ </annotation></semantics></math>is
+also true .</p>
+<p>Statement
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mspace width="0.222em"></mspace></mrow><annotation encoding="application/x-tex">p\ </annotation></semantics></math>is
+called the hypothesis (or premise) and statement
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi><mspace width="0.222em"></mspace></mrow><annotation encoding="application/x-tex">q\ </annotation></semantics></math>is
+called the conclusion of the implication.</p>
+<p> negation of the
+conditional statement</p>
+<p>The negation of the conditional statement
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>⇒</mo><mi>q</mi></mrow><annotation encoding="application/x-tex">p \Longrightarrow q</annotation></semantics></math>
+is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>⋀</mo><msup><mi>q</mi><mi>′</mi></msup></mrow><annotation encoding="application/x-tex">p\bigwedge q^{&#39;}</annotation></semantics></math>
+.</p>
+<p> truth table
+of the conditional statement</p>
+<p> converse of the
+conditional statement</p>
+<p>The converse of the conditional proposition
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>⇒</mo><mi>q</mi></mrow><annotation encoding="application/x-tex">p \Longrightarrow q</annotation></semantics></math>
+is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi><mo>⇒</mo><mi>p</mi></mrow><annotation encoding="application/x-tex">q \Longrightarrow p</annotation></semantics></math>
+.</p>
+<p> contrapositive
+of the conditional statement</p>
+<p>The contrapositive of the conditional proposition
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>⇒</mo><mi>q</mi></mrow><annotation encoding="application/x-tex">p \Longrightarrow q</annotation></semantics></math>
+is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>q</mi><mi>′</mi></msup><mo>⇒</mo><msup><mi>p</mi><mi>′</mi></msup></mrow><annotation encoding="application/x-tex">q^{&#39;} \Longrightarrow p^{&#39;}</annotation></semantics></math>.</p>
+<p> inverse of the
+conditional statement</p>
+<p>The inverse of the conditional proposition
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>⇒</mo><mi>q</mi></mrow><annotation encoding="application/x-tex">p \Longrightarrow q</annotation></semantics></math>
+is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>p</mi><mi>′</mi></msup><mo>⇒</mo><msup><mi>q</mi><mi>′</mi></msup></mrow><annotation encoding="application/x-tex">p^{&#39;} \Longrightarrow q^{&#39;}</annotation></semantics></math>.</p>
+
+<p> necessary and sufficient
+condition</p>
+<p>If a condition is both necessary and sufficient, then the result is
+said to be true iff the condition holds</p>
+<p> span</p>
+<p> input</p>
+<p> input data</p>
+<p> input-output matrix</p>
+<p> global</p>
+
+<p> global extremum</p>
+<p>Global minimum or global maximum.</p>
+<p> global maximum</p>
+<p>The largest overall value of a set or a function over its entire
+range.</p>
+<p> global minimum</p>
+<p>The smallest overall value of a set or a function over its entire
+range.</p>
+
+<p> shade</p>
+<p> tinted region; shaded
+region</p>
+<p> with respect to</p>
+<p> relative</p>
+<p> visual</p>
+
+<p> visual pattern</p>
+<p> visual arts</p>
+
+<p> visualization
+(or visualisation)</p>
+<p> visualize (or
+visualise)</p>
+<p> visuality</p>
+<p> appear</p>
+<p> image</p>
+<p> image set; range (of a function, of a
+relation)</p>
+
+<p>The set of values that the function actually takes.</p>
+<p>The set of values to which the domain is sent by the function.</p>
+<p>Range of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>β</mi><annotation encoding="application/x-tex">\beta</annotation></semantics></math>
+is the set of the second coordinates of the ordered pairs in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>β</mi><annotation encoding="application/x-tex">\beta</annotation></semantics></math>
+. Range of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>β</mi><annotation encoding="application/x-tex">\beta</annotation></semantics></math>
+=
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">{</mo><mi>y</mi><mo>:</mo><mspace width="0.222em"></mspace><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>∈</mo><mi>β</mi><mo stretchy="true" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\left\{ y:\ (x,y) \in \beta \right\}</annotation></semantics></math></p>
+
+<p> image points</p>
+<p> view</p>
+
+<p> front view</p>
+<p> right-side view</p>
+<p> top view</p>
+<p> side view</p>
+
+<p> viewing angle</p>
+<p> demonstration</p>
+<p> demonstrate</p>
+<p> description</p>
+<p> show</p>
+<p> observation</p>
+<p> observe</p>
+<p> visualization
+(or visualisation)</p>
+<p> visualize
+(visualise)</p>
+<p> consider</p>
+<p> gradian</p>
+<p>A unit of angular measure in which the measure of an entire circle is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>400</mn><annotation encoding="application/x-tex">400</annotation></semantics></math>
+gradians.</p>
+<p> graph</p>
+<p> graph; chart</p>
+
+<p>1.The graph of an equation is the set of all points whose coordinates
+satisfy the equation (the plot of a function).</p>
+<p>2.A set of points, some of which are connected together by lines. The
+points of a graph are called the
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mi>e</mi><mi>r</mi><mi>t</mi><mi>i</mi><mi>c</mi><mi>e</mi><mi>s</mi></mrow><annotation encoding="application/x-tex">vertices</annotation></semantics></math>
+and the lines are called
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>e</mi><mi>d</mi><mi>g</mi><mi>e</mi><mi>s</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">edges.</annotation></semantics></math>
+A
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mi>r</mi><mi>e</mi><mi>e</mi></mrow><annotation encoding="application/x-tex">tree</annotation></semantics></math>
+is a graph with no cycles.</p>
+<p> line graph</p>
+<p> circle graph</p>
+<p> vertical bar graph</p>
+<p> graph of frequency
+distributions</p>
+<p> graphing techniques</p>
+<p> graph paper</p>
+<p> point on the graph</p>
+<p> graph of the cartesian
+product</p>
+<p> plotting the
+graph</p>
+<p> graph of the polynomial
+function</p>
+<p> bar graph</p>
+<p> complete graph; clique</p>
+<p>Graph in which every pair of vertices is connected by an edge.</p>
+<p> graph of the set of
+integers</p>
+<p> horizontal bar graph</p>
+
+<p> graphically</p>
+<p></p>
+
+<p> graphical
+representation of the function</p>
+<p> graphical analysis</p>
+<p> graphical solution</p>
+<p> graphical reasoning</p>
+
+<p> graphical approach</p>
+<p> graphical interpretation</p>
+<p> walking around on the
+graph</p>
+
+<p>We can think of a graph as a network of roads. Walking around this
+network could be a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mi>e</mi><mi>n</mi><mi>e</mi><mi>r</mi><mi>a</mi><mi>l</mi><mspace width="0.222em"></mspace><mi>w</mi><mi>a</mi><mi>l</mi><mi>k</mi></mrow><annotation encoding="application/x-tex">general\ walk</annotation></semantics></math>,
+a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mi>a</mi><mi>t</mi><mi>h</mi></mrow><annotation encoding="application/x-tex">path</annotation></semantics></math>
+(to go through any vertex more than once is not allowed), a trail (to go
+along any edge more than once is not allowed) and a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mi>y</mi><mi>c</mi><mi>l</mi><mi>e</mi></mrow><annotation encoding="application/x-tex">cycle</annotation></semantics></math>
+(a path which ends at its starting point).</p>
+
+<p> 1. group (group of elements)</p>
+<p>2. group (a mathematical system)</p>
+<p>A finite or infinite set of element together with a binary operation
+which together satisfy the four fundamental properties of <em>closure,
+associativity, the identity property, and the inverse property</em>.</p>
+
+<p> commutative group; Abelian group</p>
+<p> group theory</p>
+<p>Study of groups.</p>
+
+<p> <em>statistics</em> group range</p>
+<p> grouped data</p>
+<p> grouping</p>
+<p> grouping symbols</p>
+<p> difficult;
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mi>h</mi><mi>y</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">phy.</annotation></semantics></math>
+power</p>
+<p> powerful</p>
+<p> difficulty</p>
+<p> daily life; real life</p>
+<p> relating to daily
+life</p>
+<p> Pigeonhole Principle;
+Drichlet’s Principle</p>
