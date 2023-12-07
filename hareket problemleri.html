@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"matematik sözlüğü"</title>
+    <style>
+        body {
+            font-size: 16px;
+            font-family: Arial, sans-serif; 
+            color: #333; 
+            background-color: #fff; 
+            line-height: 1.5; 
+        }
+        body.dark-mode {
+            color: #fff; 
+            background-color: #333; 
+        }
+    </style>
+    <script>
+        function detectDarkMode() {
+            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+            if (prefersDarkScheme.matches) {
+                document.body.classList.add("dark-mode");
+            } else {
+                document.body.classList.remove("dark-mode");
+            }
+        }
+        
+        window.onload = detectDarkMode;
+    </script>
+</head>
+<body>
+    <p> motion problems</p>
+
+<p>Distance travelled by a car
+tyre<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mspace width="0.222em"></mspace><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>n</mi><mi>u</mi><mi>m</mi><mi>b</mi><mi>e</mi><mi>r</mi><mspace width="0.222em"></mspace><mi>o</mi><mi>f</mi><mspace width="0.222em"></mspace><mi>r</mi><mi>e</mi><mi>v</mi><mi>o</mi><mi>l</mi><mi>u</mi><mi>t</mi><mi>i</mi><mi>o</mi><mi>n</mi><mi>s</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>•</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>c</mi><mi>i</mi><mi>r</mi><mi>c</mi><mi>u</mi><mi>m</mi><mi>f</mi><mi>e</mi><mi>r</mi><mi>e</mi><mi>n</mi><mi>c</mi><mi>e</mi><mspace width="0.222em"></mspace><mi>o</mi><mi>f</mi><mspace width="0.222em"></mspace><mi>t</mi><mi>h</mi><mi>e</mi><mspace width="0.222em"></mspace><mi>t</mi><mi>y</mi><mi>r</mi><mi>e</mi><mo stretchy="true" form="postfix">)</mo></mrow><mspace width="0.222em"></mspace></mrow><annotation encoding="application/x-tex">\  = (number\ of\ revolutions) \bullet (circumference\ of\ the\ tyre)\ </annotation></semantics></math></p>
+<p>Distance travelled by a car moving with a constant
+speed<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>s</mi><mi>p</mi><mi>e</mi><mi>e</mi><mi>d</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>•</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mi>i</mi><mi>m</mi><mi>e</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">= (speed) \bullet (time)</annotation></semantics></math></p>
+</body>
+</html>
