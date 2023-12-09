@@ -1,41 +1,52 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>"matematik sözlüğü"</title>
-<style>
-            body {
-                font-size: 16px;
-                font-family: Arial, sans-serif; 
-                color: #333; 
-                background-color: #fff; 
-                line-height: 1.5; 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"matematik sözlüğü"</title>
+    <style>
+        body {
+            font-size: 16px;
+            font-family: Arial, sans-serif; 
+            color: #333; 
+            background-color: #fff; 
+            line-height: 1.5; 
+        }
+        body.dark-mode {
+            color: #fff; 
+            background-color: #333; 
+        }
+    </style>
+    <script>
+        function detectDarkMode() {
+            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+            if (prefersDarkScheme.matches) {
+                document.body.classList.add("dark-mode");
+            } else {
+                document.body.classList.remove("dark-mode");
             }
-            body.dark-mode {
-                color: #fff; 
-                background-color: #333; 
-            }
-        </style>
-<script>
-            function detectDarkMode() {
-                const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
-                if (prefersDarkScheme.matches) {
-                    document.body.classList.add("dark-mode");
-                } else {
-                    document.body.classList.remove("dark-mode");
-                }
-            }
-
-            window.onload = detectDarkMode;
-        </script>
+        }
+        
+        window.onload = detectDarkMode;
+    </script>
 </head>
 <body>
-<p> orthogonal
-projection; orthographic projection</p>
-<p>A two-dimensional drawing of the front, top, and side views of an
-object onto a drawing surface in which the lines of projection are
-perpendicular to the drawing surface.</p>
+    <p> orthogonal projection</p>
+<p>A projection of a figure by parallel rays. In such a projection;</p>
+<p>I. parallel lines project to parallel lines,</p>
+<p>II. projection lines are perpendicular to the plane of image,</p>
+<p>III. the ratio of lengths of parallel segments and and the ratio of
+areas are preserved,</p>
+<p>IV. the medians of a triangle project to the medians of the image
+triangle,</p>
+<p>V. the centroid of the triangle projects to the centroid of the image
+triangle,</p>
+<p>VI. any triangle can be positioned such that its image is
+equilateral,</p>
+<p>VII. ellipses image to ellipses,</p>
+<p>VII. the center of an ellipse projects to the center of the image
+ellipse,</p>
+<p>VIII. any ellipse can be positioned such that its image is a circle,
+etc.</p>
 </body>
 </html>

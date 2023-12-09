@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"matematik sözlüğü"</title>
+    <style>
+        body {
+            font-size: 16px;
+            font-family: Arial, sans-serif; 
+            color: #333; 
+            background-color: #fff; 
+            line-height: 1.5; 
+        }
+        body.dark-mode {
+            color: #fff; 
+            background-color: #333; 
+        }
+    </style>
+    <script>
+        function detectDarkMode() {
+            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+            if (prefersDarkScheme.matches) {
+                document.body.classList.add("dark-mode");
+            } else {
+                document.body.classList.remove("dark-mode");
+            }
+        }
+        
+        window.onload = detectDarkMode;
+    </script>
+</head>
+<body>
+    <p> associativity</p>
+<p>If an operation
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">Δ</mi><annotation encoding="application/x-tex">\mathrm{\Delta}</annotation></semantics></math>
+defined on a set
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mspace width="0.222em"></mspace></mrow><annotation encoding="application/x-tex">A\ </annotation></semantics></math>
+is associative, then
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo>∈</mo><mi>A</mi><mspace width="0.222em"></mspace><mo>,</mo><mspace width="0.222em"></mspace></mrow><annotation encoding="application/x-tex">\forall a,b,c \in A\ ,\ </annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">(</mo><mi>a</mi><mi mathvariant="normal">Δ</mi><mi>b</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi mathvariant="normal">Δ</mi><mi>c</mi><mo>=</mo><mi>a</mi><mi mathvariant="normal">Δ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>b</mi><mi mathvariant="normal">Δ</mi><mi>c</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">(a\mathrm{\Delta}b)\mathrm{\Delta}c = a\mathrm{\Delta}(b\mathrm{\Delta}c)</annotation></semantics></math>
+.</p>
+<p>(the placement of the parantheses is irrelevant)</p>
+</body>
+</html>
