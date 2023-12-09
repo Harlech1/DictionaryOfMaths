@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"matematik sözlüğü"</title>
+    <style>
+        body {
+            font-size: 16px;
+            font-family: Arial, sans-serif; 
+            color: #333; 
+            background-color: #fff; 
+            line-height: 1.5; 
+        }
+        body.dark-mode {
+            color: #fff; 
+            background-color: #333; 
+        }
+    </style>
+    <script>
+        function detectDarkMode() {
+            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+            if (prefersDarkScheme.matches) {
+                document.body.classList.add("dark-mode");
+            } else {
+                document.body.classList.remove("dark-mode");
+            }
+        }
+        
+        window.onload = detectDarkMode;
+    </script>
+</head>
+<body>
+    <p>  operations in the set of irrational numbers.</p>
+<p>Assuming that each irrational is real and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>∈</mo><msup><mi>Z</mi><mo>+</mo></msup><mo>:</mo></mrow><annotation encoding="application/x-tex">n \in Z^{+}:</annotation></semantics></math></p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>*</mo><mroot><mi>a</mi><mi>n</mi></mroot><mspace width="0.222em"></mspace><mroot><mi>b</mi><mi>n</mi></mroot><mo>=</mo><mspace width="0.222em"></mspace><mroot><mrow><mi>a</mi><mi>b</mi></mrow><mi>n</mi></mroot></mrow><annotation encoding="application/x-tex">*\sqrt[n]{a}\ \sqrt[n]{b} = \ \sqrt[n]{ab}</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>*</mo><mfrac><mroot><mi>a</mi><mi>n</mi></mroot><mroot><mi>b</mi><mi>n</mi></mroot></mfrac><mo>=</mo><mspace width="0.222em"></mspace><mroot><mfrac><mi>a</mi><mi>b</mi></mfrac><mi>n</mi></mroot></mrow><annotation encoding="application/x-tex">*\frac{\sqrt[n]{a}}{\sqrt[n]{b}} = \ \sqrt[n]{\frac{a}{b}}</annotation></semantics></math>
+,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi><mo>≠</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">b \neq 0</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>*</mo><mroot><mrow><mroot><mi>a</mi><mi>m</mi></mroot><mspace width="0.222em"></mspace></mrow><mi>n</mi></mroot><mo>=</mo><mspace width="0.222em"></mspace><mroot><mi>a</mi><mrow><mi>m</mi><mi>n</mi></mrow></mroot></mrow><annotation encoding="application/x-tex">*\sqrt[n]{\sqrt[m]{a}\ } = \ \sqrt[{mn}]{a}</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>*</mo><mroot><mrow><mroot><mrow><mroot><mi>a</mi><mi>p</mi></mroot><mspace width="0.222em"></mspace></mrow><mi>m</mi></mroot><mspace width="0.222em"></mspace></mrow><mi>n</mi></mroot></mrow><annotation encoding="application/x-tex">*\sqrt[n]{\sqrt[m]{\sqrt[p]{a}\ }\ }</annotation></semantics></math>
+=<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mroot><mi>a</mi><mrow><mi>m</mi><mi>n</mi><mi>p</mi></mrow></mroot><annotation encoding="application/x-tex">\sqrt[{mnp}]{a}</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>*</mo><mroot><msup><mi>a</mi><mi>m</mi></msup><mi>n</mi></mroot><mo>=</mo><mroot><msup><mi>a</mi><mrow><mi>m</mi><mi>p</mi></mrow></msup><mrow><mi>n</mi><mi>p</mi></mrow></mroot></mrow><annotation encoding="application/x-tex">*\sqrt[n]{a^{m}} = \sqrt[{np}]{a^{mp}}</annotation></semantics></math></p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>*</mo><mroot><mrow><mi>b</mi><mroot><mi>a</mi><mi>m</mi></mroot><mspace width="0.222em"></mspace></mrow><mi>n</mi></mroot><mo>=</mo><mspace width="0.222em"></mspace><mroot><mrow><mi>a</mi><msup><mi>b</mi><mi>m</mi></msup></mrow><mrow><mi>m</mi><mi>n</mi></mrow></mroot></mrow><annotation encoding="application/x-tex">*\sqrt[n]{b\sqrt[m]{a}\ } = \ \sqrt[{mn}]{ab^{m}}</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mspace width="0.222em"></mspace><mo>*</mo><mroot><mrow><mi>c</mi><mspace width="0.222em"></mspace><mroot><mrow><mi>b</mi><mspace width="0.222em"></mspace><mroot><mi>a</mi><mi>p</mi></mroot><mspace width="0.222em"></mspace></mrow><mi>m</mi></mroot><mspace width="0.222em"></mspace></mrow><mi>n</mi></mroot></mrow><annotation encoding="application/x-tex">\ *\sqrt[n]{c\ \sqrt[m]{b\ \sqrt[p]{a}\ }\ }</annotation></semantics></math>
+=<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mroot><mrow><mi>c</mi><mroot><msup><mrow><mi>a</mi><mi>b</mi></mrow><mi>p</mi></msup><mrow><mi>m</mi><mi>p</mi></mrow></mroot></mrow><mi>n</mi></mroot><annotation encoding="application/x-tex">\sqrt[n]{c\sqrt[{mp}]{{ab}^{p}}}</annotation></semantics></math>
+=<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mroot><mrow><mi>a</mi><msup><mi>b</mi><mi>p</mi></msup><msup><mi>c</mi><mrow><mi>m</mi><mi>p</mi></mrow></msup></mrow><mrow><mi>m</mi><mi>n</mi><mi>p</mi></mrow></mroot><annotation encoding="application/x-tex">\sqrt[{mnp}]{ab^{p}c^{mp}}</annotation></semantics></math>
+*<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo stretchy="true" form="prefix">(</mo><mroot><mi>a</mi><mi>n</mi></mroot><mo stretchy="true" form="postfix">)</mo></mrow><mi>m</mi></msup><mo>=</mo><mspace width="0.222em"></mspace><mroot><msup><mi>a</mi><mi>m</mi></msup><mi>n</mi></mroot></mrow><annotation encoding="application/x-tex">\left( \sqrt[n]{a} \right)^{m} = \ \sqrt[n]{a^{m}}</annotation></semantics></math></p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>*</mo><mroot><msup><mi>a</mi><mi>m</mi></msup><mi>n</mi></mroot><mo>=</mo><mroot><msup><mi>a</mi><mrow><mi>m</mi><mi>/</mi><mi>p</mi></mrow></msup><mrow><mi>n</mi><mi>/</mi><mi>p</mi></mrow></mroot></mrow><annotation encoding="application/x-tex">*\sqrt[n]{a^{m}} = \sqrt[{n/p}]{a^{m/p}}</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>*</mo><mroot><mrow><msup><mi>a</mi><mi>n</mi></msup><mi>b</mi><mi>c</mi></mrow><mi>n</mi></mroot><mo>=</mo><mi>a</mi><mroot><mrow><mi>b</mi><mi>c</mi></mrow><mi>n</mi></mroot></mrow><annotation encoding="application/x-tex">*\sqrt[n]{a^{n}bc} = a\sqrt[n]{bc}</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>*</mo><mi>a</mi><mroot><mi>b</mi><mi>n</mi></mroot><mo>=</mo><mroot><mrow><msup><mi>a</mi><mi>n</mi></msup><mi>b</mi></mrow><mi>n</mi></mroot></mrow><annotation encoding="application/x-tex">*a\sqrt[n]{b} = \sqrt[n]{a^{n}b}</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo>*</mo><mi>a</mi></mrow><mi>m</mi></msup><mroot><mi>b</mi><mi>n</mi></mroot><mo>=</mo><mroot><mrow><msup><mi>a</mi><mrow><mi>m</mi><mi>n</mi></mrow></msup><mi>b</mi></mrow><mi>n</mi></mroot></mrow><annotation encoding="application/x-tex">{*a}^{m}\sqrt[n]{b} = \sqrt[n]{a^{mn}b}</annotation></semantics></math></p>
+</body>
+</html>
