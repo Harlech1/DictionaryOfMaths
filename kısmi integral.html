@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"matematik sözlüğü"</title>
+    <style>
+        body {
+            font-size: 16px;
+            font-family: Arial, sans-serif; 
+            color: #333; 
+            background-color: #fff; 
+            line-height: 1.5; 
+        }
+        body.dark-mode {
+            color: #fff; 
+            background-color: #333; 
+        }
+    </style>
+    <script>
+        function detectDarkMode() {
+            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+            if (prefersDarkScheme.matches) {
+                document.body.classList.add("dark-mode");
+            } else {
+                document.body.classList.remove("dark-mode");
+            }
+        }
+        
+        window.onload = detectDarkMode;
+    </script>
+</head>
+<body>
+    <p> integration by parts</p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo>∫</mo><mrow></mrow><mrow></mrow></msubsup><mrow><mi>f</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><msup><mi>g</mi><mi>′</mi></msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>d</mi><mi>x</mi></mrow><mo>=</mo><mi>f</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>g</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>−</mo><msubsup><mo>∫</mo><mrow></mrow><mrow></mrow></msubsup><mrow><msup><mi>f</mi><mi>′</mi></msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>g</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>d</mi><mi>x</mi></mrow></mrow><annotation encoding="application/x-tex">\int_{}^{}{f(x)g^{&#39;}(x)dx} = f(x)g(x) - \int_{}^{}{f^{&#39;}(x)g(x)dx}</annotation></semantics></math>
++ C (integration by parts formula)</p>
+<p>Let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mi>u</mi></mrow><annotation encoding="application/x-tex">f(x) = u</annotation></semantics></math>
+and
+g<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mi>v</mi></mrow><annotation encoding="application/x-tex">(x) = v</annotation></semantics></math>
+,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo>∫</mo><mrow></mrow><mrow></mrow></msubsup><mrow><mi>u</mi><mi>d</mi><mi>v</mi></mrow><mo>=</mo><mi>u</mi><mi>v</mi><mo>−</mo><msubsup><mo>∫</mo><mrow></mrow><mrow></mrow></msubsup><mrow><mi>v</mi><mi>d</mi><mi>u</mi></mrow></mrow><annotation encoding="application/x-tex">\int_{}^{}{udv} = uv - \int_{}^{}{vdu}</annotation></semantics></math>
+or
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo>∫</mo><mrow></mrow><mrow></mrow></msubsup><mrow><mi>u</mi><msup><mi>v</mi><mi>′</mi></msup><mi>d</mi><mi>x</mi></mrow><mo>=</mo><mi>u</mi><mi>v</mi><mo>−</mo><msubsup><mo>∫</mo><mrow></mrow><mrow></mrow></msubsup><mrow><mi>v</mi><msup><mi>u</mi><mi>′</mi></msup><mi>d</mi><mi>x</mi></mrow></mrow><annotation encoding="application/x-tex">\int_{}^{}{uv^{&#39;}dx} = uv - \int_{}^{}{vu^{&#39;}dx}</annotation></semantics></math></p>
+<p>For definite integrals ,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup><mrow><mi>f</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><msup><mi>g</mi><mi>′</mi></msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>d</mi><mi>x</mi></mrow><mo>=</mo><mrow><mo stretchy="true" form="prefix">[</mo><mi>f</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>b</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>g</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>b</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>−</mo><mi>f</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>a</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>g</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>a</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">]</mo></mrow><mo>−</mo><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup><mrow><msup><mi>f</mi><mi>′</mi></msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>g</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>d</mi><mi>x</mi></mrow></mrow><annotation encoding="application/x-tex">\int_{a}^{b}{f(x)g^{&#39;}(x)dx} = \left\lbrack f(b)g(b) - f(a)g(a) \right\rbrack - \int_{a}^{b}{f^{&#39;}(x)g(x)dx}</annotation></semantics></math></p>
+</body>
+</html>

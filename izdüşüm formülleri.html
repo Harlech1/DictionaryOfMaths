@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"matematik sözlüğü"</title>
+    <style>
+        body {
+            font-size: 16px;
+            font-family: Arial, sans-serif; 
+            color: #333; 
+            background-color: #fff; 
+            line-height: 1.5; 
+        }
+        body.dark-mode {
+            color: #fff; 
+            background-color: #333; 
+        }
+    </style>
+    <script>
+        function detectDarkMode() {
+            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+            if (prefersDarkScheme.matches) {
+                document.body.classList.add("dark-mode");
+            } else {
+                document.body.classList.remove("dark-mode");
+            }
+        }
+        
+        window.onload = detectDarkMode;
+    </script>
+</head>
+<body>
+<p>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mspace width="0.222em"></mspace><mi>t</mi><mi>r</mi><mi>i</mi><mi>g</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">\mathbf{\ }trig.</annotation></semantics></math>
+projection formulas</p>
+
+<p>In any triangle
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow><annotation encoding="application/x-tex">ABC</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mi>b</mi><mo>•</mo><mi>c</mi><mi>o</mi><mi>s</mi><mspace width="0.222em"></mspace><mover><mi>C</mi><mo accent="true">̂</mo></mover><mo>+</mo><mi>c</mi><mo>•</mo><mi>c</mi><mi>o</mi><mi>s</mi><mover><mi>B</mi><mo accent="true">̂</mo></mover></mrow><annotation encoding="application/x-tex">a = b \bullet cos\ \widehat{C} + c \bullet cos\widehat{B}</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi><mo>=</mo><mi>a</mi><mo>•</mo><mo>cos</mo><mrow><mover><mi>C</mi><mo accent="true">̂</mo></mover><mo>+</mo><mi>c</mi><mo>•</mo><mo>cos</mo><mover><mi>A</mi><mo accent="true">̂</mo></mover></mrow></mrow><annotation encoding="application/x-tex">b = a \bullet \cos{\widehat{C} + c \bullet \cos\widehat{A}}</annotation></semantics></math></p>
+
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>=</mo><mi>a</mi><mo>•</mo><mo>cos</mo><mrow><mover><mi>B</mi><mo accent="true">̂</mo></mover><mo>+</mo><mi>b</mi><mo>•</mo><mo>cos</mo><mover><mi>A</mi><mo accent="true">̂</mo></mover></mrow></mrow><annotation encoding="application/x-tex">c = a \bullet \cos{\widehat{B} + b \bullet \cos\widehat{A}}</annotation></semantics></math></p>
+</body>
+</html>
