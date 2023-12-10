@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"matematik sözlüğü"</title>
+    <style>
+        body {
+            font-size: 16px;
+            font-family: Arial, sans-serif; 
+            color: #333; 
+            background-color: #fff; 
+            line-height: 1.5; 
+        }
+        body.dark-mode {
+            color: #fff; 
+            background-color: #333; 
+        }
+    </style>
+    <script>
+        function detectDarkMode() {
+            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+            if (prefersDarkScheme.matches) {
+                document.body.classList.add("dark-mode");
+            } else {
+                document.body.classList.remove("dark-mode");
+            }
+        }
+        
+        window.onload = detectDarkMode;
+    </script>
+</head>
+<body>
+    <p> cotangent</p>
+
+<p>A trigonometric ratio, abbreviated as
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mi>o</mi><mi>t</mi><mspace width="0.222em"></mspace><mi>.</mi></mrow><annotation encoding="application/x-tex">cot\ .</annotation></semantics></math></p>
+<p>In a right triangle, the cotangent of an acute angle is defined as
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mi>o</mi><mi>t</mi><mi>θ</mi><mo>=</mo><mfrac><mrow><mi>l</mi><mi>e</mi><mi>n</mi><mi>g</mi><mi>t</mi><mi>h</mi><mspace width="0.222em"></mspace><mi>o</mi><mi>f</mi><mspace width="0.222em"></mspace><mi>l</mi><mi>e</mi><mi>g</mi><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mi>a</mi><mi>d</mi><mi>j</mi><mi>a</mi><mi>c</mi><mi>e</mi><mi>n</mi><mi>t</mi><mspace width="0.222em"></mspace><mi>t</mi><mi>o</mi><mspace width="0.222em"></mspace><mi>θ</mi></mrow><mrow><mi>l</mi><mi>e</mi><mi>n</mi><mi>g</mi><mi>t</mi><mi>h</mi><mspace width="0.222em"></mspace><mi>o</mi><mi>f</mi><mspace width="0.222em"></mspace><mi>l</mi><mi>e</mi><mi>g</mi><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mi>o</mi><mi>p</mi><mi>p</mi><mi>o</mi><mi>s</mi><mi>i</mi><mi>t</mi><mi>e</mi><mspace width="0.222em"></mspace><mi>θ</mi><mspace width="0.222em"></mspace></mrow></mfrac></mrow><annotation encoding="application/x-tex">cot\theta = \frac{length\ of\ leg\ \ adjacent\ to\ \theta}{length\ of\ leg\ \ opposite\ \theta\ }</annotation></semantics></math></p>
+</body>
+</html>

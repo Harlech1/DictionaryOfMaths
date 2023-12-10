@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"matematik sözlüğü"</title>
+    <style>
+        body {
+            font-size: 16px;
+            font-family: Arial, sans-serif; 
+            color: #333; 
+            background-color: #fff; 
+            line-height: 1.5; 
+        }
+        body.dark-mode {
+            color: #fff; 
+            background-color: #333; 
+        }
+    </style>
+    <script>
+        function detectDarkMode() {
+            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+            if (prefersDarkScheme.matches) {
+                document.body.classList.add("dark-mode");
+            } else {
+                document.body.classList.remove("dark-mode");
+            }
+        }
+        
+        window.onload = detectDarkMode;
+    </script>
+</head>
+<body>
+    <p> combination formula</p>
+<p>The symbol
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>n</mi><mo>,</mo><mi>r</mi><mo stretchy="true" form="postfix">)</mo></mrow><mspace width="0.222em"></mspace><mo>=</mo><mspace width="0.222em"></mspace><mrow><mo stretchy="true" form="prefix">(</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><mi>n</mi></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mi>r</mi></mtd></mtr></mtable><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">C(n,r)\  = \ \begin{pmatrix}
+n \\
+r
+\end{pmatrix}</annotation></semantics></math>, read as ‘’the total
+number of combinations of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+distinct objects taken
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi><annotation encoding="application/x-tex">r</annotation></semantics></math>
+at a time’’, denotes the number of subsets with
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi><annotation encoding="application/x-tex">r</annotation></semantics></math>
+elements that can be formed from a set with
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>n</mi><mspace width="0.222em"></mspace></msup><mspace width="0.222em"></mspace></mrow><annotation encoding="application/x-tex">n^{\ }\ </annotation></semantics></math>elements
+where
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>≤</mo><mi>r</mi><mo>≤</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">0 \leq r \leq n</annotation></semantics></math>.</p>
+<p>If
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>≤</mo><mi>r</mi><mo>≤</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">0 \leq r \leq n</annotation></semantics></math>,
+then<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mspace width="0.222em"></mspace><mi>C</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>n</mi><mo>,</mo><mi>r</mi><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><mi>n</mi></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mi>r</mi></mtd></mtr></mtable><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mspace width="0.222em"></mspace><mfrac><mrow><mi>P</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>n</mi><mo>,</mo><mi>r</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><mrow><mi>r</mi><mi>!</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">\ C(n,r)\begin{pmatrix}
+n \\
+r
+\end{pmatrix} = \ \frac{P(n,r)}{r!}</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mfrac><mrow><mi>n</mi><mi>!</mi></mrow><mrow><mrow><mo stretchy="true" form="prefix">(</mo><mi>n</mi><mo>−</mo><mi>r</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>!</mi><mi>r</mi><mi>!</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mi>n</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>n</mi><mo>−</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mi>n</mi><mo>−</mo><mn>2</mn><mo stretchy="true" form="postfix">)</mo></mrow><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mi>.</mi><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mi>.</mi><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mi>.</mi><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mrow><mo stretchy="true" form="prefix">(</mo><mi>n</mi><mo>−</mo><mi>r</mi><mo>+</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow></mrow><mrow><mi>r</mi><mi>!</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">= \frac{n!}{(n - r)!r!} = \frac{n(n - 1)(n - 2)\ \ .\ \ .\ \ .\ \ (n - r + 1)}{r!}</annotation></semantics></math>
+.</p>
+</body>
+</html>
