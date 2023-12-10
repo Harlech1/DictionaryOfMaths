@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"matematik sözlüğü"</title>
+    <style>
+        body {
+            font-size: 16px;
+            font-family: Arial, sans-serif; 
+            color: #333; 
+            background-color: #fff; 
+            line-height: 1.5; 
+        }
+        body.dark-mode {
+            color: #fff; 
+            background-color: #333; 
+        }
+    </style>
+    <script>
+        function detectDarkMode() {
+            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+            if (prefersDarkScheme.matches) {
+                document.body.classList.add("dark-mode");
+            } else {
+                document.body.classList.remove("dark-mode");
+            }
+        }
+        
+        window.onload = detectDarkMode;
+    </script>
+</head>
+<body>
+    <p> difference of sets</p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>*</mo><mi>A</mi><mo>∖</mo><mi>B</mi><mo>=</mo><mrow><mo stretchy="true" form="prefix">{</mo><mi>x</mi><mo>:</mo><mspace width="0.222em"></mspace><mi>x</mi><mo>∈</mo><mi>A</mi><mspace width="0.222em"></mspace><mi>v</mi><mi>e</mi><mspace width="0.222em"></mspace><mi>x</mi><mo>∉</mo><mi>B</mi><mo stretchy="true" form="postfix">}</mo></mrow></mrow><annotation encoding="application/x-tex">*A\backslash B = \left\{ x:\ x \in A\ ve\ x \notin B \right\}</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>*</mo><mi>B</mi><mo>∖</mo><mi>A</mi><mo>=</mo><mrow><mo stretchy="true" form="prefix">{</mo><mi>x</mi><mo>:</mo><mspace width="0.222em"></mspace><mi>x</mi><mo>∈</mo><mi>B</mi><mspace width="0.222em"></mspace><mi>v</mi><mi>e</mi><mspace width="0.222em"></mspace><mi>x</mi><mo>∉</mo><mspace width="0.222em"></mspace><mi>A</mi><mo stretchy="true" form="postfix">}</mo></mrow></mrow><annotation encoding="application/x-tex">*B\backslash A = \left\{ x:\ x \in B\ ve\ x \notin \ A \right\}</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>*</mo><mi>A</mi><mo>∖</mo><mi>B</mi><mo>≠</mo></mrow><annotation encoding="application/x-tex">*A\backslash B \neq</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mo>∖</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">B\backslash A</annotation></semantics></math>
+(noncommutative)</p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>*</mo><mi>A</mi><mo>∖</mo><mi>B</mi><mo>=</mo><mi>A</mi><mo>∩</mo><msup><mi>B</mi><mi>′</mi></msup></mrow><annotation encoding="application/x-tex">*A\backslash B = A \cap B^{&#39;}</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mo>*</mo><mi>B</mi><mo>∖</mo><mi>A</mi><mo>=</mo><mi>B</mi><mo>∩</mo><msup><mi>A</mi><mi>′</mi></msup></mrow><annotation encoding="application/x-tex">\ \ *B\backslash A = B \cap A^{&#39;}</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>*</mo><mi>A</mi><mo>∖</mo><mi>A</mi><mo>=</mo><mi>⌀</mi></mrow><annotation encoding="application/x-tex">*A\backslash A = \varnothing</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>*</mo><mi>A</mi><mo>∖</mo><mi>⌀</mi><mo>=</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">*A\backslash\varnothing = A</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>*</mo><mi>A</mi><mo>∖</mo><mi>E</mi><mo>=</mo><mi>⌀</mi></mrow><annotation encoding="application/x-tex">*A\backslash E = \varnothing</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>*</mo><mi>⌀</mi><mo>∖</mo><mi>A</mi><mo>=</mo><mi>⌀</mi></mrow><annotation encoding="application/x-tex">*\varnothing\backslash A = \varnothing</annotation></semantics></math></p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>*</mo><mi>A</mi><mo>∖</mo><mtext mathvariant="normal">(</mtext><mi>B</mi><mo>∪</mo><mi>C</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>A</mi><mo>∖</mo><mi>B</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>∩</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>A</mi><mo>∖</mo><mi>C</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">*A\backslash\text{(}B \cup C) = (A\backslash B) \cap (A\backslash C)</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>*</mo><mi>A</mi><mo>∖</mo><mtext mathvariant="normal">(</mtext><mi>B</mi><mo>∪</mo><mi>C</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>A</mi><mo>∖</mo><mi>B</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>∖</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>C</mi><mo>∖</mo><mi>B</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">*A\backslash\text{(}B \cup C) = (A\backslash B)\backslash(C\backslash B)</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>*</mo><mi>A</mi><mo>∖</mo><mtext mathvariant="normal">(</mtext><mi>B</mi><mo>∩</mo><mi>C</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>A</mi><mo>∖</mo><mi>B</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>∪</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>A</mi><mo>∖</mo><mi>C</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">*A\backslash\text{(}B \cap C) = (A\backslash B) \cup (A\backslash C)</annotation></semantics></math></p>
+</body>
+</html>

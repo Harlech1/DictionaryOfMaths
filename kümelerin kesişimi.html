@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"matematik sözlüğü"</title>
+    <style>
+        body {
+            font-size: 16px;
+            font-family: Arial, sans-serif; 
+            color: #333; 
+            background-color: #fff; 
+            line-height: 1.5; 
+        }
+        body.dark-mode {
+            color: #fff; 
+            background-color: #333; 
+        }
+    </style>
+    <script>
+        function detectDarkMode() {
+            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+            if (prefersDarkScheme.matches) {
+                document.body.classList.add("dark-mode");
+            } else {
+                document.body.classList.remove("dark-mode");
+            }
+        }
+        
+        window.onload = detectDarkMode;
+    </script>
+</head>
+<body>
+    <p> intersection of sets</p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>*</mo><mi>A</mi><mo>∩</mo><mi>B</mi><mo>=</mo><mrow><mo stretchy="true" form="prefix">{</mo><mi>x</mi><mo>:</mo><mspace width="0.222em"></mspace><mi>x</mi><mo>∈</mo><mi>A</mi><mspace width="0.222em"></mspace><mi>v</mi><mi>e</mi><mspace width="0.222em"></mspace><mi>x</mi><mo>∈</mo><mi>B</mi><mo stretchy="true" form="postfix">}</mo></mrow></mrow><annotation encoding="application/x-tex">*A \cap B = \left\{ x:\ x \in A\ ve\ x \in B \right\}</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>*</mo><mi>A</mi><mo>∩</mo><mi>A</mi><mo>=</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">*A \cap A = A</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>*</mo><mi>A</mi><mo>∩</mo><mi>⌀</mi><mo>=</mo><mi>⌀</mi></mrow><annotation encoding="application/x-tex">*A \cap \varnothing = \varnothing</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>*</mo><mi>A</mi><mo>∩</mo><mi>E</mi><mo>=</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">*A \cap E = A</annotation></semantics></math>
+(<em>E</em> universal set)
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>*</mo><mi>A</mi><mo>⊂</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">*A \subset B</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>⇒</mo><annotation encoding="application/x-tex">\Longrightarrow</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>∩</mo><mi>B</mi><mo>=</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">A \cap B = A</annotation></semantics></math></p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>*</mo><mi>A</mi><mo>∩</mo><mi>B</mi><mo>=</mo><mi>⌀</mi><mo>⇔</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>A</mi><mo>=</mo><mi>⌀</mi><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mi>o</mi><mi>r</mi><mspace width="0.222em"></mspace><mi>B</mi><mo>=</mo><mi>⌀</mi><mspace width="0.222em"></mspace><mi>o</mi><mi>r</mi><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mi>A</mi><mspace width="0.222em"></mspace><mi>a</mi><mi>n</mi><mi>d</mi><mspace width="0.222em"></mspace><mi>B</mi><mspace width="0.222em"></mspace><mi>a</mi><mi>r</mi><mi>e</mi><mspace width="0.222em"></mspace><mi>d</mi><mi>i</mi><mi>s</mi><mi>j</mi><mi>o</mi><mi>i</mi><mi>n</mi><mi>t</mi><mspace width="0.222em"></mspace><mi>s</mi><mi>e</mi><mi>t</mi><mi>s</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">*A \cap B = \varnothing \Longleftrightarrow (A = \varnothing\ \ or\ B = \varnothing\ or\ \ A\ and\ B\ are\ disjoint\ sets)</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>*</mo><mi>A</mi><mo>∩</mo><mi>B</mi><mo>=</mo><mi>B</mi><mo>∩</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">*A \cap B = B \cap A</annotation></semantics></math>
+(commutative property)</p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>*</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>A</mi><mo>∩</mo><mi>B</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>∩</mo><mi>C</mi><mo>=</mo><mi>A</mi><mo>∩</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>B</mi><mo>∩</mo><mi>C</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">*(A \cap B) \cap C = A \cap (B \cap C)</annotation></semantics></math>
+(associative property)</p>
+</body>
+</html>

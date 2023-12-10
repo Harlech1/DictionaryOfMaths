@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"matematik sözlüğü"</title>
+    <style>
+        body {
+            font-size: 16px;
+            font-family: Arial, sans-serif; 
+            color: #333; 
+            background-color: #fff; 
+            line-height: 1.5; 
+        }
+        body.dark-mode {
+            color: #fff; 
+            background-color: #333; 
+        }
+    </style>
+    <script>
+        function detectDarkMode() {
+            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+            if (prefersDarkScheme.matches) {
+                document.body.classList.add("dark-mode");
+            } else {
+                document.body.classList.remove("dark-mode");
+            }
+        }
+        
+        window.onload = detectDarkMode;
+    </script>
+</head>
+<body>
+    <p> complement of the set</p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>A</mi><mi>′</mi></msup><mo>=</mo><mrow><mo stretchy="true" form="prefix">{</mo><mi>x</mi><mo>:</mo><mspace width="0.222em"></mspace><mi>x</mi><mo>∈</mo><mi>E</mi><mspace width="0.222em"></mspace><mi>v</mi><mi>e</mi><mspace width="0.222em"></mspace><mi>x</mi><mo>∉</mo><mi>A</mi><mo stretchy="true" form="postfix">}</mo></mrow><mspace width="0.222em"></mspace></mrow><annotation encoding="application/x-tex">A^{&#39;} = \left\{ x:\ x \in E\ ve\ x \notin A \right\}\ </annotation></semantics></math>where
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math>
+is the universal set.
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>⌀</mi><mi>′</mi></msup><mo>=</mo><mi>E</mi></mrow><annotation encoding="application/x-tex">\varnothing^{&#39;} = E</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>E</mi><mi>′</mi></msup><mo>=</mo><mi>⌀</mi></mrow><annotation encoding="application/x-tex">E^{&#39;} = \varnothing</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>∪</mo><mi>A</mi><msup><mspace width="0.222em"></mspace><mi>′</mi></msup><mo>=</mo><mi>E</mi></mrow><annotation encoding="application/x-tex">A \cup A\ ^{&#39;} = E</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>∩</mo><mi>A</mi><msup><mspace width="0.222em"></mspace><mi>′</mi></msup><mo>=</mo><mi>⌀</mi></mrow><annotation encoding="application/x-tex">A \cap A\ ^{&#39;} = \varnothing</annotation></semantics></math></p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>⊂</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">A \subset B</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>⇔</mo><annotation encoding="application/x-tex">\Longleftrightarrow</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>B</mi><mi>′</mi></msup><mo>⊂</mo><msup><mi>A</mi><mi>′</mi></msup></mrow><annotation encoding="application/x-tex">B^{&#39;} \subset A^{&#39;}</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>A</mi><mi>′</mi></msup><mo stretchy="true" form="postfix">)</mo></mrow><mi>′</mi></msup><mo>=</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">\left( A^{&#39;} \right)^{&#39;} = A</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>A</mi><mo>∪</mo><mi>B</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>′</mi></msup><mo>=</mo><msup><mi>A</mi><mi>′</mi></msup><mo>∩</mo><msup><mi>B</mi><mi>′</mi></msup></mrow><annotation encoding="application/x-tex">(A \cup B)^{&#39;} = A^{&#39;} \cap B^{&#39;}</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>A</mi><mo>∩</mo><mi>B</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>′</mi></msup><mo>=</mo><msup><mi>A</mi><mi>′</mi></msup><mo>∪</mo><msup><mi>B</mi><mi>′</mi></msup></mrow><annotation encoding="application/x-tex">(A \cap B)^{&#39;} = A^{&#39;} \cup B^{&#39;}</annotation></semantics></math>
+(De Morgan’s laws)
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mspace width="0.222em"></mspace><annotation encoding="application/x-tex">\ </annotation></semantics></math></p>
+</body>
+</html>

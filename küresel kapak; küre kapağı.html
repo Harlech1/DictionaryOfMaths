@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"matematik sözlüğü"</title>
+    <style>
+        body {
+            font-size: 16px;
+            font-family: Arial, sans-serif; 
+            color: #333; 
+            background-color: #fff; 
+            line-height: 1.5; 
+        }
+        body.dark-mode {
+            color: #fff; 
+            background-color: #333; 
+        }
+    </style>
+    <script>
+        function detectDarkMode() {
+            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+            if (prefersDarkScheme.matches) {
+                document.body.classList.add("dark-mode");
+            } else {
+                document.body.classList.remove("dark-mode");
+            }
+        }
+        
+        window.onload = detectDarkMode;
+    </script>
+</head>
+<body>
+    <p> spherical cap; spherical
+dome</p>
+<p>The portion of a sphere cut off by a plane. Its volume is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>=</mo><mfrac><mrow><mi>π</mi><mi>h</mi></mrow><mn>6</mn></mfrac><mrow><mo stretchy="true" form="prefix">(</mo><mn>3</mn><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>h</mi><mn>2</mn></msup><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">V = \frac{\pi h}{6}(3a^{2} + h^{2})</annotation></semantics></math>
+and its curved surface area is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>=</mo><mn>2</mn><mi>π</mi><mi>R</mi><mi>h</mi></mrow><annotation encoding="application/x-tex">A = 2\pi Rh</annotation></semantics></math>,</p>
+<p>where
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi><annotation encoding="application/x-tex">r</annotation></semantics></math>
+is the radius of the cap,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+is the radius of the sphere and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>h</mi><annotation encoding="application/x-tex">h</annotation></semantics></math>
+is the height of the cap.</p>
+</body>
+</html>

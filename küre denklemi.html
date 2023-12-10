@@ -1,37 +1,89 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>"matematik sözlüğü"</title>
-<style>
-            body {
-                font-size: 16px;
-                font-family: Arial, sans-serif; 
-                color: #333; 
-                background-color: #fff; 
-                line-height: 1.5; 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"matematik sözlüğü"</title>
+    <style>
+        body {
+            font-size: 16px;
+            font-family: Arial, sans-serif; 
+            color: #333; 
+            background-color: #fff; 
+            line-height: 1.5; 
+        }
+        body.dark-mode {
+            color: #fff; 
+            background-color: #333; 
+        }
+    </style>
+    <script>
+        function detectDarkMode() {
+            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+            if (prefersDarkScheme.matches) {
+                document.body.classList.add("dark-mode");
+            } else {
+                document.body.classList.remove("dark-mode");
             }
-            body.dark-mode {
-                color: #fff; 
-                background-color: #333; 
-            }
-        </style>
-<script>
-            function detectDarkMode() {
-                const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
-                if (prefersDarkScheme.matches) {
-                    document.body.classList.add("dark-mode");
-                } else {
-                    document.body.classList.remove("dark-mode");
-                }
-            }
-
-            window.onload = detectDarkMode;
-        </script>
+        }
+        
+        window.onload = detectDarkMode;
+    </script>
 </head>
 <body>
-<p> equation of the sphere</p>
+    <p> equation of the sphere</p>
+<table>
+<colgroup>
+<col style="width: 37%" />
+<col style="width: 62%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><u>property of the sphere</u></th>
+<th><u>equation of the sphere</u></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>center at (0,0,0)</td>
+<td><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mspace width="0.222em"></mspace><msup><mi>y</mi><mn>2</mn></msup><mo>+</mo><msup><mi>z</mi><mn>2</mn></msup><mo>=</mo><mspace width="0.222em"></mspace><msup><mi>r</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">x^{2} + \ y^{2} + z^{2} = \ r^{2}</annotation></semantics></math></td>
+</tr>
+<tr class="even">
+<td>center at (a,b,c)</td>
+<td><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo>−</mo><mi>a</mi><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup><mo>+</mo><mspace width="0.222em"></mspace><msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>y</mi><mo>−</mo><mi>b</mi><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup><mo>+</mo><msup><mrow><mspace width="0.222em"></mspace><mrow><mo stretchy="true" form="prefix">(</mo><mi>z</mi><mo>−</mo><mi>c</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><mn>2</mn></msup><mo>=</mo><msup><mi>r</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">(x - a)^{2} + \ (y - b)^{2} + {\ (z - c)}^{2} = r^{2}</annotation></semantics></math></td>
+</tr>
+<tr class="odd">
+<td>center on the x-axis (a,0,0)</td>
+<td><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo>−</mo><mi>a</mi><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup><mo>+</mo><mspace width="0.222em"></mspace><msup><mi>y</mi><mn>2</mn></msup><mo>+</mo><msup><mi>z</mi><mn>2</mn></msup><mo>=</mo><mspace width="0.222em"></mspace><msup><mi>r</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">(x - a)^{2} + \ y^{2} + z^{2} = \ r^{2}</annotation></semantics></math></td>
+</tr>
+<tr class="even">
+<td>center on the y-axis (0,b,0)</td>
+<td><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mspace width="0.222em"></mspace><msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>y</mi><mo>−</mo><mi>b</mi><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup><mo>+</mo><msup><mi>z</mi><mn>2</mn></msup><mo>=</mo><mspace width="0.222em"></mspace><msup><mi>r</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">x^{2} + \ (y - b)^{2} + z^{2} = \ r^{2}</annotation></semantics></math></td>
+</tr>
+<tr class="odd">
+<td>center on the z-axis (0,0,c)</td>
+<td><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup><mo>+</mo><mspace width="0.222em"></mspace><msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>z</mi><mo>−</mo><mi>c</mi><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup><mo>=</mo><mspace width="0.222em"></mspace><msup><mi>r</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">x^{2} + y^{2} + \ (z - c)^{2} = \ r^{2}</annotation></semantics></math></td>
+</tr>
+<tr class="even">
+<td>tangent to the x-y plane
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>𝐫</mi><mo mathvariant="bold">=</mo></mrow><mrow><mo stretchy="true" form="prefix">|</mo><mi>𝐜</mi><mo stretchy="true" form="postfix">|</mo></mrow></mrow><annotation encoding="application/x-tex">\mathbf{r =}\left| \mathbf{c} \right|</annotation></semantics></math></td>
+<td><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo>−</mo><mi>a</mi><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup><mo>+</mo><mspace width="0.222em"></mspace><msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>y</mi><mo>−</mo><mi>b</mi><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup><mo>+</mo><msup><mrow><mspace width="0.222em"></mspace><mrow><mo stretchy="true" form="prefix">(</mo><mi>z</mi><mo>−</mo><mi>c</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><mn>2</mn></msup><mo>=</mo><msup><mi>c</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">(x - a)^{2} + \ (y - b)^{2} + {\ (z - c)}^{2} = c^{2}</annotation></semantics></math></td>
+</tr>
+<tr class="odd">
+<td>tangent to the y-z plane
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mspace width="0.222em"></mspace><mi>𝐫</mi><mo mathvariant="bold">=</mo></mrow><mrow><mo stretchy="true" form="prefix">|</mo><mi>𝐚</mi><mo stretchy="true" form="postfix">|</mo></mrow></mrow><annotation encoding="application/x-tex">\mathbf{\ r =}\left| \mathbf{a} \right|</annotation></semantics></math></td>
+<td><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo>−</mo><mi>a</mi><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup><mo>+</mo><mspace width="0.222em"></mspace><msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>y</mi><mo>−</mo><mi>b</mi><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup><mo>+</mo><msup><mrow><mspace width="0.222em"></mspace><mrow><mo stretchy="true" form="prefix">(</mo><mi>z</mi><mo>−</mo><mi>c</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><mn>2</mn></msup><mo>=</mo><msup><mi>a</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">(x - a)^{2} + \ (y - b)^{2} + {\ (z - c)}^{2} = a^{2}</annotation></semantics></math></td>
+</tr>
+<tr class="even">
+<td>tangent to the x-z plane
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mspace width="0.222em"></mspace><mi>𝐫</mi><mo mathvariant="bold">=</mo></mrow><mrow><mo stretchy="true" form="prefix">|</mo><mi>𝐛</mi><mo stretchy="true" form="postfix">|</mo></mrow></mrow><annotation encoding="application/x-tex">\mathbf{\ r =}\left| \mathbf{b} \right|</annotation></semantics></math></td>
+<td><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo>−</mo><mi>a</mi><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup><mo>+</mo><mspace width="0.222em"></mspace><msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>y</mi><mo>−</mo><mi>b</mi><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup><mo>+</mo><msup><mrow><mspace width="0.222em"></mspace><mrow><mo stretchy="true" form="prefix">(</mo><mi>z</mi><mo>−</mo><mi>c</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><mn>2</mn></msup><mo>=</mo><msup><mi>b</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">(x - a)^{2} + \ (y - b)^{2} + {\ (z - c)}^{2} = b^{2}</annotation></semantics></math></td>
+</tr>
+<tr class="odd">
+<td>tangent to all the coordinate planes</td>
+<td><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo>−</mo><mi>a</mi><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup><mo>+</mo><mspace width="0.222em"></mspace><msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>y</mi><mo>−</mo><mi>a</mi><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup><mo>+</mo><msup><mrow><mspace width="0.222em"></mspace><mrow><mo stretchy="true" form="prefix">(</mo><mi>z</mi><mo>−</mo><mi>a</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><mn>2</mn></msup><mo>=</mo><msup><mi>a</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">(x - a)^{2} + \ (y - a)^{2} + {\ (z - a)}^{2} = a^{2}</annotation></semantics></math>,<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mspace width="0.222em"></mspace><mi>𝐫</mi><mo mathvariant="bold">=</mo></mrow><mrow><mo stretchy="true" form="prefix">|</mo><mi>𝐚</mi><mo stretchy="true" form="postfix">|</mo></mrow><mo mathvariant="bold">=</mo><mrow><mo stretchy="true" form="prefix">|</mo><mi>𝐛</mi><mo stretchy="true" form="postfix">|</mo></mrow><mo mathvariant="bold">=</mo><mrow><mo stretchy="true" form="prefix">|</mo><mi>𝐜</mi><mo stretchy="true" form="postfix">|</mo></mrow></mrow><annotation encoding="application/x-tex">\mathbf{\ r =}\left| \mathbf{a} \right|\mathbf{=}\left| \mathbf{b} \right|\mathbf{=}\left| \mathbf{c} \right|</annotation></semantics></math></td>
+</tr>
+</tbody>
+</table>
 </body>
 </html>

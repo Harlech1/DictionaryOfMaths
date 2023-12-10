@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"matematik sözlüğü"</title>
+    <style>
+        body {
+            font-size: 16px;
+            font-family: Arial, sans-serif; 
+            color: #333; 
+            background-color: #fff; 
+            line-height: 1.5; 
+        }
+        body.dark-mode {
+            color: #fff; 
+            background-color: #333; 
+        }
+    </style>
+    <script>
+        function detectDarkMode() {
+            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+            if (prefersDarkScheme.matches) {
+                document.body.classList.add("dark-mode");
+            } else {
+                document.body.classList.remove("dark-mode");
+            }
+        }
+        
+        window.onload = detectDarkMode;
+    </script>
+</head>
+<body>
+    p> power sum</p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo>∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><mrow><mi>k</mi><mo>=</mo><mfrac><mrow><mi>n</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>n</mi><mo>+</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow></mrow><mn>2</mn></mfrac></mrow></mrow><annotation encoding="application/x-tex">\sum_{k = 1}^{n}{k = \frac{n(n + 1)}{2}}</annotation></semantics></math>
+<em>,</em>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo>∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><mrow><msup><mi>k</mi><mn>2</mn></msup><mo>=</mo></mrow><mfrac><mrow><mi>n</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>n</mi><mo>+</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mn>2</mn><mi>n</mi><mo>+</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow></mrow><mn>6</mn></mfrac></mrow><annotation encoding="application/x-tex">\sum_{k = 1}^{n}{k^{2} =}\frac{n(n + 1)(2n + 1)}{6}</annotation></semantics></math><em>,</em>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo>∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><mrow><msup><mi>k</mi><mn>3</mn></msup><mo>=</mo><mfrac><mrow><msup><mi>n</mi><mn>2</mn></msup><msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>n</mi><mo>+</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup></mrow><mn>4</mn></mfrac></mrow></mrow><annotation encoding="application/x-tex">\sum_{k = 1}^{n}{k^{3} = \frac{n^{2}(n + 1)^{2}}{4}}</annotation></semantics></math>
+<em>,</em> etc.</p>
+</body>
+</html>
