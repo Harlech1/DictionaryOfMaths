@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"matematik sözlüğü"</title>
+    <style>
+        body {
+            font-size: 16px;
+            font-family: Arial, sans-serif; 
+            color: #333; 
+            background-color: #fff; 
+            line-height: 1.5; 
+        }
+        body.dark-mode {
+            color: #fff; 
+            background-color: #333; 
+        }
+    </style>
+    <script>
+        function detectDarkMode() {
+            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+            if (prefersDarkScheme.matches) {
+                document.body.classList.add("dark-mode");
+            } else {
+                document.body.classList.remove("dark-mode");
+            }
+        }
+        
+        window.onload = detectDarkMode;
+    </script>
+</head>
+<body>
+    <p>
+Cramer’s rule for two equations containing two variables</p>
+<p>The solution to the system of equations
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">{</mo><mtable><mtr><mtd columnalign="right" style="text-align: right"><msub><mi>a</mi><mn>11</mn></msub><mi>x</mi><mo>+</mo><msub><mi>a</mi><mn>12</mn></msub><mi>y</mi><mo>=</mo><msub><mi>b</mi><mn>1</mn></msub></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right"><msub><mi>a</mi><mn>21</mn></msub><mi>x</mi><mo>+</mo><msub><mi>a</mi><mn>22</mn></msub><mi>y</mi><mo>=</mo><msub><mi>b</mi><mn>2</mn></msub></mtd></mtr></mtable></mrow><mspace width="0.222em"></mspace></mrow><annotation encoding="application/x-tex">\left\{ \begin{array}{r}
+a_{11}x + a_{12}y = b_{1} \\
+a_{21}x + a_{22}y = b_{2}
+\end{array} \right.\ </annotation></semantics></math> is given by
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mfrac><msub><mi mathvariant="normal">Δ</mi><mi>x</mi></msub><mi mathvariant="normal">Δ</mi></mfrac><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace></mrow><annotation encoding="application/x-tex">x = \frac{\mathrm{\Delta}_{x}}{\mathrm{\Delta}}\ \ </annotation></semantics></math>and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mfrac><msub><mi mathvariant="normal">Δ</mi><mi>y</mi></msub><mi mathvariant="normal">Δ</mi></mfrac></mrow><annotation encoding="application/x-tex">y = \frac{\mathrm{\Delta}_{y}}{\mathrm{\Delta}}</annotation></semantics></math>
+,</p>
+<p>where
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="normal">Δ</mi><mspace width="0.222em"></mspace></msub><mo>=</mo><mrow><mo stretchy="true" form="prefix">|</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><msub><mi>a</mi><mn>11</mn></msub></mtd><mtd columnalign="center" style="text-align: center"><msub><mi>a</mi><mn>12</mn></msub></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><msub><mi>a</mi><mn>21</mn></msub></mtd><mtd columnalign="center" style="text-align: center"><msub><mi>a</mi><mn>22</mn></msub></mtd></mtr></mtable><mo stretchy="true" form="postfix">|</mo></mrow></mrow><annotation encoding="application/x-tex">\mathrm{\Delta}_{\ } = \left| \begin{matrix}
+a_{11} &amp; a_{12} \\
+a_{21} &amp; a_{22}
+\end{matrix} \right|</annotation></semantics></math> ,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="normal">Δ</mi><mi>x</mi></msub><mo>=</mo><mrow><mo stretchy="true" form="prefix">|</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><msub><mi>b</mi><mn>1</mn></msub></mtd><mtd columnalign="center" style="text-align: center"><msub><mi>a</mi><mn>12</mn></msub></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><msub><mi>b</mi><mn>2</mn></msub></mtd><mtd columnalign="center" style="text-align: center"><msub><mi>a</mi><mn>22</mn></msub></mtd></mtr></mtable><mo stretchy="true" form="postfix">|</mo></mrow><msub><mrow><mspace width="0.222em"></mspace><mi>a</mi><mi>n</mi><mi>d</mi><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mi mathvariant="normal">Δ</mi></mrow><mi>y</mi></msub><mo>=</mo><mrow><mo stretchy="true" form="prefix">|</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><msub><mi>a</mi><mn>11</mn></msub></mtd><mtd columnalign="center" style="text-align: center"><msub><mi>b</mi><mn>1</mn></msub></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><msub><mi>a</mi><mn>21</mn></msub></mtd><mtd columnalign="center" style="text-align: center"><msub><mi>b</mi><mn>2</mn></msub></mtd></mtr></mtable><mo stretchy="true" form="postfix">|</mo></mrow></mrow><annotation encoding="application/x-tex">\mathrm{\Delta}_{x} = \left| \begin{matrix}
+b_{1} &amp; a_{12} \\
+b_{2} &amp; a_{22}
+\end{matrix} \right|{\ and\ \ \ \mathrm{\Delta}}_{y} = \left| \begin{matrix}
+a_{11} &amp; b_{1} \\
+a_{21} &amp; b_{2}
+\end{matrix} \right|</annotation></semantics></math> provided that
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mo>≠</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\mathrm{\Delta} \neq 0</annotation></semantics></math>
+.</p>
+</body>
+</html>

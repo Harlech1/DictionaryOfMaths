@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"matematik sözlüğü"</title>
+    <style>
+        body {
+            font-size: 16px;
+            font-family: Arial, sans-serif; 
+            color: #333; 
+            background-color: #fff; 
+            line-height: 1.5; 
+        }
+        body.dark-mode {
+            color: #fff; 
+            background-color: #333; 
+        }
+    </style>
+    <script>
+        function detectDarkMode() {
+            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+            if (prefersDarkScheme.matches) {
+                document.body.classList.add("dark-mode");
+            } else {
+                document.body.classList.remove("dark-mode");
+            }
+        }
+        
+        window.onload = detectDarkMode;
+    </script>
+</head>
+<body>
+    <p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>𝐢</mi><annotation encoding="application/x-tex">\mathbf{i}</annotation></semantics></math>
+ integer powers of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi><annotation encoding="application/x-tex">i</annotation></semantics></math>
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>∈</mo><mi>N</mi></mrow><annotation encoding="application/x-tex">n \in N</annotation></semantics></math>)</p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo>*</mo><mi>i</mi></mrow><mrow><mn>4</mn><mi>n</mi></mrow></msup><mo>=</mo><msup><mi>i</mi><mi>o</mi></msup><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">{*i}^{4n} = i^{o} = 1</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>*</mo><msup><mi>i</mi><mrow><mn>4</mn><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup><mo>=</mo><msup><mi>i</mi><mn>1</mn></msup><mo>=</mo><mi>i</mi></mrow><annotation encoding="application/x-tex">*i^{4n + 1} = i^{1} = i</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo>*</mo><mi>i</mi></mrow><mrow><mn>4</mn><mi>n</mi><mo>+</mo><mn>2</mn></mrow></msup><mo>=</mo><msup><mi>i</mi><mn>2</mn></msup><mo>=</mo><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">{*i}^{4n + 2} = i^{2} = - 1</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo>*</mo><mi>i</mi></mrow><mrow><mn>4</mn><mi>n</mi><mo>+</mo><mn>3</mn></mrow></msup><mo>=</mo><msup><mi>i</mi><mn>3</mn></msup><mo>=</mo><mo>−</mo><mi>i</mi></mrow><annotation encoding="application/x-tex">{*i}^{4n + 3} = i^{3} = - i</annotation></semantics></math></p>
+</body>
+</html>
