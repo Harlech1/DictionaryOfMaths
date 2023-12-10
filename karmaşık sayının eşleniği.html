@@ -1,38 +1,65 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>"matematik sözlüğü"</title>
-<style>
-            body {
-                font-size: 16px;
-                font-family: Arial, sans-serif; 
-                color: #333; 
-                background-color: #fff; 
-                line-height: 1.5; 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"matematik sözlüğü"</title>
+    <style>
+        body {
+            font-size: 16px;
+            font-family: Arial, sans-serif; 
+            color: #333; 
+            background-color: #fff; 
+            line-height: 1.5; 
+        }
+        body.dark-mode {
+            color: #fff; 
+            background-color: #333; 
+        }
+    </style>
+    <script>
+        function detectDarkMode() {
+            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+            if (prefersDarkScheme.matches) {
+                document.body.classList.add("dark-mode");
+            } else {
+                document.body.classList.remove("dark-mode");
             }
-            body.dark-mode {
-                color: #fff; 
-                background-color: #333; 
-            }
-        </style>
-<script>
-            function detectDarkMode() {
-                const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
-                if (prefersDarkScheme.matches) {
-                    document.body.classList.add("dark-mode");
-                } else {
-                    document.body.classList.remove("dark-mode");
-                }
-            }
-
-            window.onload = detectDarkMode;
-        </script>
+        }
+        
+        window.onload = detectDarkMode;
+    </script>
 </head>
 <body>
-<p> conjugate of the complex
+    <p> conjugate of the complex
 number; complex conjugate</p>
+<p>The conjugate of the complex number
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi><mo>=</mo><mi>a</mi><mo>+</mo><mi>b</mi><mi>i</mi></mrow><annotation encoding="application/x-tex">z = a + bi</annotation></semantics></math>,
+denoted by
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>z</mi><mo accent="true">¯</mo></mover><annotation encoding="application/x-tex">\overline{z}</annotation></semantics></math>,
+is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi>z</mi><mo accent="true">¯</mo></mover><mo>=</mo><mi>a</mi><mo>−</mo><mi>b</mi><mi>i</mi></mrow><annotation encoding="application/x-tex">\overline{z} = a - bi</annotation></semantics></math>.</p>
+<p>In the complex plane the points corresponding to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>z</mi><annotation encoding="application/x-tex">z</annotation></semantics></math>
+ve
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>z</mi><mo accent="true">¯</mo></mover><annotation encoding="application/x-tex">\overline{z}</annotation></semantics></math>
+are symmetric with respect to the x-axis.</p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>*</mo><mi>R</mi><mi>e</mi></mrow><annotation encoding="application/x-tex">*Re</annotation></semantics></math>(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>z</mi><mo accent="true">¯</mo></mover><annotation encoding="application/x-tex">\overline{z}</annotation></semantics></math>)=<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mspace width="0.222em"></mspace><mi>R</mi><mi>e</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>z</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\ Re(z)</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>*</mo><mi>I</mi><mi>m</mi><mo stretchy="false" form="prefix">(</mo><mover><mi>z</mi><mo accent="true">¯</mo></mover></mrow><annotation encoding="application/x-tex">*Im(\overline{z}</annotation></semantics></math>)<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mo>−</mo><mi>I</mi><mi>m</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>z</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">= - Im(z)</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>*</mo><mover><mover><mi>z</mi><mo accent="true">¯</mo></mover><mo accent="true">¯</mo></mover><mo>=</mo><mi>z</mi></mrow><annotation encoding="application/x-tex">*\overline{\overline{z}} = z</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>*</mo><mi>z</mi><mspace width="0.222em"></mspace><mi>.</mi></mrow><annotation encoding="application/x-tex">*z\ .</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>z</mi><mo accent="true">¯</mo></mover><annotation encoding="application/x-tex">\overline{z}</annotation></semantics></math>
+=
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup><mo>=</mo><msup><mrow><mo stretchy="true" form="prefix">|</mo><mi>z</mi><mo stretchy="true" form="postfix">|</mo></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">a^{2} + b^{2} = |z|^{2}</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>*</mo><mover><mrow><msub><mi>z</mi><mn>1</mn></msub><mi>.</mi><msub><mi>z</mi><mn>2</mn></msub></mrow><mo accent="true">¯</mo></mover><mo>=</mo><mover><msub><mi>z</mi><mn>1</mn></msub><mo accent="true">¯</mo></mover><mi>.</mi><mover><msub><mi>z</mi><mn>2</mn></msub><mo accent="true">¯</mo></mover></mrow><annotation encoding="application/x-tex">*\overline{z_{1}.z_{2}} = \overline{z_{1}}.\overline{z_{2}}</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>*</mo><mover><mrow><msub><mi>z</mi><mn>1</mn></msub><mo>+</mo><msub><mi>z</mi><mn>2</mn></msub></mrow><mo accent="true">¯</mo></mover><mo>=</mo><mover><msub><mi>z</mi><mn>1</mn></msub><mo accent="true">¯</mo></mover><mo>+</mo><mover><msub><mi>z</mi><mn>2</mn></msub><mo accent="true">¯</mo></mover></mrow><annotation encoding="application/x-tex">*\overline{z_{1} + z_{2}} = \overline{z_{1}} + \overline{z_{2}}</annotation></semantics></math></p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>*</mo><mover><mrow><msub><mi>z</mi><mn>1</mn></msub><mo>−</mo><msub><mi>z</mi><mn>2</mn></msub></mrow><mo accent="true">¯</mo></mover><mo>=</mo><mover><msub><mi>z</mi><mn>1</mn></msub><mo accent="true">¯</mo></mover><mo>−</mo><mover><msub><mi>z</mi><mn>2</mn></msub><mo accent="true">¯</mo></mover></mrow><annotation encoding="application/x-tex">*\overline{z_{1} - z_{2}} = \overline{z_{1}} - \overline{z_{2}}</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>*</mo><mover><mrow><msub><mi>z</mi><mn>1</mn></msub><msub><mrow><mo>÷</mo><mi>z</mi></mrow><mn>2</mn></msub></mrow><mo accent="true">¯</mo></mover><mo>=</mo><mover><msub><mi>z</mi><mn>1</mn></msub><mo accent="true">¯</mo></mover><mo>÷</mo><mover><msub><mi>z</mi><mn>2</mn></msub><mo accent="true">¯</mo></mover></mrow><annotation encoding="application/x-tex">*\overline{z_{1}{\div z}_{2}} = \overline{z_{1}} \div \overline{z_{2}}</annotation></semantics></math>
+,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>z</mi><mn>2</mn></msub><mo>≠</mo><mn>0</mn><mo>+</mo><mn>0</mn><mi>i</mi></mrow><annotation encoding="application/x-tex">z_{2} \neq 0 + 0i</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>*</mo><mi>z</mi><mo>+</mo></mrow><annotation encoding="application/x-tex">*z +</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi>z</mi><mo accent="true">¯</mo></mover><mo>=</mo><mn>2</mn><mi>.</mi><mi>R</mi><mi>e</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>z</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\overline{z} = 2.Re(z)</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>*</mo><mi>z</mi><mo>−</mo></mrow><annotation encoding="application/x-tex">*z -</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi>z</mi><mo accent="true">¯</mo></mover><mo>=</mo><mn>2</mn><mi>i</mi><mi>.</mi><mi>I</mi><mi>m</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi></mrow><annotation encoding="application/x-tex">\overline{z} = 2i.Im(z</annotation></semantics></math></p>
 </body>
 </html>

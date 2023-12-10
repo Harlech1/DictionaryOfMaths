@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"matematik sözlüğü"</title>
+    <style>
+        body {
+            font-size: 16px;
+            font-family: Arial, sans-serif; 
+            color: #333; 
+            background-color: #fff; 
+            line-height: 1.5; 
+        }
+        body.dark-mode {
+            color: #fff; 
+            background-color: #333; 
+        }
+    </style>
+    <script>
+        function detectDarkMode() {
+            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+            if (prefersDarkScheme.matches) {
+                document.body.classList.add("dark-mode");
+            } else {
+                document.body.classList.remove("dark-mode");
+            }
+        }
+        
+        window.onload = detectDarkMode;
+    </script>
+</head>
+<body>
+    <p> equality of complex
+numbers</p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>z</mi><mn>1</mn></msub><mo>=</mo><msub><mi>z</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">z_{1} = z_{2}</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>↔</mo><mrow><mo stretchy="true" form="prefix">[</mo><msub><mrow><mi>R</mi><mi>e</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi></mrow><mn>1</mn></msub><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>R</mi><mi>e</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>z</mi><mn>2</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow><mspace width="0.222em"></mspace><mi>a</mi><mi>n</mi><mi>d</mi><mspace width="0.222em"></mspace><msub><mrow><mi>I</mi><mi>m</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi></mrow><mn>1</mn></msub><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>I</mi><mi>m</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>z</mi><mn>2</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">]</mo></mrow></mrow><annotation encoding="application/x-tex">\leftrightarrow \left\lbrack {Re(z}_{1}) = Re\left( z_{2} \right)\ and\ {Im(z}_{1}) = Im(z_{2}) \right\rbrack</annotation></semantics></math>,
+where
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>z</mi><mn>1</mn></msub><mo>=</mo><mi>a</mi><mo>+</mo><mi>b</mi><mi>i</mi></mrow><annotation encoding="application/x-tex">z_{1} = a + bi</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>z</mi><mn>2</mn></msub><mo>=</mo><mi>c</mi><mo>+</mo><mi>d</mi><mi>i</mi></mrow><annotation encoding="application/x-tex">z_{2} = c + di</annotation></semantics></math>
+.</p>
+</body>
+</html>

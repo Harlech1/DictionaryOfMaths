@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"matematik sözlüğü"</title>
+    <style>
+        body {
+            font-size: 16px;
+            font-family: Arial, sans-serif; 
+            color: #333; 
+            background-color: #fff; 
+            line-height: 1.5; 
+        }
+        body.dark-mode {
+            color: #fff; 
+            background-color: #333; 
+        }
+    </style>
+    <script>
+        function detectDarkMode() {
+            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+            if (prefersDarkScheme.matches) {
+                document.body.classList.add("dark-mode");
+            } else {
+                document.body.classList.remove("dark-mode");
+            }
+        }
+        
+        window.onload = detectDarkMode;
+    </script>
+</head>
+<body>
+    <p> properties of the
+cartesian product</p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>*</mo><mi>n</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>A</mi><mi>x</mi><mi>B</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mi>n</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>B</mi><mi>x</mi><mi>A</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mi>n</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>A</mi><mo stretchy="true" form="postfix">)</mo></mrow><mspace width="0.222em"></mspace><mi>n</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>B</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">*n(AxB) = n(BxA) = n(A)\ n(B)</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>*</mo><mi>A</mi><mi>x</mi><mi>⌀</mi><mo>=</mo><mi>⌀</mi><mi>x</mi><mi>A</mi><mo>=</mo><mi>⌀</mi></mrow><annotation encoding="application/x-tex">*Ax\varnothing = \varnothing xA = \varnothing</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>*</mo><mi>A</mi><mi>x</mi><mi>B</mi><mo>≠</mo></mrow><annotation encoding="application/x-tex">*AxB \neq</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mi>x</mi><mi>A</mi></mrow><annotation encoding="application/x-tex">BxA</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>*</mo><mi>A</mi><mi>x</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>B</mi><mi>x</mi><mi>C</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>A</mi><mi>x</mi><mi>B</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>x</mi><mi>C</mi></mrow><annotation encoding="application/x-tex">*Ax(BxC) = (AxB)xC</annotation></semantics></math></p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>*</mo><mi>A</mi><mi>x</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>B</mi><mo>∪</mo><mi>C</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mrow><mo stretchy="true" form="prefix">(</mo><mi>A</mi><mi>x</mi><mi>B</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>∪</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>A</mi><mi>x</mi><mi>C</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">*Ax(B \cup C) = \ \ (AxB) \cup (AxC)</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>*</mo><mi>A</mi><mi>x</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>B</mi><mo>∩</mo><mi>C</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mrow><mo stretchy="true" form="prefix">(</mo><mi>A</mi><mi>x</mi><mi>B</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>∩</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>A</mi><mi>x</mi><mi>C</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">*Ax(B \cap C) = \ \ (AxB) \cap (AxC)</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>*</mo><mi>A</mi><mi>x</mi><mi>B</mi><mo>=</mo><mi>⌀</mi><mo>⇔</mo></mrow><annotation encoding="application/x-tex">*AxB = \varnothing \Longleftrightarrow</annotation></semantics></math>(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mspace width="0.222em"></mspace><mi>A</mi><mo>=</mo><mi>⌀</mi></mrow><annotation encoding="application/x-tex">\ A = \varnothing</annotation></semantics></math>
+or<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mspace width="0.222em"></mspace><mi>B</mi><mo>=</mo><mi>⌀</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\ B = \varnothing)</annotation></semantics></math></p>
+</body>
+</html>

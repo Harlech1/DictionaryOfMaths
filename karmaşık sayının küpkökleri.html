@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"matematik sözlüğü"</title>
+    <style>
+        body {
+            font-size: 16px;
+            font-family: Arial, sans-serif; 
+            color: #333; 
+            background-color: #fff; 
+            line-height: 1.5; 
+        }
+        body.dark-mode {
+            color: #fff; 
+            background-color: #333; 
+        }
+    </style>
+    <script>
+        function detectDarkMode() {
+            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+            if (prefersDarkScheme.matches) {
+                document.body.classList.add("dark-mode");
+            } else {
+                document.body.classList.remove("dark-mode");
+            }
+        }
+        
+        window.onload = detectDarkMode;
+    </script>
+</head>
+<body>
+   <p> cube-roots of the
+complex number</p>
+<p>The cube roots of z =
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mi>c</mi><mi>i</mi><mi>s</mi><mspace width="0.222em"></mspace><mi>θ</mi></mrow><annotation encoding="application/x-tex">rcis\ \theta</annotation></semantics></math>
+are :</p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>w</mi><mn>0</mn></msub><mo>=</mo><mroot><mi>r</mi><mn>3</mn></mroot><mrow><mo stretchy="true" form="prefix">[</mo><mi>c</mi><mi>i</mi><mi>s</mi><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mi>θ</mi><mn>3</mn></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">]</mo></mrow></mrow><annotation encoding="application/x-tex">w_{0} = \sqrt[3]{r}\left\lbrack cis\left( \frac{\theta}{3} \right) \right\rbrack</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>w</mi><mn>1</mn></msub><mo>=</mo><mroot><mi>r</mi><mn>3</mn></mroot><mrow><mo stretchy="true" form="prefix">[</mo><mi>c</mi><mi>i</mi><mi>s</mi><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mi>θ</mi><mn>3</mn></mfrac><mo>+</mo><mfrac><mrow><mn>2</mn><mi>π</mi></mrow><mn>3</mn></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">]</mo></mrow></mrow><annotation encoding="application/x-tex">w_{1} = \sqrt[3]{r}\left\lbrack cis\left( \frac{\theta}{3} + \frac{2\pi}{3} \right) \right\rbrack</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>w</mi><mn>2</mn></msub><mo>=</mo><mroot><mi>r</mi><mn>3</mn></mroot><mrow><mo stretchy="true" form="prefix">[</mo><mi>c</mi><mi>i</mi><mi>s</mi><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mi>θ</mi><mn>3</mn></mfrac><mo>+</mo><mfrac><mrow><mn>4</mn><mi>π</mi></mrow><mn>3</mn></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">]</mo></mrow></mrow><annotation encoding="application/x-tex">w_{2} = \sqrt[3]{r}\left\lbrack cis\left( \frac{\theta}{3} + \frac{4\pi}{3} \right) \right\rbrack</annotation></semantics></math>
+or
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>r</mi><mo>,</mo><mi>θ</mi><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mn>1</mn><mi>/</mi><mn>3</mn></mrow></msup><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>r</mi><mrow><mn>1</mn><mi>/</mi><mn>3</mn></mrow></msup><mspace width="0.222em"></mspace><mo>,</mo><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mfrac><mrow><mspace width="0.222em"></mspace><mi>θ</mi><mo>+</mo><mn>2</mn><mi>k</mi><mi>π</mi></mrow><mn>3</mn></mfrac><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">(r,\theta)^{1/3} = \left( r^{1/3}\ ,\ \ \frac{\ \theta + 2k\pi}{3} \right)</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">k = 0,1,2</annotation></semantics></math></p>
+</body>
+</html>
