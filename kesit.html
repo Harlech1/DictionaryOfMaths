@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"matematik sözlüğü"</title>
+    <style>
+        body {
+            font-size: 16px;
+            font-family: Arial, sans-serif; 
+            color: #333; 
+            background-color: #fff; 
+            line-height: 1.5; 
+        }
+        body.dark-mode {
+            color: #fff; 
+            background-color: #333; 
+        }
+    </style>
+    <script>
+        function detectDarkMode() {
+            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+            if (prefersDarkScheme.matches) {
+                document.body.classList.add("dark-mode");
+            } else {
+                document.body.classList.remove("dark-mode");
+            }
+        }
+        
+        window.onload = detectDarkMode;
+    </script>
+</head>
+<body>
+    <p> section; cross-section</p>
+
+<p>In 3-D, the cross section of a solid is a plane figure obtained by
+the intersection of the solid with a plane. It represents an
+infinitesimal slice of the solid. The cross section of a sphere with a
+plane is a disk.</p>
+<p>The cross section of a cube may be a square, hexagon, or other
+shape.</p>
+<p>The cross section of a right cone may be a circle, an ellipse or a
+parabola.</p>
+</body>
+</html>

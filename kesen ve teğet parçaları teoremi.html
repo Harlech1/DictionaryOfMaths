@@ -1,46 +1,41 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>"matematik sözlüğü"</title>
-<style>
-            body {
-                font-size: 16px;
-                font-family: Arial, sans-serif; 
-                color: #333; 
-                background-color: #fff; 
-                line-height: 1.5; 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"matematik sözlüğü"</title>
+    <style>
+        body {
+            font-size: 16px;
+            font-family: Arial, sans-serif; 
+            color: #333; 
+            background-color: #fff; 
+            line-height: 1.5; 
+        }
+        body.dark-mode {
+            color: #fff; 
+            background-color: #333; 
+        }
+    </style>
+    <script>
+        function detectDarkMode() {
+            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+            if (prefersDarkScheme.matches) {
+                document.body.classList.add("dark-mode");
+            } else {
+                document.body.classList.remove("dark-mode");
             }
-            body.dark-mode {
-                color: #fff; 
-                background-color: #333; 
-            }
-        </style>
-<script>
-            function detectDarkMode() {
-                const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
-                if (prefersDarkScheme.matches) {
-                    document.body.classList.add("dark-mode");
-                } else {
-                    document.body.classList.remove("dark-mode");
-                }
-            }
-
-            window.onload = detectDarkMode;
-        </script>
+        }
+        
+        window.onload = detectDarkMode;
+    </script>
 </head>
 <body>
-<p> segments of secants
+    <p> segments of secants
 and tangents theorem</p>
-<p>Given tangent
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo form="prefix" stretchy="true">[</mo><mi>P</mi><mi>T</mi></mrow><mspace width="0.222em"></mspace></mrow><annotation encoding="application/x-tex">\left\lbrack PT \right.\ </annotation></semantics></math>
-and secant
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo form="prefix" stretchy="true">[</mo><mi>P</mi><mi>A</mi></mrow><mspace width="0.222em"></mspace></mrow><annotation encoding="application/x-tex">\left\lbrack PA \right.\ </annotation></semantics></math>
-from the same endpoint
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>P</mi><annotation encoding="application/x-tex">P</annotation></semantics></math>
-outside a circle,</p>
-<p>we have
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo form="prefix" stretchy="true">|</mo><mi>P</mi><mi>T</mi><mo form="postfix" stretchy="true">|</mo></mrow><mn>2</mn></msup><mo>=</mo><mrow><mo form="prefix" stretchy="true">|</mo><mi>P</mi><mi>A</mi><mo form="postfix" stretchy="true">|</mo></mrow><mrow><mo form="prefix" stretchy="true">|</mo><mi>P</mi><mi>B</mi><mo form="postfix" stretchy="true">|</mo></mrow></mrow><annotation encoding="application/x-tex">|PT|^{2} = |PA||PB|</annotation></semantics></math></p></body>
+<p>If a secant segment and a tangent segment share an endpoint outside a
+circle, then the product of the lengths of the secant segment and its
+external segment equals the square of the length of the tangent
+segment.</p>
+</body>
 </html>

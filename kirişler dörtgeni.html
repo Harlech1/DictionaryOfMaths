@@ -1,38 +1,52 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>"matematik sözlüğü"</title>
-<style>
-            body {
-                font-size: 16px;
-                font-family: Arial, sans-serif; 
-                color: #333; 
-                background-color: #fff; 
-                line-height: 1.5; 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"matematik sözlüğü"</title>
+    <style>
+        body {
+            font-size: 16px;
+            font-family: Arial, sans-serif; 
+            color: #333; 
+            background-color: #fff; 
+            line-height: 1.5; 
+        }
+        body.dark-mode {
+            color: #fff; 
+            background-color: #333; 
+        }
+    </style>
+    <script>
+        function detectDarkMode() {
+            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+            if (prefersDarkScheme.matches) {
+                document.body.classList.add("dark-mode");
+            } else {
+                document.body.classList.remove("dark-mode");
             }
-            body.dark-mode {
-                color: #fff; 
-                background-color: #333; 
-            }
-        </style>
-<script>
-            function detectDarkMode() {
-                const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
-                if (prefersDarkScheme.matches) {
-                    document.body.classList.add("dark-mode");
-                } else {
-                    document.body.classList.remove("dark-mode");
-                }
-            }
-
-            window.onload = detectDarkMode;
-        </script>
+        }
+        
+        window.onload = detectDarkMode;
+    </script>
 </head>
 <body>
-<p> cyclic quadrilateral;
-quadrilateral of chords</p>
+    <p> cyclic quadrilateral; inscribed
+quadrilateral</p>
+
+<p>A quadrilateral whose vertices all lie on a circle. A square, a
+rectangle and and an isosceles trapezoid are cyclic.</p>
+<p>The sum of the measures of opposite angles in a cyclic quadrilateral
+is always
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>180</mn><mi>o</mi></msup><annotation encoding="application/x-tex">180^{o}</annotation></semantics></math>.</p>
+<p>When we draw the diagonals of a cyclic quadrilateral, we form four
+pairs of equal angles.</p>
+<p>The area of a cyclic quadrilateral with side lengths
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>,</mo><mspace width="0.222em"></mspace><mi>b</mi><mo>,</mo><mspace width="0.222em"></mspace><mi>c</mi><mo>,</mo><mspace width="0.222em"></mspace><mi>a</mi><mi>n</mi><mi>d</mi><mspace width="0.222em"></mspace><mi>d</mi></mrow><annotation encoding="application/x-tex">a,\ b,\ c,\ and\ d</annotation></semantics></math>
+is given by :
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>A</mi><mi>B</mi><mi>C</mi><mi>D</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><msqrt><mrow><mrow><mo stretchy="true" form="prefix">(</mo><mi>u</mi><mo>−</mo><mi>a</mi><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mi>u</mi><mo>−</mo><mi>b</mi><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mi>u</mi><mo>−</mo><mi>c</mi><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mi>u</mi><mo>−</mo><mi>d</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow></msqrt></mrow><annotation encoding="application/x-tex">A(ABCD) = \sqrt{(u - a)(u - b)(u - c)(u - d)}</annotation></semantics></math>,
+where
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>a</mi><mo>+</mo><mi>b</mi><mo>+</mo><mi>c</mi><mo>+</mo><mi>d</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">u = (a + b + c + d)/2</annotation></semantics></math>
+.</p>
 </body>
 </html>

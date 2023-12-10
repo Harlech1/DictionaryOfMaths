@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"matematik sözlüğü"</title>
+    <style>
+        body {
+            font-size: 16px;
+            font-family: Arial, sans-serif; 
+            color: #333; 
+            background-color: #fff; 
+            line-height: 1.5; 
+        }
+        body.dark-mode {
+            color: #fff; 
+            background-color: #333; 
+        }
+    </style>
+    <script>
+        function detectDarkMode() {
+            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+            if (prefersDarkScheme.matches) {
+                document.body.classList.add("dark-mode");
+            } else {
+                document.body.classList.remove("dark-mode");
+            }
+        }
+        
+        window.onload = detectDarkMode;
+    </script>
+</head>
+<body>
+    <p> properties of the chord</p>
+<p>In the same circle or in congruent circles, two minor arcs are
+congruent iff their corresponding chords are congruent.</p>
+<p>In the same circle or in congruent circles, two chords are congruent
+iff they are equidistant from the center.</p>
+<p>In the same circle or in congruent circles, if two chords are
+noncongruent, then the longer chord is closer to the</p>
+<p>center of the circle than the shorter chord.</p>
+<p>The line drawn from the center of a circle perpendicular to a chord
+bisects the chord.</p>
+<p>The line drawn from the center of the circle to the midpoint of a
+chord is perpendicular to the chord.</p>
+<p>The perpendicular bisector of a chord passes through the center of
+the circle.</p>
+<p>If a diameter is perpendicular to a chord, then the diameter bisects
+the chord and its arc.</p>
+</body>
+</html>
