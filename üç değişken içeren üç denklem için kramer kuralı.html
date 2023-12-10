@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"matematik sözlüğü"</title>
+    <style>
+        body {
+            font-size: 16px;
+            font-family: Arial, sans-serif; 
+            color: #333; 
+            background-color: #fff; 
+            line-height: 1.5; 
+        }
+        body.dark-mode {
+            color: #fff; 
+            background-color: #333; 
+        }
+    </style>
+    <script>
+        function detectDarkMode() {
+            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+            if (prefersDarkScheme.matches) {
+                document.body.classList.add("dark-mode");
+            } else {
+                document.body.classList.remove("dark-mode");
+            }
+        }
+        
+        window.onload = detectDarkMode;
+    </script>
+</head>
+<body>
+    <p>
+cramer’s rule for three equations containing three variables</p>
+<p>The solution to the system of equations
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">{</mo><mtable><mtr><mtd columnalign="right" style="text-align: right"><mspace width="0.222em"></mspace><msub><mi>a</mi><mn>11</mn></msub><mi>x</mi><mo>+</mo><msub><mi>a</mi><mn>12</mn></msub><mi>y</mi><mo>+</mo><msub><mi>a</mi><mn>13</mn></msub><mi>z</mi><mspace width="0.222em"></mspace><mo>=</mo><msub><mi>b</mi><mn>1</mn></msub><mspace width="0.222em"></mspace></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right"><msub><mi>a</mi><mn>21</mn></msub><mi>x</mi><mo>+</mo><msub><mi>a</mi><mn>22</mn></msub><mi>y</mi><mo>+</mo><msub><mi>a</mi><mn>23</mn></msub><mi>z</mi><mo>=</mo><msub><mi>b</mi><mn>2</mn></msub><mspace width="0.222em"></mspace></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right"><msub><mi>a</mi><mn>31</mn></msub><mspace width="0.222em"></mspace><mi>x</mi><mo>+</mo><msub><mi>a</mi><mn>32</mn></msub><mi>y</mi><mo>+</mo><msub><mi>a</mi><mn>33</mn></msub><mi>z</mi><mspace width="0.222em"></mspace><mo>=</mo><mi>b</mi><msub><mspace width="0.222em"></mspace><mn>3</mn></msub><mspace width="0.222em"></mspace></mtd></mtr></mtable></mrow><mspace width="0.222em"></mspace></mrow><annotation encoding="application/x-tex">\left\{ \begin{array}{r}
+\ a_{11}x + a_{12}y + a_{13}z\  = b_{1}\  \\
+a_{21}x + a_{22}y + a_{23}z = b_{2}\  \\
+a_{31}\ x + a_{32}y + a_{33}z\  = b\ _{3}\
+\end{array} \right.\ </annotation></semantics></math> is given by
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mfrac><msub><mi mathvariant="normal">Δ</mi><mi>x</mi></msub><mi mathvariant="normal">Δ</mi></mfrac><mspace width="0.222em"></mspace></mrow><annotation encoding="application/x-tex">x = \frac{\mathrm{\Delta}_{x}}{\mathrm{\Delta}}\ </annotation></semantics></math><em>,</em>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mfrac><msub><mi mathvariant="normal">Δ</mi><mi>y</mi></msub><mi mathvariant="normal">Δ</mi></mfrac></mrow><annotation encoding="application/x-tex">y = \frac{\mathrm{\Delta}_{y}}{\mathrm{\Delta}}</annotation></semantics></math>
+<em>,
+z</em><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mfrac><msub><mi mathvariant="normal">Δ</mi><mi>z</mi></msub><mi mathvariant="normal">Δ</mi></mfrac></mrow><annotation encoding="application/x-tex">= \frac{\mathrm{\Delta}_{z}}{\mathrm{\Delta}}</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mo>≠</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\mathrm{\Delta} \neq 0</annotation></semantics></math></p>
+<p>where
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="normal">Δ</mi><mspace width="0.222em"></mspace></msub><mo>=</mo><mrow><mo stretchy="true" form="prefix">|</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><msub><mi>a</mi><mn>11</mn></msub></mtd><mtd columnalign="center" style="text-align: center"><msub><mi>a</mi><mn>12</mn></msub></mtd><mtd columnalign="center" style="text-align: center"><msub><mi>a</mi><mn>13</mn></msub></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><msub><mi>a</mi><mn>21</mn></msub></mtd><mtd columnalign="center" style="text-align: center"><msub><mi>a</mi><mn>22</mn></msub></mtd><mtd columnalign="center" style="text-align: center"><msub><mi>a</mi><mn>23</mn></msub></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><msub><mi>a</mi><mn>31</mn></msub></mtd><mtd columnalign="center" style="text-align: center"><msub><mi>a</mi><mn>32</mn></msub></mtd><mtd columnalign="center" style="text-align: center"><msub><mi>a</mi><mn>33</mn></msub></mtd></mtr></mtable><mo stretchy="true" form="postfix">|</mo></mrow></mrow><annotation encoding="application/x-tex">\mathrm{\Delta}_{\ } = \left| \begin{matrix}
+a_{11} &amp; a_{12} &amp; a_{13} \\
+a_{21} &amp; a_{22} &amp; a_{23} \\
+a_{31} &amp; a_{32} &amp; a_{33}
+\end{matrix} \right|</annotation></semantics></math> <em>,</em>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="normal">Δ</mi><mi>x</mi></msub><mo>=</mo><mrow><mo stretchy="true" form="prefix">|</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><msub><mi>b</mi><mn>1</mn></msub></mtd><mtd columnalign="center" style="text-align: center"><msub><mi>a</mi><mn>12</mn></msub></mtd><mtd columnalign="center" style="text-align: center"><msub><mi>a</mi><mn>13</mn></msub></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><msub><mi>b</mi><mn>2</mn></msub></mtd><mtd columnalign="center" style="text-align: center"><msub><mi>a</mi><mn>22</mn></msub></mtd><mtd columnalign="center" style="text-align: center"><msub><mi>a</mi><mn>23</mn></msub></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><msub><mi>b</mi><mn>3</mn></msub></mtd><mtd columnalign="center" style="text-align: center"><msub><mi>a</mi><mn>32</mn></msub></mtd><mtd columnalign="center" style="text-align: center"><msub><mi>a</mi><mn>33</mn></msub></mtd></mtr></mtable><mo stretchy="true" form="postfix">|</mo></mrow><msub><mrow><mo>,</mo><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mi mathvariant="normal">Δ</mi></mrow><mi>y</mi></msub><mo>=</mo><mrow><mo stretchy="true" form="prefix">|</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><msub><mi>a</mi><mn>11</mn></msub></mtd><mtd columnalign="center" style="text-align: center"><msub><mi>b</mi><mn>1</mn></msub></mtd><mtd columnalign="center" style="text-align: center"><msub><mi>a</mi><mn>13</mn></msub></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><msub><mi>a</mi><mn>21</mn></msub></mtd><mtd columnalign="center" style="text-align: center"><msub><mi>b</mi><mn>2</mn></msub></mtd><mtd columnalign="center" style="text-align: center"><msub><mi>a</mi><mn>23</mn></msub></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><msub><mi>a</mi><mn>31</mn></msub></mtd><mtd columnalign="center" style="text-align: center"><msub><mi>b</mi><mn>3</mn></msub></mtd><mtd columnalign="center" style="text-align: center"><msub><mi>a</mi><mn>33</mn></msub></mtd></mtr></mtable><mo stretchy="true" form="postfix">|</mo></mrow></mrow><annotation encoding="application/x-tex">\mathrm{\Delta}_{x} = \left| \begin{matrix}
+b_{1} &amp; a_{12} &amp; a_{13} \\
+b_{2} &amp; a_{22} &amp; a_{23} \\
+b_{3} &amp; a_{32} &amp; a_{33}
+\end{matrix} \right|{,\ \ \mathrm{\Delta}}_{y} = \left| \begin{matrix}
+a_{11} &amp; b_{1} &amp; a_{13} \\
+a_{21} &amp; b_{2} &amp; a_{23} \\
+a_{31} &amp; b_{3} &amp; a_{33}
+\end{matrix} \right|</annotation></semantics></math> and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mspace width="0.222em"></mspace><mi mathvariant="normal">Δ</mi></mrow><mi>z</mi></msub><mo>=</mo><mrow><mo stretchy="true" form="prefix">|</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><msub><mi>a</mi><mn>11</mn></msub></mtd><mtd columnalign="center" style="text-align: center"><msub><mi>a</mi><mn>12</mn></msub></mtd><mtd columnalign="center" style="text-align: center"><msub><mi>b</mi><mn>1</mn></msub></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><msub><mi>a</mi><mn>21</mn></msub></mtd><mtd columnalign="center" style="text-align: center"><msub><mi>a</mi><mn>22</mn></msub></mtd><mtd columnalign="center" style="text-align: center"><msub><mi>b</mi><mn>2</mn></msub></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><msub><mi>a</mi><mn>31</mn></msub></mtd><mtd columnalign="center" style="text-align: center"><msub><mi>a</mi><mn>32</mn></msub></mtd><mtd columnalign="center" style="text-align: center"><msub><mi>b</mi><mn>3</mn></msub></mtd></mtr></mtable><mo stretchy="true" form="postfix">|</mo></mrow></mrow><annotation encoding="application/x-tex">{\ \mathrm{\Delta}}_{z} = \left| \begin{matrix}
+a_{11} &amp; a_{12} &amp; b_{1} \\
+a_{21} &amp; a_{22} &amp; b_{2} \\
+a_{31} &amp; a_{32} &amp; b_{3}
+\end{matrix} \right|</annotation></semantics></math></p>
+<p>If
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="normal">Δ</mi><mspace width="0.222em"></mspace></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\mathrm{\Delta}_{\ } = 0</annotation></semantics></math>
+and at least one of the determinants
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="normal">Δ</mi><mi>x</mi></msub><mo>,</mo><mspace width="0.222em"></mspace><msub><mi mathvariant="normal">Δ</mi><mi>y</mi></msub><mspace width="0.222em"></mspace><mi>o</mi><mi>r</mi><msub><mrow><mspace width="0.222em"></mspace><mi mathvariant="normal">Δ</mi></mrow><mi>z</mi></msub></mrow><annotation encoding="application/x-tex">\mathrm{\Delta}_{x},\ \mathrm{\Delta}_{y}\ or{\ \mathrm{\Delta}}_{z}</annotation></semantics></math>
+is different from <em>0,</em> then the system is inconsistent and the
+solution set is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ϕ</mi><annotation encoding="application/x-tex">\phi</annotation></semantics></math><em>.</em></p>
+<p>If
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="normal">Δ</mi><mspace width="0.222em"></mspace></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\mathrm{\Delta}_{\ } = 0</annotation></semantics></math>
+and all the determinants
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="normal">Δ</mi><mi>x</mi></msub><mo>,</mo><mspace width="0.222em"></mspace><msub><mi mathvariant="normal">Δ</mi><mi>y</mi></msub><mspace width="0.222em"></mspace><mi>o</mi><mi>r</mi><msub><mrow><mspace width="0.222em"></mspace><mi mathvariant="normal">Δ</mi></mrow><mi>z</mi></msub></mrow><annotation encoding="application/x-tex">\mathrm{\Delta}_{x},\ \mathrm{\Delta}_{y}\ or{\ \mathrm{\Delta}}_{z}</annotation></semantics></math>
+are equal to zer <em>,</em> then the system is consistent and dependent
+. There are infinitely many solutions<em>.</em></p>
+</body>
+</html>

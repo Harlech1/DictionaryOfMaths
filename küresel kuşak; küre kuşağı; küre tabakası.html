@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"matematik sözlüğü"</title>
+    <style>
+        body {
+            font-size: 16px;
+            font-family: Arial, sans-serif; 
+            color: #333; 
+            background-color: #fff; 
+            line-height: 1.5; 
+        }
+        body.dark-mode {
+            color: #fff; 
+            background-color: #333; 
+        }
+    </style>
+    <script>
+        function detectDarkMode() {
+            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+            if (prefersDarkScheme.matches) {
+                document.body.classList.add("dark-mode");
+            } else {
+                document.body.classList.remove("dark-mode");
+            }
+        }
+        
+        window.onload = detectDarkMode;
+    </script>
+</head>
+<body>
+    <p> spherical
+frustum; spherical segment</p>
+<p>Spherical segment is a solid bounded by two parallel planes through a
+sphere. Area of the lower base is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>=</mo><mi>π</mi><msup><msub><mi>r</mi><mn>1</mn></msub><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">A_{1} = \pi{r_{1}}^{2}</annotation></semantics></math>;</p>
+<p>area of the upper base is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>=</mo><mi>π</mi><msup><msub><mi>r</mi><mn>2</mn></msub><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">A_{1} = \pi{r_{2}}^{2}</annotation></semantics></math>;
+area of the zone (curved surface) is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>A</mi><mi>z</mi></msub><mo>=</mo><mn>2</mn><mi>π</mi><mi>R</mi><mi>h</mi></mrow><annotation encoding="application/x-tex">A_{z} = 2\pi Rh</annotation></semantics></math>;
+total area of the segment</p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>A</mi><mi>T</mi></msub><mo>=</mo><mn>2</mn><mi>π</mi><mi>r</mi><mi>h</mi><mo>+</mo><mi>π</mi><msup><msub><mi>r</mi><mn>1</mn></msub><mn>2</mn></msup><mo>+</mo><mi>π</mi><msup><msub><mi>r</mi><mn>2</mn></msub><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">A_{T} = 2\pi rh + \pi{r_{1}}^{2} + \pi{r_{2}}^{2}</annotation></semantics></math>
+and volume of the segment is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>=</mo><mfrac><mrow><mi>π</mi><mi>h</mi></mrow><mn>6</mn></mfrac><mrow><mo stretchy="true" form="prefix">(</mo><mn>3</mn><msup><msub><mi>r</mi><mn>1</mn></msub><mn>2</mn></msup><mo>+</mo><mn>3</mn><msup><msub><mi>r</mi><mn>2</mn></msub><mn>2</mn></msup><mo>+</mo><msup><mi>h</mi><mn>2</mn></msup><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">V = \frac{\pi h}{6}(3{r_{1}}^{2} + 3{r_{2}}^{2} + h^{2})</annotation></semantics></math>,
+where
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>r</mi><mn>1</mn></msub><annotation encoding="application/x-tex">r_{1}</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>r</mi><mn>2</mn></msub><annotation encoding="application/x-tex">r_{2}</annotation></semantics></math>
+are the radii of</p>
+<p>the bases of the segment ,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+is the radius of the sphere and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>h</mi><annotation encoding="application/x-tex">h</annotation></semantics></math>
+is the height of the segment.</p>
+<p>The surface of the spherical segment (bases are not included) is
+called spherical zone.</p>
+</body>
+</html>
