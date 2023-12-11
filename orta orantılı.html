@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"matematik sözlüğü"</title>
+    <style>
+        body {
+            font-size: 16px;
+            font-family: Arial, sans-serif; 
+            color: #333; 
+            background-color: #fff; 
+            line-height: 1.5; 
+        }
+        body.dark-mode {
+            color: #fff; 
+            background-color: #333; 
+        }
+    </style>
+    <script>
+        function detectDarkMode() {
+            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+            if (prefersDarkScheme.matches) {
+                document.body.classList.add("dark-mode");
+            } else {
+                document.body.classList.remove("dark-mode");
+            }
+        }
+        
+        window.onload = detectDarkMode;
+    </script>
+</head>
+<body>
+    <p> mean proportional</p>
+<p>In a given proportion if the means are equal, then each mean is
+called the mean proportional between the two extremes. If
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mi>x</mi><mi>b</mi></mfrac><mo>=</mo><mfrac><mi>c</mi><mi>x</mi></mfrac></mrow><annotation encoding="application/x-tex">\frac{x}{b} = \frac{c}{x}</annotation></semantics></math>
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>:</mo><mi>c</mi><mo>=</mo><mi>b</mi><mo>:</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">x:c = b:x</annotation></semantics></math>
+or
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>=</mo><mi>b</mi><mi>c</mi></mrow><annotation encoding="application/x-tex">x^{2} = bc</annotation></semantics></math>)
+, then we can say that x is mean proportional between a and b..</p>
+</body>
+</html>

@@ -1,45 +1,36 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>"matematik sözlüğü"</title>
-<style>
-            body {
-                font-size: 16px;
-                font-family: Arial, sans-serif; 
-                color: #333; 
-                background-color: #fff; 
-                line-height: 1.5; 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"matematik sözlüğü"</title>
+    <style>
+        body {
+            font-size: 16px;
+            font-family: Arial, sans-serif; 
+            color: #333; 
+            background-color: #fff; 
+            line-height: 1.5; 
+        }
+        body.dark-mode {
+            color: #fff; 
+            background-color: #333; 
+        }
+    </style>
+    <script>
+        function detectDarkMode() {
+            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+            if (prefersDarkScheme.matches) {
+                document.body.classList.add("dark-mode");
+            } else {
+                document.body.classList.remove("dark-mode");
             }
-            body.dark-mode {
-                color: #fff; 
-                background-color: #333; 
-            }
-        </style>
-<script>
-            function detectDarkMode() {
-                const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
-                if (prefersDarkScheme.matches) {
-                    document.body.classList.add("dark-mode");
-                } else {
-                    document.body.classList.remove("dark-mode");
-                }
-            }
-
-            window.onload = detectDarkMode;
-        </script>
+        }
+        
+        window.onload = detectDarkMode;
+    </script>
 </head>
 <body>
-<p> repeating decimals; periodic
-decimals</p>
-<p>A repeating decimal is a decimal in which a group of decimal digits
-repeats infinitely.</p>
-<p>All terminating decimals are also examples of repeating decimals</p>
-<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>5</mn><mn>8</mn></mfrac><mo>=</mo><mn>0</mn><mo>,</mo><mn>62500</mn><mi>…</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>625</mn></mrow><annotation encoding="application/x-tex">\frac{5}{8} = 0,62500\ldots = 0,625</annotation></semantics></math>
-0,222...<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mn>0</mn><mo>,</mo><mover><mn>2</mn><mo accent="true">¯</mo></mover><mo>=</mo><mfrac><mn>2</mn><mn>9</mn></mfrac></mrow><annotation encoding="application/x-tex">= 0,\overline{2} = \frac{2}{9}</annotation></semantics></math>
-2,454545...<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mn>2</mn><mo>,</mo><mover><mn>45</mn><mo accent="true">¯</mo></mover><mo>=</mo><mn>2</mn><mfrac><mn>45</mn><mn>99</mn></mfrac></mrow><annotation encoding="application/x-tex">= 2,\overline{45} = 2\frac{45}{99}</annotation></semantics></math>
-0,2333...=<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>2</mn><mover><mn>3</mn><mo accent="true">¯</mo></mover><mo>=</mo><mfrac><mrow><mn>23</mn><mo>−</mo><mn>2</mn></mrow><mn>90</mn></mfrac><mo>=</mo><mfrac><mn>21</mn><mn>90</mn></mfrac></mrow><annotation encoding="application/x-tex">0,2\overline{3} = \frac{23 - 2}{90} = \frac{21}{90}</annotation></semantics></math></p>
+    <p> repeating decimals</p>
 </body>
 </html>
