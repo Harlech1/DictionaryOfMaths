@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"matematik sözlüğü"</title>
+    <style>
+        body {
+            font-size: 16px;
+            font-family: Arial, sans-serif; 
+            color: #333; 
+            background-color: #fff; 
+            line-height: 1.5; 
+        }
+        body.dark-mode {
+            color: #fff; 
+            background-color: #333; 
+        }
+    </style>
+    <script>
+        function detectDarkMode() {
+            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+            if (prefersDarkScheme.matches) {
+                document.body.classList.add("dark-mode");
+            } else {
+                document.body.classList.remove("dark-mode");
+            }
+        }
+        
+        window.onload = detectDarkMode;
+    </script>
+</head>
+<body>
+    <p> secondary
+(minor) diagonal of the square matrix</p>
+<p>In the matrix
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mspace width="0.222em"></mspace><mi>A</mi></mrow><mrow><mi>n</mi><mi>x</mi><mi>n</mi></mrow></msub><annotation encoding="application/x-tex">{\ A}_{nxn}</annotation></semantics></math>
+the entries
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mrow><mn>1</mn><mi>n</mi></mrow></msub><mo>,</mo><mspace width="0.222em"></mspace><msub><mi>a</mi><mrow><mn>2</mn><mrow><mo stretchy="true" form="prefix">(</mo><mi>n</mi><mo>−</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow></mrow></msub><mo>,</mo><mspace width="0.222em"></mspace><msub><mi>a</mi><mrow><mn>3</mn><mrow><mo stretchy="true" form="prefix">(</mo><mi>n</mi><mo>−</mo><mn>2</mn><mo stretchy="true" form="postfix">)</mo></mrow></mrow></msub><mo>,</mo><mspace width="0.222em"></mspace><mi>…</mi><mo>,</mo><mspace width="0.222em"></mspace><msub><mi>a</mi><mrow><mi>n</mi><mn>1</mn></mrow></msub></mrow><annotation encoding="application/x-tex">a_{1n},\ a_{2(n - 1)},\ a_{3(n - 2)},\ \ldots,\ a_{n1}</annotation></semantics></math>
+form the secondary diagonal.</p>
+</body>
+</html>

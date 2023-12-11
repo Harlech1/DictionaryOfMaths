@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"matematik sözlüğü"</title>
+    <style>
+        body {
+            font-size: 16px;
+            font-family: Arial, sans-serif; 
+            color: #333; 
+            background-color: #fff; 
+            line-height: 1.5; 
+        }
+        body.dark-mode {
+            color: #fff; 
+            background-color: #333; 
+        }
+    </style>
+    <script>
+        function detectDarkMode() {
+            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+            if (prefersDarkScheme.matches) {
+                document.body.classList.add("dark-mode");
+            } else {
+                document.body.classList.remove("dark-mode");
+            }
+        }
+        
+        window.onload = detectDarkMode;
+    </script>
+</head>
+<body>
+    <p> Menelaus’s theorem</p>
+
+<p>If
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>,</mo><mi>Y</mi></mrow><annotation encoding="application/x-tex">X,Y</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Z</mi><annotation encoding="application/x-tex">Z</annotation></semantics></math>
+are on the sides
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mi>C</mi><mo>,</mo><mspace width="0.222em"></mspace><mi>C</mi><mi>A</mi><mo>,</mo></mrow><annotation encoding="application/x-tex">BC,\ CA,</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mi>B</mi></mrow><annotation encoding="application/x-tex">AB</annotation></semantics></math></p>
+<p>( extended if necessary) of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mi>A</mi><mi>B</mi><mi>C</mi></mrow><annotation encoding="application/x-tex">\mathrm{\Delta}ABC</annotation></semantics></math>
+are collinear,</p>
+<p>then
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mo stretchy="true" form="prefix">|</mo><mi>X</mi><mi>B</mi><mo stretchy="true" form="postfix">|</mo></mrow><mrow><mo stretchy="true" form="prefix">|</mo><mi>X</mi><mi>C</mi><mo stretchy="true" form="postfix">|</mo></mrow></mfrac><mo>•</mo><mfrac><mrow><mo stretchy="true" form="prefix">|</mo><mi>C</mi><mi>Y</mi><mo stretchy="true" form="postfix">|</mo></mrow><mrow><mo stretchy="true" form="prefix">|</mo><mi>Y</mi><mi>A</mi><mo stretchy="true" form="postfix">|</mo></mrow></mfrac><mo>•</mo><mfrac><mrow><mo stretchy="true" form="prefix">|</mo><mi>A</mi><mi>Z</mi><mo stretchy="true" form="postfix">|</mo></mrow><mrow><mo stretchy="true" form="prefix">|</mo><mi>Z</mi><mi>B</mi><mo stretchy="true" form="postfix">|</mo></mrow></mfrac><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\frac{|XB|}{|XC|} \bullet \frac{|CY|}{|YA|} \bullet \frac{|AZ|}{|ZB|} = 1</annotation></semantics></math>
+or
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mo stretchy="true" form="prefix">|</mo><mi>A</mi><mi>Z</mi><mo stretchy="true" form="postfix">|</mo></mrow><mrow><mo stretchy="true" form="prefix">|</mo><mi>B</mi><mi>Z</mi><mo stretchy="true" form="postfix">|</mo></mrow></mfrac><mo>•</mo><mfrac><mrow><mo stretchy="true" form="prefix">|</mo><mi>B</mi><mi>X</mi><mo stretchy="true" form="postfix">|</mo></mrow><mrow><mo stretchy="true" form="prefix">|</mo><mi>C</mi><mi>X</mi><mo stretchy="true" form="postfix">|</mo></mrow></mfrac><mo>•</mo><mfrac><mrow><mo stretchy="true" form="prefix">|</mo><mi>C</mi><mi>Y</mi><mo stretchy="true" form="postfix">|</mo></mrow><mrow><mo stretchy="true" form="prefix">|</mo><mi>A</mi><mi>Y</mi><mo stretchy="true" form="postfix">|</mo></mrow></mfrac><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\frac{|AZ|}{|BZ|} \bullet \frac{|BX|}{|CX|} \bullet \frac{|CY|}{|AY|} = 1</annotation></semantics></math>.</p>
+</body>
+</html>

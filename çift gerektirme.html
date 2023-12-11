@@ -1,58 +1,50 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>"matematik sözlüğü"</title>
-<style>
-            body {
-                font-size: 16px;
-                font-family: Arial, sans-serif; 
-                color: #333; 
-                background-color: #fff; 
-                line-height: 1.5; 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"matematik sözlüğü"</title>
+    <style>
+        body {
+            font-size: 16px;
+            font-family: Arial, sans-serif; 
+            color: #333; 
+            background-color: #fff; 
+            line-height: 1.5; 
+        }
+        body.dark-mode {
+            color: #fff; 
+            background-color: #333; 
+        }
+    </style>
+    <script>
+        function detectDarkMode() {
+            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+            if (prefersDarkScheme.matches) {
+                document.body.classList.add("dark-mode");
+            } else {
+                document.body.classList.remove("dark-mode");
             }
-            body.dark-mode {
-                color: #fff; 
-                background-color: #333; 
-            }
-        </style>
-<script>
-            function detectDarkMode() {
-                const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
-                if (prefersDarkScheme.matches) {
-                    document.body.classList.add("dark-mode");
-                } else {
-                    document.body.classList.remove("dark-mode");
-                }
-            }
-
-            window.onload = detectDarkMode;
-        </script>
+        }
+        
+        window.onload = detectDarkMode;
+    </script>
 </head>
 <body>
-<p> biconditional; double
+    <p> biconditional; double
 implication</p>
 <p>A statement that contains the phrase
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>″</mi><mi>i</mi><mi>f</mi><mspace width="0.222em"></mspace><mi>a</mi><mi>n</mi><mi>d</mi><mspace width="0.222em"></mspace><mi>o</mi><mi>n</mi><mi>l</mi><mi>y</mi><mspace width="0.222em"></mspace><mi>i</mi><mi>f</mi><mspace width="0.222em"></mspace><mi>″</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">''if\ and\ only\ if\ ''.</annotation></semantics></math></p>
-<p>A biconditional statement combines
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>⇒</mo><mi>q</mi></mrow><annotation encoding="application/x-tex">p \Longrightarrow q</annotation></semantics></math>
-and
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi><mo>⇒</mo><mi>p</mi></mrow><annotation encoding="application/x-tex">q \Longrightarrow p</annotation></semantics></math>
-as
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>𝐩</mi><mo mathvariant="bold">⇔</mo><mi>𝐪</mi></mrow><annotation encoding="application/x-tex">\mathbf{p \Longleftrightarrow q}</annotation></semantics></math></p>
-<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>⇔</mo><mi>q</mi></mrow><annotation encoding="application/x-tex">p \Longleftrightarrow q</annotation></semantics></math>
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>≡</mo><annotation encoding="application/x-tex">\equiv</annotation></semantics></math>
-<em>p iff q</em>
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>≡</mo><annotation encoding="application/x-tex">\equiv</annotation></semantics></math>
-<em>if p then q</em> and conversely</p>
-<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>⇔</mo><mi>q</mi><mo>≡</mo><mrow><mo form="prefix" stretchy="true">(</mo><mi>p</mi><mo>⇒</mo><mi>q</mi><mo form="postfix" stretchy="true">)</mo></mrow><msubsup><mo>⋀</mo><mrow></mrow><mrow></mrow></msubsup><mrow><mrow><mo form="prefix" stretchy="true">(</mo><mspace width="0.222em"></mspace><mi>q</mi><mo>⇒</mo><mi>p</mi><mo form="postfix" stretchy="true">)</mo></mrow><mspace width="0.222em"></mspace></mrow></mrow><annotation encoding="application/x-tex">p \Longleftrightarrow q \equiv (p \Longrightarrow qigwedge_{}^{}{(\ q \Longrightarrow p)\ }</annotation></semantics></math></p>
-<p><em>p and q</em> are necessary and sufficient conditions for each
-other</p>
-<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>⇔</mo><mn>1</mn><mo>≡</mo><mi>p</mi></mrow><annotation encoding="application/x-tex">p \Longleftrightarrow 1 \equiv p</annotation></semantics></math>
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>⇔</mo><mn>0</mn><mo>≡</mo><msup><mi>p</mi><mi>′</mi></msup></mrow><annotation encoding="application/x-tex">p \Longleftrightarrow 0 \equiv p^{'}</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>″</mi><mi>i</mi><mi>f</mi><mspace width="0.222em"></mspace><mi>a</mi><mi>n</mi><mi>d</mi><mspace width="0.222em"></mspace><mi>o</mi><mi>n</mi><mi>l</mi><mi>y</mi><mspace width="0.222em"></mspace><mi>i</mi><mi>f</mi><mspace width="0.222em"></mspace><mi>″</mi></mrow><annotation encoding="application/x-tex">&#39;&#39;if\ and\ only\ if\ &#39;&#39;</annotation></semantics></math></p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>*</mo><mi>p</mi><mo>⇔</mo><mi>q</mi><mo>,</mo><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace></mrow><annotation encoding="application/x-tex">*p \Longleftrightarrow q,\ \ </annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+<em>iff q</em>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>,</mo><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace></mrow><annotation encoding="application/x-tex">,\ \ </annotation></semantics></math>
+<em>if p then q</em> and conversely, <em>p and q</em> are necessary and
+sufficient conditions for each other</p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>⇔</mo><mi>q</mi><mo>≡</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>p</mi><mo>⇒</mo><mi>q</mi><mo stretchy="true" form="postfix">)</mo></mrow><msubsup><mo>⋀</mo><mrow></mrow><mrow></mrow></msubsup><mrow><mrow><mo stretchy="true" form="prefix">(</mo><mspace width="0.222em"></mspace><mi>q</mi><mo>⇒</mo><mi>p</mi><mo stretchy="true" form="postfix">)</mo></mrow><mspace width="0.222em"></mspace></mrow></mrow><annotation encoding="application/x-tex">p \Longleftrightarrow q \equiv (p \Longrightarrow q)\bigwedge_{}^{}{(\ q \Longrightarrow p)\ }</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>⇔</mo><mn>1</mn><mo>≡</mo><mi>p</mi></mrow><annotation encoding="application/x-tex">p \Longleftrightarrow 1 \equiv p</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>⇔</mo><mn>0</mn><mo>≡</mo><msup><mi>p</mi><mi>′</mi></msup></mrow><annotation encoding="application/x-tex">p \Longleftrightarrow 0 \equiv p^{&#39;}</annotation></semantics></math>
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>⇔</mo><mi>p</mi><mo>≡</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">p \Longleftrightarrow p \equiv 1</annotation></semantics></math>
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>⇔</mo><msup><mi>p</mi><mi>′</mi></msup><mo>≡</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">p \Longleftrightarrow p^{'} \equiv 0</annotation></semantics></math>
-(1 true, 0 false)</p></body>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>⇔</mo><msup><mi>p</mi><mi>′</mi></msup><mo>≡</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">p \Longleftrightarrow p^{&#39;} \equiv 0</annotation></semantics></math></p>
+</body>
 </html>

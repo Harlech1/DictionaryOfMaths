@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"matematik sözlüğü"</title>
+    <style>
+        body {
+            font-size: 16px;
+            font-family: Arial, sans-serif; 
+            color: #333; 
+            background-color: #fff; 
+            line-height: 1.5; 
+        }
+        body.dark-mode {
+            color: #fff; 
+            background-color: #333; 
+        }
+    </style>
+    <script>
+        function detectDarkMode() {
+            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+            if (prefersDarkScheme.matches) {
+                document.body.classList.add("dark-mode");
+            } else {
+                document.body.classList.remove("dark-mode");
+            }
+        }
+        
+        window.onload = detectDarkMode;
+    </script>
+</head>
+<body>
+    <p> integer powers of the
+square matrix<em>,</em>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>A</mi><mrow><mi>m</mi><mi>x</mi><mi>m</mi></mrow></msub><annotation encoding="application/x-tex">A_{mxm}</annotation></semantics></math>
+<em>.</em></p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>A</mi><mn>0</mn></msup><mo>=</mo><mi>I</mi></mrow><annotation encoding="application/x-tex">A^{0} = I</annotation></semantics></math>
+<em>,</em>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>A</mi><mn>1</mn></msup><mo>=</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">A^{1} = A</annotation></semantics></math>
+<em>,</em>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>A</mi><mn>2</mn></msup><mo>=</mo><mi>A</mi><mo>•</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">A^{2} = A \bullet A</annotation></semantics></math>
+<em>,</em>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>A</mi><mn>3</mn></msup><mo>=</mo><mi>A</mi><mo>•</mo><msup><mi>A</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">A^{3} = A \bullet A^{2}</annotation></semantics></math>
+<em>, . . . ,</em>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>A</mi><mi>n</mi></msup><mo>=</mo><mi>A</mi><mo>•</mo><msup><mi>A</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup></mrow><annotation encoding="application/x-tex">A^{n} = A \bullet A^{n - 1}</annotation></semantics></math></p>
+</body>
+</html>
