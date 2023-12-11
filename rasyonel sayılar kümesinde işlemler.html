@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"matematik sözlüğü"</title>
+    <style>
+        body {
+            font-size: 16px;
+            font-family: Arial, sans-serif; 
+            color: #333; 
+            background-color: #fff; 
+            line-height: 1.5; 
+        }
+        body.dark-mode {
+            color: #fff; 
+            background-color: #333; 
+        }
+    </style>
+    <script>
+        function detectDarkMode() {
+            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+            if (prefersDarkScheme.matches) {
+                document.body.classList.add("dark-mode");
+            } else {
+                document.body.classList.remove("dark-mode");
+            }
+        }
+        
+        window.onload = detectDarkMode;
+    </script>
+</head>
+<body>
+    <p> operations in
+the set of rational numbers</p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><mfrac><mi>a</mi><mi>b</mi></mfrac><mo>,</mo><mfrac><mi>c</mi><mi>d</mi></mfrac><mo>∈</mo><mi>Q</mi></mrow><annotation encoding="application/x-tex">\forall\frac{a}{b},\frac{c}{d} \in Q</annotation></semantics></math>,
+Enlarging a rational number:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mi>a</mi><mi>b</mi></mfrac><mo>=</mo><mspace width="0.222em"></mspace><mfrac><mrow><mi>a</mi><mi>c</mi></mrow><mrow><mi>b</mi><mi>c</mi></mrow></mfrac><mspace width="0.222em"></mspace></mrow><annotation encoding="application/x-tex">\frac{a}{b} = \ \frac{ac}{bc}\ </annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>≠</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">c \neq 0</annotation></semantics></math></p>
+<p>Simplifying a rational number:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mi>a</mi><mi>b</mi></mfrac><mo>=</mo><mspace width="0.222em"></mspace><mfrac><mrow><mi>a</mi><mspace width="0.222em"></mspace><mo>:</mo><mi>c</mi><mspace width="0.222em"></mspace></mrow><mrow><mi>b</mi><mspace width="0.222em"></mspace><mo>:</mo><mi>c</mi></mrow></mfrac><mspace width="0.222em"></mspace></mrow><annotation encoding="application/x-tex">\frac{a}{b} = \ \frac{a\ :c\ }{b\ :c}\ </annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mspace width="0.222em"></mspace><mi>c</mi><mo>≠</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\ c \neq 0</annotation></semantics></math>
+Addition and subtraction:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mi>a</mi><mi>b</mi></mfrac><mo>+</mo><mfrac><mi>c</mi><mi>d</mi></mfrac><mo>=</mo><mfrac><mrow><mi>a</mi><mi>d</mi><mo>+</mo><mi>b</mi><mi>c</mi></mrow><mrow><mi>b</mi><mi>d</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">\frac{a}{b} + \frac{c}{d} = \frac{ad + bc}{bd}</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mi>a</mi><mi>b</mi></mfrac><mo>−</mo><mfrac><mi>c</mi><mi>d</mi></mfrac><mo>=</mo><mfrac><mrow><mi>a</mi><mi>d</mi><mo>−</mo><mi>b</mi><mi>c</mi></mrow><mrow><mi>b</mi><mi>d</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">\frac{a}{b} - \frac{c}{d} = \frac{ad - bc}{bd}</annotation></semantics></math>.</p>
+<p>Multiplication:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mi>a</mi><mi>b</mi></mfrac><mo>•</mo><mfrac><mi>c</mi><mi>d</mi></mfrac><mo>=</mo><mfrac><mrow><mi>a</mi><mi>c</mi></mrow><mrow><mi>b</mi><mi>d</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">\frac{a}{b} \bullet \frac{c}{d} = \frac{ac}{bd}</annotation></semantics></math>
+, Division:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mi>a</mi><mi>b</mi></mfrac><mo>:</mo><mfrac><mi>c</mi><mi>d</mi></mfrac><mo>=</mo><mfrac><mi>a</mi><mi>b</mi></mfrac><mo>•</mo><mfrac><mi>d</mi><mi>c</mi></mfrac><mo>=</mo><mspace width="0.222em"></mspace><mfrac><mrow><mi>a</mi><mi>.</mi><mi>d</mi></mrow><mrow><mi>b</mi><mi>.</mi><mi>c</mi></mrow></mfrac><mspace width="0.222em"></mspace></mrow><annotation encoding="application/x-tex">\frac{a}{b}:\frac{c}{d} = \frac{a}{b} \bullet \frac{d}{c} = \ \frac{a.d}{b.c}\ </annotation></semantics></math></p>
+</body>
+</html>

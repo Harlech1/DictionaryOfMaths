@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"matematik sözlüğü"</title>
+    <style>
+        body {
+            font-size: 16px;
+            font-family: Arial, sans-serif; 
+            color: #333; 
+            background-color: #fff; 
+            line-height: 1.5; 
+        }
+        body.dark-mode {
+            color: #fff; 
+            background-color: #333; 
+        }
+    </style>
+    <script>
+        function detectDarkMode() {
+            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+            if (prefersDarkScheme.matches) {
+                document.body.classList.add("dark-mode");
+            } else {
+                document.body.classList.remove("dark-mode");
+            }
+        }
+        
+        window.onload = detectDarkMode;
+    </script>
+</head>
+<body>
+    <p> Riemann sum</p>
+
+<p>If a closed interval
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mi>a</mi><mo>,</mo><mspace width="0.222em"></mspace><mi>b</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">\lbrack a,\ b\rbrack</annotation></semantics></math>
+is partitioned by points
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>&lt;</mo><msub><mi>x</mi><mn>1</mn></msub><mo>&lt;</mo><msub><mi>x</mi><mn>2</mn></msub><mo>&lt;</mo><mspace width="0.222em"></mspace><mi>.</mi><mspace width="0.222em"></mspace><mi>.</mi><mspace width="0.222em"></mspace><mi>.</mi><mspace width="0.222em"></mspace><mo>&lt;</mo><msub><mi>x</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>&lt;</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">a &lt; x_{1} &lt; x_{2} &lt; \ .\ .\ .\  &lt; x_{n - 1} &lt; b</annotation></semantics></math>
+, then the quantity
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo>∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><mrow><mi>f</mi><mrow><mo stretchy="true" form="prefix">(</mo><msup><msub><mi>x</mi><mi>k</mi></msub><mo>*</mo></msup><mo stretchy="true" form="postfix">)</mo></mrow></mrow><mi mathvariant="normal">Δ</mi><msub><mi>x</mi><mi>k</mi></msub></mrow><annotation encoding="application/x-tex">\sum_{k = 1}^{n}{f({x_{k}}^{*})}\mathrm{\Delta}x_{k}</annotation></semantics></math>
+is called the Riemann sum, where
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><msub><mi>x</mi><mi>k</mi></msub><mo>*</mo></msup><annotation encoding="application/x-tex">{x_{k}}^{*}</annotation></semantics></math>
+is an arbitrary point in the
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>th
+subinterval and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="normal">Δ</mi><mi>x</mi></mrow><mn>1</mn></msub><mo>,</mo><mspace width="0.222em"></mspace><msub><mrow><mspace width="0.222em"></mspace><mi mathvariant="normal">Δ</mi><mi>x</mi></mrow><mn>2</mn></msub><mo>,</mo><mspace width="0.222em"></mspace><msub><mrow><mspace width="0.222em"></mspace><mi mathvariant="normal">Δ</mi><mi>x</mi></mrow><mn>3</mn></msub><mo>,</mo><mspace width="0.222em"></mspace><mi>.</mi><mspace width="0.222em"></mspace><mi>.</mi><mspace width="0.222em"></mspace><mi>.</mi><mspace width="0.222em"></mspace><mo>,</mo><mspace width="0.222em"></mspace><msub><mrow><mspace width="0.222em"></mspace><mi mathvariant="normal">Δ</mi><mi>x</mi></mrow><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">{\mathrm{\Delta}x}_{1},\ {\ \mathrm{\Delta}x}_{2},\ {\ \mathrm{\Delta}x}_{3},\ .\ .\ .\ ,\ {\ \mathrm{\Delta}x}_{n}</annotation></semantics></math>
+denote the lengths of the intervals between the points.</p>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"matematik sözlüğü"</title>
+    <style>
+        body {
+            font-size: 16px;
+            font-family: Arial, sans-serif; 
+            color: #333; 
+            background-color: #fff; 
+            line-height: 1.5; 
+        }
+        body.dark-mode {
+            color: #fff; 
+            background-color: #333; 
+        }
+    </style>
+    <script>
+        function detectDarkMode() {
+            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+            if (prefersDarkScheme.matches) {
+                document.body.classList.add("dark-mode");
+            } else {
+                document.body.classList.remove("dark-mode");
+            }
+        }
+        
+        window.onload = detectDarkMode;
+    </script>
+</head>
+<body>
+    <p> Riemann integral</p>
+
+<p>The integral defined by taking a limit of a Riemann sum;
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup><mrow><mi>f</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>d</mi><mi>x</mi><mo>=</mo><msub><mo>lim</mo><mrow><mo>max</mo><mrow><mi mathvariant="normal">Δ</mi><msub><mi>x</mi><mi>k</mi></msub><mo>→</mo><mn>0</mn></mrow></mrow></msub><mrow><msubsup><mo>∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><mrow><mi>f</mi><mrow><mo stretchy="true" form="prefix">(</mo><msup><msub><mi>x</mi><mi>k</mi></msub><mo>*</mo></msup><mo stretchy="true" form="postfix">)</mo></mrow></mrow></mrow></mrow><mi mathvariant="normal">Δ</mi><msub><mi>x</mi><mi>k</mi></msub></mrow><annotation encoding="application/x-tex">\int_{a}^{b}{f(x)dx = \lim_{\max{\mathrm{\Delta}x_{k} \rightarrow 0}}{\sum_{k = 1}^{n}{f({x_{k}}^{*})}}}\mathrm{\Delta}x_{k}</annotation></semantics></math>
+.</p>
+</body>
+</html>

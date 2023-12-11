@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"matematik sözlüğü"</title>
+    <style>
+        body {
+            font-size: 16px;
+            font-family: Arial, sans-serif; 
+            color: #333; 
+            background-color: #fff; 
+            line-height: 1.5; 
+        }
+        body.dark-mode {
+            color: #fff; 
+            background-color: #333; 
+        }
+    </style>
+    <script>
+        function detectDarkMode() {
+            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+            if (prefersDarkScheme.matches) {
+                document.body.classList.add("dark-mode");
+            } else {
+                document.body.classList.remove("dark-mode");
+            }
+        }
+        
+        window.onload = detectDarkMode;
+    </script>
+</head>
+<body>
+    <p> Roman numerals</p>
+
+<p>A system of numerical notations used by the Romans.</p>
+<p>Roman numerals are used in the release year for movies and on the
+numerals on the faces of the watches and clocks.</p>
+<p>Roman characters:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math>:
+1,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>V</mi><annotation encoding="application/x-tex">V</annotation></semantics></math>:
+5,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>:
+10,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>L</mi><annotation encoding="application/x-tex">L</annotation></semantics></math>:
+50,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>C</mi><annotation encoding="application/x-tex">C</annotation></semantics></math>:
+100,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>D</mi><annotation encoding="application/x-tex">D</annotation></semantics></math>:
+500,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>:
+1000</p>
+<p>Roman numerals from 1 to
+12:<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mspace width="0.222em"></mspace><mi>I</mi></mrow><annotation encoding="application/x-tex">\ I</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mi>I</mi><mo>,</mo><mspace width="0.222em"></mspace><mi>I</mi><mi>I</mi><mi>I</mi><mo>,</mo><mspace width="0.222em"></mspace><mi>I</mi><mi>V</mi><mo>,</mo><mspace width="0.222em"></mspace><mi>V</mi><mo>,</mo><mspace width="0.222em"></mspace><mi>V</mi><mi>I</mi><mo>,</mo><mspace width="0.222em"></mspace><mi>V</mi><mi>I</mi><mi>I</mi><mo>,</mo><mspace width="0.222em"></mspace><mi>V</mi><mi>I</mi><mi>I</mi><mi>I</mi><mo>,</mo><mspace width="0.222em"></mspace><mi>I</mi><mi>X</mi><mo>,</mo><mspace width="0.222em"></mspace><mi>X</mi><mo>,</mo><mspace width="0.222em"></mspace><mi>X</mi><mi>I</mi><mo>,</mo><mspace width="0.222em"></mspace><mi>X</mi><mi>I</mi><mi>I</mi></mrow><annotation encoding="application/x-tex">II,\ III,\ IV,\ V,\ VI,\ VII,\ VIII,\ IX,\ X,\ XI,\ XII</annotation></semantics></math></p>
+</body>
+</html>
