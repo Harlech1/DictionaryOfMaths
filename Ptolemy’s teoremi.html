@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"matematik sözlüğü"</title>
+    <style>
+        body {
+            font-size: 16px;
+            font-family: Arial, sans-serif; 
+            color: #333; 
+            background-color: #fff; 
+            line-height: 1.5; 
+        }
+        body.dark-mode {
+            color: #fff; 
+            background-color: #333; 
+        }
+    </style>
+    <script>
+        function detectDarkMode() {
+            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+            if (prefersDarkScheme.matches) {
+                document.body.classList.add("dark-mode");
+            } else {
+                document.body.classList.remove("dark-mode");
+            }
+        }
+        
+        window.onload = detectDarkMode;
+    </script>
+</head>
+<body>
+    <p> Ptolemy’s theorem</p>
+<p>In cyclic quadrilateral
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi><mi>D</mi></mrow><annotation encoding="application/x-tex">ABCD</annotation></semantics></math>,
+with side lengths
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">|</mo><mi>A</mi><mi>B</mi><mo stretchy="true" form="postfix">|</mo></mrow><mo>=</mo><mi>c</mi><mo>,</mo><mspace width="0.222em"></mspace><mrow><mo stretchy="true" form="prefix">|</mo><mi>B</mi><mi>C</mi><mo stretchy="true" form="postfix">|</mo></mrow><mo>=</mo><mi>b</mi><mo>,</mo><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mrow><mo stretchy="true" form="prefix">|</mo><mi>C</mi><mi>D</mi><mo stretchy="true" form="postfix">|</mo></mrow><mo>=</mo><mi>c</mi></mrow><annotation encoding="application/x-tex">|AB| = c,\ |BC| = b,\ \ |CD| = c</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">|</mo><mi>D</mi><mi>A</mi><mo stretchy="true" form="postfix">|</mo></mrow><mo>=</mo><mi>d</mi></mrow><annotation encoding="application/x-tex">|DA| = d</annotation></semantics></math></p>
+<p>and diagonals
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">|</mo><mi>A</mi><mi>C</mi><mo stretchy="true" form="postfix">|</mo></mrow><mo>=</mo><mi>e</mi><mspace width="0.222em"></mspace><mi>a</mi><mi>n</mi><mi>d</mi><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mrow><mo stretchy="true" form="prefix">|</mo><mi>B</mi><mi>D</mi><mo stretchy="true" form="postfix">|</mo></mrow><mo>=</mo><mi>f</mi></mrow><annotation encoding="application/x-tex">|AC| = e\ and\ \ |BD| = f</annotation></semantics></math>,
+we have
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mi>c</mi><mo>+</mo><mi>b</mi><mi>d</mi><mo>=</mo><mi>e</mi><mi>f</mi></mrow><annotation encoding="application/x-tex">ac + bd = ef</annotation></semantics></math>.</p>
+</body>
+</html>
