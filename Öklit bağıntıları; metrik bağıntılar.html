@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"matematik sözlüğü"</title>
+    <style>
+        body {
+            font-size: 16px;
+            font-family: Arial, sans-serif; 
+            color: #333; 
+            background-color: #fff; 
+            line-height: 1.5; 
+        }
+        body.dark-mode {
+            color: #fff; 
+            background-color: #333; 
+        }
+    </style>
+    <script>
+        function detectDarkMode() {
+            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+            if (prefersDarkScheme.matches) {
+                document.body.classList.add("dark-mode");
+            } else {
+                document.body.classList.remove("dark-mode");
+            }
+        }
+        
+        window.onload = detectDarkMode;
+    </script>
+</head>
+<body>
+    <p> Euclidean
+relations (in a right triangle)</p>
+
+<p>In a right triangle with leg lengths
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">|</mo><mi>A</mi><mi>C</mi><mo stretchy="true" form="postfix">|</mo></mrow><mo>=</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">|AC| = b</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">|</mo><mi>A</mi><mi>B</mi><mo stretchy="true" form="postfix">|</mo></mrow><mo>=</mo><mi>c</mi></mrow><annotation encoding="application/x-tex">|AB| = c</annotation></semantics></math>
+and hypothenuse
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">|</mo><mi>B</mi><mi>C</mi><mo stretchy="true" form="postfix">|</mo></mrow><mo>=</mo><mi>a</mi></mrow><annotation encoding="application/x-tex">|BC| = a</annotation></semantics></math></p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>h</mi><mn>2</mn></msup><mo>=</mo><mi>p</mi><mi>k</mi><mo>,</mo><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><msup><mi>b</mi><mn>2</mn></msup><mo>=</mo><mi>k</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>p</mi><mo>+</mo><mi>k</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mi>k</mi><mi>a</mi><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mi>a</mi><mi>n</mi><mi>d</mi><msup><mrow><mspace width="0.222em"></mspace><mi>c</mi></mrow><mn>2</mn></msup><mo>=</mo><mi>p</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>p</mi><mo>+</mo><mi>k</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mi>p</mi><mi>a</mi></mrow><annotation encoding="application/x-tex">h^{2} = pk,\ \ b^{2} = k(p + k) = ka\ \ and{\ c}^{2} = p(p + k) = pa</annotation></semantics></math></p>
+</body>
+</html>
