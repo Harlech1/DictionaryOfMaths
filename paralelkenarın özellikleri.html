@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"matematik sözlüğü"</title>
+    <style>
+        body {
+            font-size: 16px;
+            font-family: Arial, sans-serif; 
+            color: #333; 
+            background-color: #fff; 
+            line-height: 1.5; 
+        }
+        body.dark-mode {
+            color: #fff; 
+            background-color: #333; 
+        }
+    </style>
+    <script>
+        function detectDarkMode() {
+            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+            if (prefersDarkScheme.matches) {
+                document.body.classList.add("dark-mode");
+            } else {
+                document.body.classList.remove("dark-mode");
+            }
+        }
+        
+        window.onload = detectDarkMode;
+    </script>
+</head>
+<body>
+    <p> properties of the
+parallelogram</p>
+<p>A parallelogram has no symmetry. Opposite sides are parallel and they
+have the same length.</p>
+<p>Opposite angles are congruent and adjacent angles are
+supplementary.</p>
+<p>Bisectors of two adjacent interior angles are perpendicular.
+Bisectors of opposite angles are parallel to each other.</p>
+<p>The quadrilateral formed by the angle bisectors is a rectangle. The
+diagonals bisect each other.</p>
+<p>Each diagonal seperates the paralleogram into two triangular regions
+with equal areas.</p>
+<p>If we connect, in order, the midpoints of the sides of a
+parallelogram, then we form another parallelogram.</p>
+<p></p>
+<p>Lengths of the sides:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">|</mo><mi>A</mi><mi>B</mi><mo stretchy="true" form="postfix">|</mo></mrow><mo>=</mo><mi>a</mi></mrow><annotation encoding="application/x-tex">|AB| = a</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">|</mo><mi>B</mi><mi>C</mi><mo stretchy="true" form="postfix">|</mo></mrow><mo>=</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">|BC| = b</annotation></semantics></math></p>
+<p>The lengths of the heights to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mi>A</mi><mi>B</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">\lbrack AB\rbrack</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mi>B</mi><mi>C</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">\lbrack BC\rbrack</annotation></semantics></math>:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mspace width="0.222em"></mspace><msub><mi>h</mi><mi>a</mi></msub><mspace width="0.222em"></mspace><mi>a</mi><mi>n</mi><mi>d</mi><mspace width="0.222em"></mspace><msub><mi>h</mi><mi>b</mi></msub></mrow><annotation encoding="application/x-tex">\ h_{a}\ and\ h_{b}</annotation></semantics></math></p>
+<p>Lengths of the diagonals:</p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">|</mo><mi>A</mi><mi>C</mi><mo stretchy="true" form="postfix">|</mo></mrow><mo>=</mo><mi>e</mi><mo>=</mo><msqrt><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup><mo>−</mo><mn>2</mn><mi>a</mi><mi>b</mi><mo>cos</mo><mi>B</mi></mrow></msqrt><mo>=</mo><msqrt><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn><mi>a</mi><mi>b</mi><mo>cos</mo><mi>A</mi></mrow></msqrt></mrow><annotation encoding="application/x-tex">|AC| = e = \sqrt{a^{2} + b^{2} - 2ab\cos B} = \sqrt{a^{2} + b^{2} + 2ab\cos A}</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">|</mo><mi>B</mi><mi>D</mi><mo stretchy="true" form="postfix">|</mo></mrow><mo>=</mo><mi>f</mi><mo>=</mo><msqrt><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup><mo>−</mo><mn>2</mn><mi>a</mi><mi>b</mi><mo>cos</mo><mi>A</mi></mrow></msqrt></mrow><annotation encoding="application/x-tex">|BD| = f = \sqrt{a^{2} + b^{2} - 2ab\cos A}</annotation></semantics></math></p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>e</mi><mn>2</mn></msup><mo>+</mo><msup><mi>f</mi><mn>2</mn></msup><mo>=</mo><mn>2</mn><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">e^{2} + f^{2} = 2(a^{2} + b^{2})</annotation></semantics></math></p>
+<p>The measure of the acute angle between the diagonals:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>θ</mi><mn>0</mn></msup><annotation encoding="application/x-tex">\theta^{0}</annotation></semantics></math></p>
+<p>The measure of the acute angle between two adjacent sides:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>α</mi><mn>0</mn></msup><annotation encoding="application/x-tex">\alpha^{0}</annotation></semantics></math>
+Length of the perimeter: <em>p</em>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">(</mo><mi>A</mi><mi>B</mi><mi>C</mi><mi>D</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo></mrow><annotation encoding="application/x-tex">(ABCD) =</annotation></semantics></math><em>2a+2b</em></p>
+<p>Area:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>A</mi><mi>B</mi><mi>C</mi><mi>D</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo></mrow><annotation encoding="application/x-tex">A(ABCD) =</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mi>.</mi><msub><mi>h</mi><mi>a</mi></msub><mo>=</mo><mi>b</mi><mi>.</mi><msub><mi>h</mi><mi>b</mi></msub></mrow><annotation encoding="application/x-tex">a.h_{a} = b.h_{b}</annotation></semantics></math>
+or
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>A</mi><mi>B</mi><mi>C</mi><mi>D</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>e</mi><mi>f</mi><mi>s</mi><mi>i</mi><mi>n</mi><mi>θ</mi></mrow><annotation encoding="application/x-tex">A(ABCD) = \frac{1}{2}efsin\theta</annotation></semantics></math>,
+or
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>A</mi><mi>B</mi><mi>C</mi><mi>D</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mi>a</mi><mi>b</mi><mi>s</mi><mi>i</mi><mi>n</mi><mi>α</mi></mrow><annotation encoding="application/x-tex">A(ABCD) = absin\alpha</annotation></semantics></math></p>
+</body>
+</html>

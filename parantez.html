@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"matematik sözlüğü"</title>
+    <style>
+        body {
+            font-size: 16px;
+            font-family: Arial, sans-serif; 
+            color: #333; 
+            background-color: #fff; 
+            line-height: 1.5; 
+        }
+        body.dark-mode {
+            color: #fff; 
+            background-color: #333; 
+        }
+    </style>
+    <script>
+        function detectDarkMode() {
+            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+            if (prefersDarkScheme.matches) {
+                document.body.classList.add("dark-mode");
+            } else {
+                document.body.classList.remove("dark-mode");
+            }
+        }
+        
+        window.onload = detectDarkMode;
+    </script>
+</head>
+<body>
+    <p> paranthesis
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mspace width="0.222em"></mspace><mi>p</mi><mi>l</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">\ pl.</annotation></semantics></math>
+parantheses</p>
+
+<p>I. A paranthesis is used to denote an open end of an interval.</p>
+<p>II. Parantheses are used to denote</p>
+<p>(a) modifications to normal order of operations or to clarify order
+of operations,</p>
+<p>(b) functions in the form
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">f(x)</annotation></semantics></math>,
+which means that values of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+are dependent upon the values of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>,</p>
+<p>(c) the greatest common divisor gcd(a, b) or lowest common multiple
+lcm(a, b),</p>
+<p>(d) the ordered n-tuple of numbers (x,y), (x,y,z) etc.,</p>
+<p>(e) a matrix (large parantheses around an array of numbers indicate a
+matrix),</p>
+<p>(f) binomial coeficients (large parantheses around two numbers, one
+above the other indicate combinations), and</p>
+<p>(g) a congruence, as in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>≡</mo><mi>b</mi><mspace width="0.222em"></mspace><mrow><mo stretchy="true" form="prefix">(</mo><mi>m</mi><mi>o</mi><mi>d</mi><mspace width="0.222em"></mspace><mi>m</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">a \equiv b\ (mod\ m)</annotation></semantics></math>.</p>
+</body>
+</html>
