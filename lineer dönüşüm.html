@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"matematik sözlüğü"</title>
+    <style>
+        body {
+            font-size: 16px;
+            font-family: Arial, sans-serif; 
+            color: #333; 
+            background-color: #fff; 
+            line-height: 1.5; 
+        }
+        body.dark-mode {
+            color: #fff; 
+            background-color: #333; 
+        }
+    </style>
+    <script>
+        function detectDarkMode() {
+            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+            if (prefersDarkScheme.matches) {
+                document.body.classList.add("dark-mode");
+            } else {
+                document.body.classList.remove("dark-mode");
+            }
+        }
+        
+        window.onload = detectDarkMode;
+    </script>
+</head>
+<body>
+    <p> linear transformation</p>
+<p>For two vector spaces
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>V</mi><annotation encoding="application/x-tex">V</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>W</mi><annotation encoding="application/x-tex">W</annotation></semantics></math>,
+a map
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>:</mo><mi>V</mi><mo>→</mo><mi>W</mi></mrow><annotation encoding="application/x-tex">T:V \rightarrow W</annotation></semantics></math>
+is a linear transformation if the following hold:</p>
+<p>I.<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mrow><mo stretchy="true" form="prefix">(</mo><mover><msub><mi>v</mi><mn>1</mn></msub><mo accent="true">→</mo></mover><mo>+</mo><mover><msub><mi>v</mi><mn>2</mn></msub><mo accent="true">→</mo></mover><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mi>T</mi><mrow><mo stretchy="true" form="prefix">(</mo><mover><msub><mi>v</mi><mn>1</mn></msub><mo accent="true">→</mo></mover><mo stretchy="true" form="postfix">)</mo></mrow><mo>+</mo><mi>T</mi><mrow><mo stretchy="true" form="prefix">(</mo><mover><msub><mi>v</mi><mn>2</mn></msub><mo accent="true">→</mo></mover><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">T\left( \overrightarrow{v_{1}} + \overrightarrow{v_{2}} \right) = T\left( \overrightarrow{v_{1}} \right) + T(\overrightarrow{v_{2}})</annotation></semantics></math>
+for all vectors
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><msub><mi>v</mi><mn>1</mn></msub><mo accent="true">→</mo></mover><annotation encoding="application/x-tex">\overrightarrow{v_{1}}</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><msub><mi>v</mi><mn>2</mn></msub><mo accent="true">→</mo></mover><annotation encoding="application/x-tex">\overrightarrow{v_{2}}</annotation></semantics></math>
+in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>V</mi><annotation encoding="application/x-tex">V</annotation></semantics></math>.</p>
+<p>II.<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>k</mi><mover><mi>v</mi><mo accent="true">→</mo></mover><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mi>k</mi><mspace width="0.222em"></mspace><mi>T</mi><mrow><mo stretchy="true" form="prefix">(</mo><mover><mi>v</mi><mo accent="true">→</mo></mover><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">T\left( k\overrightarrow{v} \right) = k\ T(\overrightarrow{v})</annotation></semantics></math>
+for any scalar
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>.</p>
+</body>
+</html>

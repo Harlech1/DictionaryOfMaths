@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"matematik sözlüğü"</title>
+    <style>
+        body {
+            font-size: 16px;
+            font-family: Arial, sans-serif; 
+            color: #333; 
+            background-color: #fff; 
+            line-height: 1.5; 
+        }
+        body.dark-mode {
+            color: #fff; 
+            background-color: #333; 
+        }
+    </style>
+    <script>
+        function detectDarkMode() {
+            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+            if (prefersDarkScheme.matches) {
+                document.body.classList.add("dark-mode");
+            } else {
+                document.body.classList.remove("dark-mode");
+            }
+        }
+        
+        window.onload = detectDarkMode;
+    </script>
+</head>
+<body>
+<p>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><mi>a</mi></mrow></msub><mspace width="0.222em"></mspace><mroot><mrow><mi>f</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><mi>n</mi></mroot><mo>=</mo><mroot><munder><mrow><mi>l</mi><mi>i</mi><mi>m</mi><mi>f</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><mrow><mi>x</mi><mo>→</mo><mi>a</mi></mrow></munder><mi>n</mi></mroot></mrow><mspace width="0.222em"></mspace></munder><mo>=</mo><mroot><msub><mi>L</mi><mn>1</mn></msub><mi>n</mi></mroot></mrow><annotation encoding="application/x-tex">\underset{\ }{\lim_{x \rightarrow a}\ \sqrt[n]{f(x)} = \sqrt[n]{\underset{x \rightarrow a}{limf(x)}}} = \sqrt[n]{L_{1}}</annotation></semantics></math>
+,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>∈</mo><mi>N</mi><mo>,</mo><mspace width="0.222em"></mspace><mi>n</mi><mo>≥</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">n \in N,\ n \geq 2</annotation></semantics></math>
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mi>r</mi><mi>o</mi><mi>v</mi><mi>i</mi><mi>d</mi><mi>e</mi><mi>d</mi><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><munder><mrow><mi>l</mi><mi>i</mi><mi>m</mi><mi>f</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><mrow><mi>x</mi><mo>→</mo><mi>a</mi></mrow></munder><mo>&gt;</mo><mn>0</mn><mspace width="0.222em"></mspace><mi>i</mi><mi>f</mi><mspace width="0.222em"></mspace><mi>n</mi><mspace width="0.222em"></mspace><mi>i</mi><mi>s</mi><mspace width="0.222em"></mspace><mi>e</mi><mi>v</mi><mi>e</mi><mi>n</mi></mrow><annotation encoding="application/x-tex">provided\ \ \underset{x \rightarrow a}{limf(x)} &gt; 0\ if\ n\ is\ even</annotation></semantics></math>).</p>
+</body>
+</html>

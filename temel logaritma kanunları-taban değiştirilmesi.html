@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"matematik sözlüğü"</title>
+    <style>
+        body {
+            font-size: 16px;
+            font-family: Arial, sans-serif; 
+            color: #333; 
+            background-color: #fff; 
+            line-height: 1.5; 
+        }
+        body.dark-mode {
+            color: #fff; 
+            background-color: #333; 
+        }
+    </style>
+    <script>
+        function detectDarkMode() {
+            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+            if (prefersDarkScheme.matches) {
+                document.body.classList.add("dark-mode");
+            } else {
+                document.body.classList.remove("dark-mode");
+            }
+        }
+        
+        window.onload = detectDarkMode;
+    </script>
+</head>
+<body>
+    <p> change of base
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mspace width="0.222em"></mspace><mi>ϵ</mi><msup><mi>R</mi><mo>+</mo></msup><mspace width="0.222em"></mspace><mi>v</mi><mi>e</mi><mspace width="0.222em"></mspace><mi>a</mi><mo>,</mo><mi>c</mi><mo>≠</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">a,b,c\ \epsilon R^{+}\ ve\ a,c \neq 1</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>log</mo><mi>a</mi></msub><mi>b</mi><mo>=</mo><mfrac><mrow><msub><mo>log</mo><mi>c</mi></msub><mi>b</mi></mrow><mrow><msub><mo>log</mo><mi>c</mi></msub><mi>a</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mo>log</mo><mi>b</mi></mrow><mrow><mo>log</mo><mi>a</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mo>ln</mo><mi>b</mi></mrow><mrow><mo>ln</mo><mi>a</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">\log_{a}b = \frac{\log_{c}b}{\log_{c}a} = \frac{\log b}{\log a} = \frac{\ln b}{\ln a}</annotation></semantics></math></p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mo>*</mo><mi>l</mi><mi>o</mi><mi>g</mi></mrow><msup><mi>a</mi><mi>k</mi></msup></msub><mrow><msup><mi>M</mi><mi>n</mi></msup><mo>=</mo><mfrac><mi>n</mi><mi>k</mi></mfrac><mo>•</mo><msub><mo>log</mo><mi>a</mi></msub><mi>M</mi></mrow></mrow><annotation encoding="application/x-tex">{*log}_{a^{k}}{M^{n} = \frac{n}{k} \bullet \log_{a}M}</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>*</mo><msub><mo>log</mo><mi>a</mi></msub><mi>b</mi><mo>=</mo><msub><mo>log</mo><mi>a</mi></msub><mi>c</mi><msub><mo>log</mo><mi>c</mi></msub><mi>b</mi></mrow><annotation encoding="application/x-tex">*\log_{a}b = \log_{a}c\log_{c}b</annotation></semantics></math>
+(<em>chain rule</em> for logarithms)
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>*</mo><msub><mo>log</mo><mi>b</mi></msub><mi>a</mi><mo>=</mo><mfrac><mn>1</mn><mrow><msub><mo>log</mo><mi>a</mi></msub><mi>b</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">*\log_{b}a = \frac{1}{\log_{a}b}</annotation></semantics></math></p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>*</mo><msup><mi>a</mi><mrow><msub><mo>log</mo><mi>a</mi></msub><mi>M</mi></mrow></msup><mo>=</mo><mi>M</mi></mrow><annotation encoding="application/x-tex">*a^{\log_{a}M} = M</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mspace width="0.222em"></mspace><msup><mrow><mo>*</mo><mn>10</mn></mrow><mrow><msub><mo>log</mo><mspace width="0.222em"></mspace></msub><mi>M</mi></mrow></msup><mo>=</mo><mi>M</mi></mrow><annotation encoding="application/x-tex">\ {*10}^{\log_{\ }M} = M</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo>*</mo><mi>e</mi></mrow><mrow><mo>ln</mo><mi>M</mi></mrow></msup><mo>=</mo><mi>M</mi></mrow><annotation encoding="application/x-tex">{*e}^{\ln M} = M</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>*</mo><msup><mi>b</mi><mi>c</mi></msup><mo>=</mo><msup><mi>a</mi><mrow><mi>c</mi><mrow><msub><mo>log</mo><mi>a</mi></msub><mi>b</mi></mrow><mspace width="0.222em"></mspace></mrow></msup></mrow><annotation encoding="application/x-tex">*b^{c} = a^{c{\log_{a}b}\ }</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo>*</mo><mi>a</mi></mrow><mrow><msub><mo>log</mo><mi>b</mi></msub><mi>c</mi></mrow></msup><mo>=</mo><msup><mi>c</mi><mrow><mrow><msub><mo>log</mo><mi>b</mi></msub><mi>a</mi></mrow><mspace width="0.222em"></mspace></mrow></msup></mrow><annotation encoding="application/x-tex">{*a}^{\log_{b}c} = c^{{\log_{b}a}\ }</annotation></semantics></math></p>
+</body>
+</html>

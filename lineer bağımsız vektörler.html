@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"matematik sözlüğü"</title>
+    <style>
+        body {
+            font-size: 16px;
+            font-family: Arial, sans-serif; 
+            color: #333; 
+            background-color: #fff; 
+            line-height: 1.5; 
+        }
+        body.dark-mode {
+            color: #fff; 
+            background-color: #333; 
+        }
+    </style>
+    <script>
+        function detectDarkMode() {
+            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+            if (prefersDarkScheme.matches) {
+                document.body.classList.add("dark-mode");
+            } else {
+                document.body.classList.remove("dark-mode");
+            }
+        }
+        
+        window.onload = detectDarkMode;
+    </script>
+</head>
+<body>
+    <p> linearly independent
+vectors</p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+vectors
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><msub><mi>v</mi><mn>1</mn></msub><mo accent="true">→</mo></mover><mo>,</mo><mspace width="0.222em"></mspace><mover><msub><mi>v</mi><mn>2</mn></msub><mo accent="true">→</mo></mover><mo>,</mo><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mi>.</mi><mspace width="0.222em"></mspace><mi>.</mi><mspace width="0.222em"></mspace><mi>.</mi><mspace width="0.222em"></mspace><mo>,</mo><mspace width="0.222em"></mspace><mover><msub><mi>v</mi><mi>n</mi></msub><mo accent="true">→</mo></mover></mrow><annotation encoding="application/x-tex">\overrightarrow{v_{1}},\ \overrightarrow{v_{2}},\ \ .\ .\ .\ ,\ \overrightarrow{v_{n}}</annotation></semantics></math>
+are linearly independent if</p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><mrow><msub><mi>c</mi><mi>i</mi></msub><mover><msub><mi>v</mi><mi>i</mi></msub><mo accent="true">→</mo></mover><mo>=</mo><msub><mi>c</mi><mn>1</mn></msub><mover><msub><mi>v</mi><mn>1</mn></msub><mo accent="true">→</mo></mover><mo>+</mo><msub><mi>c</mi><mn>2</mn></msub><mover><msub><mi>v</mi><mn>2</mn></msub><mo accent="true">→</mo></mover><mo>+</mo></mrow><mi>…</mi><mo>+</mo><msub><mi>c</mi><mi>n</mi></msub><mover><msub><mi>v</mi><mi>n</mi></msub><mo accent="true">→</mo></mover><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\sum_{i = 1}^{n}{c_{i}\overrightarrow{v_{i}} = c_{1}\overrightarrow{v_{1}} + c_{2}\overrightarrow{v_{2}} +}\ldots + c_{n}\overrightarrow{v_{n}} = 0</annotation></semantics></math>
+implies
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>c</mi><mn>1</mn></msub><mo>=</mo><mspace width="0.222em"></mspace><msub><mi>c</mi><mn>2</mn></msub><mo>=</mo><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mi>.</mi><mi>.</mi><mi>.</mi><mo>=</mo><mspace width="0.222em"></mspace><msub><mi>c</mi><mi>n</mi></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">c_{1} = \ c_{2} = \ \ ... = \ c_{n} = 0</annotation></semantics></math>
+, where
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>c</mi><mn>1</mn></msub><mo>,</mo><mspace width="0.222em"></mspace><msub><mi>c</mi><mn>2</mn></msub><mo>,</mo><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mi>.</mi><mi>.</mi><mi>.</mi><mo>,</mo><mspace width="0.222em"></mspace><msub><mi>c</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">c_{1},\ c_{2},\ \ ...,\ c_{n}</annotation></semantics></math>
+are scalars.</p>
+</body>
+</html>
