@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"matematik sözlüğü"</title>
+    <style>
+        body {
+            font-size: 16px;
+            font-family: Arial, sans-serif; 
+            color: #333; 
+            background-color: #fff; 
+            line-height: 1.5; 
+        }
+        body.dark-mode {
+            color: #fff; 
+            background-color: #333; 
+        }
+    </style>
+    <script>
+        function detectDarkMode() {
+            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+            if (prefersDarkScheme.matches) {
+                document.body.classList.add("dark-mode");
+            } else {
+                document.body.classList.remove("dark-mode");
+            }
+        }
+        
+        window.onload = detectDarkMode;
+    </script>
+</head>
+<body>
+   <p>
+projection of the vector onto another vector</p>
+<p>Let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>u</mi><mo accent="true">→</mo></mover><annotation encoding="application/x-tex">\overrightarrow{u}</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>w</mi><mo accent="true">→</mo></mover><annotation encoding="application/x-tex">\overrightarrow{w}</annotation></semantics></math>
+be two nonzero vectors.</p>
+<p>The vector projection of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>u</mi><mo accent="true">→</mo></mover><annotation encoding="application/x-tex">\overrightarrow{u}</annotation></semantics></math>
+onto
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi>w</mi><mo accent="true">→</mo></mover><mspace width="0.222em"></mspace></mrow><annotation encoding="application/x-tex">\overrightarrow{w}\ </annotation></semantics></math>
+is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mrow><mi>O</mi><msup><mi>A</mi><mi>′</mi></msup></mrow><mo accent="true">→</mo></mover><mo>=</mo><mfrac><mrow><mover><mi>u</mi><mo accent="true">→</mo></mover><mspace width="0.222em"></mspace><mo>•</mo><mover><mi>w</mi><mo accent="true">→</mo></mover></mrow><msup><mrow><mo stretchy="true" form="prefix">∥</mo><mover><mi>w</mi><mo accent="true">→</mo></mover><mo stretchy="true" form="postfix">∥</mo></mrow><mn>2</mn></msup></mfrac><mspace width="0.222em"></mspace><mi>.</mi><mover><mi>w</mi><mo accent="true">→</mo></mover></mrow><annotation encoding="application/x-tex">\overrightarrow{OA^{&#39;}} = \frac{\overrightarrow{u}\  \bullet \overrightarrow{w}}{\left\| \overrightarrow{w} \right\|^{2}}\ .\overrightarrow{w}</annotation></semantics></math>
+and the length of the projection is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">|</mo><mi>O</mi><msup><mi>A</mi><mi>′</mi></msup><mo stretchy="true" form="postfix">|</mo></mrow><mo>=</mo><mrow><mo stretchy="true" form="prefix">|</mo><mfrac><mrow><mover><mi>u</mi><mo accent="true">→</mo></mover><mspace width="0.222em"></mspace><mo>•</mo><mover><mi>w</mi><mo accent="true">→</mo></mover></mrow><mrow><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mrow><mo stretchy="true" form="prefix">∥</mo><mover><mi>w</mi><mo accent="true">→</mo></mover><mo stretchy="true" form="postfix">∥</mo></mrow></mrow></mfrac><mo stretchy="true" form="postfix">|</mo></mrow></mrow><annotation encoding="application/x-tex">\left| OA^{&#39;} \right| = \left| \frac{\overrightarrow{u}\  \bullet \overrightarrow{w}}{\ \ \left\| \overrightarrow{w} \right\|} \right|</annotation></semantics></math>.</p>
+</body>
+</html>

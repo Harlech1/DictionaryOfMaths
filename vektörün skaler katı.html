@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"matematik sözlüğü"</title>
+    <style>
+        body {
+            font-size: 16px;
+            font-family: Arial, sans-serif; 
+            color: #333; 
+            background-color: #fff; 
+            line-height: 1.5; 
+        }
+        body.dark-mode {
+            color: #fff; 
+            background-color: #333; 
+        }
+    </style>
+    <script>
+        function detectDarkMode() {
+            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+            if (prefersDarkScheme.matches) {
+                document.body.classList.add("dark-mode");
+            } else {
+                document.body.classList.remove("dark-mode");
+            }
+        }
+        
+        window.onload = detectDarkMode;
+    </script>
+</head>
+<body>
+    <p> scalar multiple of the
+vector</p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><mspace width="0.222em"></mspace><mover><mi>u</mi><mo accent="true">→</mo></mover></mrow><annotation encoding="application/x-tex">\forall\ \overrightarrow{u}</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∈</mo><mi>E</mi></mrow><annotation encoding="application/x-tex">\in E</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>∈</mo><mi>R</mi></mrow><annotation encoding="application/x-tex">k \in R</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">∥</mo><mi>k</mi><mover><mi>u</mi><mo accent="true">→</mo></mover><mo stretchy="true" form="postfix">∥</mo></mrow><mo>=</mo><mrow><mo stretchy="true" form="prefix">|</mo><mi>k</mi><mspace width="0.222em"></mspace><mo stretchy="true" form="postfix">|</mo></mrow><mrow><mo stretchy="true" form="prefix">∥</mo><mover><mi>u</mi><mo accent="true">→</mo></mover><mspace width="0.222em"></mspace><mo stretchy="true" form="postfix">∥</mo></mrow></mrow><annotation encoding="application/x-tex">\left\| k\overrightarrow{u} \right\| = |k\ |\left\| \overrightarrow{u}\  \right\|</annotation></semantics></math></p>
+</body>
+</html>

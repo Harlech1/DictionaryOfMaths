@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"matematik sözlüğü"</title>
+    <style>
+        body {
+            font-size: 16px;
+            font-family: Arial, sans-serif; 
+            color: #333; 
+            background-color: #fff; 
+            line-height: 1.5; 
+        }
+        body.dark-mode {
+            color: #fff; 
+            background-color: #333; 
+        }
+    </style>
+    <script>
+        function detectDarkMode() {
+            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+            if (prefersDarkScheme.matches) {
+                document.body.classList.add("dark-mode");
+            } else {
+                document.body.classList.remove("dark-mode");
+            }
+        }
+        
+        window.onload = detectDarkMode;
+    </script>
+</head>
+<body>
+    <p> linear
+combination of vectors</p>
+<p>In
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>R</mi><mn>2</mn></msup><mo>:</mo></mrow><annotation encoding="application/x-tex">R^{2}:</annotation></semantics></math>
+A vector of the form
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mover><mi>b</mi><mo accent="true">→</mo></mover><mo>+</mo><mi>l</mi><mover><mi>c</mi><mo accent="true">→</mo></mover></mrow><annotation encoding="application/x-tex">k\overrightarrow{b} + l\overrightarrow{c}</annotation></semantics></math>,
+where
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>,</mo><mi>l</mi><mo>∈</mo><mi>R</mi></mrow><annotation encoding="application/x-tex">k,l \in R</annotation></semantics></math>
+, is a linear combination of
+vectors<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mspace width="0.222em"></mspace><mover><mi>b</mi><mo accent="true">→</mo></mover></mrow><annotation encoding="application/x-tex">\ \overrightarrow{b}</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>c</mi><mo accent="true">→</mo></mover><annotation encoding="application/x-tex">\overrightarrow{c}</annotation></semantics></math>
+.</p>
+<p>In
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>R</mi><mn>3</mn></msup><annotation encoding="application/x-tex">R^{3}</annotation></semantics></math>
+A vector of the form
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mover><mi>b</mi><mo accent="true">→</mo></mover><mo>+</mo><mi>l</mi><mover><mi>c</mi><mo accent="true">→</mo></mover></mrow><annotation encoding="application/x-tex">k\overrightarrow{b} + l\overrightarrow{c}</annotation></semantics></math>
++<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mspace width="0.222em"></mspace><mi>m</mi><mover><mi>d</mi><mo accent="true">→</mo></mover></mrow><annotation encoding="application/x-tex">\ m\overrightarrow{d}</annotation></semantics></math>,
+where
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>,</mo><mi>l</mi><mo>,</mo><mi>m</mi><mo>∈</mo><mi>R</mi></mrow><annotation encoding="application/x-tex">k,l,m \in R</annotation></semantics></math>,
+is a linear combination of
+vectors<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mspace width="0.222em"></mspace><mover><mi>b</mi><mo accent="true">→</mo></mover></mrow><annotation encoding="application/x-tex">\ \overrightarrow{b}</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>c</mi><mo accent="true">→</mo></mover><annotation encoding="application/x-tex">\overrightarrow{c}</annotation></semantics></math>
+and<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mover><mi>d</mi><mo accent="true">→</mo></mover></mrow><annotation encoding="application/x-tex">\ \ \overrightarrow{d}</annotation></semantics></math>.</p>
+<p>Every vector can be written as a linear combination of the standard
+basis vectors.</p>
+</body>
+</html>

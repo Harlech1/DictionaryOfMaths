@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"matematik sözlüğü"</title>
+    <style>
+        body {
+            font-size: 16px;
+            font-family: Arial, sans-serif; 
+            color: #333; 
+            background-color: #fff; 
+            line-height: 1.5; 
+        }
+        body.dark-mode {
+            color: #fff; 
+            background-color: #333; 
+        }
+    </style>
+    <script>
+        function detectDarkMode() {
+            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+            if (prefersDarkScheme.matches) {
+                document.body.classList.add("dark-mode");
+            } else {
+                document.body.classList.remove("dark-mode");
+            }
+        }
+        
+        window.onload = detectDarkMode;
+    </script>
+</head>
+<body>
+    <p> vector product; cross product</p>
+<p>The cross product
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi>u</mi><mo accent="true">→</mo></mover><mspace width="0.222em"></mspace><mi>x</mi><mspace width="0.222em"></mspace><mover><mi>v</mi><mo accent="true">→</mo></mover></mrow><annotation encoding="application/x-tex">\overrightarrow{u}\ x\ \overrightarrow{v}</annotation></semantics></math>
+of two linearly independent vectors in three- dimensional space is a
+vector that is perpendicular to both vectors
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi>u</mi><mo accent="true">→</mo></mover><mspace width="0.222em"></mspace></mrow><annotation encoding="application/x-tex">\overrightarrow{u}\ </annotation></semantics></math>and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mspace width="0.222em"></mspace><mover><mi>v</mi><mo accent="true">→</mo></mover></mrow><annotation encoding="application/x-tex">\ \overrightarrow{v}</annotation></semantics></math>
+and therefore normal (orthogonal) to the plane containing them. It is
+defined by using determinants.</p>
+<p>In
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>R</mi><mn>3</mn></msup><mo>:</mo></mrow><annotation encoding="application/x-tex">R^{3}:</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi>u</mi><mo accent="true">→</mo></mover><mspace width="0.222em"></mspace><mi>x</mi><mspace width="0.222em"></mspace><mover><mi>v</mi><mo accent="true">→</mo></mover><mo>=</mo><mrow><mo stretchy="true" form="prefix">|</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><mover><mi>i</mi><mo accent="true">→</mo></mover></mtd><mtd columnalign="center" style="text-align: center"><mover><mi>j</mi><mo accent="true">→</mo></mover></mtd><mtd columnalign="center" style="text-align: center"><mover><mi>k</mi><mo accent="true">→</mo></mover></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><msub><mi>x</mi><mn>1</mn></msub></mtd><mtd columnalign="center" style="text-align: center"><msub><mi>y</mi><mn>1</mn></msub></mtd><mtd columnalign="center" style="text-align: center"><msub><mi>z</mi><mn>1</mn></msub></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><msub><mi>x</mi><mn>2</mn></msub></mtd><mtd columnalign="center" style="text-align: center"><msub><mi>y</mi><mn>2</mn></msub></mtd><mtd columnalign="center" style="text-align: center"><msub><mi>z</mi><mn>2</mn></msub></mtd></mtr></mtable><mo stretchy="true" form="postfix">|</mo></mrow></mrow><annotation encoding="application/x-tex">\overrightarrow{u}\ x\ \overrightarrow{v} = \left| \begin{matrix}
+\overrightarrow{i} &amp; \overrightarrow{j} &amp; \overrightarrow{k} \\
+x_{1} &amp; y_{1} &amp; z_{1} \\
+x_{2} &amp; y_{2} &amp; z_{2}
+\end{matrix} \right|</annotation></semantics></math>, where
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>u</mi><mo accent="true">→</mo></mover><annotation encoding="application/x-tex">\overrightarrow{u}</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><msub><mi>y</mi><mn>1</mn></msub><mo>,</mo><msub><mi>z</mi><mn>1</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">= (x_{1},y_{1},z_{1})</annotation></semantics></math>
+,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>v</mi><mo accent="true">→</mo></mover><annotation encoding="application/x-tex">\overrightarrow{v}</annotation></semantics></math>
+=
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>x</mi><mn>2</mn></msub><mo>,</mo><msub><mi>y</mi><mn>2</mn></msub><mo>,</mo><msub><mi>z</mi><mn>2</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(x_{2},y_{2},z_{2})</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>i</mi><mo accent="true">→</mo></mover><annotation encoding="application/x-tex">\overrightarrow{i}</annotation></semantics></math>,<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mspace width="0.222em"></mspace><mover><mi>j</mi><mo accent="true">→</mo></mover></mrow><annotation encoding="application/x-tex">\ \overrightarrow{j}</annotation></semantics></math>and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>k</mi><mo accent="true">→</mo></mover><annotation encoding="application/x-tex">\overrightarrow{k}</annotation></semantics></math>
+are standard basis vectors.</p>
+</body>
+</html>
