@@ -1,37 +1,50 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>"matematik sözlüğü"</title>
-<style>
-            body {
-                font-size: 16px;
-                font-family: Arial, sans-serif; 
-                color: #333; 
-                background-color: #fff; 
-                line-height: 1.5; 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"matematik sözlüğü"</title>
+    <style>
+        body {
+            font-size: 16px;
+            font-family: Arial, sans-serif; 
+            color: #333; 
+            background-color: #fff; 
+            line-height: 1.5; 
+        }
+        body.dark-mode {
+            color: #fff; 
+            background-color: #333; 
+        }
+    </style>
+    <script>
+        function detectDarkMode() {
+            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+            if (prefersDarkScheme.matches) {
+                document.body.classList.add("dark-mode");
+            } else {
+                document.body.classList.remove("dark-mode");
             }
-            body.dark-mode {
-                color: #fff; 
-                background-color: #333; 
-            }
-        </style>
-<script>
-            function detectDarkMode() {
-                const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
-                if (prefersDarkScheme.matches) {
-                    document.body.classList.add("dark-mode");
-                } else {
-                    document.body.classList.remove("dark-mode");
-                }
-            }
-
-            window.onload = detectDarkMode;
-        </script>
+        }
+        
+        window.onload = detectDarkMode;
+    </script>
 </head>
 <body>
-<p> slope of the tangent</p>
+    <p> slope of the tangent</p>
+
+<p>The slope of the tangent line to the graph of a function at a point
+on the graph is equal to the derivative of</p>
+<p>the function at that point. If
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+is a function defined and differentiable at the point
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>x</mi><mn>0</mn></msub><mspace width="0.222em"></mspace><mo>,</mo><msub><mi>y</mi><mn>0</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">A(x_{0}\ ,y_{0})</annotation></semantics></math>,
+then the slope</p>
+<p>of the line tangent to the graph of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+at a is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>m</mi><mi>t</mi></msub><mo>=</mo></mrow><annotation encoding="application/x-tex">m_{t} =</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>f</mi><mi>′</mi></msup><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>x</mi><mn>0</mn></msub><mo>,</mo><msub><mi>y</mi><mn>0</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">f^{&#39;}(x_{0},y_{0})</annotation></semantics></math>
+.</p>
 </body>
 </html>

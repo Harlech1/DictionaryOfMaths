@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"matematik sözlüğü"</title>
+    <style>
+        body {
+            font-size: 16px;
+            font-family: Arial, sans-serif; 
+            color: #333; 
+            background-color: #fff; 
+            line-height: 1.5; 
+        }
+        body.dark-mode {
+            color: #fff; 
+            background-color: #333; 
+        }
+    </style>
+    <script>
+        function detectDarkMode() {
+            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+            if (prefersDarkScheme.matches) {
+                document.body.classList.add("dark-mode");
+            } else {
+                document.body.classList.remove("dark-mode");
+            }
+        }
+        
+        window.onload = detectDarkMode;
+    </script>
+</head>
+<body>
+    <p> properties of the
+tangent function
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mi>t</mi><mi>a</mi><mi>n</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">y = tanx</annotation></semantics></math></p>
+<p>Its domain
+is<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mspace width="0.222em"></mspace><mi>R</mi><mo>∖</mo><mrow><mo stretchy="true" form="prefix">{</mo><mi>x</mi><mo>:</mo><mspace width="0.222em"></mspace><mi>x</mi><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>2</mn><mi>k</mi><mo>−</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mfrac><mi>π</mi><mn>2</mn></mfrac><mo>,</mo><mspace width="0.222em"></mspace><mi>k</mi><mo>∈</mo><mi>Z</mi><mo stretchy="true" form="postfix">}</mo></mrow></mrow><annotation encoding="application/x-tex">\ R\backslash\left\{ x:\ x = (2k - 1)\frac{\pi}{2},\ k \in Z \right\}</annotation></semantics></math>
+and its range is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">(</mo><mo>−</mo><mi>∞</mi><mo>,</mo><mspace width="0.222em"></mspace><mi>∞</mi><mo stretchy="true" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">( - \infty,\ \infty)</annotation></semantics></math>.</p>
+<p>Its vertical asymptotes are
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>2</mn><mi>k</mi><mo>−</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mfrac><mi>π</mi><mn>2</mn></mfrac><mo>,</mo><mspace width="0.222em"></mspace><mi>k</mi><mo>∈</mo><mi>Z</mi></mrow><annotation encoding="application/x-tex">x = (2k - 1)\frac{\pi}{2},\ k \in Z</annotation></semantics></math>.
+It is a periodic function with the principal period
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>=</mo><mi>π</mi></mrow><annotation encoding="application/x-tex">T = \pi</annotation></semantics></math>.</p>
+<p>It is an odd function. Its graph is symmetric with respect to the
+origin.</p>
+<p>It passes through the origin. Its x-intercepts are
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">{</mo><mi>x</mi><mo>:</mo><mspace width="0.222em"></mspace><mi>x</mi><mo>=</mo><mi>k</mi><mi>π</mi><mo>,</mo><mspace width="0.222em"></mspace><mi>k</mi><mo>∈</mo><mi>Z</mi><mo stretchy="true" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\left\{ x:\ x = k\pi,\ k \in Z \right\}</annotation></semantics></math></p>
+</body>
+</html>

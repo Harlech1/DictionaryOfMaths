@@ -1,40 +1,36 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>"matematik sözlüğü"</title>
-<style>
-            body {
-                font-size: 16px;
-                font-family: Arial, sans-serif; 
-                color: #333; 
-                background-color: #fff; 
-                line-height: 1.5; 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"matematik sözlüğü"</title>
+    <style>
+        body {
+            font-size: 16px;
+            font-family: Arial, sans-serif; 
+            color: #333; 
+            background-color: #fff; 
+            line-height: 1.5; 
+        }
+        body.dark-mode {
+            color: #fff; 
+            background-color: #333; 
+        }
+    </style>
+    <script>
+        function detectDarkMode() {
+            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+            if (prefersDarkScheme.matches) {
+                document.body.classList.add("dark-mode");
+            } else {
+                document.body.classList.remove("dark-mode");
             }
-            body.dark-mode {
-                color: #fff; 
-                background-color: #333; 
-            }
-        </style>
-<script>
-            function detectDarkMode() {
-                const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
-                if (prefersDarkScheme.matches) {
-                    document.body.classList.add("dark-mode");
-                } else {
-                    document.body.classList.remove("dark-mode");
-                }
-            }
-
-            window.onload = detectDarkMode;
-        </script>
+        }
+        
+        window.onload = detectDarkMode;
+    </script>
 </head>
 <body>
-<p> tangent-chord angle</p>
-<p>Angle which is formed by a tangent and a chord meeting at the point
-of tangency of the tangent</p>
-<p>Its measure is half the measure of its intercepted arc.
-<em>m</em><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mrow><mi>K</mi><mi>T</mi><mi>M</mi></mrow><mo accent="true">̂</mo></mover><mo>=</mo><mfrac><mrow><mi>m</mi><mi>K</mi><mi>L</mi><mi>T</mi></mrow><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">\widehat{KTM} = rac{mKLT}{2}</annotation></semantics></math></p></body>
+    <p> tangent-chord angle</p>
+</body>
 </html>

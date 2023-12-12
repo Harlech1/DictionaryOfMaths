@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"matematik sözlüğü"</title>
+    <style>
+        body {
+            font-size: 16px;
+            font-family: Arial, sans-serif; 
+            color: #333; 
+            background-color: #fff; 
+            line-height: 1.5; 
+        }
+        body.dark-mode {
+            color: #fff; 
+            background-color: #333; 
+        }
+    </style>
+    <script>
+        function detectDarkMode() {
+            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+            if (prefersDarkScheme.matches) {
+                document.body.classList.add("dark-mode");
+            } else {
+                document.body.classList.remove("dark-mode");
+            }
+        }
+        
+        window.onload = detectDarkMode;
+    </script>
+</head>
+<body>
+    <p> fundamental identities</p>
+
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mi>a</mi><mi>n</mi><mi>θ</mi><mo>=</mo><mfrac><mrow><mi>s</mi><mi>i</mi><mi>n</mi><mi>θ</mi></mrow><mrow><mi>c</mi><mi>o</mi><mi>s</mi><mi>θ</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">tan\theta = \frac{sin\theta}{cos\theta}</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mi>o</mi><mi>t</mi><mi>θ</mi><mo>=</mo><mfrac><mrow><mi>c</mi><mi>o</mi><mi>s</mi><mi>θ</mi></mrow><mrow><mi>s</mi><mi>i</mi><mi>n</mi><mi>θ</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">cot\theta = \frac{cos\theta}{sin\theta}</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mrow><mi>c</mi><mi>o</mi><mi>s</mi><mi>θ</mi></mrow></mfrac><mo>=</mo><mi>s</mi><mi>e</mi><mi>c</mi><mi>θ</mi></mrow><annotation encoding="application/x-tex">\frac{1}{cos\theta} = sec\theta</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mrow><mi>s</mi><mi>i</mi><mi>n</mi><mi>θ</mi></mrow></mfrac><mo>=</mo><mi>c</mi><mi>s</mi><mi>c</mi><mi>θ</mi></mrow><annotation encoding="application/x-tex">\frac{1}{sin\theta} = csc\theta</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mo>sin</mo><mn>2</mn></msup><mi>θ</mi><mo>+</mo><msup><mo>cos</mo><mn>2</mn></msup><mi>θ</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\sin^{2}\theta + \cos^{2}\theta = 1</annotation></semantics></math></p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>+</mo><msup><mo>tan</mo><mn>2</mn></msup><mi>θ</mi><mo>=</mo><msup><mo>sec</mo><mn>2</mn></msup><mi>θ</mi></mrow><annotation encoding="application/x-tex">1 + \tan^{2}\theta = \sec^{2}\theta</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>+</mo><msup><mo>cot</mo><mn>2</mn></msup><mi>θ</mi><msup><mrow><mo>=</mo><mspace width="0.222em"></mspace><mi>c</mi><mi>s</mi><mi>c</mi></mrow><mn>2</mn></msup><mi>θ</mi></mrow><annotation encoding="application/x-tex">1 + \cot^{2}\theta{= \ csc}^{2}\theta</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msqrt><mrow><mn>1</mn><mo>−</mo><msup><mo>cos</mo><mn>2</mn></msup><mi>θ</mi></mrow></msqrt><mo>=</mo><mrow><mo stretchy="true" form="prefix">|</mo><mi>s</mi><mi>i</mi><mi>n</mi><mi>x</mi><mo stretchy="true" form="postfix">|</mo></mrow></mrow><annotation encoding="application/x-tex">\sqrt{1 - \cos^{2}\theta} = |sinx|</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msqrt><mrow><mn>1</mn><mo>−</mo><msup><mo>sin</mo><mn>2</mn></msup><mi>θ</mi></mrow></msqrt><mo>=</mo><mrow><mo stretchy="true" form="prefix">|</mo><mi>c</mi><mi>o</mi><mi>s</mi><mi>x</mi><mo stretchy="true" form="postfix">|</mo></mrow></mrow><annotation encoding="application/x-tex">\sqrt{1 - \sin^{2}\theta} = |cosx|</annotation></semantics></math></p>
+</body>
+</html>

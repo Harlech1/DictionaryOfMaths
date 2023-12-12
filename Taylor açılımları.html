@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"matematik sözlüğü"</title>
+    <style>
+        body {
+            font-size: 16px;
+            font-family: Arial, sans-serif; 
+            color: #333; 
+            background-color: #fff; 
+            line-height: 1.5; 
+        }
+        body.dark-mode {
+            color: #fff; 
+            background-color: #333; 
+        }
+    </style>
+    <script>
+        function detectDarkMode() {
+            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+            if (prefersDarkScheme.matches) {
+                document.body.classList.add("dark-mode");
+            } else {
+                document.body.classList.remove("dark-mode");
+            }
+        }
+        
+        window.onload = detectDarkMode;
+    </script>
+</head>
+<body>
+    <p> Taylor expansions</p>
+<p>Taylor expansions of the functions
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mi>i</mi><mi>n</mi><mi>x</mi><mo>,</mo><mspace width="0.222em"></mspace><mi>c</mi><mi>o</mi><mi>s</mi><mi>x</mi><mo>,</mo><mspace width="0.222em"></mspace><mi>a</mi><mi>n</mi><mi>d</mi><mspace width="0.222em"></mspace><msup><mi>e</mi><mi>x</mi></msup></mrow><annotation encoding="application/x-tex">sinx,\ cosx,\ and\ e^{x}</annotation></semantics></math>
+about
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x = 0</annotation></semantics></math>:</p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mi>i</mi><mi>n</mi><mi>x</mi><mo>=</mo><mi>x</mi><mo>−</mo><mfrac><msup><mi>x</mi><mn>3</mn></msup><mrow><mn>3</mn><mi>!</mi></mrow></mfrac><mo>+</mo><mfrac><msup><mi>x</mi><mn>5</mn></msup><mrow><mn>5</mn><mi>!</mi></mrow></mfrac><mo>−</mo><mfrac><msup><mi>x</mi><mn>7</mn></msup><mrow><mn>7</mn><mi>!</mi></mrow></mfrac><mo>+</mo><mfrac><msup><mi>x</mi><mn>9</mn></msup><mrow><mn>9</mn><mi>!</mi></mrow></mfrac><mo>−</mo><mspace width="0.222em"></mspace><mi>⋯</mi></mrow><annotation encoding="application/x-tex">sinx = x - \frac{x^{3}}{3!} + \frac{x^{5}}{5!} - \frac{x^{7}}{7!} + \frac{x^{9}}{9!} - \ \cdots</annotation></semantics></math></p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mi>o</mi><mi>s</mi><mi>x</mi><mo>=</mo><mn>1</mn><mo>−</mo><mfrac><msup><mi>x</mi><mn>2</mn></msup><mrow><mn>2</mn><mi>!</mi></mrow></mfrac><mo>+</mo><mfrac><msup><mi>x</mi><mn>4</mn></msup><mrow><mn>4</mn><mi>!</mi></mrow></mfrac><mo>−</mo><mfrac><msup><mi>x</mi><mn>6</mn></msup><mrow><mn>6</mn><mi>!</mi></mrow></mfrac><mo>+</mo><mfrac><msup><mi>x</mi><mn>8</mn></msup><mrow><mn>8</mn><mi>!</mi></mrow></mfrac><mo>−</mo><mspace width="0.222em"></mspace><mi>⋯</mi></mrow><annotation encoding="application/x-tex">cosx = 1 - \frac{x^{2}}{2!} + \frac{x^{4}}{4!} - \frac{x^{6}}{6!} + \frac{x^{8}}{8!} - \ \cdots</annotation></semantics></math></p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>e</mi><mi>x</mi></msup><mo>=</mo><mn>1</mn><mo>+</mo><mi>x</mi><mo>+</mo><mfrac><msup><mi>x</mi><mn>2</mn></msup><mrow><mn>2</mn><mi>!</mi></mrow></mfrac><mo>+</mo><mfrac><msup><mi>x</mi><mn>3</mn></msup><mrow><mn>3</mn><mi>!</mi></mrow></mfrac><mo>+</mo><mfrac><msup><mi>x</mi><mn>4</mn></msup><mrow><mn>4</mn><mi>!</mi></mrow></mfrac><mo>+</mo><mspace width="0.222em"></mspace><mi>⋯</mi></mrow><annotation encoding="application/x-tex">e^{x} = 1 + x + \frac{x^{2}}{2!} + \frac{x^{3}}{3!} + \frac{x^{4}}{4!} + \ \cdots</annotation></semantics></math></p>
+</body>
+</html>
