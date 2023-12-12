@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"matematik sözlüğü"</title>
+    <style>
+        body {
+            font-size: 16px;
+            font-family: Arial, sans-serif; 
+            color: #333; 
+            background-color: #fff; 
+            line-height: 1.5; 
+        }
+        body.dark-mode {
+            color: #fff; 
+            background-color: #333; 
+        }
+    </style>
+    <script>
+        function detectDarkMode() {
+            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+            if (prefersDarkScheme.matches) {
+                document.body.classList.add("dark-mode");
+            } else {
+                document.body.classList.remove("dark-mode");
+            }
+        }
+        
+        window.onload = detectDarkMode;
+    </script>
+</head>
+<body>
+    <p> finite series</p>
+<p>Let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mn>1</mn></msub><mo>,</mo><msub><mi>a</mi><mn>2</mn></msub><mo>,</mo><mspace width="0.222em"></mspace><msub><mi>a</mi><mn>3</mn></msub><mo>,</mo><mspace width="0.222em"></mspace><msub><mi>a</mi><mn>4</mn></msub><mo>,</mo><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mi>.</mi><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mi>.</mi><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mi>.</mi><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mo>,</mo><msub><mi>a</mi><mi>k</mi></msub><mo>,</mo><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mi>.</mi><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mi>.</mi><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mi>.</mi></mrow><annotation encoding="application/x-tex">a_{1},a_{2},\ a_{3},\ a_{4},\ \ \ .\ \ .\ \ .\ \ ,a_{k},\ \ .\ \ .\ \ .</annotation></semantics></math>
+be an infinite sequence. Then the sum of the first
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+terms of the sequence,</p>
+<p>denoted by
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mn>1</mn></msub><mo>+</mo><msub><mi>a</mi><mn>2</mn></msub><mo>+</mo><mspace width="0.222em"></mspace><msub><mi>a</mi><mn>3</mn></msub><mo>+</mo><msub><mi>a</mi><mn>4</mn></msub><mo>+</mo><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mi>.</mi><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mi>.</mi><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mi>.</mi><mspace width="0.222em"></mspace><mo>+</mo><msub><mi>a</mi><mi>n</mi></msub><mo>=</mo><msubsup><mo>∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><msub><mi>a</mi><mi>k</mi></msub></mrow><annotation encoding="application/x-tex">a_{1} + a_{2} + \ a_{3} + a_{4} + \ \ \ .\ \ .\ \ .\  + a_{n} = \sum_{k = 1}^{n}a_{k}</annotation></semantics></math>
+, is a finite series.</p>
+</body>
+</html>
