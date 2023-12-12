@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"matematik sözlüğü"</title>
+    <style>
+        body {
+            font-size: 16px;
+            font-family: Arial, sans-serif; 
+            color: #333; 
+            background-color: #fff; 
+            line-height: 1.5; 
+        }
+        body.dark-mode {
+            color: #fff; 
+            background-color: #333; 
+        }
+    </style>
+    <script>
+        function detectDarkMode() {
+            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+            if (prefersDarkScheme.matches) {
+                document.body.classList.add("dark-mode");
+            } else {
+                document.body.classList.remove("dark-mode");
+            }
+        }
+        
+        window.onload = detectDarkMode;
+    </script>
+</head>
+<body>
+    <p> properties of the
+exponential function
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><msup><mi>a</mi><mi>x</mi></msup></mrow><annotation encoding="application/x-tex">f(x) = a^{x}</annotation></semantics></math><em>,</em>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>&gt;</mo><mn>1</mn><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mi>o</mi><mi>r</mi><mspace width="0.222em"></mspace><mn>0</mn><mo>&lt;</mo><mi>a</mi><mo>&lt;</mo><mn>1</mn><mspace width="0.222em"></mspace></mrow><annotation encoding="application/x-tex">a &gt; 1\ \ or\ 0 &lt; a &lt; 1\ </annotation></semantics></math></p>
+<p>Its domain is the set of all real numbers. Its range is the set of
+positive real numbers.</p>
+<p>There are no x-intercepts and y-intercept is 1. x-axis is the
+horizontal asymptote.</p>
+<p>If <em>a &gt;1</em>, then it is an increasing function and is
+<em>1-1.</em> If <em>0&lt; a &lt;1</em>, then it is a decreasing
+function and is <em>1-1</em>.</p>
+<p>Its graph is continuous, with no corners or gaps.</p>
+</body>
+</html>

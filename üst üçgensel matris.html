@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"matematik sözlüğü"</title>
+    <style>
+        body {
+            font-size: 16px;
+            font-family: Arial, sans-serif; 
+            color: #333; 
+            background-color: #fff; 
+            line-height: 1.5; 
+        }
+        body.dark-mode {
+            color: #fff; 
+            background-color: #333; 
+        }
+    </style>
+    <script>
+        function detectDarkMode() {
+            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+            if (prefersDarkScheme.matches) {
+                document.body.classList.add("dark-mode");
+            } else {
+                document.body.classList.remove("dark-mode");
+            }
+        }
+        
+        window.onload = detectDarkMode;
+    </script>
+</head>
+<body>
+    <p> upper triangular matrix</p>
+
+<p>A triangular matrix of the form
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>A</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>=</mo><mrow><mo stretchy="true" form="prefix">{</mo><mtable><mtr><mtd columnalign="right" style="text-align: right"><msub><mi>a</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mi>f</mi><mi>o</mi><mi>r</mi><mspace width="0.222em"></mspace><mi>i</mi><mo>&lt;</mo><mi>j</mi></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right"><mn>0</mn><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mi>f</mi><mi>o</mi><mi>r</mi><mspace width="0.222em"></mspace><mi>i</mi><mo>≥</mo><mi>j</mi></mtd></mtr></mtable></mrow><mspace width="0.222em"></mspace></mrow><annotation encoding="application/x-tex">A_{ij} = \left\{ \begin{array}{r}
+a_{ij}\ \ \ \ \ \ for\ i &lt; j \\
+0\ \ \ \ \ \ \ \ \ \ for\ i \geq j
+\end{array} \right.\ </annotation></semantics></math></p>
+</body>
+</html>

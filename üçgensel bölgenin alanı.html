@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"matematik sözlüğü"</title>
+    <style>
+        body {
+            font-size: 16px;
+            font-family: Arial, sans-serif; 
+            color: #333; 
+            background-color: #fff; 
+            line-height: 1.5; 
+        }
+        body.dark-mode {
+            color: #fff; 
+            background-color: #333; 
+        }
+    </style>
+    <script>
+        function detectDarkMode() {
+            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+            if (prefersDarkScheme.matches) {
+                document.body.classList.add("dark-mode");
+            } else {
+                document.body.classList.remove("dark-mode");
+            }
+        }
+        
+        window.onload = detectDarkMode;
+    </script>
+</head>
+<body>
+    <p> area of the triangular
+region</p>
+<p>a)The area of a triangle is half the product of an height and the
+length of the side to which it is drawn</p>
+<p><em>A</em><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">(</mo><mi mathvariant="normal">Δ</mi><mi>A</mi><mi>B</mi><mi>C</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mfrac><mrow><mi>a</mi><mi>.</mi><msub><mi>h</mi><mi>a</mi></msub></mrow><mn>2</mn></mfrac><mo>=</mo><mfrac><mrow><mi>b</mi><mi>.</mi><msub><mi>h</mi><mi>b</mi></msub></mrow><mn>2</mn></mfrac><mo>=</mo><mfrac><mrow><mi>c</mi><mi>.</mi><msub><mi>h</mi><mi>c</mi></msub></mrow><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">(\mathrm{\Delta}ABC) = \frac{a.h_{a}}{2} = \frac{b.h_{b}}{2} = \frac{c.h_{c}}{2}</annotation></semantics></math>
+<em>,</em>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mspace width="0.222em"></mspace><mi>a</mi><mi>.</mi><msub><mi>h</mi><mi>a</mi></msub><mo>=</mo><mi>b</mi><mi>.</mi><msub><mi>h</mi><mi>b</mi></msub><mo>=</mo><mi>c</mi><mi>.</mi><msub><mi>h</mi><mi>c</mi></msub></mrow><annotation encoding="application/x-tex">\ a.h_{a} = b.h_{b} = c.h_{c}</annotation></semantics></math><em>.</em>
+In
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mi>A</mi><mi>B</mi><mi>C</mi><mspace width="0.222em"></mspace></mrow><annotation encoding="application/x-tex">\mathrm{\Delta}ABC\ </annotation></semantics></math>
+<em>if</em>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>h</mi><mi>a</mi></msub><mo>&gt;</mo><msub><mi>h</mi><mi>b</mi></msub><mo>&gt;</mo><msub><mi>h</mi><mi>c</mi></msub></mrow><annotation encoding="application/x-tex">h_{a} &gt; h_{b} &gt; h_{c}</annotation></semantics></math>
+<em>,</em> then
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>&lt;</mo><mi>b</mi><mo>&lt;</mo><mi>c</mi></mrow><annotation encoding="application/x-tex">a &lt; b &lt; c</annotation></semantics></math>
+<em>.</em></p>
+<p>b)
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>A</mi><mi>B</mi><mi>C</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>a</mi><mi>b</mi><mi>s</mi><mi>i</mi><mi>n</mi><mover><mi>C</mi><mo accent="true">̂</mo></mover><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>a</mi><mi>c</mi><mi>s</mi><mi>i</mi><mi>n</mi><mover><mi>B</mi><mo accent="true">̂</mo></mover><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>b</mi><mi>c</mi><mi>s</mi><mi>i</mi><mi>n</mi><mover><mi>A</mi><mo accent="true">̂</mo></mover><mspace width="0.222em"></mspace></mrow><annotation encoding="application/x-tex">A(ABC) = \frac{1}{2}absin\widehat{C} = \frac{1}{2}acsin\widehat{B} = \frac{1}{2}bcsin\widehat{A}\ </annotation></semantics></math></p>
+<p>c)<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi mathvariant="normal">Δ</mi><mi>A</mi><mi>B</mi><mi>C</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><msqrt><mrow><mi>u</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>u</mi><mo>−</mo><mi>a</mi><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mi>u</mi><mo>−</mo><mi>b</mi><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mi>u</mi><mo>−</mo><mi>c</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow></msqrt></mrow><annotation encoding="application/x-tex">A(\mathrm{\Delta}ABC) = \sqrt{u(u - a)(u - b)(u - c)}</annotation></semantics></math>
+,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>=</mo><mfrac><mrow><mi>a</mi><mo>+</mo><mi>b</mi><mo>+</mo><mi>c</mi></mrow><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">u = \frac{a + b + c}{2}</annotation></semantics></math>
+( <em>Heron’s formula</em>)</p>
+<p>d)
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi mathvariant="normal">Δ</mi><mi>A</mi><mi>B</mi><mi>C</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mi>u</mi><mi>r</mi></mrow><annotation encoding="application/x-tex">A(\mathrm{\Delta}ABC) = ur</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>=</mo><mfrac><mrow><mi>a</mi><mo>+</mo><mi>b</mi><mo>+</mo><mi>c</mi></mrow><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">u = \frac{a + b + c}{2}</annotation></semantics></math>
+and r is the inradius of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mi>A</mi><mi>B</mi><mi>C</mi></mrow><annotation encoding="application/x-tex">\mathrm{\Delta}ABC</annotation></semantics></math></p>
+<p>e)
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi mathvariant="normal">Δ</mi><mi>A</mi><mi>B</mi><mi>C</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mfrac><mrow><mi>a</mi><mi>b</mi><mi>c</mi></mrow><mrow><mn>4</mn><mi>R</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">A(\mathrm{\Delta}ABC) = \frac{abc}{4R}</annotation></semantics></math>
+, R is the circumradius
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>o</mi><mi>f</mi><mspace width="0.222em"></mspace><mi mathvariant="normal">Δ</mi><mi>A</mi><mi>B</mi><mi>C</mi></mrow><annotation encoding="application/x-tex">of\ \mathrm{\Delta}ABC</annotation></semantics></math></p>
+<p>f)<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mspace width="0.222em"></mspace><mi>A</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi mathvariant="normal">Δ</mi><mi>A</mi><mi>B</mi><mi>C</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mn>2</mn><msup><mi>R</mi><mn>2</mn></msup><mi>s</mi><mi>i</mi><mi>n</mi><mi>A</mi><mi>s</mi><mi>i</mi><mi>n</mi><mi>B</mi><mi>s</mi><mi>i</mi><mi>n</mi><mi>C</mi></mrow><annotation encoding="application/x-tex">\ A(\mathrm{\Delta}ABC) = 2R^{2}sinAsinBsinC</annotation></semantics></math></p>
+<p>g)<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mspace width="0.222em"></mspace><mi>A</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi mathvariant="normal">Δ</mi><mi>A</mi><mi>B</mi><mi>C</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mfrac><mrow><msup><mi>a</mi><mn>2</mn></msup><mi>s</mi><mi>i</mi><mi>n</mi><mi>B</mi><mspace width="0.222em"></mspace><mi>s</mi><mi>i</mi><mi>n</mi><mi>C</mi></mrow><mrow><mn>2</mn><mi>s</mi><mi>i</mi><mi>n</mi><mi>A</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">\ A(\mathrm{\Delta}ABC) = \frac{a^{2}sinB\ sinC}{2sinA}</annotation></semantics></math></p>
+<p>f)
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi mathvariant="normal">Δ</mi><mi>A</mi><mi>B</mi><mi>C</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>u</mi><mo>−</mo><mi>a</mi><mo stretchy="true" form="postfix">)</mo></mrow><msub><mi>r</mi><mi>a</mi></msub><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>u</mi><mo>−</mo><mi>b</mi><mo stretchy="true" form="postfix">)</mo></mrow><msub><mi>r</mi><mi>b</mi></msub><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>u</mi><mo>−</mo><mi>c</mi><mo stretchy="true" form="postfix">)</mo></mrow><msub><mi>r</mi><mi>c</mi></msub></mrow><annotation encoding="application/x-tex">A(\mathrm{\Delta}ABC) = (u - a)r_{a} = (u - b)r_{b} = (u - c)r_{c}</annotation></semantics></math>
+where each of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>r</mi><mi>a</mi></msub><mo>,</mo><msub><mi>r</mi><mi>b</mi></msub><mo>,</mo><mi>a</mi><mi>n</mi><mi>d</mi><mspace width="0.222em"></mspace><msub><mi>r</mi><mi>c</mi></msub></mrow><annotation encoding="application/x-tex">r_{a},r_{b},and\ r_{c}</annotation></semantics></math>
+is an exradius of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mi>A</mi><mi>B</mi><mi>C</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">\mathrm{\Delta}ABC.</annotation></semantics></math></p>
+<p>Comparing areas of triangular regions</p>
+<p>a) If two triangles with the same altitude have different bases, the
+ratio of their areas is the ratio of their bases.</p>
+<p>b) If two triangles with the same base have different altitudes, the
+ratio of their areas is the ratio of their heights.</p>
+<p>c) By drawing all three medians of a triangle, we divide the triangle
+into six regions of equal area.</p>
+<p>d) The ratio of areas of similar triangles is the square of the
+similarity ratio.</p>
+</body>
+</html>
