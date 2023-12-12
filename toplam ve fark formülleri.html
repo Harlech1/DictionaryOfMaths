@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"matematik sözlüğü"</title>
+    <style>
+        body {
+            font-size: 16px;
+            font-family: Arial, sans-serif; 
+            color: #333; 
+            background-color: #fff; 
+            line-height: 1.5; 
+        }
+        body.dark-mode {
+            color: #fff; 
+            background-color: #333; 
+        }
+    </style>
+    <script>
+        function detectDarkMode() {
+            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+            if (prefersDarkScheme.matches) {
+                document.body.classList.add("dark-mode");
+            } else {
+                document.body.classList.remove("dark-mode");
+            }
+        }
+        
+        window.onload = detectDarkMode;
+    </script>
+</head>
+<body>
+    <p> sum and difference
+formulas</p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>sin</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>α</mi><mo>+</mo><mi>β</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mi>s</mi><mi>i</mi><mi>n</mi><mi>α</mi><mi>.</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>β</mi><mo>+</mo><mi>c</mi><mi>o</mi><mi>s</mi><mi>α</mi><mi>.</mi><mi>s</mi><mi>i</mi><mi>n</mi><mi>β</mi></mrow><annotation encoding="application/x-tex">\sin(\alpha + \beta) = sin\alpha.cos\beta + cos\alpha.sin\beta</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>sin</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>α</mi><mo>−</mo><mi>β</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mi>s</mi><mi>i</mi><mi>n</mi><mi>α</mi><mi>.</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>β</mi><mo>−</mo><mi>c</mi><mi>o</mi><mi>s</mi><mi>α</mi><mi>.</mi><mi>s</mi><mi>i</mi><mi>n</mi><mi>β</mi></mrow><annotation encoding="application/x-tex">\sin(\alpha - \beta) = sin\alpha.cos\beta - cos\alpha.sin\beta</annotation></semantics></math></p>
+<p>cos<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">(</mo><mi>α</mi><mo>−</mo><mi>β</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mi>c</mi><mi>o</mi><mi>s</mi><mi>α</mi><mi>.</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>β</mi><mo>+</mo><mi>s</mi><mi>i</mi><mi>n</mi><mi>α</mi><mi>.</mi><mi>s</mi><mi>i</mi><mi>n</mi><mi>β</mi></mrow><annotation encoding="application/x-tex">(\alpha - \beta) = cos\alpha.cos\beta + sin\alpha.sin\beta</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>cos</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>α</mi><mo>+</mo><mi>β</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mi>c</mi><mi>o</mi><mi>s</mi><mi>α</mi><mi>.</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>β</mi><mo>−</mo><mi>s</mi><mi>i</mi><mi>n</mi><mi>α</mi><mi>.</mi><mi>s</mi><mi>i</mi><mi>n</mi><mi>β</mi></mrow><annotation encoding="application/x-tex">\cos(\alpha + \beta) = cos\alpha.cos\beta - sin\alpha.sin\beta</annotation></semantics></math></p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>tan</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>α</mi><mo>+</mo><mi>β</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mfrac><mrow><mo>tan</mo><mi>α</mi><mo>+</mo><mi>t</mi><mi>a</mi><mi>n</mi><mi>β</mi></mrow><mrow><mn>1</mn><mo>−</mo><mi>t</mi><mi>a</mi><mi>n</mi><mi>α</mi><mi>.</mi><mi>t</mi><mi>a</mi><mi>n</mi><mi>β</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">\tan(\alpha + \beta) = \frac{\tan\alpha + tan\beta}{1 - tan\alpha.tan\beta}</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>tan</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>α</mi><mo>−</mo><mi>β</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mfrac><mrow><mo>tan</mo><mi>α</mi><mo>−</mo><mo>tan</mo><mi>β</mi></mrow><mrow><mn>1</mn><mo>+</mo><mo>tan</mo><mi>α</mi><mi>.</mi><mo>tan</mo><mi>β</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">\tan(\alpha - \beta) = \frac{\tan\alpha - \tan\beta}{1 + \tan\alpha.\tan\beta}</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>cot</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>α</mi><mo>+</mo><mi>β</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mfrac><mrow><mo>cot</mo><mi>β</mi><mi>.</mi><mi>c</mi><mi>o</mi><mi>t</mi><mi>α</mi><mo>−</mo><mn>1</mn></mrow><mrow><mo>cot</mo><mi>β</mi><mo>+</mo><mi>c</mi><mi>o</mi><mi>t</mi><mi>α</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">\cot(\alpha + \beta) = \frac{\cot\beta.cot\alpha - 1}{\cot\beta + cot\alpha}</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>cot</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>α</mi><mo>−</mo><mi>β</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mfrac><mrow><mo>cot</mo><mi>β</mi><mi>.</mi><mi>c</mi><mi>o</mi><mi>t</mi><mi>α</mi><mo>+</mo><mn>1</mn></mrow><mrow><mo>cot</mo><mi>β</mi><mo>−</mo><mi>c</mi><mi>o</mi><mi>t</mi><mi>α</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">\cot(\alpha - \beta) = \frac{\cot\beta.cot\alpha + 1}{\cot\beta - cot\alpha}</annotation></semantics></math></p>
+</body>
+</html>

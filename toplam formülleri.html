@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"matematik sözlüğü"</title>
+    <style>
+        body {
+            font-size: 16px;
+            font-family: Arial, sans-serif; 
+            color: #333; 
+            background-color: #fff; 
+            line-height: 1.5; 
+        }
+        body.dark-mode {
+            color: #fff; 
+            background-color: #333; 
+        }
+    </style>
+    <script>
+        function detectDarkMode() {
+            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+            if (prefersDarkScheme.matches) {
+                document.body.classList.add("dark-mode");
+            } else {
+                document.body.classList.remove("dark-mode");
+            }
+        }
+        
+        window.onload = detectDarkMode;
+    </script>
+</head>
+<body>
+    <p> formulas for sums (summation
+formulas)</p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>3</mn><mo>+</mo><mi>…</mi><mo>+</mo><mi>n</mi><mo>=</mo><msubsup><mo>∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><mrow><mi>k</mi><mo>=</mo><mfrac><mrow><mi>n</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>n</mi><mo>+</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow></mrow><mn>2</mn></mfrac></mrow></mrow><annotation encoding="application/x-tex">1 + 2 + 3 + \ldots + n = \sum_{k = 1}^{n}{k = \frac{n(n + 1)}{2}}</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mi>a</mi><mo>+</mo><mi>a</mi><mi>r</mi></mrow><mspace width="0.222em"></mspace></msup><mo>+</mo><msup><mrow><mi>a</mi><mi>r</mi></mrow><mn>2</mn></msup><mo>+</mo><mspace width="0.222em"></mspace><mi>…</mi><mo>+</mo><mi>a</mi><msup><mi>r</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup><mo>=</mo><msubsup><mo>∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><mrow><mi>a</mi><mi>.</mi><msup><mi>r</mi><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></msup><mo>=</mo></mrow><mfrac><mrow><mi>a</mi><mi>.</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><msup><mi>r</mi><mi>n</mi></msup><mo stretchy="true" form="postfix">)</mo></mrow></mrow><mrow><mn>1</mn><mo>−</mo><mi>r</mi></mrow></mfrac><mspace width="0.222em"></mspace><mo>,</mo><mspace width="0.222em"></mspace><mi>r</mi><mo>≠</mo><mn>0</mn><mo>,</mo><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mi>r</mi><mo>≠</mo><mspace width="0.222em"></mspace><mn>1</mn></mrow><annotation encoding="application/x-tex">{a + ar}^{\ } + {ar}^{2} + \ \ldots + ar^{n - 1} = \sum_{k = 1}^{n}{a.r^{k - 1} =}\frac{a.(1 - r^{n})}{1 - r}\ ,\ r \neq 0,\ \ r \neq \ 1</annotation></semantics></math></p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>+</mo><mn>4</mn><mo>+</mo><mn>6</mn><mo>+</mo><mi>…</mi><mo>+</mo><mn>2</mn><mi>n</mi><mo>=</mo><msubsup><mo>∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><mrow><mn>2</mn><mi>k</mi><mo>=</mo><mi>n</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>n</mi><mo>+</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">2 + 4 + 6 + \ldots + 2n = \sum_{k = 1}^{n}{2k = n(n + 1)}</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>1</mn><mspace width="0.222em"></mspace></msup><annotation encoding="application/x-tex">1^{\ }</annotation></semantics></math><em>+</em><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mrow><mspace width="0.222em"></mspace><mi>r</mi><mo>+</mo><mi>r</mi></mrow><mn>2</mn></msup><annotation encoding="application/x-tex">{\ r + r}^{2}</annotation></semantics></math><em>+</em><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mspace width="0.222em"></mspace><msup><mi>r</mi><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">\ r^{3}</annotation></semantics></math><em>+...+</em><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mspace width="0.222em"></mspace><msup><mi>r</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup><mo>=</mo><msubsup><mo>∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><mrow><msup><mi>r</mi><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></msup><mo>=</mo></mrow><mfrac><mrow><mn>1</mn><mo>−</mo><msup><mi>r</mi><mi>n</mi></msup></mrow><mrow><mn>1</mn><mo>−</mo><mi>r</mi></mrow></mfrac><mspace width="0.222em"></mspace><mo>,</mo><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mi>r</mi><mo>≠</mo><mn>0</mn><mspace width="0.222em"></mspace><mo>,</mo><mspace width="0.222em"></mspace><mi>r</mi><mo>≠</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\ r^{n - 1} = \sum_{k = 1}^{n}{r^{k - 1} =}\frac{1 - r^{n}}{1 - r}\ ,\ \ r \neq 0\ ,\ r \neq 1</annotation></semantics></math></p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>1</mn><mn>3</mn></msup><mo>+</mo><msup><mn>2</mn><mn>3</mn></msup><mo>+</mo><msup><mn>3</mn><mn>3</mn></msup><mo>+</mo><mspace width="0.222em"></mspace><mi>…</mi><mo>+</mo><msup><mi>n</mi><mn>3</mn></msup><mo>=</mo></mrow><annotation encoding="application/x-tex">1^{3} + 2^{3} + 3^{3} + \ \ldots + n^{3} =</annotation></semantics></math><em>=</em><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mspace width="0.222em"></mspace><msubsup><mo>∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><mrow><msup><mi>k</mi><mn>3</mn></msup><mo>=</mo><mfrac><mrow><msup><mi>n</mi><mn>2</mn></msup><msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>n</mi><mo>+</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup></mrow><mn>4</mn></mfrac></mrow></mrow><annotation encoding="application/x-tex">\ \sum_{k = 1}^{n}{k^{3} = \frac{n^{2}(n + 1)^{2}}{4}}</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>+</mo><mi>c</mi><mo>+</mo><mi>c</mi><mo>+</mo><mi>…</mi><mo>+</mo><mi>c</mi><mo>=</mo><msubsup><mo>∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><mi>c</mi><mo>=</mo><mi>n</mi><mo>•</mo><mi>c</mi></mrow><annotation encoding="application/x-tex">c + c + c + \ldots + c = \sum_{k = 1}^{n}c = n \bullet c</annotation></semantics></math></p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>1</mn><mn>2</mn></msup><mo>+</mo><msup><mn>2</mn><mn>2</mn></msup><mo>+</mo><msup><mn>3</mn><mn>2</mn></msup><mo>+</mo><mspace width="0.222em"></mspace><mi>…</mi><mo>+</mo><msup><mi>n</mi><mn>2</mn></msup><mo>=</mo><msubsup><mo>∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><mrow><msup><mi>k</mi><mn>2</mn></msup><mo>=</mo></mrow><mfrac><mrow><mi>n</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>n</mi><mo>+</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mn>2</mn><mi>n</mi><mo>+</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow></mrow><mn>6</mn></mfrac></mrow><annotation encoding="application/x-tex">1^{2} + 2^{2} + 3^{2} + \ \ldots + n^{2} = \sum_{k = 1}^{n}{k^{2} =}\frac{n(n + 1)(2n + 1)}{6}</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>+</mo><mn>3</mn><mo>+</mo><mn>5</mn><mo>+</mo><mi>…</mi><mo>+</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>2</mn><mi>n</mi><mo>−</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><msubsup><mo>∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><mrow><mrow><mo stretchy="true" form="prefix">(</mo><mn>2</mn><mi>k</mi><mo>−</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><msup><mi>n</mi><mn>2</mn></msup></mrow></mrow><annotation encoding="application/x-tex">1 + 3 + 5 + \ldots + (2n - 1) = \sum_{k = 1}^{n}{(2k - 1) = n^{2}}</annotation></semantics></math></p>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"matematik sözlüğü"</title>
+    <style>
+        body {
+            font-size: 16px;
+            font-family: Arial, sans-serif; 
+            color: #333; 
+            background-color: #fff; 
+            line-height: 1.5; 
+        }
+        body.dark-mode {
+            color: #fff; 
+            background-color: #333; 
+        }
+    </style>
+    <script>
+        function detectDarkMode() {
+            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+            if (prefersDarkScheme.matches) {
+                document.body.classList.add("dark-mode");
+            } else {
+                document.body.classList.remove("dark-mode");
+            }
+        }
+        
+        window.onload = detectDarkMode;
+    </script>
+</head>
+<body>
+    <p>
+derivatives of inverse trigonometric functions</p>
+<p><em>Let u be a differentiable function of x .</em></p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mi>d</mi><mrow><mi>d</mi><mi>x</mi></mrow></mfrac><mrow><mo stretchy="true" form="prefix">(</mo><mi>a</mi><mi>r</mi><mi>c</mi><mi>s</mi><mi>i</mi><mi>n</mi><mspace width="0.222em"></mspace><mi>u</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mfrac><msup><mi>u</mi><mi>′</mi></msup><msqrt><mrow><mn>1</mn><mo>−</mo><msup><mi>u</mi><mn>2</mn></msup></mrow></msqrt></mfrac></mrow><annotation encoding="application/x-tex">\frac{d}{dx}(arcsin\ u) = \frac{u^{&#39;}}{\sqrt{1 - u^{2}}}</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mi>d</mi><mrow><mi>d</mi><mi>x</mi></mrow></mfrac><mrow><mo stretchy="true" form="prefix">(</mo><mi>a</mi><mi>r</mi><mi>c</mi><mi>c</mi><mi>o</mi><mi>s</mi><mspace width="0.222em"></mspace><mi>u</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mfrac><mrow><mo>−</mo><msup><mi>u</mi><mi>′</mi></msup></mrow><msqrt><mrow><mn>1</mn><mo>−</mo><msup><mi>u</mi><mn>2</mn></msup></mrow></msqrt></mfrac></mrow><annotation encoding="application/x-tex">\frac{d}{dx}(arccos\ u) = \frac{- u^{&#39;}}{\sqrt{1 - u^{2}}}</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mi>d</mi><mrow><mi>d</mi><mi>x</mi></mrow></mfrac><mrow><mo stretchy="true" form="prefix">(</mo><mi>a</mi><mi>r</mi><mi>c</mi><mi>t</mi><mi>a</mi><mi>n</mi><mspace width="0.222em"></mspace><mi>u</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mfrac><msup><mi>u</mi><mi>′</mi></msup><mrow><mn>1</mn><mo>+</mo><msup><mi>u</mi><mn>2</mn></msup></mrow></mfrac></mrow><annotation encoding="application/x-tex">\frac{d}{dx}(arctan\ u) = \frac{u^{&#39;}}{1 + u^{2}}</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mi>d</mi><mrow><mi>d</mi><mi>x</mi></mrow></mfrac><mrow><mo stretchy="true" form="prefix">(</mo><mi>a</mi><mi>r</mi><mi>c</mi><mi>c</mi><mi>o</mi><mi>t</mi><mspace width="0.222em"></mspace><mi>u</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mfrac><msup><mrow><mo>−</mo><mi>u</mi></mrow><mi>′</mi></msup><mrow><mn>1</mn><mo>+</mo><msup><mi>u</mi><mn>2</mn></msup></mrow></mfrac></mrow><annotation encoding="application/x-tex">\frac{d}{dx}(arccot\ u) = \frac{{- u}^{&#39;}}{1 + u^{2}}</annotation></semantics></math></p>
+</body>
+</html>

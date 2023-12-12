@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"matematik sözlüğü"</title>
+    <style>
+        body {
+            font-size: 16px;
+            font-family: Arial, sans-serif; 
+            color: #333; 
+            background-color: #fff; 
+            line-height: 1.5; 
+        }
+        body.dark-mode {
+            color: #fff; 
+            background-color: #333; 
+        }
+    </style>
+    <script>
+        function detectDarkMode() {
+            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+            if (prefersDarkScheme.matches) {
+                document.body.classList.add("dark-mode");
+            } else {
+                document.body.classList.remove("dark-mode");
+            }
+        }
+        
+        window.onload = detectDarkMode;
+    </script>
+</head>
+<body>
+    <p> limit of
+trigonometric functions</p>
+
+<p>a) Since the basic trigonometric functions are continuous on their
+domains, for any number c in the natural domain of</p>
+<p>the stated function:</p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><mi>a</mi></mrow></msub><mrow><mi>s</mi><mi>i</mi><mi>n</mi><mspace width="0.222em"></mspace><mi>x</mi><mo>=</mo><mi>s</mi><mi>i</mi><mi>n</mi><mi>a</mi></mrow></mrow><annotation encoding="application/x-tex">\lim_{x \rightarrow a}{sin\ x = sina}</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><mi>a</mi></mrow></msub><mrow><mi>c</mi><mi>o</mi><mi>s</mi><mi>x</mi><mo>=</mo><mi>c</mi><mi>o</mi><mi>s</mi><mi>a</mi></mrow></mrow><annotation encoding="application/x-tex">\lim_{x \rightarrow a}{cosx = cosa}</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><mi>a</mi></mrow></msub><mrow><mi>t</mi><mi>a</mi><mi>n</mi><mi>x</mi><mo>=</mo><mi>t</mi><mi>a</mi><mi>n</mi><mi>a</mi></mrow></mrow><annotation encoding="application/x-tex">\lim_{x \rightarrow a}{tanx = tana}</annotation></semantics></math></p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><mi>a</mi></mrow></msub><mrow><mi>c</mi><mi>o</mi><mi>t</mi><mi>x</mi><mo>=</mo><mi>s</mi><mi>i</mi><mi>n</mi><mi>a</mi></mrow></mrow><annotation encoding="application/x-tex">\lim_{x \rightarrow a}{cotx = sina}</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><mi>a</mi></mrow></msub><mrow><mi>s</mi><mi>e</mi><mi>c</mi><mi>x</mi><mo>=</mo><mi>s</mi><mi>e</mi><mi>c</mi><mi>a</mi><mspace width="0.222em"></mspace></mrow></mrow><annotation encoding="application/x-tex">\lim_{x \rightarrow a}{secx = seca\ }</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><mi>c</mi></mrow></msub><mrow><mi>c</mi><mi>s</mi><mi>c</mi><mi>x</mi><mo>=</mo><mi>c</mi><mi>s</mi><mi>c</mi><mspace width="0.222em"></mspace><mi>c</mi></mrow></mrow><annotation encoding="application/x-tex">\lim_{x \rightarrow c}{cscx = csc\ c}</annotation></semantics></math></p>
+
+<p>b)<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munder><mrow><mspace width="0.222em"></mspace><mi>l</mi><mi>i</mi><mi>m</mi></mrow><mrow><mi>θ</mi><mo>→</mo><mn>0</mn></mrow></munder><mrow><mo stretchy="true" form="prefix">(</mo><mi>s</mi><mi>i</mi><mi>n</mi><mi>θ</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>/</mi><mi>θ</mi><mo>=</mo><mspace width="0.222em"></mspace><mrow><msub><mo>lim</mo><mrow><mi>θ</mi><mo>→</mo><mn>0</mn></mrow></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mi>a</mi><mi>n</mi><mi>θ</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>/</mi><mi>θ</mi><mo>=</mo><mn>1</mn><mspace width="0.222em"></mspace></mrow><mspace width="0.222em"></mspace></mrow><mspace width="0.222em"></mspace><msub><mo>lim</mo><mrow><mi>θ</mi><mo>→</mo><mn>0</mn></mrow></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>s</mi><mi>i</mi><mi>n</mi><mi>k</mi><mi>θ</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>/</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>l</mi><mi>θ</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mspace width="0.222em"></mspace><mrow><msub><mo>lim</mo><mrow><mi>θ</mi><mo>→</mo><mn>0</mn></mrow></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mi>a</mi><mi>n</mi><mi>k</mi><mi>θ</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>/</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>l</mi><mi>θ</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mi>k</mi><mi>/</mi><mi>l</mi><mspace width="0.222em"></mspace></mrow><mspace width="0.222em"></mspace></mrow><annotation encoding="application/x-tex">{\underset{\theta \rightarrow 0}{\ lim}(sin\theta)/\theta = \ {\lim_{\theta \rightarrow 0}(tan\theta)/\theta = 1\ }\ }\ \lim_{\theta \rightarrow 0}(sink\theta)/(l\theta) = \ {\lim_{\theta \rightarrow 0}(tank\theta)/(l\theta) = k/l\ }\ </annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>,</mo><mi>l</mi><mo>∈</mo><mi>R</mi><mo>,</mo><mspace width="0.222em"></mspace><mi>l</mi><mo>≠</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">k,l \in R,\ l \neq 0</annotation></semantics></math></p>
+</body>
+</html>
