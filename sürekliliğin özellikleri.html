@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"matematik sözlüğü"</title>
+    <style>
+        body {
+            font-size: 16px;
+            font-family: Arial, sans-serif; 
+            color: #333; 
+            background-color: #fff; 
+            line-height: 1.5; 
+        }
+        body.dark-mode {
+            color: #fff; 
+            background-color: #333; 
+        }
+    </style>
+    <script>
+        function detectDarkMode() {
+            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+            if (prefersDarkScheme.matches) {
+                document.body.classList.add("dark-mode");
+            } else {
+                document.body.classList.remove("dark-mode");
+            }
+        }
+        
+        window.onload = detectDarkMode;
+    </script>
+</head>
+<body>
+    <p> properties of
+continuity</p>
+<p>If
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mspace width="0.222em"></mspace><mi>b</mi></mrow><annotation encoding="application/x-tex">\ b</annotation></semantics></math>
+is a real number and the functions
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math>
+are continuous at
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mi>c</mi></mrow><annotation encoding="application/x-tex">x = c</annotation></semantics></math>
+, then the functions</p>
+<p>‘’<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi><mi>.</mi><mi>f</mi><mo>,</mo><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mi>f</mi><mo>∓</mo><mi>g</mi><mspace width="0.222em"></mspace><mo>,</mo><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mi>f</mi><mi>.</mi><mi>g</mi><mo>,</mo><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mfrac><mrow><mspace width="0.222em"></mspace><mi>f</mi></mrow><mi>g</mi></mfrac><mspace width="0.222em"></mspace><mo>,</mo><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mi>g</mi><mo>≠</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">b.f,\ \ f \mp g\ ,\ \ f.g,\ \ \frac{\ f}{g}\ ,\ \ g \neq 0</annotation></semantics></math>
+‘’ are also continuous at
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mspace width="0.222em"></mspace><mi>c</mi><mspace width="0.222em"></mspace></mrow><annotation encoding="application/x-tex">\ c\ </annotation></semantics></math><em>.</em></p>
+</body>
+</html>
