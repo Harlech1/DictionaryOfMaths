@@ -1,36 +1,47 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>"matematik sözlüğü"</title>
-<style>
-            body {
-                font-size: 16px;
-                font-family: Arial, sans-serif; 
-                color: #333; 
-                background-color: #fff; 
-                line-height: 1.5; 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"matematik sözlüğü"</title>
+    <style>
+        body {
+            font-size: 16px;
+            font-family: Arial, sans-serif; 
+            color: #333; 
+            background-color: #fff; 
+            line-height: 1.5; 
+        }
+        body.dark-mode {
+            color: #fff; 
+            background-color: #333; 
+        }
+    </style>
+    <script>
+        function detectDarkMode() {
+            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+            if (prefersDarkScheme.matches) {
+                document.body.classList.add("dark-mode");
+            } else {
+                document.body.classList.remove("dark-mode");
             }
-            body.dark-mode {
-                color: #fff; 
-                background-color: #333; 
-            }
-        </style>
-<script>
-            function detectDarkMode() {
-                const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
-                if (prefersDarkScheme.matches) {
-                    document.body.classList.add("dark-mode");
-                } else {
-                    document.body.classList.remove("dark-mode");
-                }
-            }
-
-            window.onload = detectDarkMode;
-        </script>
+        }
+        
+        window.onload = detectDarkMode;
+    </script>
 </head>
 <body>
-<p> arc length</p></body>
+    <p> arc length</p>
+
+<p>A portion of the circumference of a circle.</p>
+<p>For a circle of radius <em>r,</em> a central angle of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>θ</mi><annotation encoding="application/x-tex">\theta</annotation></semantics></math>
+<em>degrees (or</em>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>α</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math>
+<em>radians)</em> subtends an arc whose length is</p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>l</mi><mo>=</mo><mn>2</mn><mi>π</mi><mi>r</mi><mi>.</mi><mfrac><mi>θ</mi><msup><mn>360</mn><mi>o</mi></msup></mfrac></mrow><annotation encoding="application/x-tex">l = 2\pi r.\frac{\theta}{360^{o}}</annotation></semantics></math>
+or
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>l</mi><mo>=</mo><mi>r</mi><mi>.</mi><mi>α</mi></mrow><annotation encoding="application/x-tex">l = r.\alpha</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mi>A</mi><mi>r</mi><mi>c</mi><mspace width="0.222em"></mspace><mi>l</mi><mi>e</mi><mi>n</mi><mi>g</mi><mi>t</mi><mi>h</mi></mrow><mrow><mi>c</mi><mi>i</mi><mi>r</mi><mi>c</mi><mi>u</mi><mi>m</mi><mi>f</mi><mi>e</mi><mi>r</mi><mi>e</mi><mi>n</mi><mi>c</mi><mi>e</mi><mspace width="0.222em"></mspace><mi>o</mi><mi>f</mi><mspace width="0.222em"></mspace><mi>t</mi><mi>h</mi><mi>e</mi><mspace width="0.222em"></mspace><mi>c</mi><mi>i</mi><mi>r</mi><mi>c</mi><mi>l</mi><mi>e</mi></mrow></mfrac><mo>=</mo><mfrac><mi>l</mi><mi>C</mi></mfrac><mo>=</mo><mspace width="0.222em"></mspace><mfrac><msup><mi>θ</mi><mn>0</mn></msup><msup><mn>360</mn><mi>o</mi></msup></mfrac><mo>=</mo><mspace width="0.222em"></mspace><mfrac><mrow><mi>α</mi><mspace width="0.222em"></mspace><mrow><mo stretchy="true" form="prefix">(</mo><mi>r</mi><mi>a</mi><mi>d</mi><mi>y</mi><mi>a</mi><mi>n</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><mrow><mn>2</mn><mi>π</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">\frac{Arc\ length}{circumference\ of\ the\ circle} = \frac{l}{C} = \ \frac{\theta^{0}}{360^{o}} = \ \frac{\alpha\ (radyan)}{2\pi}</annotation></semantics></math></p>
+</body>
 </html>
