@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"matematik sözlüğü"</title>
+    <style>
+        body {
+            font-size: 16px;
+            font-family: Arial, sans-serif; 
+            color: #333; 
+            background-color: #fff; 
+            line-height: 1.5; 
+        }
+        body.dark-mode {
+            color: #fff; 
+            background-color: #333; 
+        }
+    </style>
+    <script>
+        function detectDarkMode() {
+            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+            if (prefersDarkScheme.matches) {
+                document.body.classList.add("dark-mode");
+            } else {
+                document.body.classList.remove("dark-mode");
+            }
+        }
+        
+        window.onload = detectDarkMode;
+    </script>
+</head>
+<body>
+    <p> distance between
+the point and the line; point-line distance-2D</p>
+<p>In
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>R</mi><mn>2</mn></msup><mo>:</mo><mspace width="0.222em"></mspace></mrow><annotation encoding="application/x-tex">R^{2}:\ </annotation></semantics></math>The
+shortest (perpendicular) distance between the point
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><msub><mi>y</mi><mn>1</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">A(x_{1},y_{1})</annotation></semantics></math>
+and the line
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mi>x</mi><mo>+</mo><mi>b</mi><mi>y</mi><mo>+</mo><mi>c</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">ax + by + c = 0</annotation></semantics></math></p>
+<p>(or
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mi>m</mi><mi>x</mi><mo>+</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">y = mx + n</annotation></semantics></math>)
+is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>l</mi><mo>=</mo><mfrac><mrow><mo stretchy="true" form="prefix">|</mo><mi>a</mi><msub><mi>x</mi><mn>1</mn></msub><mo>+</mo><mspace width="0.222em"></mspace><mi>b</mi><msub><mi>y</mi><mn>1</mn></msub><mo>+</mo><mi>c</mi><mo stretchy="true" form="postfix">|</mo></mrow><msqrt><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup></mrow></msqrt></mfrac></mrow><annotation encoding="application/x-tex">l = \frac{\left| ax_{1} + \ by_{1} + c \right|}{\sqrt{a^{2} + b^{2}}}</annotation></semantics></math>
+(or
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>l</mi><mo>=</mo><mfrac><mrow><mo stretchy="true" form="prefix">|</mo><msub><mi>y</mi><mn>1</mn></msub><mo>−</mo><mi>m</mi><msub><mi>x</mi><mn>1</mn></msub><mo>−</mo><mi>n</mi><mo stretchy="true" form="postfix">|</mo></mrow><msqrt><mrow><mn>1</mn><mo>+</mo><msup><mi>m</mi><mn>2</mn></msup></mrow></msqrt></mfrac></mrow><annotation encoding="application/x-tex">l = \frac{\left| y_{1} - mx_{1} - n \right|}{\sqrt{1 + m^{2}}}</annotation></semantics></math>
+)</p>
+</body>
+</html>

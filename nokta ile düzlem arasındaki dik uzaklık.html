@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"matematik sözlüğü"</title>
+    <style>
+        body {
+            font-size: 16px;
+            font-family: Arial, sans-serif; 
+            color: #333; 
+            background-color: #fff; 
+            line-height: 1.5; 
+        }
+        body.dark-mode {
+            color: #fff; 
+            background-color: #333; 
+        }
+    </style>
+    <script>
+        function detectDarkMode() {
+            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+            if (prefersDarkScheme.matches) {
+                document.body.classList.add("dark-mode");
+            } else {
+                document.body.classList.remove("dark-mode");
+            }
+        }
+        
+        window.onload = detectDarkMode;
+    </script>
+</head>
+<body>
+    <p>
+perpendicular distance between the point and the plane; point-plane</p>
+<p>distance-3D</p>
+
+<p>In
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>R</mi><mn>3</mn></msup><mo>:</mo></mrow><annotation encoding="application/x-tex">R^{3}:</annotation></semantics></math>
+The shortest (perpendicular) distance between the point
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><msub><mi>y</mi><mn>1</mn></msub><mo>,</mo><msub><mi>z</mi><mn>1</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">A(x_{1},y_{1},z_{1})</annotation></semantics></math>
+and the plane
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mi>x</mi><mo>+</mo><mi>b</mi><mi>y</mi><mo>+</mo><mi>c</mi><mi>z</mi><mo>+</mo><mi>d</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">ax + by + cz + d = 0</annotation></semantics></math>
+is</p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>l</mi><mo>=</mo><mfrac><mrow><mo stretchy="true" form="prefix">|</mo><mi>a</mi><msub><mi>x</mi><mn>1</mn></msub><mo>+</mo><mspace width="0.222em"></mspace><mi>b</mi><msub><mi>y</mi><mn>1</mn></msub><mo>+</mo><mi>c</mi><msub><mi>z</mi><mn>1</mn></msub><mo>+</mo><mi>d</mi><mo stretchy="true" form="postfix">|</mo></mrow><msqrt><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup><mo>+</mo><msup><mi>c</mi><mn>2</mn></msup></mrow></msqrt></mfrac></mrow><annotation encoding="application/x-tex">l = \frac{\left| ax_{1} + \ by_{1} + cz_{1} + d \right|}{\sqrt{a^{2} + b^{2} + c^{2}}}</annotation></semantics></math></p>
+</body>
+</html>
