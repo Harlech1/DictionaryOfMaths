@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"matematik sözlüğü"</title>
+    <style>
+        body {
+            font-size: 16px;
+            font-family: Arial, sans-serif; 
+            color: #333; 
+            background-color: #fff; 
+            line-height: 1.5; 
+        }
+        body.dark-mode {
+            color: #fff; 
+            background-color: #333; 
+        }
+    </style>
+    <script>
+        function detectDarkMode() {
+            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+            if (prefersDarkScheme.matches) {
+                document.body.classList.add("dark-mode");
+            } else {
+                document.body.classList.remove("dark-mode");
+            }
+        }
+        
+        window.onload = detectDarkMode;
+    </script>
+</head>
+<body>
+    <p> mixed fraction; mixed number</p>
+
+<p>An improper fraction
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mi>a</mi><mi>b</mi></mfrac><mo>&gt;</mo><mn>1</mn><mspace width="0.222em"></mspace></mrow><annotation encoding="application/x-tex">\frac{a}{b} &gt; 1\ </annotation></semantics></math>written
+as the sum of an integer and a proper fraction (
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mi>a</mi><mi>b</mi></mfrac><mo>=</mo><mi>m</mi><mo>+</mo><mfrac><mi>c</mi><mi>d</mi></mfrac></mrow><annotation encoding="application/x-tex">\frac{a}{b} = m + \frac{c}{d}</annotation></semantics></math>
+).</p>
+</body>
+</html>

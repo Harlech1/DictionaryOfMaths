@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"matematik sözlüğü"</title>
+    <style>
+        body {
+            font-size: 16px;
+            font-family: Arial, sans-serif; 
+            color: #333; 
+            background-color: #fff; 
+            line-height: 1.5; 
+        }
+        body.dark-mode {
+            color: #fff; 
+            background-color: #333; 
+        }
+    </style>
+    <script>
+        function detectDarkMode() {
+            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+            if (prefersDarkScheme.matches) {
+                document.body.classList.add("dark-mode");
+            } else {
+                document.body.classList.remove("dark-mode");
+            }
+        }
+        
+        window.onload = detectDarkMode;
+    </script>
+</head>
+<body>
+    <p> second
+derivative
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><msup><mi>y</mi><mi>″</mi></msup><mo>=</mo><mi>f</mi></mrow><mi>″</mi></msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mfrac><mi>d</mi><mrow><mi>d</mi><mi>x</mi></mrow></mfrac><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mrow><mi>d</mi><mi>f</mi></mrow><mrow><mi>d</mi><mi>x</mi></mrow></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mfrac><mrow><msup><mi>d</mi><mn>2</mn></msup><mi>f</mi></mrow><msup><mrow><mi>d</mi><mi>x</mi></mrow><mn>2</mn></msup></mfrac><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace></mrow><annotation encoding="application/x-tex">{y^{&#39;&#39;} = f}^{&#39;&#39;}(x) = \frac{d}{dx}\left( \frac{df}{dx} \right) = \frac{d^{2}f}{{dx}^{2}}\ \ </annotation></semantics></math></p>
+</body>
+</html>

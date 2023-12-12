@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"matematik sözlüğü"</title>
+    <style>
+        body {
+            font-size: 16px;
+            font-family: Arial, sans-serif; 
+            color: #333; 
+            background-color: #fff; 
+            line-height: 1.5; 
+        }
+        body.dark-mode {
+            color: #fff; 
+            background-color: #333; 
+        }
+    </style>
+    <script>
+        function detectDarkMode() {
+            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+            if (prefersDarkScheme.matches) {
+                document.body.classList.add("dark-mode");
+            } else {
+                document.body.classList.remove("dark-mode");
+            }
+        }
+        
+        window.onload = detectDarkMode;
+    </script>
+</head>
+<body>
+    <p> double-angle formulas</p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>sin</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>2</mn><mi>α</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mo>sin</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>α</mi><mo>+</mo><mi>α</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mn>2</mn><mi>s</mi><mi>i</mi><mi>n</mi><mi>α</mi><mi>.</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>α</mi></mrow><annotation encoding="application/x-tex">\sin(2\alpha) = \sin(\alpha + \alpha) = 2sin\alpha.cos\alpha</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>cos</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>2</mn><mi>α</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mo>cos</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>α</mi><mo>+</mo><mi>α</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><msup><mo>cos</mo><mn>2</mn></msup><mi>α</mi><mo>−</mo><msup><mo>sin</mo><mn>2</mn></msup><mi>α</mi><msup><mrow><mo>=</mo><mn>2</mn><mi>c</mi><mi>o</mi><mi>s</mi></mrow><mn>2</mn></msup><mi>α</mi><mo>−</mo><mn>1</mn><mo>=</mo><mn>1</mn><mo>−</mo><mn>2</mn><msup><mo>sin</mo><mn>2</mn></msup><mi>α</mi></mrow><annotation encoding="application/x-tex">\cos(2\alpha) = \cos(\alpha + \alpha) = \cos^{2}\alpha - \sin^{2}\alpha{= 2cos}^{2}\alpha - 1 = 1 - 2\sin^{2}\alpha</annotation></semantics></math></p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>tan</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>2</mn><mi>α</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mfrac><mrow><mn>2</mn><mi>t</mi><mi>a</mi><mi>n</mi><mi>α</mi></mrow><mrow><mn>1</mn><mo>−</mo><msup><mo>tan</mo><mn>2</mn></msup><mi>α</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">\tan(2\alpha) = \frac{2tan\alpha}{1 - \tan^{2}\alpha}</annotation></semantics></math></p>
+
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>sin</mo><mo>∝</mo><mo>=</mo><mn>2</mn><mi>s</mi><mi>i</mi><mi>n</mi><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mo>∝</mo><mn>2</mn></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mo>cos</mo><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mo>∝</mo><mn>2</mn></mfrac><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\sin \propto = 2sin\left( \frac{\propto}{2} \right)\cos\left( \frac{\propto}{2} \right)</annotation></semantics></math>
+<em>cos</em><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∝</mo><mo>=</mo><msup><mo>cos</mo><mn>2</mn></msup><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mo>∝</mo><mn>2</mn></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mo>−</mo><msup><mo>sin</mo><mn>2</mn></msup><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mo>∝</mo><mn>2</mn></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><msup><mrow><mn>2</mn><mi>c</mi><mi>o</mi><mi>s</mi></mrow><mn>2</mn></msup><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mo>∝</mo><mn>2</mn></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mo>−</mo><mn>1</mn><mo>=</mo><mn>1</mn><mo>−</mo><mn>2</mn><msup><mo>sin</mo><mn>2</mn></msup><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mo>∝</mo><mn>2</mn></mfrac><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\propto = \cos^{2}\left( \frac{\propto}{2} \right) - \sin^{2}\left( \frac{\propto}{2} \right) = {2cos}^{2}\left( \frac{\propto}{2} \right) - 1 = 1 - 2\sin^{2}\left( \frac{\propto}{2} \right)</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>tan</mo><mo>∝</mo><mo>=</mo><mfrac><mrow><mn>2</mn><mi>t</mi><mi>a</mi><mi>n</mi><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mo>∝</mo><mn>2</mn></mfrac><mo stretchy="true" form="postfix">)</mo></mrow></mrow><mrow><mn>1</mn><mo>−</mo><msup><mo>tan</mo><mn>2</mn></msup><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mo>∝</mo><mn>2</mn></mfrac><mo stretchy="true" form="postfix">)</mo></mrow></mrow></mfrac></mrow><annotation encoding="application/x-tex">\tan \propto = \frac{2tan\left( \frac{\propto}{2} \right)}{1 - \tan^{2}\left( \frac{\propto}{2} \right)}</annotation></semantics></math></p>
+</body>
+</html>

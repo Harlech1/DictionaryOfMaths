@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"matematik sözlüğü"</title>
+    <style>
+        body {
+            font-size: 16px;
+            font-family: Arial, sans-serif; 
+            color: #333; 
+            background-color: #fff; 
+            line-height: 1.5; 
+        }
+        body.dark-mode {
+            color: #fff; 
+            background-color: #333; 
+        }
+    </style>
+    <script>
+        function detectDarkMode() {
+            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+            if (prefersDarkScheme.matches) {
+                document.body.classList.add("dark-mode");
+            } else {
+                document.body.classList.remove("dark-mode");
+            }
+        }
+        
+        window.onload = detectDarkMode;
+    </script>
+</head>
+<body>
+    <p> <em>log.</em> change of base
+formula</p>
+
+<p>The formula
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>,</mo><mspace width="0.222em"></mspace><mi>b</mi><mo>,</mo><mi>c</mi><mspace width="0.222em"></mspace><mi>ϵ</mi><msup><mi>R</mi><mo>+</mo></msup><mspace width="0.222em"></mspace><mi>v</mi><mi>e</mi><mspace width="0.222em"></mspace><mi>a</mi><mo>,</mo><mi>c</mi><mo>≠</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">a,\ b,c\ \epsilon R^{+}\ ve\ a,c \neq 1</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>log</mo><mi>a</mi></msub><mi>b</mi><mo>=</mo><mfrac><mrow><msub><mo>log</mo><mi>c</mi></msub><mi>b</mi></mrow><mrow><msub><mo>log</mo><mi>c</mi></msub><mi>a</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">\log_{a}b = \frac{\log_{c}b}{\log_{c}a}</annotation></semantics></math>
+changes the base of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>log</mo><mi>a</mi></msub><mi>b</mi></mrow><annotation encoding="application/x-tex">\log_{a}b</annotation></semantics></math>
+from
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>
+to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi><annotation encoding="application/x-tex">c</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>.</mi><annotation encoding="application/x-tex">.</annotation></semantics></math></p>
+</body>
+</html>

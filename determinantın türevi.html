@@ -1,38 +1,55 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>"matematik sözlüğü"</title>
-<style>
-            body {
-                font-size: 16px;
-                font-family: Arial, sans-serif; 
-                color: #333; 
-                background-color: #fff; 
-                line-height: 1.5; 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"matematik sözlüğü"</title>
+    <style>
+        body {
+            font-size: 16px;
+            font-family: Arial, sans-serif; 
+            color: #333; 
+            background-color: #fff; 
+            line-height: 1.5; 
+        }
+        body.dark-mode {
+            color: #fff; 
+            background-color: #333; 
+        }
+    </style>
+    <script>
+        function detectDarkMode() {
+            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+            if (prefersDarkScheme.matches) {
+                document.body.classList.add("dark-mode");
+            } else {
+                document.body.classList.remove("dark-mode");
             }
-            body.dark-mode {
-                color: #fff; 
-                background-color: #333; 
-            }
-        </style>
-<script>
-            function detectDarkMode() {
-                const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
-                if (prefersDarkScheme.matches) {
-                    document.body.classList.add("dark-mode");
-                } else {
-                    document.body.classList.remove("dark-mode");
-                }
-            }
-
-            window.onload = detectDarkMode;
-        </script>
+        }
+        
+        window.onload = detectDarkMode;
+    </script>
 </head>
 <body>
-<p> derivative of the
+    <p> derivative of the
 determinant</p>
+
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mi>d</mi><mrow><mi>d</mi><mi>x</mi></mrow></mfrac><mrow><mo stretchy="true" form="prefix">|</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><msub><mi>f</mi><mn>1</mn></msub></mtd><mtd columnalign="center" style="text-align: center"><msub><mi>f</mi><mn>2</mn></msub></mtd><mtd columnalign="center" style="text-align: center"><msub><mi>f</mi><mn>3</mn></msub></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><msub><mi>g</mi><mn>1</mn></msub></mtd><mtd columnalign="center" style="text-align: center"><msub><mi>g</mi><mn>2</mn></msub></mtd><mtd columnalign="center" style="text-align: center"><msub><mi>g</mi><mn>3</mn></msub></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><msub><mi>h</mi><mn>1</mn></msub></mtd><mtd columnalign="center" style="text-align: center"><msub><mi>h</mi><mn>2</mn></msub></mtd><mtd columnalign="center" style="text-align: center"><msub><mi>h</mi><mn>3</mn></msub></mtd></mtr></mtable><mo stretchy="true" form="postfix">|</mo></mrow><mo>=</mo><mrow><mo stretchy="true" form="prefix">|</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><msup><msub><mi>f</mi><mn>1</mn></msub><mi>′</mi></msup></mtd><mtd columnalign="center" style="text-align: center"><msup><msub><mi>f</mi><mn>2</mn></msub><mi>′</mi></msup></mtd><mtd columnalign="center" style="text-align: center"><msup><msub><mi>f</mi><mn>3</mn></msub><mi>′</mi></msup></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><msub><mi>g</mi><mn>1</mn></msub></mtd><mtd columnalign="center" style="text-align: center"><msub><mi>g</mi><mn>2</mn></msub></mtd><mtd columnalign="center" style="text-align: center"><msub><mi>g</mi><mn>3</mn></msub></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><msub><mi>h</mi><mn>1</mn></msub></mtd><mtd columnalign="center" style="text-align: center"><msub><mi>h</mi><mn>2</mn></msub></mtd><mtd columnalign="center" style="text-align: center"><msub><mi>h</mi><mn>3</mn></msub></mtd></mtr></mtable><mo stretchy="true" form="postfix">|</mo></mrow><mo>+</mo><mrow><mo stretchy="true" form="prefix">|</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><msub><mi>f</mi><mn>1</mn></msub></mtd><mtd columnalign="center" style="text-align: center"><msub><mi>f</mi><mn>2</mn></msub></mtd><mtd columnalign="center" style="text-align: center"><msub><mi>f</mi><mn>3</mn></msub></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><msup><msub><mi>g</mi><mn>1</mn></msub><mi>′</mi></msup></mtd><mtd columnalign="center" style="text-align: center"><msup><msub><mi>g</mi><mn>2</mn></msub><mi>′</mi></msup></mtd><mtd columnalign="center" style="text-align: center"><msup><msub><mi>g</mi><mn>3</mn></msub><mi>′</mi></msup></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><msub><mi>h</mi><mn>1</mn></msub></mtd><mtd columnalign="center" style="text-align: center"><msub><mi>h</mi><mn>2</mn></msub></mtd><mtd columnalign="center" style="text-align: center"><msub><mi>h</mi><mn>3</mn></msub></mtd></mtr></mtable><mo stretchy="true" form="postfix">|</mo></mrow><mo>+</mo><mrow><mo stretchy="true" form="prefix">|</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><msub><mi>f</mi><mn>1</mn></msub></mtd><mtd columnalign="center" style="text-align: center"><msub><mi>f</mi><mn>2</mn></msub></mtd><mtd columnalign="center" style="text-align: center"><msub><mi>f</mi><mn>3</mn></msub></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><msub><mi>g</mi><mn>1</mn></msub></mtd><mtd columnalign="center" style="text-align: center"><msub><mi>g</mi><mn>2</mn></msub></mtd><mtd columnalign="center" style="text-align: center"><msub><mi>g</mi><mn>3</mn></msub></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><msup><msub><mi>h</mi><mn>1</mn></msub><mi>′</mi></msup></mtd><mtd columnalign="center" style="text-align: center"><msup><msub><mi>h</mi><mn>2</mn></msub><mi>′</mi></msup></mtd><mtd columnalign="center" style="text-align: center"><msup><msub><mi>h</mi><mn>3</mn></msub><mi>′</mi></msup></mtd></mtr></mtable><mo stretchy="true" form="postfix">|</mo></mrow></mrow><annotation encoding="application/x-tex">\frac{d}{dx}\left| \begin{matrix}
+f_{1} &amp; f_{2} &amp; f_{3} \\
+g_{1} &amp; g_{2} &amp; g_{3} \\
+h_{1} &amp; h_{2} &amp; h_{3}
+\end{matrix} \right| = \left| \begin{matrix}
+{f_{1}}^{&#39;} &amp; {f_{2}}^{&#39;} &amp; {f_{3}}^{&#39;} \\
+g_{1} &amp; g_{2} &amp; g_{3} \\
+h_{1} &amp; h_{2} &amp; h_{3}
+\end{matrix} \right| + \left| \begin{matrix}
+f_{1} &amp; f_{2} &amp; f_{3} \\
+{g_{1}}^{&#39;} &amp; {g_{2}}^{&#39;} &amp; {g_{3}}^{&#39;} \\
+h_{1} &amp; h_{2} &amp; h_{3}
+\end{matrix} \right| + \left| \begin{matrix}
+f_{1} &amp; f_{2} &amp; f_{3} \\
+g_{1} &amp; g_{2} &amp; g_{3} \\
+{h_{1}}^{&#39;} &amp; {h_{2}}^{&#39;} &amp; {h_{3}}^{&#39;}
+\end{matrix} \right|</annotation></semantics></math></p>
 </body>
 </html>
