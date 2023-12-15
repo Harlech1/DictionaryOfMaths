@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>"matematik sözlüğü"</title>
+<style>
+            body {
+                font-size: 16px;
+                font-family: Arial, sans-serif; 
+                color: #333; 
+                background-color: #fff; 
+                line-height: 1.5; 
+            }
+            body.dark-mode {
+                color: #fff; 
+                background-color: #333; 
+            }
+        </style>
+<script>
+            function detectDarkMode() {
+                const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+                if (prefersDarkScheme.matches) {
+                    document.body.classList.add("dark-mode");
+                } else {
+                    document.body.classList.remove("dark-mode");
+                }
+            }
+
+            window.onload = detectDarkMode;
+        </script>
+</head>
+<body>
+<p>Matematik Sözlüğü: Terimler uygulaması Türker Kızılcık tarafından geliştirilmiştir. Uygulamadaki kelimelerin ve açıklamaları "Dictionary of Maths" adlı kitabın yazarı Tayfur Şansan tarafından yazılmıştır. </p>
+<p>Türker Kızılcık İletişim Bilgileri: Mail: turkerkizilcik@gmail.com</p>
+<p>Matematik Sözlüğü: Terimler uygulamasının her hakkı saklıdır.</p>
+</body>
+</html>
