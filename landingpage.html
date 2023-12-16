@@ -45,7 +45,7 @@
     .features {
       display: flex;
       justify-content: space-around;
-      align-items: center;
+      align-items: flex-start; /* Özelliklerin üstten hizalanması */
       margin-top: 40px;
     }
 
@@ -65,6 +65,10 @@
 
     .feature-box p {
       margin: 0;
+    }
+
+    .feature-box h3 {
+      font-weight: bold; /* Özellik başlıkları bold */
     }
 
     main {
@@ -102,17 +106,17 @@
     <div class="features">
       <div class="feature-box">
         <img src="house.png" alt="Feature 1 Resmi">
-        <p>Ana Sayfa</p>
+        <h3>Ana Sayfa</h3>
         <p>Günlük sözler, makaleler ve üç kelime ezberiyle bilginizi güçlendirin.</p>
       </div>
       <div class="feature-box">
         <img src="character.book.closed.png" alt="Feature 2 Resmi">
-        <p>Sözlük</p>
+        <h3>Sözlük</h3>
         <p>4000+ kelime dağarcığı ile istediğiniz kelimeyi aratıp bulabilirsiniz.</p>
       </div>
       <div class="feature-box">
         <img src="heart.png" alt="Feature 3 Resmi">
-        <p>Favoriler</p>
+        <h3>Favoriler</h3>
         <p>Ezberlemek veya aklınızda tutmak istediğiniz kelimeleri favorileyip istediğinizde bakabilirsiniz.</p>
       </div>
     </div>
