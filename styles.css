@@ -1,0 +1,33 @@
+/* Örnek Temel Stiller */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.title {
+  text-align: left;
+}
+
+.title h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.title p {
+  margin-top: 5px;
+  color: #666;
+}
+
+.icon img {
+  max-width: 100px;
+  height: auto;
+}
