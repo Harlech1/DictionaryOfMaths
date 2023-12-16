@@ -73,16 +73,15 @@
     main {
       text-align: center;
       padding: 50px 20px;
+       padding-bottom: 100px; 
     }
 
-    footer {
-      text-align: center;
-      background-color: #333;
-      color: #fff;
-      padding: 10px;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
+     footer {
+      /* ... */
+      position: relative; /* Footer'ın pozisyonunu relative yap */
+      margin-top: -100px; /* Footer'ı yukarı doğru kaydır */
+      height: 100px; /* Footer yüksekliği */
+      clear: both; /* Z-index değeri ile footer'ın içeriği örtmemesini sağlamak için clear:both */
     }
 
     /* App Store download resmi için yeni boyut */
