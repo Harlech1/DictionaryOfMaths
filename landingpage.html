@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+      <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -42,15 +42,33 @@
       color: #597dc0; /* Alt başlık rengi daha açık mavi */
     }
 
+    .features {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 40px;
+    }
+
+    .feature-box {
+      text-align: center;
+      padding: 20px;
+      border-radius: 10px;
+      background-color: #f3f3f3; /* Dikdörtgen arka plan rengi gri */
+      width: 200px;
+    }
+
+    .feature-box img {
+      width: 50px; /* Küçük resim boyutu */
+      margin-bottom: 10px;
+    }
+
+    .feature-box p {
+      margin: 0;
+    }
+
     main {
       text-align: center;
       padding: 50px 20px;
-    }
-
-    img {
-      max-width: 200px;
-      height: auto;
-      border-radius: 5px;
     }
 
     footer {
@@ -74,6 +92,23 @@
   </header>
 
   <main>
+    <div class="features">
+      <div class="feature-box">
+        <img src="mock_image_1.jpg" alt="Feature 1 Resmi">
+        <p>Feature 1</p>
+        <p>Feature 1 açıklaması burada olacak.</p>
+      </div>
+      <div class="feature-box">
+        <img src="mock_image_2.jpg" alt="Feature 2 Resmi">
+        <p>Feature 2</p>
+        <p>Feature 2 açıklaması burada olacak.</p>
+      </div>
+      <div class="feature-box">
+        <img src="mock_image_3.jpg" alt="Feature 3 Resmi">
+        <p>Feature 3</p>
+        <p>Feature 3 açıklaması burada olacak.</p>
+      </div>
+    </div>
     <p>Matematik Sözlüğü uygulaması, geniş bir matematik terimleri koleksiyonunu içerir. Kolay kullanımı ve kapsamlı içeriği ile matematik öğrenimini destekler.</p>
     <a href="https://apps.apple.com/cy/app/instagram/id389801252?l=tr"><img src="appstoredownload.png" alt="Uygulamayı İndir"></a>
   </main>
